@@ -1,0 +1,450 @@
+body {
+    background-color: #ffffff; /* 白に変更 */
+}
+/* ------------------------------------------------
+ * Spica 各ページ
+ * -----------------------------------------------*/
+/* 各ページのタイトル */
+.spica-title {
+    text-align: center;
+    color: #363637;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    font-size: 40px;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-style: normal;
+}
+
+/* 各ページのトップ画像 */
+.spica-page-imge img {
+    height: 400px;          /* ← 好きな高さに調整 */
+    object-fit: cover;      /* 枠に合わせてトリミング */
+    width: 100%;            /* 横幅いっぱいに */
+    display: block;
+}
+
+/* ------------------------------------------------
+ * Spica TOPページのスタイル
+ * -----------------------------------------------*/
+.container {
+    max-width: 100%;
+    margin: 0 auto; /* 中央揃え */
+    padding: 0px; /* 内側の余白を追加 */
+}
+
+
+/* スライダーのスタイル */
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* ← 画面の高さに合わせる */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ← 画像をいい感じに切り取ってフィット */
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+/* 各スライドの表示タイミング */
+.slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slider img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/* フェードアニメーション */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------------------
+ * Spica ヘッダー
+ * -----------------------------------------------*/
+/* ヘッダー全体のスタイル */
+#main-header {
+    position: fixed; /* ヘッダーを画面上部に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 他の要素より前面に表示 */
+    background-color: #fff; /* 背景色を白に設定 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ヘッダー内のコンテンツ */
+.header-inner {
+    display: flex;
+    justify-content: space-between; /* 左右に要素を配置 */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* 左右のナビゲーションメニュー */
+.navGlobal {
+    display: flex;
+    align-items: center;
+}
+
+.navGlobalIn {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navGlobalIn li {
+    margin: 0 15px; /* 各メニュー項目の間隔を設定 */
+}
+
+.navGlobalIn li a {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-style: normal;
+}
+
+.navGlobalIn li a:hover {
+    color: #ffb836;
+}
+
+/* ロゴのスタイル */
+.spica-logo-main {
+    position: absolute;
+    top: 50%; /* 縦方向の中央 */
+    left: 50%; /* 横方向の中央 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+    z-index: 1000; /* スライダーの上に表示 */
+    text-align: center;
+    width: 30%; /* ロゴの幅を画面の30%に調整 */
+    height: auto;
+}
+
+.spica-logo-main img {
+    width: 100%; /* 親の30%に合わせる */
+    height: auto;
+    object-fit: contain;
+    margin: 0; /* これで中央にピタッと */
+    padding: 0;
+}
+
+
+/* ロゴのスタイル */
+.spica-logo-top {
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    align-items: center; /* ← ロゴを縦方向中央に揃える */
+    justify-content: center;
+}
+        
+.spica-logo-top img {
+    height: 70px; /* ロゴの高さを調整 */
+    object-fit: contain; /* ロゴの比率を維持 */
+}        
+
+/* スライドアニメーション */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+/* ------------------------------------------------
+ * Spica Managements ブログ一覧
+ * -----------------------------------------------*/
+    /* 記事リスト全体のレイアウト */
+    .blog-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px; /* 画面の最大幅を設定 */
+        margin: 0 auto; /* 中央寄せ */
+    }
+
+    /* 各記事のスタイル */
+    .blog-post {
+        background-color: #f3f3f3;
+        border-radius: 0%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        transition: transform 0.3s;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .blog-post:hover {
+        transform: translateY(-5px);
+    }
+
+    /* サムネイル画像のスタイル調整 */
+    .thumbnail-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        overflow: hidden; /* 画像が枠からはみ出さないように */
+    }
+
+    .thumbnail {
+        height: 120px;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+
+    /* タイトルのスタイル調整 */
+    .blog-post h3 {
+        font-size: 0.95em;
+        margin: 5px 0;
+        text-align: center;
+        white-space: nowrap; /* テキストを1行に制限 */
+        overflow: hidden; /* 枠を超えた部分を非表示 */
+        text-overflow: ellipsis; /* 見切れた部分に「...」を表示 */
+        max-width: 100%; /* タイトルの幅をカード内に収める */
+    }
+
+    /* ボタンやリンクの配置 */
+    .blog-post p {
+        font-size: 0.85em;
+        margin: 0;
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .blog-post-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .blog-post:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+
+    /* デスクトップ向けのレイアウト */
+    @media (min-width: 768px) {
+        .blog-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+/* ------------------------------------------------
+ * Spica Managements ブログ表示
+ * -----------------------------------------------*/
+ .blog-detail {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 20px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.blog-detail h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blog-detail .update-date {
+    text-align: right;
+    color: #666;
+    margin-bottom: 60px;
+    font-size: 0.9rem;
+}
+.blog-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0; /* ← 左右の auto をなくして上下だけ余白 */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------
+ * Managements
+ * -----------------------------------------------*/
+/* 各ページのタイトル */
+.admin-title {
+    text-align: center;
+    color: #363637;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    font-size: 40px;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-style: normal;
+}
+
+/* ログアウトボタンのスタイル */
+.logout a {
+    margin: 20px auto;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    max-width: 160px;
+}
+
+.logout a:hover {
+    background-color: #ffb83678;
+}
+
+.logout i {
+    margin-right: 6px;
+}
+
+/* 戻るボタン　レスポンシブデザイン */
+.return a {
+    margin: 20px auto;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    max-width: 160px;
+}
+
+.return a:hover {
+    background-color: #ffb83678;
+}
+
+.return i {
+    margin-right: 6px;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) {
+
+    /* ログアウトボタン */
+    .logout a {
+        position: static;
+        margin-top: 12px;
+        text-align: center;
+        padding: 6px;
+        font-size: 12px;
+        max-width: 100px;
+    }
+
+    /* 戻るボタン */
+    .return a {
+        position: static;
+        margin-top: 12px;
+        text-align: center;
+        padding: 6px;
+        font-size: 12px;
+        max-width: 100px;
+    }    
+}
+
+/* レスポンシブデザイン: 小さな画面（スマートフォン）対応 */
+@media screen and (max-width: 480px) {
+    /* メニューのボックスの幅をさらに小さくする */
+    .menu-box {
+        width: 100%;
+        padding: 10px;
+        max-width: 100px;
+    }
+
+    /* メニュータイトルのフォントサイズをさらに小さくする */
+    .menu_title {
+        font-size: 14px;
+    }
+}
+
+/* ロゴのスタイル */
+.top-image img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
