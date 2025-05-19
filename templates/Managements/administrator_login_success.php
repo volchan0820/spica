@@ -87,7 +87,7 @@
     </div>
 
     <div class="menu">
-    <h1 class="menu_title">BLOG</h1>
+    <h2 class="menu_title">Blog</h2>
     <div class="mui-panel menu-box">
         <ul class="menu_list">
             <li>

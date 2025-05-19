@@ -18,7 +18,12 @@ class BlogsController extends AppController
     // 管理画面トップページ
     public function index()
     {
-
+        // 'blogs' テーブルのデータを取得
+        $blogs = $this->Blogs->find('all');
+        // ビューにデータを渡す
+        $this->set(compact('blogs'));
+        // 下書き一覧にリダイレクト
+        $this->redirect(['action' => 'draftList']);
     }
 
     // 下書きブログ一覧
@@ -32,7 +37,7 @@ class BlogsController extends AppController
         $this->set(compact('blogs'));
     }
 
-    // 書きブログ記事
+    // 下書きブログ記事
     public function draftView($id = null)
     {
         try {
@@ -43,8 +48,17 @@ class BlogsController extends AppController
         } catch (RecordNotFoundException $e) {
             throw new NotFoundException(__('記事が見つかりませんでした。'));
         }
-    
-        $this->set(compact('blog'));
+        // 次の記事を取得
+        $nextBlog = $this->Blogs->find()
+            ->where(['id >' => $id, 'status' => 'draft', 'delete_flag' => 0])
+            ->order(['id' => 'ASC'])
+            ->first();
+        // 前の記事を取得
+        $prevBlog = $this->Blogs->find()
+            ->where(['id <' => $id, 'status' => 'draft', 'delete_flag' => 0])
+            ->order(['id' => 'DESC'])
+            ->first();
+        $this->set(compact('blog', 'nextBlog', 'prevBlog'));
     }
 
     // 公開中ブログ一覧
@@ -69,8 +83,17 @@ class BlogsController extends AppController
         } catch (RecordNotFoundException $e) {
             throw new NotFoundException(__('記事が見つかりませんでした。'));
         }
-    
-        $this->set(compact('blog'));
+        // 次の記事を取得
+        $nextBlog = $this->Blogs->find()
+            ->where(['id >' => $id, 'status' => 'published', 'delete_flag' => 0])
+            ->order(['id' => 'ASC'])
+            ->first();
+        // 前の記事を取得
+        $prevBlog = $this->Blogs->find()
+            ->where(['id <' => $id, 'status' => 'published', 'delete_flag' => 0])
+            ->order(['id' => 'DESC'])
+            ->first();
+        $this->set(compact('blog', 'nextBlog', 'prevBlog'));
     }
 
     // ブログ新規投稿
@@ -300,7 +323,7 @@ class BlogsController extends AppController
     }
 
     // 公開中のブログ削除
-    public function delete($id = null)
+    public function publisheDelete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
 
@@ -317,6 +340,26 @@ class BlogsController extends AppController
         }
 
         return $this->redirect(['action' => 'blogList']); // 一覧に戻す
+    }
+
+    // 下書きブログ削除
+    public function draftDelete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+
+        try {
+            $blog = $this->Blogs->get($id);  // blogsテーブルから1件取得
+            $blog->delete_flag = 1;           // delete_flagを1にするだけ
+            if ($this->Blogs->save($blog)) {
+                $this->Flash->success(__('ブログ記事を削除しました。'));
+            } else {
+                $this->Flash->error(__('ブログ記事の削除に失敗しました。'));
+            }
+        } catch (\Exception $e) {
+            $this->Flash->error(__('ブログ記事の削除時にエラーが発生しました。'));
+        }
+
+        return $this->redirect(['action' => 'draftList']); // 一覧に戻す
     }
 
 }

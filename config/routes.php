@@ -88,7 +88,7 @@ return function (RouteBuilder $routes): void {
 
         // 管理画面のルート
         // ManagementsControllerのadministratorLoginアクション
-        $builder->connect('/managements/administrator-login', ['controller' => 'Managements', 'action' => 'administratorLogin']);
+        $builder->connect('/managements/administrator-login-ZmhT3nWEjld02kFcqEm5', ['controller' => 'Managements', 'action' => 'administratorLogin']);
         
         $builder->fallbacks();
     });

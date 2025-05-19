@@ -15,7 +15,29 @@
     <title>Hair atelier spicaのこだわり | 浦添市のカフェのようなプライベート美容室</title>
     <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。カフェのような空間で、ゆったりとした時間をお過ごしください。">
 <style>
-    
+    body {
+        background-color: #f5f5f5;
+        margin: 0;
+        font-family: "Zen Maru Gothic", sans-serif;
+    }
+
+    .top-image img {
+        display: block;
+        margin: 30px auto 10px;
+        max-width: 180px;
+        height: auto;
+    }
+
+    .admin-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 0;
+        color: #444;
+        font-family: "Tsukimi Rounded", sans-serif;
+    }
+
+
 </style>
 </head>
 <body>
@@ -24,20 +46,32 @@
     <div class="top-image">
         <img src="/img/spiica-logo.png" alt="spica-logo">
     </div>
-    <div class="blog-detail">
-        <h1><?= h($blog->title) ?></h1>
-        <p class="update-date">更新日: <?= $blog->modified->format('Y年m月d日') ?></p>
-        <div class="blog-content">
-            <?= $blog->content ?>
-        </div>
-        <a href="<?= $this->Url->build(['action' => 'edit', $blog->id]) ?>">編集</a> |
-        <?= $this->Form->postLink(
-    '削除',
-    ['action' => 'delete', $blog->id],
-    ['confirm' => '削除してもよろしいですか？']
-) ?>
 
-        <a href="<?= $this->Url->build(['action' => 'blogList']) ?>" class="back-link">← ブログ一覧に戻る</a>
+    <h2 class="admin-title">Draft View</h2>
+
+    <div class="blog-action-links">
+        <a href="<?= $this->Url->build(['action' => 'edit', $blog->id]) ?>">編集</a> |
+        <?= $this->Form->postLink('削除',['action' => 'draftDelete', $blog->id],['confirm' => '削除してもよろしいですか？']) ?>
+    </div>
+
+    <div class="blog-detail">
+        <p class="update-date">更新日: <?= $blog->modified->format('Y年m月d日') ?></p>
+        <h1><?= h($blog->title) ?></h1>
+        <div class="blog-content"><?= $blog->content ?></div>
+    </div>
+    
+    <div class="blog-navigation">
+        <?php if (!empty($prevBlog)): ?>
+            <a href="<?= $this->Url->build(['action' => 'draftView', $prevBlog->id]) ?>" class="nav-arrow prev">
+                <span class="arrow-left"></span> BACK
+            </a>
+        <?php endif; ?>
+        <a href="<?= $this->Url->build(['action' => 'draftList']) ?>" class="nav-center">Back to Blog List</a>
+        <?php if (!empty($nextBlog)): ?>
+            <a href="<?= $this->Url->build(['action' => 'draftView', $nextBlog->id]) ?>" class="nav-arrow next">
+                NEXT <span class="arrow-right"></span>
+            </a>
+        <?php endif; ?>
     </div>
 </body>
 </html>

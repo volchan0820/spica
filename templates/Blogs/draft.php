@@ -14,10 +14,10 @@
 
     <title>美容室spica BLOG | 浦添市の似合わせカットと弱酸性薬剤の施術事例・ヘアケア情報</title>
     <meta name="description" content="Hair atelier spicaのブログでは、似合わせカットの施術例や弱酸性薬剤による髪にやさしい施術、美容室の日常、ヘアケアのコツなどを発信しています。">
-
 </head>
 
 <body>
+    <!-- ハンバーガーメニュー -->
     <?php echo $this->element('administrator_header'); ?>
 
     <div class="top-image">
@@ -49,11 +49,7 @@
                     </div>
 
                     <div class="blog-info">
-                        <h3>
-                            <!-- 記事のタイトル -->
-                            <?= h($blog->title) ?> <span style="color: red;">（下書き）</span>
-                        </h3>
-                        <!-- 日付を表示（西暦-月-日） -->
+                        <h3><?= h($blog->title) ?> <span style="color: red;">（下書き）</span></h3>
                         <p><?= $blog->created->format('Y年m月d日') ?></p>
                         <p>
                             <a href="<?= $this->Url->build(['action' => 'edit', $blog->id]) ?>">編集</a> |

@@ -130,7 +130,7 @@
 
 <!-- ボタン -->
 <div class="button-container">
-<?= $this->Form->button('下書き保存', ['type' => 'button', 'id' => 'draftButton']) ?>
+<!-- <?= $this->Form->button('下書き保存', ['type' => 'button', 'id' => 'draftButton']) ?> -->
 <?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton']) ?>
 </div>
 

@@ -67,7 +67,16 @@ class SpicaController extends AppController
         } catch (RecordNotFoundException $e) {
             throw new NotFoundException(__('記事が見つかりませんでした。'));
         }
+        // 次の記事を取得
+        $nextBlog = $this->Blogs->find()
+            ->where(['id >' => $id, 'status' => 'published', 'delete_flag' => 0])
+            ->order(['id' => 'ASC'])
+            ->first();
+        // 前の記事を取得
+        $prevBlog = $this->Blogs->find()
+            ->where(['id <' => $id, 'status' => 'published', 'delete_flag' => 0])
+            ->order(['id' => 'DESC'])
+            ->first();
+        $this->set(compact('blog', 'nextBlog', 'prevBlog'));
     }
-
-
 }
