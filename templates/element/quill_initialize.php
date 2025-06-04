@@ -1,4 +1,4 @@
-// src/Template/Element/initializeQuill.php
+<!-- 使ってないファイルかも、要確認 -->
 
 <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">

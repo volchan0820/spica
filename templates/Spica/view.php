@@ -22,7 +22,7 @@
     <?php echo $this->element('spica_header'); ?>
     <h1 class="spica-title">BLOG</h1>
     <div class="blog-detail">
-        <p class="update-date">更新日: <?= $blog->modified->format('Y年m月d日') ?></p>
+        <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
         <h1><?= h($blog->title) ?></h1>
         <div class="blog-content">
             <?= $blog->content ?>

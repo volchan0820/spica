@@ -49,7 +49,6 @@
         text-align: center;
         padding: 10px 20px;
         transition: background-color 0.3s ease;
-        font-family: "Tsukimi Rounded", sans-serif;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;
@@ -74,7 +73,6 @@
         text-align: center;
         padding: 10px 20px;
         transition: background-color 0.3s ease;
-        font-family: "Tsukimi Rounded", sans-serif;
         font-weight: 400;
         font-style: normal;
         text-decoration: none;

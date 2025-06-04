@@ -36,7 +36,6 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
         font-size: 16px;
-        font-family: "Tsukimi Rounded", sans-serif;
         font-weight: 400;
         font-style: normal;
         margin-left: 20%;

@@ -47,7 +47,7 @@
         <img src="/img/spiica-logo.png" alt="spica-logo">
     </div>
 
-    <h2 class="admin-title">Draft View</h2>
+    <h1 class="admin-title">Draft View</h1>
 
     <div class="blog-action-links">
         <a href="<?= $this->Url->build(['action' => 'edit', $blog->id]) ?>">編集</a> |
@@ -55,8 +55,8 @@
     </div>
 
     <div class="blog-detail">
-        <p class="update-date">更新日: <?= $blog->modified->format('Y年m月d日') ?></p>
-        <h1><?= h($blog->title) ?></h1>
+        <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
+        <h2><?= h($blog->title) ?></h2>
         <div class="blog-content"><?= $blog->content ?></div>
     </div>
     

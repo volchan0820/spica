@@ -46,6 +46,7 @@
         font-family: "Tsukimi Rounded", sans-serif;
         font-style: normal;
         margin-left: 6%;
+        text-align: left;
     }
 
     /* メニューリストのスタイル */

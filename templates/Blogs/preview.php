@@ -1,4 +1,3 @@
-<!-- templates/Blogs/preview.php -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-    
+    <!-- 検索結果に表示しない、リンクも辿らせない -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- FrozenTime -->
     <?php use Cake\I18n\FrozenTime; ?>
-    
-    <title>プレビュー</title>
+    <title>確認画面｜ブログ編集｜spica管理画面</title>
 <style>
     body {
         background-color: #f5f5f5;
@@ -45,19 +44,12 @@
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     }
 
-    .update-date {
-        text-align: right;
-        font-size: 16px;
-        color: #999;
-        margin-bottom: 10px;
-    }
-
     .preview-title {
         text-align: center;
         font-size: 32px;
         font-weight: bold;
         margin: 20px 0;
-        font-family: "Tsukimi Rounded", sans-serif;
+        /*font-family: "Tsukimi Rounded", sans-serif;*/
         color: #333;
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
@@ -137,12 +129,12 @@
         <img src="/img/spiica-logo.png" alt="spica-logo">
     </div>
 
-    <h2 class="admin-title">Preview</h2>
+    <h1 class="admin-title">Preview</h1>
 
     <div class="confirm-blog-detail">
-        <h2 class="update-date"><?= isset($data['created']) ? h(FrozenTime::parse($data['created'])->format('Y/m/d')) : '投稿日なし' ?></h2>
-        <h2 class="preview-title"><?= isset($data['title']) ? h($data['title']) : 'タイトルなし' ?></h2>
-        <h2 class="preview-text"><?= isset($data['content']) ? $data['content'] : '<p>本文なし</p>' ?></h2>
+        <p class="update-date"><?= isset($data['created']) ? h(FrozenTime::parse($data['created'])->format('Y/m/d')) : '投稿日なし' ?></p>
+        <h2>class="preview-title"><?= isset($data['title']) ? h($data['title']) : 'タイトルなし' ?></h2>
+        <p class="preview-text"><?= isset($data['content']) ? $data['content'] : '<p>本文なし</p>' ?></p>
     </div>
     <div class="publish-button-wrapper">
         <?= $this->Form->create(null, ['url' => ['action' => 'publish']]) ?>
