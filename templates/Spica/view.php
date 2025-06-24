@@ -15,7 +15,10 @@
     <title>Hair atelier spicaのこだわり | 浦添市のカフェのようなプライベート美容室</title>
     <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。カフェのような空間で、ゆったりとした時間をお過ごしください。">
 <style>
-
+    h2 {
+        font-family: 'Zen Maru Gothic', sans-serif;
+        border-bottom: 1px solid #d3d3d3;
+    }
 </style>
 </head>
 <body>
@@ -23,7 +26,7 @@
     <h1 class="spica-title">BLOG</h1>
     <div class="blog-detail">
         <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
-        <h1><?= h($blog->title) ?></h1>
+        <h2><?= h($blog->title) ?></h2>
         <div class="blog-content">
             <?= $blog->content ?>
         </div>

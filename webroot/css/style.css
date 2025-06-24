@@ -1,6 +1,7 @@
 /* 全体 */
 body {
     background-color: #ffffff;
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 h1 {
     font-size: 24px;
@@ -288,18 +289,9 @@ border-color: #007acc;
     font-size: 16px;
     color: #000000;
     margin-bottom: 10px;
-    font-family: "Tsukimi Rounded", sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
-.preview-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 20px 0;
-    font-family: "Tsukimi Rounded", sans-serif;
-    color: #333;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
+
 .preview-text {
     text-align: left;
     font-size: 18px;
@@ -330,6 +322,10 @@ border-color: #007acc;
     text-decoration: none;
 }
 
+.blog-content {
+    margin-top: 60px;
+}
+
 /* ------------------------------------------------
  * 管理画面のみのスタイル
  * -----------------------------------------------*/
@@ -351,6 +347,8 @@ border-color: #007acc;
     font-size: 40px;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 /* ログアウトボタンのスタイル */
@@ -410,36 +408,120 @@ border-color: #007acc;
 .return i {
     margin-right: 6px;
 }
-/* レスポンシブデザイン */
-@media screen and (max-width: 768px) {
-    /* ログアウトボタン */
-    .logout a {
-        position: static;
-        margin-top: 12px;
-        text-align: center;
-        padding: 6px;
-        font-size: 12px;
-        max-width: 100px;
-    }
-    /* 戻るボタン */
-    .return a {
-        position: static;
-        margin-top: 12px;
-        text-align: center;
-        padding: 6px;
-        font-size: 12px;
-        max-width: 100px;
-    }    
+
+/********** add.php **********/
+.draftButton {
+    margin: 20px;
+    margin-left: 50%;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    max-width: 160px;
+    padding: 20px 20px 20px 20px;
+}
+.draftButton:hover {
+    background-color: #ffb83678;
 }
 
-/* レスポンシブデザイン: 小さな画面（スマートフォン）対応 */
-@media screen and (max-width: 480px) {
-    .menu-box {
-        width: 100%;
-        padding: 10px;
-        max-width: 100px;
-    }
-    .menu_title {
-        font-size: 14px;
-    }
+/********** edit.php, add.php **********/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/********** edit.php **********/
+.previewButton {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    max-width: 160px;
+    padding: 20px 40px 20px 40px;
+}
+.previewButton:hover {
+    background-color: #ffb83678;
+}
+
+/********** preview.php **********/
+.confirm-blog-detail {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.preview-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 30px;
+    word-break: break-word;
+}
+.preview-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.publish-button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+.publishButton {
+    margin: 100px auto;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    max-width: 160px;
+}
+.publishButton:hover {
+    background-color: #ffb83678;
 }

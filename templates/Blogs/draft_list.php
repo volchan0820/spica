@@ -15,7 +15,11 @@
     <title>美容室spica BLOG | 浦添市の似合わせカットと弱酸性薬剤の施術事例・ヘアケア情報</title>
     <meta name="description" content="Hair atelier spicaのブログでは、似合わせカットの施術例や弱酸性薬剤による髪にやさしい施術、美容室の日常、ヘアケアのコツなどを発信しています。">
 </head>
-
+<style>
+    h3 {
+        font-family: 'Zen Maru Gothic', sans-serif;
+    }
+</style>
 <body>
     <!-- ハンバーガーメニュー -->
     <?php echo $this->element('administrator_header'); ?>
@@ -42,7 +46,8 @@
                             <img src="<?= h($firstImageUrl ?: '/img/spiica-logo-top.png') ?>" alt="サムネイル" class="thumbnail">
                         </div>
                         <div class="blog-info">
-                            <h3><span style="color: blue;">（下書き）</span><?= h($blog->title) ?></h3>
+                            <!-- 末尾が綺麗に表示されないため半角スペースを追加 -->
+                            <h3><span style="color: blue;">（下書き）</span><?= h($blog->title) ?>&nbsp;</h3>
                             <p><?= $blog->created->format('Y年m月d日') ?></p>
                         </div>
                     </div>

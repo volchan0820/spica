@@ -24,37 +24,6 @@
         padding-right: 200px !important;
     }
 
-    /* ボタンを横並びにする親要素のスタイル */
-    .button-container {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 20px;
-    }
-
-    /* 下書き保存ボタン */
-    body .draftButton {
-        margin: 20px;
-        margin-left: 50%;
-        font-size: 16px;
-        color: #000000;
-        background-color: #ffb836;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 20px;
-        transition: background-color 0.3s ease;
-        font-weight: 400;
-        font-style: normal;
-        text-decoration: none;
-        max-width: 160px;
-        padding: 20px 20px 20px 20px;
-    }
 
     /* 確認ボタン */
     body .previewButton {

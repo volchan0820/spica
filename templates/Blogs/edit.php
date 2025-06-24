@@ -23,95 +23,11 @@
         padding-left: 200px !important;
         padding-right: 200px !important;
     }
-
-    /* ボタンを横並びにする親要素のスタイル */
-    .button-container {
-        display: flex; /* フレックスボックスを使用 */
-        justify-content: center; /* ボタンを中央揃え */
-        gap: 10px; /* ボタン間のスペースを設定 */
-        margin-top: 20px; /* 上部に余白を追加 */
-    }
-
-    /* 下書き保存ボタン */
-    body .draftButton {
-    margin: 20px;
-    margin-left: 50%;
-    font-size: 16px;
-    color: #000000;
-    background-color: #ffb836;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    font-family: "Tsukimi Rounded", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    max-width: 160px;
-    padding: 20px 20px 20px 20px;
-    }
-
-    /* 確認ボタン */
-    body .previewButton {
-    margin: 20px;
-    margin-right: 50%;
-    font-size: 16px;
-    color: #000000;
-    background-color: #ffb836;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    font-family: "Tsukimi Rounded", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    max-width: 160px;
-    padding: 20px 40px 20px 40px;
-    }
-
-    /* レスポンシブデザイン */
-    @media screen and (max-width: 768px) {
-
-        /* 下書き保存ボタン */
-        body .draftButton {
-            position: static;
-            margin-top: 12px;
-            text-align: center;
-            padding: 6px;
-            font-size: 12px;
-            max-width: 100px;
-        }
-
-        /* 確認ボタン */
-        body .previewButton {
-            position: static;
-            margin-top: 12px;
-            text-align: center;
-            padding: 6px;
-            font-size: 12px;
-            max-width: 100px;
-        }    
-    }
     </style>
 </head>
 <body>
-    <!-- ハンバーガーメニュー -->
     <?php echo $this->element('administrator_header'); ?>
 
-    <!-- ロゴ -->
     <div class="top-image">
         <img src="/img/spiica-logo.png" alt="spica-logo">
     </div>
@@ -128,14 +44,12 @@
 <!-- デフォルトは下書き -->
 <?= $this->Form->control('status', ['type' => 'hidden', 'value' => 'draft', ]) ?>
 
-<!-- ボタン -->
 <div class="button-container">
+<!-- 下書き保存は必要なさそうなので一旦削除 -->
 <!-- <?= $this->Form->button('下書き保存', ['type' => 'button', 'id' => 'draftButton']) ?> -->
-<?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton']) ?>
+<?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton', 'class' => 'previewButton']) ?>
 </div>
-
 <?= $this->Form->end() ?>
-
 
 <!-- Quill.jsと自動保存のスクリプト -->
 <script>
@@ -441,14 +355,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.body.appendChild(previewForm);
         previewForm.submit();
-    });
-
-
-
-
-    
+    });    
 });
 </script>
-
 </body>
 </html>

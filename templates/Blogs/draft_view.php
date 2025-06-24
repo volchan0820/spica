@@ -16,28 +16,12 @@
     <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。カフェのような空間で、ゆったりとした時間をお過ごしください。">
 <style>
     body {
-        background-color: #f5f5f5;
-        margin: 0;
         font-family: "Zen Maru Gothic", sans-serif;
     }
-
-    .top-image img {
-        display: block;
-        margin: 30px auto 10px;
-        max-width: 180px;
-        height: auto;
+    h2 {
+        font-family: 'Zen Maru Gothic', sans-serif;
+        border-bottom: 1px solid #d3d3d3;
     }
-
-    .admin-title {
-        text-align: center;
-        font-size: 36px;
-        font-weight: bold;
-        margin-top: 0;
-        color: #444;
-        font-family: "Tsukimi Rounded", sans-serif;
-    }
-
-
 </style>
 </head>
 <body>
