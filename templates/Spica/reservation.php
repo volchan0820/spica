@@ -24,15 +24,9 @@
         <div class="spica-page-imge">
             <img src="/img/cafe_2.jpg" alt="hair atelier spica">
         </div>
-        <h1 class="spica-title fade-up">CONCEPT</h1>
+        <h1 class="spica-title">RESERVATION</h1>
 
-        <p class="concept-text fade-up">
-            ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。
-            <br>
-            ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。ここにはCONCEPTを書きます。
-        </p>
-
-    <footer class="footer">
+    <footer class="footer fade-up">
         <?php echo $this->element('spica_footer'); ?>
     </footer>
 

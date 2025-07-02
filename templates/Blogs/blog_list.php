@@ -25,7 +25,7 @@
     <?php echo $this->element('administrator_header'); ?>
 
     <div class="top-image">
-        <img src="/img/spiica-logo.png" alt="spica-logo">
+        <img src="/img/spica-logo.png" alt="spica-logo">
     </div>
 
     <h2 class="admin-title">Published List</h2>
@@ -43,7 +43,7 @@
                             }
                         ?>
                         <div class="thumbnail-container">
-                            <img src="<?= h($firstImageUrl ?: '/img/spiica-logo-top.png') ?>" alt="サムネイル" class="thumbnail">
+                            <img src="<?= h($firstImageUrl ?: '/img/spica-logo-top.png') ?>" alt="サムネイル" class="thumbnail">
                         </div>
                         <div class="blog-info">
                             <!-- 末尾が綺麗に表示されないため半角スペースを追加 -->

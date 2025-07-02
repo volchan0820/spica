@@ -48,6 +48,12 @@ class SpicaController extends AppController
 
     }
 
+    // ギャラリー
+    public function gallery()
+    {
+
+    }
+
     public function blog()
     {
         // 公開済みのブログ記事を取得
@@ -78,5 +84,23 @@ class SpicaController extends AppController
             ->order(['id' => 'DESC'])
             ->first();
         $this->set(compact('blog', 'nextBlog', 'prevBlog'));
+    }
+
+    // アクセス
+    public function access()
+    {
+
+    }
+
+    // WEB予約
+    public function reservation()
+    {
+
+    }
+
+    // プライバシーポリシー
+    public function privacyPolicy()
+    {
+
     }
 }

@@ -20,7 +20,7 @@
     <?php echo $this->element('administrator_header'); ?>
 
     <div class="top-image">
-        <img src="/img/spiica-logo.png" alt="spica-logo">
+        <img src="/img/spica-logo.png" alt="spica-logo">
     </div>
 
     <h2>ブログ投稿の確認</h2>

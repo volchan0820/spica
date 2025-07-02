@@ -78,7 +78,7 @@
     <?php echo $this->element('administrator_header'); ?>
 
     <div class="top-image">
-        <img src="/img/spiica-logo.png" alt="spica-logo">
+        <img src="/img/spica-logo.png" alt="spica-logo">
     </div>
 
     <h2 class="admin-title">New Post</h2>

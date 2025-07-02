@@ -112,7 +112,7 @@
             </ul>
         </nav>
         <div class="spica-logo-top">
-            <a href="/spica/index/"><img src="/img/spiica-logo-top.png" alt="hair atelier spica"></a>
+            <a href="/spica/index/"><img src="/img/spica-logo-top.png" alt="hair atelier spica"></a>
         </div>
         <nav class="navGlobal navRight">
             <ul class="navGlobalIn">

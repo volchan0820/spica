@@ -87,7 +87,7 @@
 
 <body>
     <div class="top-image">
-        <img src="/img/spiica-logo.png" alt="spica-logo">
+        <img src="/img/spica-logo.png" alt="spica-logo">
     </div>
 
     <?= $this->Form->create(null, ['url' => ['controller' => 'Managements', 'action' => 'administrator_login'], 'method' => 'post']) ?>

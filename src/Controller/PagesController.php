@@ -70,4 +70,9 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+
+    public function privacyPolicy()
+    {
+        // templates/Pages/privacy_policy.php を表示
+    }
 }

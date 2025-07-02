@@ -24,6 +24,12 @@
         <div class="spica-page-imge">
             <img src="/img/cafe_2.jpg" alt="hair atelier spica">
         </div>
-        <h1 class="spica-title">MENU</h1>
+        <h1 class="spica-title fade-up">MENU</h1>
+
+    <footer class="footer">
+        <?php echo $this->element('spica_footer'); ?>
+    </footer>
+
+    <?= $this->element('fade_up_script') ?>
 </body>
 </html>
