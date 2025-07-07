@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
     <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
 
-    <!-- Select2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
 	<!-- フォントの高速化 -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +23,7 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-    <style>
-        .select2-container--default .select2-selection__placeholder {
-            color: #333 !important; /* 普通の文字色にする */
-        }
-    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
@@ -46,7 +36,7 @@
 
     <div class="filter-area fade-up">
         <select id="styleFilter" aria-label="スタイルで絞り込み">
-            <option value=""><?= h('全てのスタイル') ?></option>
+            
             <?php foreach ($styles as $value => $label): ?>
                 <option value="<?= h($value) ?>"><?= h($label) ?></option>
             <?php endforeach; ?>
@@ -91,19 +81,12 @@
             initMasonry();
         });
 
-        // Select2 初期化
-        $('#styleFilter').select2({
-            placeholder: "全てのスタイル",
-            allowClear: true,
-            width: 'resolve'
-        });
-
         // Select2のchangeイベントで絞り込み
         $('#styleFilter').on('change', function () {
             var styleVal = $(this).val();
             $('.grid-item').each(function () {
                 // valueが"all"または空なら全て表示
-                var match = !styleVal || $(this).data('style') === styleVal;
+                var match = styleVal === 'all' || $(this).data('style') === styleVal;
                 $(this).toggle(match);
             });
             imagesLoaded($('.grid')[0], function () {

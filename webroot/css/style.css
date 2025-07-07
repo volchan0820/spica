@@ -259,6 +259,7 @@ h2 {
 }
 
 /********** gallery.php **********/
+/* 画像のスタイル */
 .grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -290,6 +291,23 @@ h2 {
     width: 300px;
     height: 60px;
     border-radius: 0;
+}
+/* プルダウンのスタイル */
+#styleFilter {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('/img/arrow_down.svg') no-repeat right 10px center;
+    background-size: 12px 12px;
+    padding: 6px 30px 6px 10px;
+    font-size: 1.5rem;
+    border: 1px solid #adadad;
+    cursor: pointer;
+}
+#styleFilter:focus {
+    outline: none;
+    /* border-color: #007bff; */
+    /* box-shadow: 0 0 3px #007bff; */
 }
 
 /* ------------------------------------------------
