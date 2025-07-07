@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <!-- レスポンシブ用 -->
+    <?= $this->Html->css('responsive/responsive_sm', ['block' => true]) ?>
     <title>下書き一覧</title>
 
 </head>

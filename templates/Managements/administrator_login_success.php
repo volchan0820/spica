@@ -88,20 +88,30 @@
     </div>
 
     <div class="menu">
-    <h2 class="menu_title">Blog</h2>
+        <h2 class="menu_title">Blog</h2>
+        <div class="mui-panel menu-box">
+            <ul class="menu_list">
+                <li>
+                    <?php echo $this->Html->link('New Post', ['controller' => 'Blogs', 'action' => 'add']); ?>
+                </li>
+                <li>
+                    <?php echo $this->Html->link('Draft List', ['controller' => 'Blogs', 'action' => 'draft_list']); ?>
+                </li>
+                <li>
+                    <?php echo $this->Html->link('Published Articles', ['controller' => 'Blogs', 'action' => 'blog_list']); ?>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu">
+    <h2 class="menu_title">Gallery</h2>
     <div class="mui-panel menu-box">
         <ul class="menu_list">
             <li>
-                <?php echo $this->Html->link('New Post', ['controller' => 'Blogs', 'action' => 'add']); ?>
-            </li>
-            <li>
-                <?php echo $this->Html->link('Draft List', ['controller' => 'Blogs', 'action' => 'draft_list']); ?>
-            </li>
-            <li>
-                <?php echo $this->Html->link('Published Articles', ['controller' => 'Blogs', 'action' => 'blog_list']); ?>
+                <?php echo $this->Html->link('Add Image', ['controller' => 'Gallerys', 'action' => 'add']); ?>
             </li>
         </ul>
     </div>
-    </div>
+</div>
 </body>
 </html>

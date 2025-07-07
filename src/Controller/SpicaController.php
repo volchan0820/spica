@@ -16,6 +16,7 @@ class SpicaController extends AppController
         parent::initialize();
         // モデルをロードする
         $this->Blogs = $this->getTableLocator()->get('Blogs');
+        $this->Galleries = $this->getTableLocator()->get('Galleries');
     }
 
     // サイトの一番初めの画面
@@ -26,7 +27,6 @@ class SpicaController extends AppController
             'order' => ['Blogs.created' => 'DESC']
         ])->toArray();
 
-        // ビューにデータを渡す
         $this->set(compact('blogs'));
     }
 
@@ -51,7 +51,9 @@ class SpicaController extends AppController
     // ギャラリー
     public function gallery()
     {
-
+        $galleries = $this->Galleries->find('all')->toArray();
+        $styles = ['all' => '全てのスタイル', 'short' => 'ショート', 'bob' => 'ボブ', 'medium' => 'ミディアム', 'long' => 'ロング'];
+        $this->set(compact('galleries', 'styles'));
     }
 
     public function blog()

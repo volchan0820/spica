@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
-	<?= $this->Html->script('script') ?>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Noto+Sans+JP|Noto+Serif+JP:300,400,500|Raleway:400,500,700&amp;display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 	<title>浦添市の美容室spica | 似合わせカット×弱酸性薬剤のプライベートサロン</title>
 	<meta name="description" content="沖縄県浦添市経塚のHair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しい施術を提供するプライベートサロン。カフェのような空間でリラックスしながら、理想のヘアスタイルに。">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
+
+	<!-- フォントの高速化 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- 使用フォント Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<style>
 	/* SNSのスタイル */
@@ -131,22 +139,29 @@
 		<a href="" target="_blank"><i class="fab fa-youtube"></i></a>
 		<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
 	</div>
+
 	<?php echo $this->element('spica_header'); ?>
+
 	<div class="container">
-	<div class="slider">
-		<img src="/img/cafe.jpg" alt="Slide 1">
-		<img src="/img/cafe_1.jpg" alt="Slide 2">
-		<img src="/img/cafe_2.jpg" alt="Slide 3">
+		<div class="slider">
+			<img src="/img/cafe.jpg" alt="Slide 1">
+			<img src="/img/cafe_1.jpg" alt="Slide 2">
+			<img src="/img/cafe_2.jpg" alt="Slide 3">
+		</div>
+		<div class="spica-logo-main">
+			<div class="glass-bg"></div>
+			<img src="/img/spica-logo-top.png" alt="spica logo" />
+		</div>
 	</div>
-	<div class="spica-logo-main">
-		<div class="glass-bg"></div>
-		<img src="/img/spica-logo-top.png" alt="spica logo" />
-	</div>
-	</div>
+
+	<!-- ダミー -->
 	<div class="main-container">
 		<div class="sec-concept">
-			<h1>concept</h1>
-			<p>test</p>
+			<h1>ダミーデータ</h1>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
 		</div>
 	</div>
 

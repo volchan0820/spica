@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
-    <?= $this->Html->script('script') ?>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spica ブログ投稿画面</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-    <!-- Quill.jsのCDNリンク -->
+    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
+
+	<!-- フォントの高速化 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- 使用フォント Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
     <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-
-    <title>美容室spica BLOG | 浦添市の似合わせカットと弱酸性薬剤の施術事例・ヘアケア情報</title>
-    <meta name="description" content="Hair atelier spicaのブログでは、似合わせカットの施術例や弱酸性薬剤による髪にやさしい施術、美容室の日常、ヘアケアのコツなどを発信しています。">
-
+    
     <style>
     body {
         padding-left: 200px !important;
         padding-right: 200px !important;
     }
-
 
     /* 確認ボタン */
     body .previewButton {

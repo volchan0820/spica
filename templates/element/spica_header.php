@@ -1,106 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Spica</title>
-    <style>
-        /* ロゴのスタイル */
-        .spica-logo-top {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-        .spica-logo-top img {
-            height: 70px;
-            object-fit: contain;
-        } 
-        #main-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1100;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 90%;
-            max-width: 1200px;
-        }
-        /* 左右のナビゲーションメニュー */
-        .navGlobal {
-            display: flex;
-            align-items: center;
-        }
-        .navGlobalIn {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .navGlobalIn li {
-            margin: 0 15px;
-            margin: 20px;
-        }
-        .navGlobalIn li a {
-            position: relative;
-            display: block;
-            color: #555;
-            font-size: 14px;
-            text-align: center;
-            font-family: "Tsukimi Rounded", sans-serif;
-            overflow: hidden;
-            height: 1.5em;
-            min-width: 80px; /* 文字に余白をもたせる */
-        }
-        .navGlobalIn li a .en {
-            display: block;
-            transition: opacity 0.3s ease;
-        }
-        .navGlobalIn li a:hover .en {
-            opacity: 0;
-        }
-        .navGlobalIn li a .jp {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        /* 虹色グラデーションの初期設定 */
-        background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-        background-size: 300% 100%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-        animation: none;
-        }
-        .navGlobalIn li a:hover .jp {
-        opacity: 1;
-        animation: rainbowFlow 2s linear 1;
-        }
-        @keyframes rainbowFlow {
-        0% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-        }
-    </style>
-</head>
-
-<body>
 <header id="main-header">
     <div class="header-inner">
         <nav class="navGlobal navLeft">
@@ -121,8 +18,53 @@
                 <li><a href="/spica/access/"><span class="en">ACCESS</span><span class="jp">アクセス</span></a></li>
                 <li><a href="/spica/reservation/"><span class="en">WEB予約</span><span class="jp">WEB予約</span></a></li>
             </ul>
-        </nav>
+        </nav>      
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
     </div>
 </header>
-</body>
-</html>
+
+<!-- ハンバーガーメニューのサイドメニュー -->
+<div class="sidebar">
+<ul class="sidebar-menu">
+    <li><a href="/spica/index/">HOME<br>ホーム</a></li>
+    <li><a href="/spica/concept/">CONCEPT<br>コンセプト</a></li>
+    <li><a href="/spica/menu/">MENU<br>メニュー</a></li>
+    <li><a href="/spica/staff/">STAFF<br>スタッフ</a></li>
+    <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
+    <li><a href="/spica/blog/">BLOG<br>ブログ</a></li>
+    <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>
+    <li><a href="/spica/reservation/">RESERVATION<br>WEB予約</a></li>
+</ul>
+<!-- SNSアイコン横並び -->
+<div class="sidebar-sns">
+    <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
+    <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+
+<!-- 背景オーバーレイ -->
+<div class="overlay"></div>
+
+<script>
+    $(function () {
+    $('.hamburger').click(function () {
+        $('.sidebar').toggleClass('active');
+        $('.overlay').toggleClass('active');
+        $('.hamburger').toggleClass('active');
+        $('body').toggleClass('no-scroll');
+    });
+
+    $('.overlay').click(function () {
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        $('.hamburger').removeClass('active');
+        $('body').toggleClass('no-scroll');
+    });
+    });
+</script>
