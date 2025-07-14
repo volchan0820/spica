@@ -310,6 +310,66 @@ h2 {
     /* box-shadow: 0 0 3px #007bff; */
 }
 
+/* モーダルの背景 */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+/* 画像と✕ボタンをまとめて囲む */
+.modal-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+/* モーダル内の画像 */
+.modal-content {
+  max-width: 90vw;
+  max-height: 80vh;
+  animation: zoom 0.3s;
+}
+@keyframes zoom {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+}
+.modal-info {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+.modal-info p {
+    max-width: 50%;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 閉じるボタン */
+.modal-close {
+    position: absolute;
+    top: -34px;
+    right: -4px;
+    color: #cecccc;
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+
 /* ------------------------------------------------
  * 管理画面のみのスタイル
  * -----------------------------------------------*/
@@ -393,7 +453,7 @@ h2 {
     margin-right: 6px;
 }
 
-/********** add.php **********/
+/********** Blogs/add.php **********/
 .draftButton {
     margin: 20px;
     margin-left: 50%;
@@ -420,7 +480,7 @@ h2 {
     background-color: #ffb83678;
 }
 
-/********** edit.php, add.php **********/
+/********** Blogs/edit.php, Blogs/add.php **********/
 .button-container {
     display: flex;
     justify-content: center;
@@ -428,7 +488,7 @@ h2 {
     margin-top: 20px;
 }
 
-/********** edit.php **********/
+/********** Blogs/edit.php **********/
 .previewButton {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -456,7 +516,7 @@ h2 {
     background-color: #ffb83678;
 }
 
-/********** preview.php **********/
+/********** Blogs/preview.php **********/
 .confirm-blog-detail {
     background-color: #ffffff;
     border: 2px solid #ddd;
@@ -508,6 +568,28 @@ h2 {
 }
 .publishButton:hover {
     background-color: #ffb83678;
+}
+
+/********** Gallerys/add.php **********/
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto; /* 左右中央寄せ */
+    padding: 0 20px; /* 左右に余白 */
+    font-family: 'Zen Old Mincho', serif;
+}
+.form-wrapper .input {
+    margin-bottom: 2.5rem;
+}
+
+.form-wrapper label {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+.form-wrapper .required {
+    color: red;
+    font-size: 0.8em;
+    margin-left: 0.5em;
 }
 
 /* ------------------------------------------------

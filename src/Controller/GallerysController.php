@@ -21,13 +21,18 @@ class GallerysController extends AppController
     public function add()
     {
         $styleOptions = ['short' => 'ショート', 'bob' => 'ボブ', 'medium' => 'ミディアム', 'long' => 'ロング'];
-        $this->set(compact('styleOptions'));
+        $menuOptions1 = ['cut' => 'カット', 'color' => 'カラー', 'perm' => 'パーマ', 'straight' => 'ストレート', 'treatment' => 'トリートメント'];
+        $menuOptions2 = ['cut' => 'カット', 'color' => 'カラー', 'perm' => 'パーマ', 'straight' => 'ストレート', 'treatment' => 'トリートメント'];
+        $menuOptions3 = ['cut' => 'カット', 'color' => 'カラー', 'perm' => 'パーマ', 'straight' => 'ストレート', 'treatment' => 'トリートメント'];
+        $menuOptions4 = ['cut' => 'カット', 'color' => 'カラー', 'perm' => 'パーマ', 'straight' => 'ストレート', 'treatment' => 'トリートメント'];
+        $menuOptions5 = ['cut' => 'カット', 'color' => 'カラー', 'perm' => 'パーマ', 'straight' => 'ストレート', 'treatment' => 'トリートメント'];
+        $this->set(compact('styleOptions', 'menuOptions1', 'menuOptions2', 'menuOptions3', 'menuOptions4', 'menuOptions5'));
 
         if ($this->request->is('post')) {
             $data = $this->request->getData();
 
-            if (empty($data['style']) || !$data['image_file'] || $data['image_file']->getError() !== UPLOAD_ERR_OK) {
-                $this->Flash->error('スタイルと画像を両方入力してください。');
+            if (empty($data['style']) || empty($data['menu1']) || !$data['image_file'] || $data['image_file']->getError() !== UPLOAD_ERR_OK) {
+                $this->Flash->error('スタイルと画像とメニュー①は必須項目です。');
                 return;
             }
 

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
-    <?= $this->Html->script('script') ?>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,12 +27,12 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<style>
-    h2 {
-        font-family: 'Zen Maru Gothic', sans-serif;
-        border-bottom: 1px solid #d3d3d3;
-    }
-</style>
+    <style>
+        h2 {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            border-bottom: 1px solid #d3d3d3;
+        }
+    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
