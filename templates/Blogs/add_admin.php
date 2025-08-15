@@ -19,9 +19,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- 使用フォント Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet"> <!-- 手書き風丸ゴシック font-family: "Tsukimi Rounded", sans-serif; -->
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> <!-- 丸ゴシック font-family: "Zen Maru Gothic", sans-serif; -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> <!-- メイリオに近い font-family: 'Noto Sans JP', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet"> <!-- 明朝体 font-family: 'Zen Old Mincho', serif; -->
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -229,7 +230,7 @@
                     // 下書き保存が完了したらプレビュー画面へ遷移
                     var previewForm = document.createElement("form");
                     previewForm.method = "post";
-                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
+                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirmAdmin']) ?>";
 
                     var idInput = document.createElement("input");
                     idInput.type = "hidden";
@@ -257,7 +258,7 @@
 
             var previewForm = document.createElement("form");
             previewForm.method = "post";
-            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
+            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirmAdmin']) ?>";
 
             // タイトルとコンテンツを隠しフィールドに追加
             var titleInput = document.createElement("input");
@@ -334,7 +335,7 @@
                     // 下書き保存が完了したらプレビュー画面へ遷移
                     var previewForm = document.createElement("form");
                     previewForm.method = "post";
-                    previewForm.action = "<?= $this->Url->build(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']) ?>";
+                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'draftSaveCompleteAdmin']) ?>";
 
                     var idInput = document.createElement("input");
                     idInput.type = "hidden";

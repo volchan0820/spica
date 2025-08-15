@@ -64,7 +64,7 @@
             <img class="modal-content" id="modalImage">
         </div>
         <div id="modalInfo" class="modal-info"></div>
-            <?= $this->Form->postLink('削除する',['action' => 'imageDelete', $gallery->id],['confirm' => '削除してもよろしいですか？', 'class' => 'btn btn-delete']) ?>
+            <?= $this->Form->postLink('削除する',['action' => 'imageDelete', $gallery->id],['confirmAdmin' => '削除してもよろしいですか？', 'class' => 'btn btn-delete']) ?>
     </div>
 
     <?= $this->element('fade_up_script') ?>    

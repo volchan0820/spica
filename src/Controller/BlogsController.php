@@ -15,46 +15,15 @@ class BlogsController extends AppController
         parent::initialize();
     }
 
-    // // 管理画面トップページ
-
-    // 下書き保存ボタン押下の処理がここにいるみたい
-    // public function index()
-    // {
-    //     // 'blogs' テーブルのデータを取得
-    //     $blogs = $this->Blogs->find('all');
-    //     // ビューにデータを渡す
-    //     $this->set(compact('blogs'));
-    //     // 下書き一覧にリダイレクト
-    //     $this->redirect(['action' => 'listDraftAdmin']);
-    // }
-
     // ブログ新規投稿
     public function addAdmin()
     {
         $blog = $this->Blogs->newEmptyEntity();
-
-        if ($this->request->is(['post', 'put'])) {
-            $blog = $this->Blogs->patchEntity($blog, $this->request->getData());
-
-            // 下書き保存ボタンが押された場合のみ
-            if ($this->request->getData('save_as_draft')) {
-                $blog->status = 'draft';
-
-                if ($this->Blogs->save($blog)) {
-                    $this->Flash->success('下書き保存しました');
-                    return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
-                } else {
-                    $this->Flash->error('下書き保存に失敗しました');
-                }
-            }
-            // 確認画面へ進む場合はメッセージ不要
-        }
-
         $this->set(compact('blog'));
     }
 
     // ブログ投稿前プレビュー
-    public function confirm()
+    public function confirmAdmin()
     {
         if ($this->request->is('post')) {
             $data = $this->request->getData();
@@ -83,7 +52,7 @@ class BlogsController extends AppController
             }
             $blog = $this->Blogs->patchEntity($blog, ['status' => 'published']);
             if ($this->Blogs->save($blog)) {
-                return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
+                return $this->redirect(['controller' => 'Blogs', 'action' => 'publishCompleteAdmin']);
                 $this->Flash->success(__('ブログを公開しました。'));
             } else {
                 $this->Flash->error('公開に失敗しました。');
@@ -341,4 +310,13 @@ class BlogsController extends AppController
         return $this->redirect(['action' => 'listDraftAdmin']);
     }
 
+    public function draftSaveCompleteAdmin()
+    {
+
+    }
+
+    public function publishCompleteAdmin()
+    {
+
+    }
 }

@@ -37,7 +37,7 @@
 
     <div class="blog-action-links">
         <a href="<?= $this->Url->build(['action' => 'editAdmin', $blog->id]) ?>">編集</a>
-        <?= $this->Form->postLink('削除',['action' => 'deletePublished', $blog->id],['confirm' => '削除してもよろしいですか？']) ?>
+        <?= $this->Form->postLink('削除',['action' => 'deletePublished', $blog->id],['confirmAdmin' => '削除してもよろしいですか？']) ?>
     </div>
 
     <div class="blog-detail">

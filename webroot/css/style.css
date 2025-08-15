@@ -529,16 +529,16 @@ body .menu_list li a:hover {
     color: #fff;
 }
 
-/********** Blogs/add.php **********/
+/********** ブログ投稿 **********/
 /* 下書き保存ボタン */
-.draftButton {
+body .draftButton {
     margin: 20px;
     margin-left: 50%;
     font-size: 16px;
     color: #000000;
     background-color: #ffb836;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     display: flex;
@@ -552,6 +552,7 @@ body .menu_list li a:hover {
     text-decoration: none;
     max-width: 160px;
     padding: 20px 20px 20px 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .draftButton:hover {
     background-color: #ffb83678;
@@ -565,7 +566,7 @@ body .previewButton {
     color: #000000;
     background-color: #ffb836;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     display: flex;
@@ -579,6 +580,10 @@ body .previewButton {
     text-decoration: none;
     max-width: 160px;
     padding: 20px 40px 20px 40px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.previewButton:hover {
+    background-color: #ffb83678;
 }
 
 /********** Blogs/edit.php, Blogs/add.php **********/
@@ -589,33 +594,6 @@ body .previewButton {
     margin-top: 20px;
 }
 
-/********** Blogs/edit.php **********/
-.previewButton {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    font-size: 16px;
-    color: #000000;
-    background-color: #ffb836;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    max-width: 160px;
-    padding: 20px 40px 20px 40px;
-}
-.previewButton:hover {
-    background-color: #ffb83678;
-}
 
 /********** Blogs/preview.php **********/
 .confirm-blog-detail {
@@ -646,13 +624,15 @@ body .previewButton {
     text-align: center;
     margin-top: 20px;
 }
-.publishButton {
+
+/* 公開するボタン */
+body .publishButton {
     margin: 100px auto;
     font-size: 16px;
     color: #000000;
     background-color: #ffb836;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     display: flex;
@@ -661,11 +641,11 @@ body .previewButton {
     text-align: center;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
-    font-family: "Zen Maru Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     max-width: 160px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .publishButton:hover {
     background-color: #ffb83678;
