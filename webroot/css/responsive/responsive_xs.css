@@ -1,67 +1,6 @@
 /* 超小型スマホ（〜480px） */
 @media screen and (max-width: 480px) {
 	/* ------------------------------------------------
-	* ブログのスタイル
-	* -----------------------------------------------*/
-    .spica-page-imge img {
-        height: 180px;
-    }
-    .spica-title {
-        font-size: 22px;
-        padding-top: 30px;
-        padding-bottom: 16px;
-    }
-    .blog-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        padding: 0 12px;
-    }
-	.blog-post {
-		height: 200px;
-	}
-	.blog-post h3 {
-		-webkit-line-clamp:1;
-	}
-    .thumbnail-container {
-        width: 100%;
-    }
-    .thumbnail {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-    .slider {
-        height: 220px !important;
-        padding: 0 12px !important;
-        box-sizing: border-box;
-    }
-    .slider img {
-        height: 220px !important;
-        object-fit: cover !important;
-    }
-    .spica-logo-main {
-        top: 65% !important;
-        height: 70px !important;
-        -webkit-backdrop-filter: blur(2px) !important;
-    }
-    .spica-logo-main img {
-        width: 100px !important;
-        height: auto !important;
-    }
-    .copyright {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-    .privacy-policy a {
-        font-size: 9px;
-    }
-    .spica-logo-footer img {
-        width: 80px;
-    }
-
-	/* ------------------------------------------------
 	* ハンバーガーメニューのスタイル
 	* -----------------------------------------------*/
 	.navGlobal.navLeft,
@@ -188,4 +127,81 @@
 	.sns-fixed{
 		display: none;
 	}
+
+	/* ------------------------------------------------
+	* ブログのスタイル
+	* -----------------------------------------------*/
+    .spica-page-imge img {
+        height: 180px;
+    }
+    .spica-title {
+        font-size: 22px;
+        padding-top: 30px;
+        padding-bottom: 16px;
+    }
+    .blog-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 12px;
+    }
+	.blog-post {
+		height: 200px;
+	}
+	.blog-post h3 {
+		-webkit-line-clamp:1;
+	}
+    .thumbnail-container {
+        width: 100%;
+    }
+    .thumbnail {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+    .slider {
+        height: 220px !important;
+        padding: 0 12px !important;
+        box-sizing: border-box;
+    }
+    .slider img {
+        height: 220px !important;
+        object-fit: cover !important;
+    }
+    .spica-logo-main {
+        top: 65% !important;
+        height: 70px !important;
+        -webkit-backdrop-filter: blur(2px) !important;
+    }
+    .spica-logo-main img {
+        width: 100px !important;
+        height: auto !important;
+    }
+    .copyright {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    .privacy-policy a {
+        font-size: 9px;
+    }
+    .spica-logo-footer img {
+        width: 80px;
+    }
+
+	/* ------------------------------------------------
+	* ギャラリーのスタイル
+	* -----------------------------------------------*/
+	.grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+		gap: 10px;
+    }
+	    .grid-item {
+        width: calc(50% - 10px); /* gapの分を引く */
+        margin-bottom: 16px;
+    }
+
+
 }

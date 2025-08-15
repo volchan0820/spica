@@ -15,19 +15,85 @@ class BlogsController extends AppController
         parent::initialize();
     }
 
-    // 管理画面トップページ
-    public function index()
+    // // 管理画面トップページ
+
+    // 下書き保存ボタン押下の処理がここにいるみたい
+    // public function index()
+    // {
+    //     // 'blogs' テーブルのデータを取得
+    //     $blogs = $this->Blogs->find('all');
+    //     // ビューにデータを渡す
+    //     $this->set(compact('blogs'));
+    //     // 下書き一覧にリダイレクト
+    //     $this->redirect(['action' => 'listDraftAdmin']);
+    // }
+
+    // ブログ新規投稿
+    public function addAdmin()
     {
-        // 'blogs' テーブルのデータを取得
-        $blogs = $this->Blogs->find('all');
-        // ビューにデータを渡す
-        $this->set(compact('blogs'));
-        // 下書き一覧にリダイレクト
-        $this->redirect(['action' => 'draftList']);
+        $blog = $this->Blogs->newEmptyEntity();
+
+        if ($this->request->is(['post', 'put'])) {
+            $blog = $this->Blogs->patchEntity($blog, $this->request->getData());
+
+            // 下書き保存ボタンが押された場合のみ
+            if ($this->request->getData('save_as_draft')) {
+                $blog->status = 'draft';
+
+                if ($this->Blogs->save($blog)) {
+                    $this->Flash->success('下書き保存しました');
+                    return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
+                } else {
+                    $this->Flash->error('下書き保存に失敗しました');
+                }
+            }
+            // 確認画面へ進む場合はメッセージ不要
+        }
+
+        $this->set(compact('blog'));
+    }
+
+    // ブログ投稿前プレビュー
+    public function confirm()
+    {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if (isset($data['id']) && !empty($data['id'])) {
+                $dataFromDb = $this->Blogs->get($data['id']);
+                $this->set('data', $dataFromDb);
+            } else {
+                $this->set(compact('data'));
+            }
+        } else {
+            return $this->redirect(['action' => 'add']);
+        }
+    }
+
+    // ブログ投稿ボタン
+    public function publish()
+    {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            $blog = $this->Blogs->find()
+                ->where(['id' => $data['id'], 'status' => 'draft'])
+                ->first();    
+            if (!$blog) {
+                $this->Flash->error('下書きが見つかりませんでした。');
+                return $this->redirect(['action' => 'index']);
+            }
+            $blog = $this->Blogs->patchEntity($blog, ['status' => 'published']);
+            if ($this->Blogs->save($blog)) {
+                return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
+                $this->Flash->success(__('ブログを公開しました。'));
+            } else {
+                $this->Flash->error('公開に失敗しました。');
+            }
+        }
+        return $this->redirect(['action' => 'add']);
     }
 
     // 下書きブログ一覧
-    public function draftList()
+    public function listDraftAdmin()
     {
         // 全てのブログ記事を取得
         $blogs = $this->Blogs->find()
@@ -38,7 +104,7 @@ class BlogsController extends AppController
     }
 
     // 下書きブログ記事
-    public function draftView($id = null)
+    public function viewDraftAdmin($id = null)
     {
         try {
             $blog = $this->Blogs->get($id);
@@ -62,7 +128,7 @@ class BlogsController extends AppController
     }
 
     // 公開中ブログ一覧
-    public function blogList()
+    public function listPublishedAdmin()
     {
         // 全てのブログ記事を取得
         $blogs = $this->Blogs->find()
@@ -73,7 +139,7 @@ class BlogsController extends AppController
     }
 
     // 公開中ブログ記事
-    public function blogView($id = null)
+    public function viewPublishedAdmin($id = null)
     {
         try {
             $blog = $this->Blogs->get($id);
@@ -94,29 +160,6 @@ class BlogsController extends AppController
             ->order(['id' => 'DESC'])
             ->first();
         $this->set(compact('blog', 'nextBlog', 'prevBlog'));
-    }
-
-    // ブログ新規投稿
-    public function add()
-    {
-        $blog = $this->Blogs->newEmptyEntity();
-        
-        if ($this->request->is(['post', 'put'])) {  // POSTまたはPUTメソッドの場合
-            $blog = $this->Blogs->patchEntity($blog, $this->request->getData());    // フォームデータをエンティティにパッチ
-
-            // ステータスを適用 (デフォルトは 'draft' )
-            if (empty($this->request->getData('status'))) { // ステータスが空の場合
-                $blog->status = 'draft';    // 下書き
-            }
-
-            if ($this->Blogs->save($blog)) {
-                $this->Flash->success(__('ブログを保存しました。'));
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('ブログの保存に失敗しました。'));
-        }
-
-        $this->set(compact('blog'));
     }
 
     // 画像アップロード機能
@@ -200,26 +243,21 @@ class BlogsController extends AppController
     // 編集ページの保存機能
     public function editAutosave()
     {
-        $this->request->allowMethod(['post']);  // POSTメソッドのみ許可
-    
-        $data = $this->request->getData();  // 送信されたデータを取得
-        $blog = null;  // 下書き記事
-    
+        $this->request->allowMethod(['post']);    
+        $data = $this->request->getData();
+        $blog = null;    
         // IDがある場合、既存のレコードを取得
         if (!empty($data['id'])) {
             $blog = $this->Blogs->find()
                 ->where(['id' => $data['id']])
                 ->first();
-        }
-    
+        }    
         // 既存レコードがない場合、新規作成
         if (empty($data['id']) || !$blog) {
             $blog = $this->Blogs->newEmptyEntity();
         }
-    
         // データを更新（フォームデータをセット）
         $blog = $this->Blogs->patchEntity($blog, $data);
-    
         // 新規作成の場合はstatusを'draft'に設定
         if (empty($data['id']) || !$blog->id) {
             $blog->status = 'draft';  // 新規作成は下書き
@@ -228,108 +266,52 @@ class BlogsController extends AppController
             if (!empty($data['status']) && $data['status'] === 'published') {
                 $blog->status = 'published';  // 公開状態に更新
             }
-        }
-    
+        }    
         // 保存
         if ($this->Blogs->save($blog)) {
             $newBlogId = $blog->id;
             Log::debug('Auto-saved Blog ID: ' . $newBlogId);
-    
             return $this->response->withType('application/json')
                 ->withStringBody(json_encode([
                     'success' => true,
                     'id' => $newBlogId
                 ]));
         }
-    
         // 保存に失敗した場合
         return $this->response->withType('application/json')
             ->withStringBody(json_encode(['success' => false]));
     }
     
     // ブログ編集ページ
-    public function edit($id = null)    // 引数にIDを取る
+    public function editAdmin($id = null)
     {
-        $blog = $this->Blogs->get($id);  // 編集する記事を取得
-
-        // フォームが送信された場合
+        $blog = $this->Blogs->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
-
-            $blog = $this->Blogs->patchEntity($blog, $this->request->getData());  // フォームデータをセット
-            
-            
+            $blog = $this->Blogs->patchEntity($blog, $this->request->getData());
             // ステータスを適用 (デフォルトは 'draft' )
-            if (empty($this->request->getData('status'))) { // ステータスが空の場合
-                $blog->status = 'draft';    // 下書き
+            if (empty($this->request->getData('status'))) {
+                $blog->status = 'draft';
             }
-
             if ($this->Blogs->save($blog)) {
                 $this->Flash->success(__('記事が更新されました。'));
 
-                return $this->redirect(['action' => 'index']);  // 更新後は一覧ページにリダイレクト
+                return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('記事の更新に失敗しました。'));
         }
-
-        $this->set(compact('blog'));  // ビューにブログデータを渡す
+        $this->set(compact('blog'));
     }
 
-    // ブログ投稿ボタン
-    public function publish()
-    {
-        if ($this->request->is('post')) {   // POSTメソッドの場合
-            $data = $this->request->getData();
-    
-            // 下書きの ID を取得
-            $blog = $this->Blogs->find()    // Blogsテーブルを検索
-                ->where(['id' => $data['id'], 'status' => 'draft']) // 下書きのみ
-                ->first();
-    
-            if (!$blog) {
-                $this->Flash->error('下書きが見つかりませんでした。');
-                return $this->redirect(['action' => 'index']);
-            }
-    
-            // ステータスを 'published' に更新
-            $blog = $this->Blogs->patchEntity($blog, ['status' => 'published']);
-    
-            if ($this->Blogs->save($blog)) {
-                $this->Flash->success('ブログを公開しました。');
-                return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
-            } else {
-                $this->Flash->error('公開に失敗しました。');
-            }
-        }
-    
-        return $this->redirect(['action' => 'add']);
-    }
-    
-    // ブログプレビューボタン
-    public function preview()
-    {
-        if ($this->request->is('post')) {
-            $data = $this->request->getData(); // フォームデータを取得
-    
-            // ここでIDを使ってデータベースからデータを取得したい場合
-            if (isset($data['id']) && !empty($data['id'])) {
-                $dataFromDb = $this->Blogs->get($data['id']); // DBからデータを取得
-                $this->set('data', $dataFromDb); // DBから取得したデータを渡す
-            } else {
-                $this->set(compact('data')); // フォームデータをそのまま渡す
-            }
-        } else {
-            return $this->redirect(['action' => 'add']); // 直接アクセス禁止
-        }
-    }
 
-    // 公開中のブログ削除
-    public function publisheDelete($id = null)
+    
+
+    // 公開中ブログ削除処理
+    public function deletePublished($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-
         try {
-            $blog = $this->Blogs->get($id);  // blogsテーブルから1件取得
-            $blog->delete_flag = 1;           // delete_flagを1にするだけ
+            $blog = $this->Blogs->get($id);
+            $blog->delete_flag = 1;
             if ($this->Blogs->save($blog)) {
                 $this->Flash->success(__('ブログ記事を削除しました。'));
             } else {
@@ -338,18 +320,16 @@ class BlogsController extends AppController
         } catch (\Exception $e) {
             $this->Flash->error(__('ブログ記事の削除時にエラーが発生しました。'));
         }
-
-        return $this->redirect(['action' => 'blogList']); // 一覧に戻す
+        return $this->redirect(['action' => 'listPublishedAdmin']);
     }
 
-    // 下書きブログ削除
+    // 下書きブログ削除処理
     public function draftDelete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-
         try {
-            $blog = $this->Blogs->get($id);  // blogsテーブルから1件取得
-            $blog->delete_flag = 1;           // delete_flagを1にするだけ
+            $blog = $this->Blogs->get($id);
+            $blog->delete_flag = 1;
             if ($this->Blogs->save($blog)) {
                 $this->Flash->success(__('ブログ記事を削除しました。'));
             } else {
@@ -358,8 +338,7 @@ class BlogsController extends AppController
         } catch (\Exception $e) {
             $this->Flash->error(__('ブログ記事の削除時にエラーが発生しました。'));
         }
-
-        return $this->redirect(['action' => 'draftList']); // 一覧に戻す
+        return $this->redirect(['action' => 'listDraftAdmin']);
     }
 
 }

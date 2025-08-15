@@ -8,9 +8,6 @@ use Cake\Datasource\Exception\RecordNotFoundException;
 
 class SpicaController extends AppController
 {
-
-    //public $Blogs;
-
     public function initialize(): void
     {
         parent::initialize();
@@ -19,7 +16,7 @@ class SpicaController extends AppController
         $this->Galleries = $this->getTableLocator()->get('Galleries');
     }
 
-    // サイトの一番初めの画面
+    // TOP
     public function index()
     {
         // データベースからブログの投稿を取得（最新の投稿順）
@@ -30,44 +27,47 @@ class SpicaController extends AppController
         $this->set(compact('blogs'));
     }
 
-    // コンセプト
+    // CONCEPT
     public function concept()
     {
 
     }
 
-    // メニュー
+    // MENU
     public function menu()
     {
 
     }
 
-    // スタッフ
+    // STAFF
     public function staff()
     {
 
     }
 
-    // ギャラリー
+    // GALLERY
     public function gallery()
     {
-        $galleries = $this->Galleries->find('all')->toArray();
+        $galleries = $this->Galleries
+            ->find('all')
+            ->where(['delete_flag' => 0])
+            ->toArray();
         $styles = ['all' => '全てのスタイル', 'short' => 'ショート', 'bob' => 'ボブ', 'medium' => 'ミディアム', 'long' => 'ロング'];
         $this->set(compact('galleries', 'styles'));
     }
 
-    public function blog()
+    // BLOG 一覧
+    public function blogList()
     {
-        // 公開済みのブログ記事を取得
         $blogs = $this->Blogs->find()
-            ->where(['status' => 'published'])  // 公開された記事だけを取得
-            ->where(['delete_flag' => 0])   // 削除されていないデータだけ
-            ->order(['created' => 'DESC']);    // 新しい順に並べる
-    
+            ->where(['status' => 'published'])
+            ->where(['delete_flag' => 0])
+            ->order(['created' => 'DESC']);    
         $this->set(compact('blogs'));
     }
 
-    public function view($id = null)
+    // BLOG 記事
+    public function blogView($id = null)
     {
         try {
             $blog = $this->Blogs->get($id);
@@ -75,12 +75,12 @@ class SpicaController extends AppController
         } catch (RecordNotFoundException $e) {
             throw new NotFoundException(__('記事が見つかりませんでした。'));
         }
-        // 次の記事を取得
+        // NEXT 次の記事を取得
         $nextBlog = $this->Blogs->find()
             ->where(['id >' => $id, 'status' => 'published', 'delete_flag' => 0])
             ->order(['id' => 'ASC'])
             ->first();
-        // 前の記事を取得
+        // BACK 前の記事を取得
         $prevBlog = $this->Blogs->find()
             ->where(['id <' => $id, 'status' => 'published', 'delete_flag' => 0])
             ->order(['id' => 'DESC'])
@@ -88,7 +88,7 @@ class SpicaController extends AppController
         $this->set(compact('blog', 'nextBlog', 'prevBlog'));
     }
 
-    // アクセス
+    // ACCESS
     public function access()
     {
 
@@ -100,7 +100,7 @@ class SpicaController extends AppController
 
     }
 
-    // プライバシーポリシー
+    // PRIVACY POLICY
     public function privacyPolicy()
     {
 
