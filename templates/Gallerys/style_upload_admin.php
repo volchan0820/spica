@@ -21,6 +21,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- JavaScript -->
      <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -28,10 +31,6 @@
 </head>
 <body>
     <?php echo $this->element('administrator_header'); ?>
-
-    <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
-    </div>
 
     <h2 class="admin-title">Add Image</h2>
 

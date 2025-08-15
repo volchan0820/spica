@@ -45,7 +45,7 @@
     <div class="blog-list fade-up">
         <?php foreach ($blogs as $blog): ?>
             <?php if ($blog->status === 'published'): ?>
-                <a href="<?= $this->Url->build(['action' => 'view', $blog->id]) ?>" class="blog-post-link">
+                <a href="<?= $this->Url->build(['action' => 'blogView', $blog->id]) ?>" class="blog-post-link">
                     <div class="blog-post">
                         <!-- サムネイル画像がある場合 -->
                         <?php

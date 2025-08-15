@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Spica ブログ投稿画面</title>
+    <title>管理画面｜ブログ投稿画面</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
     <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_md.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_lg.css">
 
 	<!-- フォントの高速化 -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,93 +23,41 @@
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- JavaScript -->
-    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     
     <style>
-    body {
-        padding-left: 200px !important;
-        padding-right: 200px !important;
-    }
-
-    /* 確認ボタン */
-    body .previewButton {
-        margin: 20px;
-        margin-right: 50%;
-        font-size: 16px;
-        color: #000000;
-        background-color: #ffb836;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 20px;
-        transition: background-color 0.3s ease;
-        font-weight: 400;
-        font-style: normal;
-        text-decoration: none;
-        max-width: 160px;
-        padding: 20px 40px 20px 40px;
-    }
-
-    /* レスポンシブデザイン */
-    @media screen and (max-width: 768px) {
-
-        /* 下書き保存ボタン */
-        body .draftButton {
-            position: static;
-            margin-top: 12px;
-            text-align: center;
-            padding: 6px;
-            font-size: 12px;
-            max-width: 100px;
+        body {
+            padding-left: 200px !important;
+            padding-right: 200px !important;
         }
-
-        /* 確認ボタン */
-        body .previewButton {
-            position: static;
-            margin-top: 12px;
-            text-align: center;
-            padding: 6px;
-            font-size: 12px;
-            max-width: 100px;
-        }    
-    }
     </style>
 </head>
+
 <body>
     <?php echo $this->element('administrator_header'); ?>
 
-    <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
-    </div>
-
-    <h2 class="admin-title">New Post</h2>
+    <h1 class="admin-title">New Post</h1>
 
     <?= $this->Form->create($blog, ['type' => 'file']) ?>
         <?= $this->Form->control('title', ['label' => 'Title']) ?>
-
         <!-- Quill.jsのエディタ -->
         <div id="editor" style="height: 300px;"></div>
         <?= $this->Form->control('content', ['type' => 'hidden', 'id' => 'content']) ?>
-
         <?= $this->Form->control('status', ['type' => 'hidden', 'value' => 'draft', ]) ?>
-
         <div class="button-container">
             <?= $this->Form->button('下書き保存', ['type' => 'button', 'id' => 'draftButton', 'class' => 'draftButton']) ?>
             <?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton', 'class' => 'previewButton']) ?>
         </div>
-    <?= $this->Form->end() ?>
-
-    
+    <?= $this->Form->end() ?>    
 </body>
 </html>
+
 <!-- Quill.js -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -139,8 +90,7 @@
             document.getElementById("content").value = quill.root.innerHTML;
         });
 
-
-        // --- 入力値の復元 ---
+        // 入力値の復元
         var savedTitle = sessionStorage.getItem("blog_title");
         if (savedTitle !== null) {
             document.getElementById("title").value = savedTitle;
@@ -150,7 +100,7 @@
             quill.root.innerHTML = savedContent;
         }
 
-        // --- 入力値の保存 ---
+        // 入力値の保存
         document.getElementById("title").addEventListener("input", function() {
             sessionStorage.setItem("blog_title", this.value);
         });
@@ -158,7 +108,7 @@
             sessionStorage.setItem("blog_content", quill.root.innerHTML);
         });
 
-        //////////////////// 画像アップロードの処理 ////////////////////
+        // 画像アップロードの処理
         function imageHandler() {
             var input = document.createElement("input");
             input.setAttribute("type", "file");
@@ -193,12 +143,12 @@
             };
         }
 
-        //////////////////// 自動保存機能 ////////////////////
+        // 自動保存機能
         let form = document.querySelector("form");
         let saveUrl = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'autosave']) ?>";
         let blogId = <?= isset($blog->id) ? $blog->id : 'null' ?>;
 
-        //デバウンス処理　1秒間隔で自動保存を行う、入力があった場合はその都度保存を行う
+        // デバウンス処理　1秒間隔で自動保存を行う、入力があった場合はその都度保存を行う
         let autoSaveTimeout;
         function autoSave() {
             clearTimeout(autoSaveTimeout);
@@ -228,7 +178,7 @@
                     }
                 })
                 .catch(error => console.error("自動保存エラー:", error));
-            }, 1000); // 2秒待つ
+            }, 1000); // 1秒待つ
         }
 
         // Quillエディタの入力を監視
@@ -242,7 +192,7 @@
         // CSRFトークンを取得
         var csrfToken = document.querySelector("input[name='_csrfToken']").value;
 
-        //////////////////// 確認ボタン押下の処理 ////////////////////
+        // 確認ボタン押下の処理
         document.getElementById("previewButton").addEventListener("click", function (event) {
 
             // タイトルと本文必須チェック
@@ -279,7 +229,7 @@
                     // 下書き保存が完了したらプレビュー画面へ遷移
                     var previewForm = document.createElement("form");
                     previewForm.method = "post";
-                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'preview']) ?>";
+                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
 
                     var idInput = document.createElement("input");
                     idInput.type = "hidden";
@@ -307,7 +257,7 @@
 
             var previewForm = document.createElement("form");
             previewForm.method = "post";
-            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'preview']) ?>";
+            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
 
             // タイトルとコンテンツを隠しフィールドに追加
             var titleInput = document.createElement("input");
@@ -342,7 +292,7 @@
             previewForm.submit();
         });
 
-        //////////////////// 下書き保存ボタン押下の処理 ////////////////////
+        // 下書き保存ボタン押下の処理
         document.getElementById("draftButton").addEventListener("click", function (event) {
 
         // セッションストレージからタイトルと本文を削除
@@ -384,7 +334,7 @@
                     // 下書き保存が完了したらプレビュー画面へ遷移
                     var previewForm = document.createElement("form");
                     previewForm.method = "post";
-                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'index']) ?>";
+                    previewForm.action = "<?= $this->Url->build(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']) ?>";
 
                     var idInput = document.createElement("input");
                     idInput.type = "hidden";
@@ -413,7 +363,7 @@
             // 下書き保存が完了したらプレビュー画面へ遷移
             var previewForm = document.createElement("form");
             previewForm.method = "post";
-            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'index']) ?>";
+            previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'listDraftAdmin']) ?>";
 
             // タイトルとコンテンツを隠しフィールドに追加
             var titleInput = document.createElement("input");

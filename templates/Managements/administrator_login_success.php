@@ -1,117 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
-    <?= $this->Html->script('script') ?>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>管理画面 | TOP</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_md.css">
+    <link rel="stylesheet" href="/css/responsive/responsive_lg.css">
 
-    
-    <!-- FontAwesomeを読み込む -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<!-- フォントの高速化 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>管理画面</title>
+	<!-- 使用フォント Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-    <style>
-    /* メニューのボックススタイル */
-    body .menu {
-        width: 90%; /* 幅を90%に設定して少し大きく */
-        max-width: 600px; /* 最大幅を600pxに制限 */
-        padding: 20px; /* 内側の余白を増やす */
-        margin:  0 auto;
-    }
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    /* メニューのボックススタイル */
-    body .menu-box {
-        width: 90%; /* 幅を90%に設定して少し大きく */
-        max-width: 600px; /* 最大幅を600pxに制限 */
-        padding: 20px; /* 内側の余白を増やす */
-        background-color: #FFF;
-        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.12); /* 影を強調 */
-        margin:  0 auto;
-    }
-
-    /* メニュータイトル */
-    body .menu_title {
-        font-size: 26px;
-        color: #555;
-        display: block;
-        margin-bottom: 5px;
-        font-family: "Tsukimi Rounded", sans-serif;
-        font-style: normal;
-        margin-left: 6%;
-        text-align: left;
-    }
-
-    /* メニューリストのスタイル */
-    body .menu_list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    body .menu_list li {
-        margin: 10px 0;
-    }
-
-    /* メニュー項目（リンク）のスタイル */
-    body .menu_list li a {
-        text-decoration: none;
-        color: #333;
-        padding: 8px 15px;
-        display: block;
-        background-color: #f5f5f5;
-        transition: background-color 0.3s;
-        font-size: 18px;
-        font-family: "Tsukimi Rounded", sans-serif;
-        font-style: normal;
-    }
-
-    body .menu_list li a:hover {
-        background-color:rgb(170, 170, 170);
-        color: #fff;
-    }
-    </style>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <?php echo $this->element('administrator_header'); ?>
 
-    <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
-    </div>
+    <?= $this->Flash->render() ?>
 
-    <div class="menu">
-        <h2 class="menu_title">Blog</h2>
-        <div class="mui-panel menu-box">
-            <ul class="menu_list">
-                <li>
-                    <?php echo $this->Html->link('New Post', ['controller' => 'Blogs', 'action' => 'add']); ?>
-                </li>
-                <li>
-                    <?php echo $this->Html->link('Draft List', ['controller' => 'Blogs', 'action' => 'draft_list']); ?>
-                </li>
-                <li>
-                    <?php echo $this->Html->link('Published Articles', ['controller' => 'Blogs', 'action' => 'blog_list']); ?>
-                </li>
-            </ul>
+    <div class="menu-content">
+        <div class="menu">
+            <h2 class="menu-title">Blog</h2>
+            <div class="mui-panel menu-box">
+                <ul class="menu_list">
+                    <li><?php echo $this->Html->link('New Post', ['controller' => 'Blogs', 'action' => 'add_admin']); ?></li>
+                    <li><?php echo $this->Html->link('Draft List', ['controller' => 'Blogs', 'action' => 'list_draft_admin']); ?></li>
+                    <li><?php echo $this->Html->link('Published Articles', ['controller' => 'Blogs', 'action' => 'list_published_admin']); ?></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <h2 class="menu-title">Gallery</h2>
+            <div class="mui-panel menu-box">
+                <ul class="menu_list">
+                    <li><?php echo $this->Html->link('Add Image', ['controller' => 'Gallerys', 'action' => 'styleUploadAdmin']); ?></li>
+                    <li><?php echo $this->Html->link('Image List', ['controller' => 'Gallerys', 'action' => 'styleListAdmin']); ?></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="menu">
-    <h2 class="menu_title">Gallery</h2>
-    <div class="mui-panel menu-box">
-        <ul class="menu_list">
-            <li>
-                <?php echo $this->Html->link('Add Image', ['controller' => 'Gallerys', 'action' => 'add']); ?>
-            </li>
-        </ul>
-    </div>
-</div>
 </body>
 </html>

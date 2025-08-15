@@ -28,9 +28,7 @@
 <body>
     <?php echo $this->element('administrator_header'); ?>
 
-    <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
-    </div>
+    <h1 class="admin-title">Draft Edit</h1>
 
 <?= $this->Form->create($blog, ['type' => 'file']) ?>
 <?= $this->Form->control('id', ['type' => 'hidden']) ?>
@@ -200,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // 下書き保存が完了したらプレビュー画面へ遷移
                 var previewForm = document.createElement("form");
                 previewForm.method = "post";
-                previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'preview']) ?>";
+                previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
 
                 var idInput = document.createElement("input");
                 idInput.type = "hidden";
@@ -228,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var previewForm = document.createElement("form");
         previewForm.method = "post";
-        previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'preview']) ?>";
+        previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'confirm']) ?>";
 
         // タイトルとコンテンツを隠しフィールドに追加
         var titleInput = document.createElement("input");
@@ -294,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // 下書き保存が完了したらプレビュー画面へ遷移
                 var previewForm = document.createElement("form");
                 previewForm.method = "post";
-                previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'draftList']) ?>";
+                previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'listDraftAdmin']) ?>";
 
                 var idInput = document.createElement("input");
                 idInput.type = "hidden";
@@ -322,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var previewForm = document.createElement("form");
         previewForm.method = "post";
-        previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'draftList']) ?>";
+        previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'listDraftAdmin']) ?>";
 
         // タイトルとコンテンツを隠しフィールドに追加
         var titleInput = document.createElement("input");

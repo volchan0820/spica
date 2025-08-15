@@ -27,13 +27,9 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
-    <?php echo $this->element('spica_header'); ?>
+    <?php echo $this->element('administrator_header'); ?>
 
-    <div class="spica-page-imge">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
-    <h1 class="spica-title fade-up">GALLERY</h1>
+    <h1 class="admin-title fade-up">Image List</h1>
 
     <div class="filter-area fade-up">
         <div class="select-wrapper">
@@ -61,10 +57,6 @@
         <?php endforeach; ?>
     </div>
 
-    <footer class="footer">
-        <?= $this->element('spica_footer') ?>
-    </footer>
-
     <!-- モーダル表示用 -->
     <div id="imageModal" class="modal">
         <div class="modal-image-wrapper">
@@ -72,6 +64,7 @@
             <img class="modal-content" id="modalImage">
         </div>
         <div id="modalInfo" class="modal-info"></div>
+            <?= $this->Form->postLink('削除する',['action' => 'imageDelete', $gallery->id],['confirm' => '削除してもよろしいですか？', 'class' => 'btn btn-delete']) ?>
     </div>
 
     <?= $this->element('fade_up_script') ?>    

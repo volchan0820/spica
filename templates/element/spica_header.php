@@ -1,3 +1,4 @@
+<!-- 上部メニュー -->
 <header id="main-header">
     <div class="header-inner">
         <nav class="navGlobal navLeft">
@@ -14,7 +15,7 @@
         <nav class="navGlobal navRight">
             <ul class="navGlobalIn">
                 <li><a href="/spica/gallery/"><span class="en">GALLERY</span><span class="jp">ギャラリー</span></a></li>
-                <li><a href="/spica/blog/"><span class="en">BLOG</span><span class="jp">ブログ</span></a></li>
+                <li><a href="/spica/blogList/"><span class="en">BLOG</span><span class="jp">ブログ</span></a></li>
                 <li><a href="/spica/access/"><span class="en">ACCESS</span><span class="jp">アクセス</span></a></li>
                 <li><a href="/spica/reservation/"><span class="en">WEB予約</span><span class="jp">WEB予約</span></a></li>
             </ul>
@@ -26,26 +27,26 @@
     </div>
 </header>
 
-<!-- ハンバーガーメニューのサイドメニュー -->
+<!-- レスポンシブ　ハンバーガーメニュー -->
 <div class="sidebar">
-<ul class="sidebar-menu">
-    <li><a href="/spica/index/">HOME<br>ホーム</a></li>
-    <li><a href="/spica/concept/">CONCEPT<br>コンセプト</a></li>
-    <li><a href="/spica/menu/">MENU<br>メニュー</a></li>
-    <li><a href="/spica/staff/">STAFF<br>スタッフ</a></li>
-    <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
-    <li><a href="/spica/blog/">BLOG<br>ブログ</a></li>
-    <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>
-    <li><a href="/spica/reservation/">RESERVATION<br>WEB予約</a></li>
-</ul>
-<!-- SNSアイコン横並び -->
-<div class="sidebar-sns">
-    <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
-    <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-</div>
+    <ul class="sidebar-menu">
+        <li><a href="/spica/index/">HOME<br>ホーム</a></li>
+        <li><a href="/spica/concept/">CONCEPT<br>コンセプト</a></li>
+        <li><a href="/spica/menu/">MENU<br>メニュー</a></li>
+        <li><a href="/spica/staff/">STAFF<br>スタッフ</a></li>
+        <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
+        <li><a href="/spica/blogList/">BLOG<br>ブログ</a></li>
+        <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>
+        <li><a href="/spica/reservation/">RESERVATION<br>WEB予約</a></li>
+    </ul>
+    <!-- SNSアイコン横並び -->
+    <div class="sidebar-sns">
+        <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
+        <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
 </div>
 
 <!-- 背景オーバーレイ -->

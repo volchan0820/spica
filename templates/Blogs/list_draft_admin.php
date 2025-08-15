@@ -31,15 +31,11 @@
     <!-- ハンバーガーメニュー -->
     <?php echo $this->element('administrator_header'); ?>
 
-    <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
-    </div>
-
-    <h2 class="admin-title">Published List</h2>
+    <h2 class="admin-title">Draft List</h2>
     <div class="blog-list">
         <?php foreach ($blogs as $blog): ?>
-            <?php if ($blog->status === 'published'): ?>
-                <a href="<?= $this->Url->build(['action' => 'blogView', $blog->id]) ?>" class="blog-post-link">
+            <?php if ($blog->status === 'draft'): ?>
+                <a href="<?= $this->Url->build(['action' => 'viewDraftAdmin', $blog->id]) ?>" class="blog-post-link">
                     <div class="blog-post">
                         <?php
                             preg_match('/<img[^>]+src="([^">]+)"/', $blog->content, $matches);
@@ -54,8 +50,8 @@
                         </div>
                         <div class="blog-info">
                             <!-- 末尾が綺麗に表示されないため半角スペースを追加 -->
-                            <h3><span style="color: red;">（公開中）</span><?= h($blog->title) ?>&nbsp;</h3>
-                            <p><?= $blog->modified->format('Y年m月d日') ?></p>
+                            <h3><span style="color: blue;">（下書き）</span><?= h($blog->title) ?>&nbsp;</h3>
+                            <p><?= $blog->created->format('Y年m月d日') ?></p>
                         </div>
                     </div>
                 </a>

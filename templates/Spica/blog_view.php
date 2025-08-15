@@ -49,13 +49,13 @@
     
     <div class="blog-navigation">
         <?php if (!empty($prevBlog)): ?>
-            <a href="<?= $this->Url->build(['action' => 'view', $prevBlog->id]) ?>" class="nav-arrow prev">
+            <a href="<?= $this->Url->build(['action' => 'blogView', $prevBlog->id]) ?>" class="nav-arrow prev">
                 <span class="arrow-left"></span> BACK
             </a>
         <?php endif; ?>
-        <a href="<?= $this->Url->build(['action' => 'blog']) ?>" class="nav-center">Back to Blog List</a>
+        <a href="<?= $this->Url->build(['action' => 'blogList']) ?>" class="nav-center">Back to Blog List</a>
         <?php if (!empty($nextBlog)): ?>
-            <a href="<?= $this->Url->build(['action' => 'view', $nextBlog->id]) ?>" class="nav-arrow next">
+            <a href="<?= $this->Url->build(['action' => 'blogView', $nextBlog->id]) ?>" class="nav-arrow next">
                 NEXT <span class="arrow-right"></span>
             </a>
         <?php endif; ?>

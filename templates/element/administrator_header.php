@@ -1,157 +1,64 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>管理画面</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
 
-    <!-- レスポンシブ用 -->
-    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <style>
-        /* 全体 */
-        body, html {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .wrapper {
-            display: flex;
-        }
-
-        /* サイドバー */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100vh;
-            background: rgb(255, 208, 106);
-            padding: 20px;
-            box-sizing: border-box;
-            transition: left 0.3s;
-            z-index: 1000;
-        }
-
-        .sidebar.active {
-            left: 0;
-        }
-
-        .sidebar-menu {
-            list-style: none;
-            padding: 0;
-            margin-top: 60px;
-        }
-
-        .sidebar-menu li {
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .sidebar-menu li i {
-            margin-right: 10px;
-        }
-
-        .sidebar-menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* ハンバーガーメニュー */
-        .hamburger {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            font-size: 28px;
-            color: #333;
-            cursor: pointer;
-            z-index: 1100;
-        }
-
-        /* 背景の暗幕（オーバーレイ） */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            transition: width 0.3s;
-            overflow: hidden;
-            z-index: 900;
-        }
-
-        .overlay.active {
-            width: 100%;
-        }
-
-        /* メインコンテンツ */
-        .main-content {
-            flex: 1;
-            margin-left: 0;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-
-        @media (min-width: 768px) {
-            .main-content {
-                padding: 40px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="hamburger">
-        <i class="fas fa-bars"></i>
+<!-- 上部メニュー -->
+<header id="main-header" style="background-color: #ffca58;">
+    <div class="header-inner">
+        <nav class="navGlobal navLeft">
+            <ul class="navGlobalIn">
+                <li><a href="/managements/administratorLoginSuccess/"><span>Home</span></a></li>
+                <li><a href="/blogs/addAdmin/"><span>New Post</span></a></li>
+                <li><a href="/blogs/listDraftAdmin/"><span>Draft List</span></a></li>
+                <li><a href="/blogs/listPublishedAdmin/"><span>Published List</span></a></li>
+            </ul>
+        </nav>
+        <div class="spica-logo-top">
+            <a href="/managements/administratorLoginSuccess/"><img src="/img/spica-logo-top.png" alt="hair atelier spica"></a>
+        </div>
+        <nav class="navGlobal navRight">
+            <ul class="navGlobalIn">
+                <li><a href="/gallerys/styleUploadAdmin/"><span>Add Image</span></a></li>
+                <li><a href="/gallerys/styleListAdmin/"><span>Image List</span></a></li>
+                <li><a href=""><span>Access Log</span></a></li>
+                <li><a href="/managements/administratorLogout/"><span>Logout</span></a></li>
+            </ul>
+        </nav>      
+        <div class="hamburger" style="right: initial;">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
     </div>
+</header>
 
-    <div class="sidebar">
-        <ul class="sidebar-menu">
-            <li>
-                <i class="fas fa-home"></i>
-                <a href="<?= $this->Url->build(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']) ?>">Top</a>
-            </li>
-            <li>
-                <i class="fas fa-blog"></i>
-                <a href="<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'add']) ?>">New Post</a>
-            </li>
-            <li>
-                <i class="fas fa-edit"></i>
-                <a href="<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'draftList']) ?>">Draft List</a>
-            </li>
-            <li>
-                <i class="fas fa-book"></i>
-                <a href="<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'blogList']) ?>">Published List</a>
-            </li>
-            <li>
-                <i class="fas fa-sign-out-alt"></i>
-                <a href="<?= $this->Url->build(['controller' => 'Managements', 'action' => 'administratorLogout']) ?>">Logout</a>
-            </li>
-        </ul>
-    </div>
+<!-- ハンバーガーメニュー内コンテンツ -->
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li><a href="/managements/administratorLoginSuccess/">HOME<br>&nbsp;</a></li>
+        <li><a href="/blogs/addAdmin/">BLOG<br>New Post</a></li>
+        <li><a href="/blogs/listDraftAdmin/">BLOG<br>Draft List</a></li>
+        <li><a href="/blogs/listPublishedAdmin/">BLOG<br>Published List</a></li>
+        <li><a href="/gallerys/styleUploadAdmin/">GALLERY<br>Add Image</a></li>
+        <li><a href="/gallerys/styleListAdmin/">GALLERY<br>Image List</a></li>
+        <li><a href="">ACCESS LOG<br>&nbsp;</a></li>
+        <li><a href="/managements/administratorLogout/">Logout<br>&nbsp;</a></li>
+    </ul>
+</div>
 
-    <div class="overlay"></div>
+<!-- 背景オーバーレイ -->
+<div class="overlay"></div>
 
-    <script>
-    $(function() {
-        $('.hamburger').click(function() {
-            $('.sidebar').toggleClass('active');
-            $('.overlay').toggleClass('active');
-        });
-
-        $('.overlay').click(function() {
-            $('.sidebar').removeClass('active');
-            $('.overlay').removeClass('active');
-        });
+<script>
+    $(function () {
+    $('.hamburger').click(function () {
+        $('.sidebar').toggleClass('active');
+        $('.overlay').toggleClass('active');
+        $('.hamburger').toggleClass('active');
+        $('body').toggleClass('no-scroll');
     });
-    </script>
-</body>
-</html>
+
+    $('.overlay').click(function () {
+        $('.sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+        $('.hamburger').removeClass('active');
+        $('body').toggleClass('no-scroll');
+    });
+    });
+</script>
