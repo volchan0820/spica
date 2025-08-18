@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <?= $this->Html->script('//code.jquery.com/jquery-3.6.0.min.js') ?>
-    <?= $this->Html->script('script') ?>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-    <!-- Quill.jsのCDNリンク -->
-    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    
+    <title>管理画面｜ブログ編集画面</title>
 
-    <title>美容室spica BLOG | 浦添市の似合わせカットと弱酸性薬剤の施術事例・ヘアケア情報</title>
-    <meta name="description" content="Hair atelier spicaのブログでは、似合わせカットの施術例や弱酸性薬剤による髪にやさしい施術、美容室の日常、ヘアケアのコツなどを発信しています。">
+    <!-- CSS -->
+    <?php echo $this->element('head_css'); ?>
+    <!-- 使用フォント -->
+    <?php echo $this->element('head_fonts'); ?>
+    <!-- JavaScript -->
+    <?php echo $this->element('head_scripts'); ?>
 
     <style>
-    body {
-        padding-left: 200px !important;
-        padding-right: 200px !important;
-    }
+        body {
+            padding-left: 200px !important;
+            padding-right: 200px !important;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +40,7 @@
 <div class="button-container">
 <!-- 下書き保存は必要なさそうなので一旦削除 -->
 <!-- <?= $this->Form->button('下書き保存', ['type' => 'button', 'id' => 'draftButton']) ?> -->
-<?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton', 'class' => 'previewButton']) ?>
+<?= $this->Form->button('確認', ['type' => 'button', 'id' => 'previewButton', 'class' => 'editPreviewButton']) ?>
 </div>
 <?= $this->Form->end() ?>
 

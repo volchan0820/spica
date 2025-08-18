@@ -4,24 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spicaのこだわり</title>
-    <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。">
+    <title>Hair atelier spica | ACCESS</title>
+    <meta name="description" content="ACCESS">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
-
-	<!-- フォントの高速化 -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- 使用フォント Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
+    <?php echo $this->element('head_css'); ?>
+    <!-- 使用フォント -->
+    <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
-
+    <?php echo $this->element('head_scripts'); ?>
 </head>
 
 <body>

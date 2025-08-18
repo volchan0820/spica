@@ -4,27 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spicaのこだわり</title>
-    <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。">
+    <title>Hair atelier spica | gallery</title>
+    <meta name="description" content="gallery">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
-
-	<!-- フォントの高速化 -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- 使用フォント Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet"> <!-- 手書き風丸ゴシック font-family: "Tsukimi Rounded", sans-serif; -->
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet"> <!-- 丸ゴシック font-family: "Zen Maru Gothic", sans-serif; -->
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> <!-- メイリオに近い font-family: 'Noto Sans JP', sans-serif; -->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet"> <!-- 明朝体 font-family: 'Zen Old Mincho', serif; -->
-
+    <?php echo $this->element('head_css'); ?>
+    <!-- 使用フォント -->
+    <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <?php echo $this->element('head_scripts'); ?>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>

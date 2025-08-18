@@ -4,28 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spicaのこだわり | 浦添市のカフェのようなプライベート美容室</title>
-    <meta name="description" content="Hair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しく、心も整う美容室を目指しています。カフェのような空間で、ゆったりとした時間をお過ごしください。">
+    <title>管理画面 | 下書きブログ記事</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
-    <link rel="stylesheet" href="/css/responsive/responsive_xs.css">
-
-    <!-- フォントの高速化 -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<!-- 使用フォント Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <?php echo $this->element('head_css'); ?>
+    <!-- 使用フォント -->
+    <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <?php echo $this->element('head_scripts'); ?>
 </head>
 <body>
     <?php echo $this->element('administrator_header'); ?>
@@ -34,7 +20,7 @@
 
     <div class="blog-action-links">
         <a href="<?= $this->Url->build(['action' => 'editAdmin', $blog->id]) ?>">編集</a> |
-        <?= $this->Form->postLink('削除',['action' => 'draftDelete', $blog->id],['confirmAdmin' => '削除してもよろしいですか？']) ?>
+        <?= $this->Form->postLink('削除',['action' => 'draftDelete', $blog->id],['confirm' => '削除してもよろしいですか？']) ?>
     </div>
 
     <div class="blog-detail">
