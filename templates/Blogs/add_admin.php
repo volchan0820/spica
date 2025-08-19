@@ -83,12 +83,12 @@
         }
 
         // 入力値の保存
-        document.getElementById("title").addEventListener("input", function() {
-            sessionStorage.setItem("blog_title", this.value);
-        });
-        quill.on("text-change", function() {
-            sessionStorage.setItem("blog_content", quill.root.innerHTML);
-        });
+        // document.getElementById("title").addEventListener("input", function() {
+        //     sessionStorage.setItem("blog_title", this.value);
+        // });
+        // quill.on("text-change", function() {
+        //     sessionStorage.setItem("blog_content", quill.root.innerHTML);
+        // });
 
         // 画像アップロードの処理
         function imageHandler() {
@@ -130,7 +130,7 @@
         let saveUrl = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'autosave']) ?>";
         let blogId = <?= isset($blog->id) ? $blog->id : 'null' ?>;
 
-        // デバウンス処理　1秒間隔で自動保存を行う、入力があった場合はその都度保存を行う
+        // デバウンス処理　入力が止まってから1秒後に自動保存
         let autoSaveTimeout;
         function autoSave() {
             clearTimeout(autoSaveTimeout);
@@ -165,10 +165,12 @@
 
         // Quillエディタの入力を監視
         quill.on("text-change", autoSave);
-
-        // タイトル・ステータス変更を監視
-        document.querySelector("#title").addEventListener("input", autoSave);
-        document.querySelectorAll(".status-btn").forEach(button => {button.addEventListener("click", autoSave);
+        
+        // ステータス変更ボタンは即時保存
+        document.querySelectorAll(".status-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                saveBlog(); // 1秒待たず即保存
+            });
         });
 
         // CSRFトークンを取得

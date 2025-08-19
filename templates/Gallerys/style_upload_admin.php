@@ -19,17 +19,17 @@
     <h2 class="admin-title">Add Image</h2>
 
     <div class="form-wrapper">
-    <?= $this->Form->create(null, ['type' => 'file', 'id' => 'galleryForm']) ?>
-        <?= $this->Form->control('style', ['type' => 'select', 'label' => ['text' => 'スタイル <span class="required">必須</span>', 'escape' => false], 'options' => $styleOptions, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('image_file', ['type' => 'file', 'label' => ['text' => '画像ファイル <span class="required">必須</span>', 'escape' => false]]) ?>
-        <?= $this->Form->control('menu1', ['type' => 'select', 'label' => ['text' => 'メニュー① <span class="required">必須</span>', 'escape' => false], 'options' => $menuOptions1, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('menu2', ['type' => 'select', 'label' => 'メニュー②', 'options' => $menuOptions2, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('menu3', ['type' => 'select', 'label' => 'メニュー③', 'options' => $menuOptions3, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('menu4', ['type' => 'select', 'label' => 'メニュー④', 'options' => $menuOptions4, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('menu5', ['type' => 'select', 'label' => 'メニュー⑤', 'options' => $menuOptions5, 'empty' => '選択してください']) ?>
-        <?= $this->Form->control('note', ['type' => 'textarea', 'label' => '自由記入欄', 'rows' => 4, 'placeholder' => '補足情報やコメントがあればここに記入']) ?>
-        <?= $this->Form->button('投稿する') ?>
-    <?= $this->Form->end() ?>
+        <?= $this->Form->create(null, ['type' => 'file', 'id' => 'galleryForm']) ?>
+            <?= $this->Form->control('style', ['type' => 'select', 'label' => ['text' => 'スタイル <span class="required">必須</span>', 'escape' => false], 'options' => $styleOptions, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('image_file', ['type' => 'file', 'label' => ['text' => '画像ファイル <span class="required">必須</span>', 'escape' => false]]) ?>
+            <?= $this->Form->control('menu1', ['type' => 'select', 'label' => ['text' => 'メニュー① <span class="required">必須</span>', 'escape' => false], 'options' => $menuOptions1, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('menu2', ['type' => 'select', 'label' => 'メニュー②', 'options' => $menuOptions2, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('menu3', ['type' => 'select', 'label' => 'メニュー③', 'options' => $menuOptions3, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('menu4', ['type' => 'select', 'label' => 'メニュー④', 'options' => $menuOptions4, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('menu5', ['type' => 'select', 'label' => 'メニュー⑤', 'options' => $menuOptions5, 'empty' => '選択してください']) ?>
+            <?= $this->Form->control('note', ['type' => 'textarea', 'label' => '自由記入欄', 'rows' => 4, 'placeholder' => '補足情報やコメントがあればここに記入']) ?>
+            <?= $this->Form->button('投稿する', ['class' => 'submit-btn']) ?>
+        <?= $this->Form->end() ?>
     </div>
 
     <script>
