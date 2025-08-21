@@ -42,7 +42,7 @@ class GallerysController extends AppController
             $gallery = $this->Galleries->patchEntity($gallery, $data);
             if ($this->Galleries->save($gallery)) {
                 $this->Flash->success('登録成功');
-                return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLoginSuccess']);
+                return $this->redirect(['controller' => 'Gallerys', 'action' => 'styleUploadCompleteAdmin']);
             } else {
                 $this->Flash->error('登録に失敗しました。');
             }
@@ -71,5 +71,8 @@ class GallerysController extends AppController
             $this->Flash->error(__('削除に失敗しました。'));
         }
         return $this->redirect(['action' => 'styleListAdmin']);
+    }
+
+    public function styleUploadCompleteAdmin() {
     }
 }

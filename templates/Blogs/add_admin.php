@@ -169,7 +169,7 @@
         // ステータス変更ボタンは即時保存
         document.querySelectorAll(".status-btn").forEach(button => {
             button.addEventListener("click", () => {
-                saveBlog(); // 1秒待たず即保存
+                saveBlog();
             });
         });
 

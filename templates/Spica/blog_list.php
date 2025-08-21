@@ -66,5 +66,9 @@
     </footer>
 
     <?= $this->element('fade_up_script') ?>
+
+    <!-- ページトップボタン -->
+	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
+	<?php echo $this->element('page_top_script'); ?>
 </body>
 </html>

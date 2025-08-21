@@ -20,7 +20,7 @@
     <h2 class="admin-title">Published View</h2>
 
     <div class="blog-action-links">
-        <a href="<?= $this->Url->build(['action' => 'editAdmin', $blog->id]) ?>">編集</a>
+        <a href="<?= $this->Url->build(['action' => 'editAdmin', $blog->id]) ?>">編集</a> |
         <?= $this->Form->postLink('削除',['action' => 'deletePublished', $blog->id],['confirm' => '削除してもよろしいですか？']) ?>
     </div>
 

@@ -51,71 +51,6 @@
 	.sns-fixed a img:hover {
 		transform: scale(1.2);
 	}
-
-	/* ページトップボタンのスタイル */
-	.pagetop {
-		position: fixed;
-		bottom: 100px;
-		left: 95%;
-		display: inline-block;
-		text-decoration: none;
-		color: #555;
-		font-size: 12px;
-		font-family: 'Arial', sans-serif;
-		writing-mode: vertical-lr;
-		text-orientation: mixed;
-		letter-spacing: 0.2em;
-		z-index: 1000;
-		cursor: pointer;
-	}
-	.pagetop-text {
-		display: inline-block;
-		transform: translateY(80px);
-	}
-	.pagetop::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 100%;
-		transform: translateX(-50%);
-		width: 0.5px;
-		height: 160px;
-		background-color: #555;
-		transition: none;
-		pointer-events: none;
-	}
-	.pagetop:hover::after {
-		animation: disappearAndGrow 1.4s forwards;
-	}
-	@keyframes disappearAndGrow {
-		0% {
-		opacity: 1;
-		height: 160px;
-		}
-		10% {
-		opacity: 0;
-		height: 160px;
-		}
-		30% {
-		opacity: 0;
-		height: 0;
-		}
-		100% {
-		opacity: 1;
-		height: 160px;
-		}
-	}
-	.pagetop::before {
-		content: '';
-		position: absolute;
-		left: 11px;
-		width: 10px;
-		height: 20px;
-		border-left: 0.5px solid #555;
-		transform: rotate(45deg);
-		background: transparent;
-		box-sizing: border-box;
-	}
 	</style>
 </head>
 <body>
@@ -149,35 +84,58 @@
 			<p>ダミーデータダミーデータダミーデータ</p>
 			<p>ダミーデータダミーデータダミーデータ</p>
 			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
+			<p>ダミーデータダミーデータダミーデータ</p>
 		</div>
 	</div>
 
 	<footer class="footer">
 		<?php echo $this->element('spica_footer'); ?>
 	</footer>
+
+	<!-- ページトップボタン -->
+	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
+	<?php echo $this->element('page_top_script'); ?>
 </body>
 </html>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		const pagetop = document.getElementById('pagetop');
-		// 初期非表示
-		pagetop.style.display = 'none';
+document.addEventListener("DOMContentLoaded", () => {
+  const pagetop = document.getElementById("pagetop");
+  const footer = document.querySelector(".footer");
 
-		window.addEventListener('scroll', function() {
-		if (window.pageYOffset > 50) {
-			pagetop.style.display = 'inline-block';
-		} else {
-			pagetop.style.display = 'none';
-		}
-		});
+  if (pagetop && footer) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // フッターが見えたらボタンを上に移動
+          pagetop.classList.add("stay-above-footer");
+        } else {
+          // フッターが見えなくなったら元に戻す
+          pagetop.classList.remove("stay-above-footer");
+        }
+      });
+    }, { threshold: 0 });
 
-		pagetop.addEventListener('click', function(e) {
-		e.preventDefault();
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-		});
-	});
+    observer.observe(footer);
+  }
+});
 </script>
