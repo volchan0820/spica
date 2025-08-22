@@ -209,6 +209,88 @@ h2 {
 }
 
 /*----------------------------------------
+ サイト　concept
+----------------------------------------*/
+.concept-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.concept-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 40px;
+    padding-bottom: 60px;         /* 線との余白 */
+    border-bottom: 1px solid #ccc; /* 下線を追加 */
+}
+.concept-block:last-child {
+    border-bottom: none;  /* 最後のブロックは線を消す */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.concept-block .concept-text {
+    flex: 1;
+}
+.concept-block .concept-text h2 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.concept-block .concept-text p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-block .concept-image {
+    flex: 1;
+    text-align: center;
+}
+.concept-block .concept-image img {
+    max-width: 100%;
+    height: auto;
+}
+/* 偶数番目だけ左右を反転 */
+.concept-block.reverse {
+    flex-direction: row-reverse;
+}
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .concept-block,
+    .concept-block.reverse {
+        flex-direction: column;
+    }
+    .concept-block .concept-image,
+    .concept-block .concept-text {
+        text-align: center;
+    }
+}
+/* 画像の背景に四角い枠を作る */
+.concept-image {
+    position: relative;
+    display: inline-block;
+}
+.concept-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; /* 画像を前に */
+}
+/* 擬似要素で枠を作る */
+.concept-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    z-index: 1; /* 画像より後ろ */
+}
+
+/*----------------------------------------
  サイト　gallery
 ----------------------------------------*/
 /* 画像のスタイル */

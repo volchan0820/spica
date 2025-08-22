@@ -54,6 +54,6 @@
 
     <footer class="footer">
         <?php echo $this->element('spica_footer'); ?>
-    </footer>    
+    </footer>
 </body>
 </html>
