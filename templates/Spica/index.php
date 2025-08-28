@@ -116,26 +116,3 @@
 	<?php echo $this->element('page_top_script'); ?>
 </body>
 </html>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const pagetop = document.getElementById("pagetop");
-  const footer = document.querySelector(".footer");
-
-  if (pagetop && footer) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // フッターが見えたらボタンを上に移動
-          pagetop.classList.add("stay-above-footer");
-        } else {
-          // フッターが見えなくなったら元に戻す
-          pagetop.classList.remove("stay-above-footer");
-        }
-      });
-    }, { threshold: 0 });
-
-    observer.observe(footer);
-  }
-});
-</script>

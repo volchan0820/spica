@@ -19,17 +19,13 @@
         <img src="/img/spica-logo.png" alt="spica-logo">
     </div>
 
-    <?= $this->Form->create(null, ['url' => ['controller' => 'Managements', 'action' => 'administrator_login'], 'method' => 'post']) ?>
-
+    <?= $this->Form->create(null, ['url' => '/managements/administrator-login-ZmhT3nWEjld02kFcqEm5', 'method' => 'post']) ?>
         <!-- ログインID -->
         <?= $this->Form->control('username', ['type' => 'text', 'label' => ['text' => 'Login Id', 'class' => 'form-label'], 'class' => 'form-input']) ?>
-
         <!-- パスワード -->
         <?= $this->Form->control('passwd', ['type' => 'password', 'label' => ['text' => 'Password', 'class' => 'form-label'], 'class' => 'form-input']) ?>
-
         <!-- ログインボタン -->
         <?= $this->Form->submit('LOGIN', ['class' => 'form-submit']) ?>
-
     <?= $this->Form->end() ?>
 </body>
 </html>

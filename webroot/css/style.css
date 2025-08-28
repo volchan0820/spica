@@ -104,6 +104,43 @@ h2 {
     box-sizing: border-box;
 }
 
+/* SNSメニュー */
+.sns-fixed {
+    position: fixed;
+    top: 14%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sns-fixed a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+.sns-fixed a:nth-child(1) i {
+    color:rgb(0, 0, 0);
+}
+.sns-fixed a:nth-child(2) i {
+    color:rgb(0, 0, 0);
+}        
+.sns-fixed a:nth-child(3) i {
+    color:rgb(0, 0, 0);
+}
+.sns-fixed a:nth-child(4) i {
+    color:rgb(0, 0, 0);
+}
+.sns-fixed a:nth-child(5) i {
+    color:rgb(0, 0, 0);
+}
+.sns-fixed a img:hover {
+    transform: scale(1.2);
+}
+
 /*----------------------------------------
  サイト　TOP
 ----------------------------------------*/
@@ -716,6 +753,32 @@ body .form-submit {
     body .form-input {
         font-size: 14px;
     }
+}
+/* アカウントロック　ログイン画面へ戻るボタン */
+body .btn-back {
+    margin: 100px auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffb836;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.btn-back:hover {
+    background-color: #ffb83678;
+    color: #ffffff;
 }
 
 /*----------------------------------------
