@@ -5,6 +5,8 @@ use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\TableRegistry;
 use Cake\Http\Exception\NotFoundException;
 use Cake\Datasource\Exception\RecordNotFoundException;
+use Cake\Mailer\Mailer;
+use GeoIp2\Database\Reader;
 
 class ManagementsController extends AppController
 {
@@ -42,7 +44,7 @@ class ManagementsController extends AppController
 
             if (!$username || !$password) {
                 $this->Flash->error(__('IDとパスワードを入力してください'));
-                return $this->redirect($this->Url->build('/managements/administrator-login-ZmhT3nWEjld02kFcqEm5'));
+                return $this->redirect(['controller' => 'Managements', 'action' => 'administratorLogin']);
             }
 
             // 管理者アカウントは1つだけ
@@ -74,16 +76,44 @@ class ManagementsController extends AppController
                     $attempt->is_locked = 1;
                     $AttemptsTable->save($attempt);
 
+                    // ログイン失敗の詳細を取得                    
+                    $ip = $this->request->clientIp();                           // IPアドレス取得                    
+                    $userAgent = $this->request->getHeaderLine('User-Agent');   // User-Agent取得
+                    $host = gethostbyaddr($ip);                                 // ホスト名（IPから逆引き）
+                    $geoDbPath = '/usr/share/GeoIP/GeoLite2-City.mmdb';         // GeoIP データベースのパス
+
+                    try {
+                        $reader = new Reader($geoDbPath);
+                        $record = $reader->city($ip);
+
+                        $country = $record->country->name;                     // 国
+                        $region  = $record->mostSpecificSubdivision->name;     // 都道府県など
+                        $city    = $record->city->name;                        // 市区町村
+                    } catch (\Exception $e) {
+                        $country = $region = $city = '不明';
+                    }
+
+                    // メール送信内容
+                    $mailBody = "管理者ログインが3回失敗し、アカウントがロックされました。\n\n" .
+                                "ユーザー名: {$username}\n" .
+                                "時刻: " . date('Y-m-d H:i:s') . "\n" .
+                                "IPアドレス: {$ip}\n" .
+                                "ホスト名: {$host}\n" .
+                                "国: {$country}\n" .
+                                "地域: {$region}\n" .
+                                "市区町村: {$city}\n" .
+                                "User-Agent: {$userAgent}\n";
+
                     // Gmail へ通知
                     $mailer = new Mailer('default');
+                    // 差出人の設定
                     $mailer->setFrom(['r.miyazato0820@gmail.com' => '管理システム'])
+                        // 宛先
                         ->setTo('r.miyazato0820@gmail.com')
+                        // 件名
                         ->setSubject('管理者ログインが3回失敗しました')
-                        ->deliver(
-                            "管理者ログインが3回失敗し、アカウントがロックされました。\n\n" .
-                            "ユーザー名: {$username}\n" .
-                            "時刻: " . date('Y-m-d H:i:s')
-                        );
+                        // 本文
+                        ->deliver($mailBody);
 
                     return $this->render('administrator_login_locked');
                 }

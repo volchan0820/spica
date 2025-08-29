@@ -26,7 +26,7 @@
     </div>
 
     <h1 class="admin-title">Account Locked</h1>
-    <h2 class="admin-subtitle">3回失敗したのでアカウントをロックしました。<br>管理者に連絡してください。</h2>
+    <h2 class="admin-subtitle">ログインに3回失敗したのでアカウントをロックしました。<br>管理者に連絡してください。</h2>
 
 
     <form action="<?= $this->Url->build(['action' => 'administratorLogin']) ?>" method="get">
