@@ -24,6 +24,16 @@
 
     <h1 class="spica-title fade-up">ACCESS</h1>
 
+    <div class="access-info">
+        <p>Hair atelier spica</p>
+        <br>
+        <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
+        <p>6-A, EST COMPLEX 2nd BLD, 608-1 Kyozuka, Urasoe-shi, Okinawa 900-0000, Japan</p>
+        <br>
+        <p>OPEN: 10:00〜18:00</p>
+        <p>CLOSE: 土曜日・日曜日</p>
+    </div>
+
     <div class="access-map">
         <iframe
         src="https://maps.google.com/maps?q=26.234143,127.722426&z=18&output=embed"

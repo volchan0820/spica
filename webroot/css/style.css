@@ -149,7 +149,7 @@ h2 {
     text-align: center;
     color: #363637;
     padding-top: 6%;
-    padding-bottom: 2%;
+    padding-bottom: 8%;
     font-size: 40px;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
@@ -479,6 +479,13 @@ h2 {
     height: 400px;
     display: block;
     border-radius: 8px;
+}
+.access-info {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*----------------------------------------
