@@ -13,6 +13,23 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <!-- <style>
+    .spica-title {
+        letter-spacing: 8px;
+        position: relative;
+        display: inline-block;
+        background: rgb(90, 90, 90);      /* 背景を黒に */
+        color: #fff;             /* 文字色を白に */
+        font-size: 40px;
+        font-family: "Tsukimi Rounded", sans-serif;
+        font-style: normal;
+        padding: 20px 60px;      /* 四角に見える余白 */
+        margin: -60px 0 40px;    /* 画像と少し重なるように上方向にずらす */
+        margin-left: 20px;
+        z-index: 2;              /* 背景画像より前に出す */
+    }
+    </style> -->
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
