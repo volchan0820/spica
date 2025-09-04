@@ -49,10 +49,6 @@
         <?php endforeach; ?>
     </div>
 
-    <footer class="footer">
-        <?= $this->element('spica_footer') ?>
-    </footer>
-
     <!-- モーダル表示用 -->
     <div id="imageModal" class="modal">
         <div class="modal-image-wrapper">
@@ -62,11 +58,17 @@
         <div id="modalInfo" class="modal-info"></div>
     </div>
 
-	<!-- ページトップボタン -->
+    <!-- フッター -->
+    <footer class="footer">
+        <?php echo $this->element('spica_footer'); ?>
+    </footer>
+
+    <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
 	<?php echo $this->element('page_top_script'); ?>
 
-    <?= $this->element('fade_up_script') ?>    
+    <!-- フェードアップ -->
+    <?= $this->element('fade_up_script') ?> 
 </body>
 </html>
 

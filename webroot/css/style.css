@@ -3,7 +3,7 @@
 ----------------------------------------*/
 body {
     background-color: #ffffff;
-    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
     color: #333;
 }
 h1 {
@@ -49,13 +49,13 @@ h2 {
     letter-spacing: 0.2em;
     z-index: 1000;
     cursor: pointer;
-    opacity: 0;             /* 初期は透明 */
-    pointer-events: none;   /* クリックできない */
+    opacity: 0;
+    pointer-events: none;
     transition: opacity 0.4s ease, bottom 0.3s ease;
 }
 .pagetop.show {
     opacity: 1;
-    pointer-events: auto;   /* 表示されてる時だけクリック可能 */
+    pointer-events: auto;
 }
 .pagetop-text {
     display: inline-block;
@@ -143,7 +143,7 @@ h2 {
 }
 
 /*----------------------------------------
- サイト　TOP
+ サイト　トップ
 ----------------------------------------*/
 /* 各ページのタイトル */
 .spica-title {
@@ -247,6 +247,151 @@ h2 {
     z-index: 1;
 }
 
+/* 各コンテンツの表示 */
+.top-block {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+}
+.top-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    border-bottom: 1px solid #ccc;
+}
+/* コンテンツ見出し */
+.top-inner h2 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 8px;
+    position: relative;
+}
+.top-inner h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 48%;
+    height: 1px;
+    background-color: #000;
+}
+/* 最後のブロックは線を消す */
+.top-block:last-child .top-inner {
+    border-bottom: none;
+}
+/* 画像とテキスト */
+.top-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.top-section-image, .top-text {
+    flex: 1;
+}
+/* テキスト */
+.top-text p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    font-family: 'Zen Old Mincho', serif;
+    margin-bottom: 50px;
+}
+/* 偶数番目は左右反転 */
+.top-block:nth-of-type(even) .top-content {
+    flex-direction: row-reverse;
+}
+/* 偶数番目のセクションのタイトルは右寄せにする */
+.top-block:nth-of-type(even) h2 {
+    text-align: right;
+    /* padding-right: 390px; */
+}
+.top-block:nth-of-type(even) h2::after {
+    left: auto;
+    right: 0;
+}
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .top-content {
+        flex-direction: column;
+        padding: 0;
+    }
+    .top-inner {
+        padding: 0 20px;
+    }
+    .top-inner h2 {
+        text-align: center;
+    }
+}
+
+/* view moreボタン */
+.btnBasic {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  padding: 12px 30px 12px 20px;
+  text-decoration: none;
+  border: 2px solid #000;
+  color: #000;
+}
+.btnBasic__label {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  overflow: visible;
+  color: black;
+}
+.typo {
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+/* 矢印 */
+.arrow {
+  margin-left: 12px;
+  position: relative;
+  width: 20px;
+  height: 12px;
+}
+.arrow__line {
+  position: absolute;
+  height: 0.5px;
+  background: #000;
+  transition: transform 0.4s ease;
+}
+.arrow__line--01 {
+  top: 50%;
+  left: 0;
+  width: 350%;
+  transform: translateY(-50%) translateX(0);
+}
+.arrow__line--02 {
+  top: 25%;
+  right: -51px;
+  width: 8px;
+  transform: translateY(-50%) rotate(45deg) translateX(0);
+}
+/* hover時の動き 左から右にスライド */
+.btnBasic:hover .typo {
+  transform: translateX(10px);
+}
+/* 文字の stagger アニメーション */
+.btnBasic:hover .typo:nth-child(1) { transition-delay: 0s; }
+.btnBasic:hover .typo:nth-child(2) { transition-delay: 0.05s; }
+.btnBasic:hover .typo:nth-child(3) { transition-delay: 0.1s; }
+.btnBasic:hover .typo:nth-child(4) { transition-delay: 0.15s; }
+.btnBasic:hover .typo:nth-child(5) { transition-delay: 0.2s; }
+.btnBasic:hover .typo:nth-child(6) { transition-delay: 0.25s; }
+.btnBasic:hover .typo:nth-child(7) { transition-delay: 0.3s; }
+.btnBasic:hover .typo:nth-child(8) { transition-delay: 0.35s; }
+
+.btnBasic:hover .arrow__line--01 {
+  transform: translateX(10px) translateY(-50%);
+}
+.btnBasic:hover .arrow__line--02 {
+  transform: translateX(10px) translateY(-50%) rotate(45deg);
+}
+
 /*----------------------------------------
  サイト　コンセプト
 ----------------------------------------*/
@@ -261,11 +406,11 @@ h2 {
     justify-content: space-between;
     margin-bottom: 80px;
     gap: 40px;
-    padding-bottom: 60px;         /* 線との余白 */
-    border-bottom: 1px solid #ccc; /* 下線を追加 */
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ccc;
 }
 .concept-block:last-child {
-    border-bottom: none;  /* 最後のブロックは線を消す */
+    border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -330,7 +475,77 @@ h2 {
 }
 
 /*----------------------------------------
- サイト　gallery
+ サイト　メニュー
+----------------------------------------*/
+/* メニュー表 */
+.price-menu-frame {
+  max-width: 800px;
+  margin: 60px auto;
+  margin-bottom: 200px;
+  padding: 20px 70px;
+  border: 10px solid #a9a9a9;
+  position: relative;
+  text-align: center;
+}
+.price-menu-frame::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: -35px;
+  bottom: -35px;
+  border: 10px solid #333;
+}
+.price-menu-items {
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: left;
+}
+/* メニュータイトル */
+.price-menu-title {
+    display: inline-block; 
+    background: #5a5a5a;
+    color: #fff;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 12px 40px;
+    margin: 40px auto 30px;
+    letter-spacing: 6px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 注意書き */
+.price-menu-note {
+    text-align: center;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+/* メニュー */
+.price-menu-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 100px;
+  gap: 20px;
+  align-items: center;
+  padding: 6px 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* 価格 */
+.price-menu-row p:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+/* 区切り線 */
+.price-menu-section {
+  border-top: 1px solid #333;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+/*----------------------------------------
+ サイト　ギャラリー
 ----------------------------------------*/
 /* 画像のスタイル */
 .grid {
@@ -480,7 +695,7 @@ h2 {
     width: 100%;
     height: 400px;
     display: block;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 .access-info {
     text-align: center;
@@ -791,7 +1006,7 @@ body .btn-back {
 }
 
 /*----------------------------------------
- 管理画面　TOP
+ 管理画面　トップ
 ----------------------------------------*/
 /* ロゴのスタイル */
 .top-image img {
@@ -1004,7 +1219,7 @@ body .editPreviewButton {
 }
 
 /*----------------------------------------
- 管理画面　gallery
+ 管理画面　ギャラリー
 ----------------------------------------*/
 .form-wrapper {
     max-width: 600px;

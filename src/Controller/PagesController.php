@@ -75,4 +75,9 @@ class PagesController extends AppController
     {
         // templates/Pages/privacy_policy.php を表示
     }
+
+    public function cancelPolicy()
+    {
+        // templates/Pages/cancel_policy.php を表示
+    }
 }

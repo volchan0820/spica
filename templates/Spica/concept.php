@@ -81,14 +81,16 @@
         </section>
     </main>
 
+    <!-- フッター -->
     <footer class="footer">
         <?php echo $this->element('spica_footer'); ?>
     </footer>
-    
-	<!-- ページトップボタン -->
+
+    <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
 	<?php echo $this->element('page_top_script'); ?>
 
+    <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
 </body>
 </html>
