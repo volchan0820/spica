@@ -1,1 +1,16 @@
 /* PC（1024px以上） */
+@media screen and (max-width: 1024px) {
+    /* ------------------------------------------------
+	* サイト・管理画面　ギャラリー
+	* -----------------------------------------------*/
+    .grid {
+        padding: 0 20px; /* 左右20pxの余白 */
+        box-sizing: border-box; /* 内側paddingを含めて計算 */
+        margin-bottom: 50px;
+    }
+
+    .grid-item {
+        width: calc(23% - 10px); /* gapやpadding分を少し引く */
+        margin-bottom: 16px;
+    }
+}

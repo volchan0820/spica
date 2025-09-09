@@ -13,23 +13,6 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
-    <!-- <style>
-    .spica-title {
-        letter-spacing: 8px;
-        position: relative;
-        display: inline-block;
-        background: rgb(90, 90, 90);      /* 背景を黒に */
-        color: #fff;             /* 文字色を白に */
-        font-size: 40px;
-        font-family: "Tsukimi Rounded", sans-serif;
-        font-style: normal;
-        padding: 20px 60px;      /* 四角に見える余白 */
-        margin: -60px 0 40px;    /* 画像と少し重なるように上方向にずらす */
-        margin-left: 20px;
-        z-index: 2;              /* 背景画像より前に出す */
-    }
-    </style> -->
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
@@ -40,6 +23,37 @@
 
     <h1 class="spica-title fade-up">STAFF</h1>
 
+    <div class="staff-section fade-up">
+        <div class="staff-item">
+            <div class="staff-image">
+                <img src="/img/staff.png" alt="スタッフ名">
+                <h2 class="staff-name">氏　名<a href="https://www.instagram.com/youraccount" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a></h2>
+            </div>
+            <div class="staff-info">
+                <h3 class="staff-section-title">経歴</h3>
+                    <p class="staff-text">
+                        兵庫県芦屋市のハイエンドサロンにて、上質を求めるお客様に向き合いながら、繊細な技術と洗練された提案力を磨きました。<br>
+                        その後、地元・沖縄へと拠点を移し、フリーランススタイリスト経験を積み重ね、一人ひとりの髪質やライフスタイルに合わせた“似合わせ”スタイルを追求しながら、お客様との信頼関係を何より大切にしてきました。<br>
+                        そして2025年、沖縄県浦添市にて「Hair atelier spica（ヘアアトリエスピカ）」をオープン。これまでの経験を活かし、丁寧なカウンセリングと確かな技術で、その人らしい美しさを引き出すヘアデザインを提供しています。
+                    </p>
+                <h3 class="staff-section-title">資格・実績</h3>
+                    <ul class="staff-text">
+                        <li>ヘアケアマイスター認定</li>
+                        <li>〇〇コンテスト 優勝</li>
+                        <li>セミナー実績：2026年3月：美容師専門学生向けキャリアスタート講座</li>
+                    </ul>
+                <h3 class="staff-section-title">得意な技術</h3>
+                    <p class="staff-text">
+                        カット、ショート
+                    </p>
+                <h3 class="staff-section-title">趣味</h3>
+                    <p class="staff-text">
+                        魚釣り
+                    </p>
+            </div>
+        </div>
+    </div>
+
     <!-- フッター -->
     <footer class="footer">
         <?php echo $this->element('spica_footer'); ?>
@@ -48,6 +62,10 @@
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
 	<?php echo $this->element('page_top_script'); ?>
+
+    <!-- レスポンシブ　ページトップボタン -->
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <?php echo $this->element('page_top_mobile_script'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>

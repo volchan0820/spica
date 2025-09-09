@@ -13,16 +13,6 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
-    <style>
-    .reservation-info {
-        text-align: center;
-        font-size: 1.8rem;
-        color: #555;
-        margin-top: 20px;
-        font-family: 'Noto Sans JP', sans-serif;
-    }
-    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
@@ -38,12 +28,19 @@
         <br>
         <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
         <br>
-        <p>OPEN: 10:00〜18:00</p>
+        <p>OPEN: 10:00〜19:00</p>
         <p>CLOSE: 土曜日・日曜日</p>
-    </div>
-
-    <div class="line-imge">
-        <img src="/img/line.png" alt="友だち追加">
+        <div class="line-buttons">
+            <!-- LINE公式ボタン -->
+            <a href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener"><img src="/img/line.png" alt="友だち追加"></a>
+            <!-- ホットペッパービューティーボタン -->
+            <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank" rel="noopener" class="hotpepper-btn">ホットペッパーで予約</a>
+        </div>
+        <div class="reservation-attention">
+            <span class="reservation-attention-note">※ご予約前に</span>
+            <a href="/pages/cancel_policy/" class="attention-link">こちら</a>
+            <span class="reservation-attention-note">の注意事項をご確認ください。</span>
+        </div>
     </div>
 
     <!-- フッター -->
@@ -54,6 +51,10 @@
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
 	<?php echo $this->element('page_top_script'); ?>
+
+    <!-- レスポンシブ　ページトップボタン -->
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <?php echo $this->element('page_top_mobile_script'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
