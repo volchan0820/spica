@@ -29,36 +29,38 @@
 
     <h1 class="spica-title fade-up">BLOG</h1>
 
-    <div class="blog-list fade-up">
-        <?php foreach ($blogs as $blog): ?>
-            <?php if ($blog->status === 'published'): ?>
-                <a href="<?= $this->Url->build(['action' => 'blogView', $blog->id]) ?>" class="blog-post-link">
-                    <div class="blog-post">
-                        <!-- サムネイル画像がある場合 -->
-                        <?php
-                            // contentから最初の画像を取得
-                            preg_match('/<img[^>]+src="([^">]+)"/', $blog->content, $matches);
-                            if (!empty($matches[1])) {
-                                $firstImageUrl = $matches[1];
-                            } else {
-                                $firstImageUrl = null;
-                            }
-                        ?>                    
-                        <div class="thumbnail-container">
-                            <img 
-                                src="<?= h($firstImageUrl ?: '/img/spica-logo-top.png') ?>" 
-                                alt="サムネイル" 
-                                class="thumbnail"
-                            >
+    <div class="contents-wrapper">
+        <div class="blog-list fade-up">
+            <?php foreach ($blogs as $blog): ?>
+                <?php if ($blog->status === 'published'): ?>
+                    <a href="<?= $this->Url->build(['action' => 'blogView', $blog->id]) ?>" class="blog-post-link">
+                        <div class="blog-post">
+                            <!-- サムネイル画像がある場合 -->
+                            <?php
+                                // contentから最初の画像を取得
+                                preg_match('/<img[^>]+src="([^">]+)"/', $blog->content, $matches);
+                                if (!empty($matches[1])) {
+                                    $firstImageUrl = $matches[1];
+                                } else {
+                                    $firstImageUrl = null;
+                                }
+                            ?>                    
+                            <div class="thumbnail-container">
+                                <img 
+                                    src="<?= h($firstImageUrl ?: '/img/spica-logo-top.png') ?>" 
+                                    alt="サムネイル" 
+                                    class="thumbnail"
+                                >
+                            </div>
+                            <div class="blog-info">
+                                <h3><?= h($blog->title) ?></h3>
+                                <p><?= $blog->modified->format('Y年m月d日') ?></p>
+                            </div>
                         </div>
-                        <div class="blog-info">
-                            <h3><?= h($blog->title) ?></h3>
-                            <p><?= $blog->modified->format('Y年m月d日') ?></p>
-                        </div>
-                    </div>
-                </a>
-            <?php endif; ?>
-        <?php endforeach; ?>
+                    </a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
     </div>
 
     <!-- フッター -->

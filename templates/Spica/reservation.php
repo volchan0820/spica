@@ -23,23 +23,25 @@
 
     <h1 class="spica-title">RESERVATION</h1>
 
-    <div class="reservation-info fade-up">
-        <p>Hair atelier spica</p>
-        <br>
-        <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
-        <br>
-        <p>OPEN: 10:00〜19:00</p>
-        <p>CLOSE: 土曜日・日曜日</p>
-        <div class="line-buttons">
-            <!-- LINE公式ボタン -->
-            <a href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener"><img src="/img/line.png" alt="友だち追加"></a>
-            <!-- ホットペッパービューティーボタン -->
-            <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank" rel="noopener" class="hotpepper-btn">ホットペッパーで予約</a>
-        </div>
-        <div class="reservation-attention">
-            <span class="reservation-attention-note">※ご予約前に</span>
-            <a href="/pages/cancel_policy/" class="attention-link">こちら</a>
-            <span class="reservation-attention-note">の注意事項をご確認ください。</span>
+    <div class="contents-wrapper">
+        <div class="reservation-info fade-up">
+            <p style="font-size: 30px;">Hair atelier spica</p>
+            <br>
+            <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
+            <br>
+            <p>OPEN: 10:00〜19:00</p>
+            <p>CLOSE: 土曜日・日曜日</p>
+            <div class="line-buttons">
+                <!-- LINE公式ボタン -->
+                <a href="https://lin.ee/xxxxxxx" target="_blank" rel="noopener"><img src="/img/line.png" alt="友だち追加"></a>
+                <!-- ホットペッパービューティーボタン -->
+                <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank" rel="noopener" class="hotpepper-btn">ホットペッパーで予約</a>
+            </div>
+            <div class="reservation-attention">
+                <span class="reservation-attention-note">※ご予約前に</span>
+                <a href="/pages/cancel_policy/" class="attention-link">こちら</a>
+                <span class="reservation-attention-note">の注意事項をご確認ください。</span>
+            </div>
         </div>
     </div>
 

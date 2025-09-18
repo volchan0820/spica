@@ -15,38 +15,38 @@
     <?php echo $this->element('head_scripts'); ?>
 </head>
 <body>
+    <!-- ヘッダー -->
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-imge">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
-    <h1 class="spica-title fade-up">GALLERY</h1>
-
-    <div class="filter-area fade-up">
-        <div class="select-wrapper">
-            <select id="styleFilter" aria-label="スタイルで絞り込み">
-                <?php foreach ($styles as $value => $label): ?>
-                    <option value="<?= h($value) ?>"><?= h($label) ?></option>
-                <?php endforeach; ?>
-            </select>
+    <!-- コンテンツ -->
+    <div class="contents-wrapper">
+        <div class="spica-page-imge">
+            <img src="/img/cafe_2.jpg" alt="hair atelier spica">
         </div>
-    </div>
-
-    <div class="grid fade-up">
-        <?php foreach ($galleries as $gallery): ?>
-            <div class="grid-item"
-                data-style="<?= h($gallery->style) ?>"
-                data-menu1="<?= h($gallery->menu1) ?>"
-                data-menu2="<?= h($gallery->menu2) ?>"
-                data-menu3="<?= h($gallery->menu3) ?>"
-                data-menu4="<?= h($gallery->menu4) ?>"
-                data-menu5="<?= h($gallery->menu5) ?>"
-                data-note="<?= h($gallery->note) ?>">
-                <img src="/img/<?= h($gallery->image_path) ?>" alt="ギャラリー画像">
-                
+        <h1 class="spica-title fade-up">GALLERY</h1>
+        <div class="filter-area fade-up">
+            <div class="select-wrapper">
+                <select id="styleFilter" aria-label="スタイルで絞り込み">
+                    <?php foreach ($styles as $value => $label): ?>
+                        <option value="<?= h($value) ?>"><?= h($label) ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
-        <?php endforeach; ?>
+        </div>
+        <div class="grid fade-up">
+            <?php foreach ($galleries as $gallery): ?>
+                <div class="grid-item"
+                    data-style="<?= h($gallery->style) ?>"
+                    data-menu1="<?= h($gallery->menu1) ?>"
+                    data-menu2="<?= h($gallery->menu2) ?>"
+                    data-menu3="<?= h($gallery->menu3) ?>"
+                    data-menu4="<?= h($gallery->menu4) ?>"
+                    data-menu5="<?= h($gallery->menu5) ?>"
+                    data-note="<?= h($gallery->note) ?>">
+                    <img src="/img/<?= h($gallery->image_path) ?>" alt="ギャラリー画像">                    
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 
     <!-- モーダル表示用 -->

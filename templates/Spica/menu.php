@@ -23,153 +23,155 @@
 
     <h1 class="spica-title fade-up">MENU</h1>
 
-    <!-- シングルメニュー -->
-    <div class="price-menu-frame fade-up">
-        <div class="price-menu-items">
-            <h2 class="price-menu-title">&nbsp;SINGLE　MENU</h2>
-            <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
-            <!-- カット -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Cut</p>
-                    <p>カット・トリートメント</p>
-                    <p>¥7,700</p>
+    <div class="contents-wrapper">
+        <!-- シングルメニュー -->
+        <div class="price-menu-frame fade-up">
+            <div class="price-menu-items">
+                <h2 class="price-menu-title">&nbsp;SINGLE　MENU</h2>
+                <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
+                <!-- カット -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Cut</p>
+                        <p>カット・トリートメント</p>
+                        <p>¥7,700</p>
+                    </div>
                 </div>
-            </div>
-            <!-- カラー -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Color</p>
-                    <p>カラー・トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- カラー -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Color</p>
+                        <p>カラー・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-            </div>
-            <!-- パーマ -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Perm</p>
-                    <p>アルカリパーマ・トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- パーマ -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Perm</p>
+                        <p>アルカリパーマ・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p>Perm</p>
+                        <p>弱酸性パーマ・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>前髪パーマ・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p>Perm</p>
-                    <p>弱酸性パーマ・トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- ストレート -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Straight</p>
+                        <p>ストレート・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>前髪ストレート・トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>前髪パーマ・トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- ヘッドスパ -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Head Spa</p>
+                        <p>ヘッドスパ</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-            </div>
-            <!-- ストレート -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Straight</p>
-                    <p>ストレート・トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- トリートメント -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Treatment</p>
+                        <p>トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>前髪ストレート・トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-            <!-- ヘッドスパ -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Head Spa</p>
-                    <p>ヘッドスパ</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-            <!-- トリートメント -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Treatment</p>
-                    <p>トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-        </div>  
-    </div>
+            </div>  
+        </div>
 
-    <!-- セットメニュー -->
-    <div class="price-menu-frame fade-up">
-        <div class="price-menu-items">
-            <h2 class="price-menu-title">&nbsp;SET　MENU</h2>
-            <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
-            <!-- カット & カラー -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Cut & Color</p>
-                    <p>カット + カラー + トリートメント</p>
-                    <p>¥8,000</p>
+        <!-- セットメニュー -->
+        <div class="price-menu-frame fade-up">
+            <div class="price-menu-items">
+                <h2 class="price-menu-title">&nbsp;SET　MENU</h2>
+                <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
+                <!-- カット & カラー -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Cut & Color</p>
+                        <p>カット + カラー + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>カット + カラー + ブリーチ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>カット + カラー + ブリーチ + トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- カット & パーマ -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Cut & Perm</p>
+                        <p>カット + アルカリパーマ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>カット + 弱酸性パーマ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>カット + スパイラルパーマ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>カット + 前髪パーマ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>前髪カット + パーマ + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-            </div>
-            <!-- カット & パーマ -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Cut & Perm</p>
-                    <p>カット + アルカリパーマ + トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- カット & ストレート -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Cut & Straight</p>
+                        <p>カット + ストレート + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
+                    <div class="price-menu-row">
+                        <p></p>
+                        <p>カット + 前髪ストレート + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>カット + 弱酸性パーマ + トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- カラー & ストレート -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Color & Straight</p>
+                        <p>カラー + ストレート + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>カット + スパイラルパーマ + トリートメント</p>
-                    <p>¥8,000</p>
+                <!-- カット & カラー & ストレート -->
+                <div class="price-menu-section">
+                    <div class="price-menu-row">
+                        <p>Cut & Color & Straight</p>
+                        <p>カット + カラー + ストレート + トリートメント</p>
+                        <p>¥8,000</p>
+                    </div>
                 </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>カット + 前髪パーマ + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>前髪カット + パーマ + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-            <!-- カット & ストレート -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Cut & Straight</p>
-                    <p>カット + ストレート + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-                <div class="price-menu-row">
-                    <p></p>
-                    <p>カット + 前髪ストレート + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-            <!-- カラー & ストレート -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Color & Straight</p>
-                    <p>カラー + ストレート + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-            <!-- カット & カラー & ストレート -->
-            <div class="price-menu-section">
-                <div class="price-menu-row">
-                    <p>Cut & Color & Straight</p>
-                    <p>カット + カラー + ストレート + トリートメント</p>
-                    <p>¥8,000</p>
-                </div>
-            </div>
-        </div>  
+            </div>  
+        </div>
     </div>
 
     <!-- フッター -->

@@ -26,7 +26,7 @@
                 <li><a href="/spica/gallery/"><span class="en">GALLERY</span><span class="jp">ギャラリー</span></a></li>
                 <li><a href="/spica/blogList/"><span class="en">BLOG</span><span class="jp">ブログ</span></a></li>
                 <li><a href="/spica/access/"><span class="en">ACCESS</span><span class="jp">アクセス</span></a></li>
-                <li><a href="/spica/reservation/"><span class="en">WEB予約</span><span class="jp">WEB予約</span></a></li>
+                <li><a href="/spica/reservation/"><span class="en">RESERVE</span><span class="jp">WEB予約</span></a></li>
             </ul>
         </nav>      
         <div class="hamburger">
@@ -46,7 +46,7 @@
         <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
         <li><a href="/spica/blogList/">BLOG<br>ブログ</a></li>
         <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>
-        <li><a href="/spica/reservation/">RESERVATION<br>WEB予約</a></li>
+        <li><a href="/spica/reservation/">RESERVE<br>WEB予約</a></li>
     </ul>
     <!-- SNSアイコン横並び -->
     <div class="sidebar-sns">

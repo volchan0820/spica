@@ -29,7 +29,7 @@
 
 	<?php echo $this->element('spica_header'); ?>
 
-	<div class="container">
+	<!-- <div class="container">
 		<div class="slider">
 			<img src="/img/cafe.jpg" alt="Slide 1">
 			<img src="/img/cafe_1.jpg" alt="Slide 2">
@@ -39,7 +39,20 @@
 			<div class="glass-bg"></div>
 			<img src="/img/spica-logo-top.png" alt="spica logo" />
 		</div>
-	</div>
+	</div> -->
+
+    <div class="container">
+        <div class="slider">
+            <video autoplay muted loop playsinline>
+            <source src="/video/test.mp4" type="video/mp4">
+            お使いのブラウザは動画に対応していません。
+            </video>
+        </div>
+        <div class="spica-logo-main">
+            <div class="glass-bg"></div>
+            <img src="/img/spica-logo-top.png" alt="spica logo" />
+        </div>
+    </div>
 
     <main class="top-section">
         <!-- コンセプト -->

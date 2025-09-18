@@ -26,26 +26,28 @@
 
     <h1 class="spica-title">BLOG</h1>
 
-    <div class="blog-detail">
-        <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
-        <h2><?= h($blog->title) ?></h2>
-        <div class="blog-content">
-            <?= $blog->content ?>
+    <div class="contents-wrapper">
+        <div class="blog-detail">
+            <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
+            <h2><?= h($blog->title) ?></h2>
+            <div class="blog-content">
+                <?= $blog->content ?>
+            </div>
         </div>
-    </div>
-    
-    <div class="blog-navigation">
-        <?php if (!empty($prevBlog)): ?>
-            <a href="<?= $this->Url->build(['action' => 'blogView', $prevBlog->id]) ?>" class="nav-arrow prev">
-                <span class="arrow-left"></span> BACK
-            </a>
-        <?php endif; ?>
-        <a href="<?= $this->Url->build(['action' => 'blogList']) ?>" class="nav-center">Back to Blog List</a>
-        <?php if (!empty($nextBlog)): ?>
-            <a href="<?= $this->Url->build(['action' => 'blogView', $nextBlog->id]) ?>" class="nav-arrow next">
-                NEXT <span class="arrow-right"></span>
-            </a>
-        <?php endif; ?>
+        
+        <div class="blog-navigation">
+            <?php if (!empty($prevBlog)): ?>
+                <a href="<?= $this->Url->build(['action' => 'blogView', $prevBlog->id]) ?>" class="nav-arrow prev">
+                    <span class="arrow-left"></span> BACK
+                </a>
+            <?php endif; ?>
+            <a href="<?= $this->Url->build(['action' => 'blogList']) ?>" class="nav-center">Back to Blog List</a>
+            <?php if (!empty($nextBlog)): ?>
+                <a href="<?= $this->Url->build(['action' => 'blogView', $nextBlog->id]) ?>" class="nav-arrow next">
+                    NEXT <span class="arrow-right"></span>
+                </a>
+            <?php endif; ?>
+        </div>
     </div>
 
     <!-- フッター -->
