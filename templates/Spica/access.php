@@ -18,7 +18,7 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-imge">
+    <div class="spica-page-img">
         <img src="/img/cafe_2.jpg" alt="hair atelier spica">
     </div>
 
@@ -26,7 +26,10 @@
 
     <div class="contents-wrapper">
         <div class="access-info fade-up">
-            <p>Hair atelier spica</p>
+
+            <div class="hair-atelier-spica-title-img">
+                <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
+            </div>
             <br>
             <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
             <p>6-A, EST COMPLEX 2nd BLD, 608-1 Kyozuka, Urasoe-shi, Okinawa 901-2111, Japan</p>

@@ -3,7 +3,6 @@
 ----------------------------------------*/
 body {
     background-color: #ffffff;
-    /* font-family: 'Noto Sans JP', sans-serif; */
     color: #333;
 }
 h1 {
@@ -153,8 +152,12 @@ h2 {
 /*----------------------------------------
  サイト　トップ
 ----------------------------------------*/
+
+/* letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
+左寄せになって見えるためtext-indentで先頭にスペースを入れる */
+
 /* 各ページのタイトル */
-.spica-title {
+/* .spica-title {
     letter-spacing: 8px;
     text-align: center;
     color: #363637;
@@ -163,9 +166,25 @@ h2 {
     font-size: 40px;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
+} */
+
+.spica-title {
+    letter-spacing: 8px;          /* 文字間 */
+    text-align: center;            /* 中央揃え */
+    text-indent: 4px;              /* letter-spacing の半分を先頭に追加 */
+    color: #363637;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    font-size: 40px;
+    font-family: "Tsukimi Rounded", sans-serif;
+    font-style: normal;
 }
+
+
+
+
 /* 各ページのトップ画像 */
-.spica-page-imge img {
+.spica-page-img img {
     height: 400px;
     object-fit: cover;
     width: 100%;
@@ -185,7 +204,6 @@ h2 {
   height: 100vh; /* 画面高さ */
   overflow: hidden;
 }
-
 .slider video {
   position: absolute;
   top: 50%;
@@ -204,8 +222,6 @@ h2 {
     transform: none;
   }
 }
-
-
 
 /* 画像スライド　動画に変更のためコメントアウト */
 /* .slider img {
@@ -531,6 +547,7 @@ h2 {
 .price-menu-items {
    font-family: 'Zen Kaku Gothic New', sans-serif;
     text-align: left;
+    padding-left: 10px;
 }
 /* メニュータイトル */
 .price-menu-title {
@@ -812,7 +829,7 @@ h2 {
     margin-top: 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
-.line-imge {
+.line-img {
     text-align: center;
 }
 .line-buttons {
@@ -826,27 +843,7 @@ h2 {
     height: 60px;
     cursor: pointer;
 }
-.hotpepper-btn {
-    display: inline-block;
-    background-color: #d6002f;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 18px 25px;
-    margin-bottom: 8px;
-    text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-    transition: background 0.3s ease;
-}
-.hotpepper-btn:hover {
-    color: #fff;
-}
-.hotpepper-btn:visited,
-.hotpepper-btn:active,
-.hotpepper-btn:focus {
-    color: #fff;
-    background-color: #d6002f;
-}
+
 .reservation-attention {
     text-align: center;
     font-size: 1.4rem;
@@ -862,6 +859,18 @@ h2 {
 .reservation-attention-note{
 color: #d6002f;
 font-size: 1.2rem;
+}
+
+.hair-atelier-spica-title-img {
+    max-width: 24%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hair-atelier-spica-title-img img {
+    width: 100%;
+    height: auto;
 }
 
 /*----------------------------------------
@@ -922,7 +931,7 @@ font-size: 1.2rem;
     font-family: "Tsukimi Rounded", sans-serif;
     overflow: hidden;
     height: 1.5em;
-    min-width: 80px; /* 文字に余白をもたせる */
+    min-width: 80px;
 }
 .navGlobalIn li a .en {
     display: block;
@@ -1017,8 +1026,6 @@ font-size: 1.2rem;
     font-size: 40px;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
-    /* font-weight: bold; */
-    /* margin-top: 0; */
 }
 /* ログアウトボタンのスタイル */
 .logout a {
@@ -1383,8 +1390,8 @@ body .editPreviewButton {
 ----------------------------------------*/
 .form-wrapper {
     max-width: 600px;
-    margin: 0 auto; /* 左右中央寄せ */
-    padding: 0 20px; /* 左右に余白 */
+    margin: 0 auto;
+    padding: 0 20px;
     font-family: 'Zen Old Mincho', serif;
 }
 .form-wrapper .input {

@@ -18,7 +18,7 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-imge">
+    <div class="spica-page-img">
         <img src="/img/cafe_2.jpg" alt="hair atelier spica">
     </div>
 
