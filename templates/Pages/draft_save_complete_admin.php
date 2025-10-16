@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body class="draft-save-complete-admin">
     <?php echo $this->element('administrator_header'); ?>
 
     <h1 class="admin-title">Draft Saved</h1>

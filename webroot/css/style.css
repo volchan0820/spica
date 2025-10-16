@@ -297,13 +297,19 @@ h2 {
 /* 各コンテンツの表示 */
 .top-block {
     margin-bottom: 80px;
-    padding-bottom: 60px;
 }
-.top-inner {
+/* .top-inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
     border-bottom: 1px solid #ccc;
+} */
+.top-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    border-bottom: 1px solid #ccc;  /* 線の太さ・色 */
+    padding-bottom: 60px;            /* 線とコンテンツの間隔 */
 }
 /* コンテンツ見出し */
 .top-inner h2 {
@@ -325,6 +331,7 @@ h2 {
 /* 最後のブロックは線を消す */
 .top-block:last-child .top-inner {
     border-bottom: none;
+     padding-bottom: 0;
 }
 /* 画像とテキスト */
 .top-content {
@@ -357,7 +364,7 @@ h2 {
     right: 0;
 }
 /* スマホ対応 */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .top-content {
         flex-direction: column;
         padding: 0;
@@ -368,7 +375,7 @@ h2 {
     .top-inner h2 {
         text-align: center;
     }
-}
+} */
 
 /* view moreボタン */
 .btnBasic {
@@ -1019,6 +1026,7 @@ font-size: 1.2rem;
 ----------------------------------------*/
 /* 各ページのタイトル */
 .admin-title {
+    letter-spacing: 8px;
     text-align: center;
     color: #363637;
     padding-top: 10%;

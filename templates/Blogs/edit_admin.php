@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body>
+<body class="edit-admin">
     <?php echo $this->element('administrator_header'); ?>
 
     <h1 class="admin-title">Draft Edit</h1>

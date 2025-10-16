@@ -52,8 +52,7 @@ class BlogsController extends AppController
             }
             $blog = $this->Blogs->patchEntity($blog, ['status' => 'published']);
             if ($this->Blogs->save($blog)) {
-                return $this->redirect(['controller' => 'Blogs', 'action' => 'publishCompleteAdmin']);
-                $this->Flash->success(__('ブログを公開しました。'));
+                return $this->render('/Pages/publish_complete_admin');
             } else {
                 $this->Flash->error('公開に失敗しました。');
             }
@@ -299,24 +298,17 @@ class BlogsController extends AppController
         try {
             $blog = $this->Blogs->get($id);
             $blog->delete_flag = 1;
+
             if ($this->Blogs->save($blog)) {
-                $this->Flash->success(__('ブログ記事を削除しました。'));
+                return $this->render('/Pages/draft_delete_complete_admin');
             } else {
+                // 削除失敗は元の下書き一覧に戻す
                 $this->Flash->error(__('ブログ記事の削除に失敗しました。'));
+                return $this->redirect(['action' => 'listDraftAdmin']);
             }
         } catch (\Exception $e) {
             $this->Flash->error(__('ブログ記事の削除時にエラーが発生しました。'));
+            return $this->redirect(['action' => 'listDraftAdmin']);
         }
-        return $this->redirect(['action' => 'listDraftAdmin']);
-    }
-
-    public function draftSaveCompleteAdmin()
-    {
-
-    }
-
-    public function publishCompleteAdmin()
-    {
-
     }
 }

@@ -149,15 +149,16 @@
 .blog-detail {
     background-color: #ffffff;
     border: 2px solid #ddd;
-    padding: 40px;
+    padding: 20px;
     margin: 0px auto;
     margin-bottom: 60px;
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 90%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 .update-date {
     text-align: right;
-    font-size: 16px;
+    font-size: 14px;
     color: #000000;
     margin-bottom: 10px;
     font-family: 'Zen Old Mincho', serif;
@@ -171,7 +172,7 @@ font-size: 24px;
     font-family: 'Zen Old Mincho', serif;
 }
 .preview-title h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 40px;
     margin-bottom: 20px;
     color: #333;
@@ -184,7 +185,7 @@ font-size: 24px;
 }
 .preview-text {
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     color: #444;
     margin-top: 30px;
@@ -194,7 +195,7 @@ font-size: 24px;
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -220,4 +221,48 @@ font-size: 24px;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+/* 投稿前の確認画面 */
+.confirm-blog-detail {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.confirm-blog-detail .update-date {
+    text-align: right;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.confirm-blog-detail .preview-title {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    font-family: 'Zen Old Mincho', serif;
+}
+.confirm-blog-detail .preview-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 60px;
+    word-break: break-word;
+}
+.confirm-blog-detail p {
+    font-family: 'Zen Old Mincho', serif;
+}
+.confirm-blog-detail .preview-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }

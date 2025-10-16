@@ -19,11 +19,11 @@
     <?php echo $this->element('spica_header'); ?>
 
     <!-- コンテンツ -->
-    <div class="contents-wrapper">
-        <div class="spica-page-img">
-            <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-        </div>
+    <div class="spica-page-img">
+        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
+    </div>
         <h1 class="spica-title fade-up">GALLERY</h1>
+    <div class="contents-wrapper">
         <div class="filter-area fade-up">
             <div class="select-wrapper">
                 <select id="styleFilter" aria-label="スタイルで絞り込み">

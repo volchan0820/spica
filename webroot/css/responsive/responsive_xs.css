@@ -119,6 +119,88 @@
 	}
 
 	/* ------------------------------------------------
+	* サイト　トップ
+	* -----------------------------------------------*/
+	.top-block {
+		margin-bottom: 0px;
+    	padding-bottom: 0px;
+	}
+	/* .top-inner {
+		padding: 0 20px;
+	} */
+	     .top-inner {
+        padding-bottom: 20px; /* 線とテキストの間隔 */
+        border-bottom: none;   /* 実線は消す */
+        position: relative;
+    }
+
+    .top-inner::after {
+        content: "";
+        display: block;
+        width: 80%;             /* 線の長さ */
+        height: 1px;
+        background-color: #ccc;
+        margin: 0 auto;         /* 中央揃え */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .top-inner h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+    .top-inner h2::after {
+        width: 60%;
+        bottom: -3px;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .top-section-image img {
+        width: 100%;
+        height: auto;
+    }
+    .top-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+	/* reverseクラス */
+    .top-block.reverse .top-content {
+        flex-direction: column;
+    }
+	.top-block:nth-of-type(even) h2 {
+		text-align: left;
+	}
+	.top-block:nth-of-type(even) h2::after {
+		left: 0;
+        right: auto;
+	}
+
+
+
+	
+
+	.concept-block {
+		margin-bottom: 0px;
+	}
+
+    .concept-block .concept-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-block .concept-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+		text-align: left;
+    }
+	
+
+	/* ------------------------------------------------
 	* サイト　スタッフ
 	* -----------------------------------------------*/
 	.staff-section {
@@ -389,4 +471,32 @@
 	.grid-item {
         width: calc(50% - 20px);
     }
+
+	/* ------------------------------------------------
+	* 管理画面　ブログ
+	* -----------------------------------------------*/
+	.add-admin {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+	.admin-title {		
+		font-size: 22px;
+		margin-top: 100px;
+	}
+	.publish-complete-admin {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
+	.edit-admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
+	.draft-save-complete-admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
+	.draft_delete_complete_admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
 }

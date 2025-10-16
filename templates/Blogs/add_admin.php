@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body class="add-admin">
     <?php echo $this->element('administrator_header'); ?>
 
     <h1 class="admin-title">New Post</h1>
@@ -318,7 +318,8 @@
                     // 下書き保存が完了したらプレビュー画面へ遷移
                     var previewForm = document.createElement("form");
                     previewForm.method = "post";
-                    previewForm.action = "<?= $this->Url->build(['controller' => 'Blogs', 'action' => 'draftSaveCompleteAdmin']) ?>";
+                    previewForm.action = "<?= $this->Url->build(['controller' => 'Pages', 'action' => 'display', 'draft_save_complete_admin']) ?>";
+
 
                     var idInput = document.createElement("input");
                     idInput.type = "hidden";
