@@ -64,11 +64,7 @@
                         <img src="/img/concept_counseling.jpg" alt="カウンセリング">
                     </div>
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
-                        </p>
+                        <p>丁寧なカットで、あなたの魅力を自然に引き出すプライベートサロン。</p>
                         <!-- view moreボタン -->
                         <a href="/spica/concept/" class="btnBasic">
                             <div class="btnBasic__label">

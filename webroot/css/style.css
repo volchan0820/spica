@@ -153,25 +153,14 @@ h2 {
  サイト　トップ
 ----------------------------------------*/
 
-/* letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
-左寄せになって見えるためtext-indentで先頭にスペースを入れる */
-
-/* 各ページのタイトル */
-/* .spica-title {
+/*
+letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
+左寄せになって見えるためtext-indentで先頭にスペースを入れる
+*/
+.spica-title {
     letter-spacing: 8px;
     text-align: center;
-    color: #363637;
-    padding-top: 6%;
-    padding-bottom: 8%;
-    font-size: 40px;
-    font-family: "Tsukimi Rounded", sans-serif;
-    font-style: normal;
-} */
-
-.spica-title {
-    letter-spacing: 8px;          /* 文字間 */
-    text-align: center;            /* 中央揃え */
-    text-indent: 4px;              /* letter-spacing の半分を先頭に追加 */
+    text-indent: 4px;
     color: #363637;
     padding-top: 6%;
     padding-bottom: 8%;
@@ -179,10 +168,6 @@ h2 {
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
-
-
-
-
 /* 各ページのトップ画像 */
 .spica-page-img img {
     height: 400px;
@@ -196,21 +181,20 @@ h2 {
     margin: 0 auto;
     padding: 0px;
 }
-
 /* スライダーのスタイル */
 .slider {
   position: relative;
   width: 100%;
-  height: 100vh; /* 画面高さ */
+  height: 100vh;
   overflow: hidden;
 }
 .slider video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;   /* 横幅を最低100%確保 */
-  min-height: 100%;  /* 高さを最低100%確保 */
-  object-fit: cover; /* 画面いっぱいに表示 */
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
@@ -223,7 +207,7 @@ h2 {
   }
 }
 
-/* 画像スライド　動画に変更のためコメントアウト */
+/* 画像スライド　動画に変更のため一旦コメントアウト */
 /* .slider img {
     position: absolute;
     top: 0;
@@ -277,9 +261,9 @@ h2 {
     left: 0;
     transform: translateY(-50%);
     z-index: 1000;
-    width: 100vw; /* 画面の横幅いっぱいに */
-    height: 150px; /* 縦幅を狭く調整 */
-    border-radius: 0; /* 角を丸くしない（またはお好みで） */
+    width: 100vw;
+    height: 150px;
+    border-radius: 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -293,25 +277,16 @@ h2 {
     object-fit: contain;
     z-index: 1;
 }
-
-/* 各コンテンツの表示 */
 .top-block {
     margin-bottom: 80px;
 }
-/* .top-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    border-bottom: 1px solid #ccc;
-} */
 .top-inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    border-bottom: 1px solid #ccc;  /* 線の太さ・色 */
-    padding-bottom: 60px;            /* 線とコンテンツの間隔 */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 60px;
 }
-/* コンテンツ見出し */
 .top-inner h2 {
     font-size: 3.8rem;
     margin-bottom: 20px;
@@ -319,14 +294,43 @@ h2 {
     letter-spacing: 8px;
     position: relative;
 }
+/* コンテンツの下線 */
 .top-inner h2::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 48%;
+    width: 45.5%;
     height: 1px;
     background-color: #000;
+}
+/* 左側のハサミマーク */
+.top-inner h2::before {
+    content: "✂";
+    position: absolute;
+    bottom: -14px;
+    left: calc(48.5% + 5px);
+    transform: translateX(-100%);
+    font-size: 16px;
+    color: #000;
+}
+/* 右側のハサミマーク */
+.top-block:nth-of-type(even) .top-inner h2::before {
+    left: auto;
+    right: calc(47.5% + 5px);
+    transform: translateX(100%);
+}
+/* 偶数番目は左右反転 */
+.top-block:nth-of-type(even) .top-content {
+    flex-direction: row-reverse;
+}
+/* 偶数番目のセクションのタイトルは右寄せにする */
+.top-block:nth-of-type(even) h2 {
+    text-align: right;
+}
+.top-block:nth-of-type(even) h2::after {
+    left: auto;
+    right: 0;
 }
 /* 最後のブロックは線を消す */
 .top-block:last-child .top-inner {
@@ -350,33 +354,6 @@ h2 {
     font-family: 'Zen Old Mincho', serif;
     margin-bottom: 50px;
 }
-/* 偶数番目は左右反転 */
-.top-block:nth-of-type(even) .top-content {
-    flex-direction: row-reverse;
-}
-/* 偶数番目のセクションのタイトルは右寄せにする */
-.top-block:nth-of-type(even) h2 {
-    text-align: right;
-    /* padding-right: 390px; */
-}
-.top-block:nth-of-type(even) h2::after {
-    left: auto;
-    right: 0;
-}
-/* スマホ対応 */
-/* @media (max-width: 768px) {
-    .top-content {
-        flex-direction: column;
-        padding: 0;
-    }
-    .top-inner {
-        padding: 0 20px;
-    }
-    .top-inner h2 {
-        text-align: center;
-    }
-} */
-
 /* view moreボタン */
 .btnBasic {
   display: inline-flex;
@@ -515,7 +492,7 @@ h2 {
     height: auto;
     display: block;
     position: relative;
-    z-index: 2; /* 画像を前に */
+    z-index: 2;
 }
 /* 擬似要素で枠を作る */
 .concept-image::before {
@@ -526,7 +503,7 @@ h2 {
     width: 100%;
     height: 100%;
     border: 1px solid #333;
-    z-index: 1; /* 画像より後ろ */
+    z-index: 1;
 }
 
 /*----------------------------------------
@@ -850,12 +827,12 @@ h2 {
     height: 60px;
     cursor: pointer;
 }
-
 .reservation-attention {
     text-align: center;
     font-size: 1.4rem;
     line-height: 1.6;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .reservation-attention .attention-link {
     color: #007bff;
@@ -867,18 +844,26 @@ h2 {
 color: #d6002f;
 font-size: 1.2rem;
 }
-
 .hair-atelier-spica-title-img {
     max-width: 24%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
-
 .hair-atelier-spica-title-img img {
     width: 100%;
     height: auto;
 }
+.contact-info {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+address {
+  font-style: normal;
+}
+
 
 /*----------------------------------------
  サイト　ヘッダー
@@ -1018,6 +1003,26 @@ font-size: 1.2rem;
 }
 .privacy-policy a:hover {
     color: #c4c4c4;
+}
+
+/*----------------------------------------
+ サイト　プライバシーポリシー
+----------------------------------------*/
+.privacy-policy-content {
+    padding: 0px 120px 0px 120px;
+    margin-bottom: 100px;
+}
+.privacy-policy-title {
+    font-family: 'Zen Old Mincho', serif;
+}
+.privacy-policy-subtitle {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.privacy-policy-text {
+    margin: 0px 0px 40px 25px;
+    font-family: 'Zen Old Mincho', serif;
 }
 
 
@@ -1359,14 +1364,6 @@ body .editPreviewButton {
     gap: 10px;
     margin-top: 20px;
 }
-/* .confirm-blog-detail {
-    background-color: #ffffff;
-    border: 2px solid #ddd;
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 800px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-} */
 .preview-text {
     text-align: left;
     font-size: 18px;

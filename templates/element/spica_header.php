@@ -53,8 +53,8 @@
         <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
         <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="javascript:void(0)" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="javascript:void(0)" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
 </div>
 
@@ -63,18 +63,18 @@
 
 <script>
     $(function () {
-    $('.hamburger').click(function () {
-        $('.sidebar').toggleClass('active');
-        $('.overlay').toggleClass('active');
-        $('.hamburger').toggleClass('active');
-        $('body').toggleClass('no-scroll');
-    });
+        $('.hamburger').click(function () {
+            $('.sidebar').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('.hamburger').toggleClass('active');
+            $('body').toggleClass('no-scroll');
+        });
 
-    $('.overlay').click(function () {
-        $('.sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-        $('.hamburger').removeClass('active');
-        $('body').toggleClass('no-scroll');
-    });
+        $('.overlay').click(function () {
+            $('.sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+            $('.hamburger').removeClass('active');
+            $('body').toggleClass('no-scroll');
+        });
     });
 </script>

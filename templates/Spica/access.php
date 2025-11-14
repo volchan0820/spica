@@ -32,9 +32,10 @@
             </div>
             <br>
             <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
+            <br>
             <p>6-A, EST COMPLEX 2nd BLD, 608-1 Kyozuka, Urasoe-shi, Okinawa 901-2111, Japan</p>
             <br>
-            <p>OPEN: 10:00〜19:00</p>
+            <p>OPEN: 10:00〜18:00</p>
             <p>CLOSE: 土曜日・日曜日</p>
         </div>
         <div class="access-map fade-up">

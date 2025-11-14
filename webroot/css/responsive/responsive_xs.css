@@ -125,36 +125,52 @@
 		margin-bottom: 0px;
     	padding-bottom: 0px;
 	}
-	/* .top-inner {
-		padding: 0 20px;
-	} */
-	     .top-inner {
-        padding-bottom: 20px; /* 線とテキストの間隔 */
-        border-bottom: none;   /* 実線は消す */
+	.top-inner {
+        padding-bottom: 20px;
+        border-bottom: none;
         position: relative;
     }
-
+	.top-inner h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	/* コンテンツの下線 */
     .top-inner::after {
         content: "";
         display: block;
-        width: 80%;             /* 線の長さ */
+        width: 80%;
         height: 1px;
         background-color: #ccc;
-        margin: 0 auto;         /* 中央揃え */
+        margin: 0 auto;
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
     }
-    .top-inner h2 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-    .top-inner h2::after {
-        width: 60%;
+	/* コンテンツの下線 */
+    /* .top-inner h2::after {
+        width: 90%;
         bottom: -3px;
-    }
+    } */
+
+	/* コンテンツの下線 */
+	.top-inner h2::after {
+		width: 90%;
+	}
+	/* 左側のハサミマーク */
+	.top-inner h2::before {
+		left: calc(98% + 5px);
+		bottom: -13px;
+	}
+	/* 右側のハサミマーク */
+	.top-block:nth-of-type(even) .top-inner h2::before {
+		right: calc(5% + 5px);
+	}
+	/* 最後の .top-block 内の線だけ消す */
+	.top-block:last-of-type .top-inner::after {
+		content: none;
+	}
     .top-content {
         display: flex;
         flex-direction: column;
@@ -179,15 +195,9 @@
 		left: 0;
         right: auto;
 	}
-
-
-
-	
-
 	.concept-block {
 		margin-bottom: 0px;
 	}
-
     .concept-block .concept-text h2 {
         font-size: 2.2rem;
         margin-bottom: 15px;
@@ -197,8 +207,7 @@
         font-size: 1rem;
         line-height: 1.5;
 		text-align: left;
-    }
-	
+    }	
 
 	/* ------------------------------------------------
 	* サイト　スタッフ
@@ -257,6 +266,17 @@
 	.hair-atelier-spica-title-img img {
 		width: 100%;
 		height: auto;
+	}
+
+	/*----------------------------------------
+	サイト　プライバシーポリシー
+	----------------------------------------*/
+	.privacy-policy-content {
+		padding: 0px 20px 0px 20px;
+	}
+	.privacy-policy-title {
+		padding: 0px 41px 0px 41px;
+
 	}
 
 	/* ------------------------------------------------
@@ -360,8 +380,8 @@
 	/* スクロール禁止 */
 	body.no-scroll {
 		overflow: hidden;
-		position: fixed;
-		width: 100%;
+		/* position: fixed;
+		width: 100%; */
 	}
 
 	/* ------------------------------------------------
@@ -376,7 +396,6 @@
         overflow: hidden;
         background: #ffffff;
     }
-
     .thumbnail {
         max-width: 100%;
         max-height: 100%;
@@ -398,7 +417,6 @@
         gap: 12px;
         padding: 0 12px;
     }
-
     .blog-post {
         height: 240px;
         display: flex;
@@ -406,7 +424,6 @@
         align-items: center;
         justify-content: flex-start;
     }
-
     .blog-post h3 {
         font-size: 0.9em;
         text-align: center;
@@ -419,7 +436,6 @@
         min-height: calc(1.4em * 2);
         margin: 6px 0 4px;
     }
-
     .blog-post p {
         font-size: 0.8em;
         text-align: center;
@@ -459,6 +475,7 @@
 		margin: 20px;
 		max-width: 90%;
 	}
+
 	/* ------------------------------------------------
 	* サイト・管理画面　ギャラリー
 	* -----------------------------------------------*/

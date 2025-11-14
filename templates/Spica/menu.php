@@ -29,12 +29,12 @@
             <div class="price-menu-frame fade-up">
                 <div class="price-menu-items">
                     <h2 class="price-menu-title">&nbsp;SINGLE　MENU</h2>
-                    <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
+                    <p class="price-menu-note">カット以外は全てにベースケアトリートメント、<br>aujuaトリートメント付きとなっております。</p>
                     <!-- カット -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Cut</p>
-                            <p>カット・トリートメント</p>
+                            <p>カット</p>
                             <p>¥7,700</p>
                         </div>
                     </div>
@@ -42,39 +42,39 @@
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Color</p>
-                            <p>カラー・トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>カラー</p>
+                            <p>¥13,500</p>
                         </div>
                     </div>
                     <!-- パーマ -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Perm</p>
-                            <p>アルカリパーマ・トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>パーマ</p>
+                            <p>¥14,500</p>
                         </div>
-                        <div class="price-menu-row">
+                        <!-- <div class="price-menu-row">
                             <p>Perm</p>
                             <p>弱酸性パーマ・トリートメント</p>
                             <p>¥8,000</p>
-                        </div>
+                        </div> -->
                         <div class="price-menu-row">
                             <p></p>
-                            <p>前髪パーマ・トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>前髪パーマ</p>
+                            <p>¥7,700</p>
                         </div>
                     </div>
                     <!-- ストレート -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Straight</p>
-                            <p>ストレート・トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>ストレート</p>
+                            <p>¥24,000</p>
                         </div>
                         <div class="price-menu-row">
                             <p></p>
-                            <p>前髪ストレート・トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>前髪ストレート</p>
+                            <p>¥7,700</p>
                         </div>
                     </div>
                     <!-- ヘッドスパ -->
@@ -82,7 +82,7 @@
                         <div class="price-menu-row">
                             <p>Head Spa</p>
                             <p>ヘッドスパ</p>
-                            <p>¥8,000</p>
+                            <p>¥6,600 ~ ¥7,700</p>
                         </div>
                     </div>
                     <!-- トリートメント -->
@@ -90,9 +90,14 @@
                         <div class="price-menu-row">
                             <p>Treatment</p>
                             <p>トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>¥6,600 ~ ¥7,700</p>
                         </div>
                     </div>
+                <p class="price-menu-note">
+                    ▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
+                <br>
+                    ▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                </p>
                 </div>  
             </div>
 
