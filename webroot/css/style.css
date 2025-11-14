@@ -558,23 +558,26 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 }
 /* メニュー */
 .price-menu-row {
-  display: grid;
-  grid-template-columns: 150px 1fr 100px;
-  gap: 20px;
-  align-items: center;
-  padding: 6px 0;
-  font-family: 'Noto Sans JP', sans-serif;
+    display: grid;
+    grid-template-columns: 150px 1fr 100px;
+    gap: 20px;
+    align-items: center;
+    padding: 6px 0;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 /* 価格 */
 .price-menu-row p:last-child {
-  text-align: right;
-  white-space: nowrap;
+    text-align: right;
+    white-space: nowrap;
 }
 /* 区切り線 */
 .price-menu-section {
-  border-top: 1px solid #333;
-  margin: 20px 0;
-  padding: 10px 0;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.price-menu-note-small {
+    border-top: 1px solid #333;
 }
 
 /*----------------------------------------

@@ -12,6 +12,9 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <!-- CakePHPが生成したCSRFトークンをJavaScript側で利用できるようにグローバル変数にセット -->
+    <script>window.csrfToken = '<?= $this->request->getAttribute('csrfToken') ?>';</script>
 </head>
 <body>
     <?php echo $this->element('administrator_header'); ?>
@@ -27,10 +30,10 @@
             </select>
         </div>
     </div>
-
     <div class="grid fade-up">
         <?php foreach ($galleries as $gallery): ?>
             <div class="grid-item"
+                data-id="<?= h($gallery->id) ?>"
                 data-style="<?= h($gallery->style) ?>"
                 data-menu1="<?= h($gallery->menu1) ?>"
                 data-menu2="<?= h($gallery->menu2) ?>"
@@ -39,11 +42,9 @@
                 data-menu5="<?= h($gallery->menu5) ?>"
                 data-note="<?= h($gallery->note) ?>">
                 <img src="/img/<?= h($gallery->image_path) ?>" alt="ギャラリー画像">
-                
             </div>
         <?php endforeach; ?>
     </div>
-
     <!-- モーダル表示用 -->
     <div id="imageModal" class="modal">
         <div class="modal-image-wrapper">
@@ -51,9 +52,8 @@
             <img class="modal-content" id="modalImage">
         </div>
         <div id="modalInfo" class="modal-info"></div>
-            <?= $this->Form->postLink('削除する',['action' => 'imageDelete', $gallery->id],['confirm' => '削除してもよろしいですか？', 'class' => 'btn btn-delete']) ?>
+        <div id="modalDeleteBtn"></div>
     </div>
-
     <?= $this->element('fade_up_script') ?>    
 </body>
 </html>
@@ -167,5 +167,41 @@
                 });
             }
         });
+    });
+
+    // ギャラリー画像をクリックしたときに、詳細モーダルを表示し情報と削除ボタンをセットする処理
+    $('.grid-item img').on('click', function () {
+        const $parent = $(this).closest('.grid-item');
+        const galleryId = $parent.data('id'); // クリックした画像のID
+        const imgSrc = $(this).attr('src');
+
+        $('#modalImage').attr('src', imgSrc);
+
+        // モーダル情報
+        const styleLabel = styleLabels[$parent.data('style')] || $parent.data('style');
+        let menus = [];
+        for (let i = 1; i <= 5; i++) {
+            const menu = $parent.data('menu' + i);
+            if (menu) menus.push(menuLabels[menu] || menu);
+        }
+        const note = $parent.data('note') || '';
+        const infoHtml = `
+            <p>スタイル：${styleLabel}</p>
+            <p>メニュー：${menus.join('、')}</p>
+            ${note ? `<p style="margin-top:1em;">${note}</p>` : ''}
+        `;
+
+        $('#modalInfo').html(infoHtml);
+
+        // 削除ボタンを生成（CSRFトークンもCakePHPで自動付与される）
+        // CSRFトークンをwindow.csrfTokenで受け取っている前提
+        $('#modalDeleteBtn').html(`
+            <form method="post" action="/gallerys/imageDelete/${galleryId}" onsubmit="return confirm('削除してもよろしいですか？');">
+                <input type="hidden" name="_csrfToken" value="${window.csrfToken}">
+                <button type="submit" class="btn btn-delete">削除する</button>
+            </form>
+        `);
+
+        $('#imageModal').fadeIn(lockBodyScroll);
     });
 </script>
