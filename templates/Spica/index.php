@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>浦添市の美容室spica | 似合わせカット×弱酸性薬剤のプライベートサロン</title>
-	<meta name="description" content="沖縄県浦添市経塚のHair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しい施術を提供するプライベートサロン。カフェのような空間でリラックスしながら、理想のヘアスタイルに。">
+    <title>浦添市の美容室spica | 似合わせカット×弱酸性薬剤のプライベートサロン</title>
+    <meta name="description" content="沖縄県浦添市経塚のHair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しい施術を提供するプライベートサロン。カフェのような空間でリラックスしながら、理想のヘアスタイルに。">
 
     <!-- CSS -->
-    <?php echo $this->element('head_css'); ?>
-    <!-- 使用フォント -->
-    <?php echo $this->element('head_fonts'); ?>
+    <?= $this->element('head_css'); ?>
+    <!-- フォント -->
+    <?= $this->element('head_fonts'); ?>
     <!-- JavaScript -->
-    <?php echo $this->element('head_scripts'); ?>
-
-	<style>
-
-	</style>
+    <?= $this->element('head_scripts'); ?>
 </head>
+
 <body>
-	<div class="sns-fixed">
-		<a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
-		<a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-		<a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
-		<a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-		<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-	</div>
 
-	<?php echo $this->element('spica_header'); ?>
+    <!-- SNS固定ボタン（sectionにする必要なし） -->
+    <div class="sns-fixed">
+        <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
+        <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
 
-	<!-- <div class="container">
-		<div class="slider">
-			<img src="/img/cafe.jpg" alt="Slide 1">
-			<img src="/img/cafe_1.jpg" alt="Slide 2">
-			<img src="/img/cafe_2.jpg" alt="Slide 3">
-		</div>
-		<div class="spica-logo-main">
-			<div class="glass-bg"></div>
-			<img src="/img/spica-logo-top.png" alt="spica logo" />
-		</div>
-	</div> -->
+    <!-- ヘッダー -->
+    <header>
+        <?= $this->element('spica_header'); ?>
+    </header>
 
+    <!-- メインビジュアル（装飾のため section にしない） -->
     <div class="container">
         <div class="slider">
             <video autoplay muted loop playsinline>
-            <source src="/video/test.mp4" type="video/mp4">
-            お使いのブラウザは動画に対応していません。
+                <source src="/video/test.mp4" type="video/mp4">
+                お使いのブラウザは動画に対応していません。
             </video>
         </div>
         <div class="spica-logo-main">
             <div class="glass-bg"></div>
-            <img src="/img/spica-logo-top.png" alt="spica logo" />
+            <img src="/img/spica-logo-top.png" alt="Hair atelier spica ロゴ" />
         </div>
     </div>
 
+    <!-- メインコンテンツ -->
     <main class="top-section">
-        <!-- コンセプト -->
-        <section class="top-block fade-up">
+        <div class="top-right-note fade-up">
+            やさしい光が差し込むカフェのような空間で、<br>
+            ゆったりとお過ごしください
+        </div>
+        <!-- h1はページの主題として必須（視覚的非表示） -->
+        <h1 class="visually-hidden">Hair atelier spica（ヘアアトリエスピカ）</h1>
+
+        <!-- ------------------------------- -->
+        <!-- CONCEPT -->
+        <!-- ------------------------------- -->
+        <section class="top-block fade-up" aria-labelledby="concept-title">
             <div class="top-inner">
-                <h2>CONCEPT</h2>
+                <h2 id="concept-title">concept</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="カウンセリングの様子">
+                    </figure>
+
                     <div class="top-text">
-                        <p>丁寧なカットで、あなたの魅力を自然に引き出すプライベートサロン。</p>
-                        <!-- view moreボタン -->
+                        <p>
+                            毎日が少しラクになって、<br>                            
+                            鏡を見るのが楽しみになるヘアスタイルを。<br>
+                            落ち着いた大人女性が安心して過ごせる。<br>
+                            プライベートな空間〜
+                        </p>
+
                         <a href="/spica/concept/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -87,31 +89,29 @@
                 </div>
             </div>
         </section>
-        <!-- メニュー(反転) -->
-        <section class="top-block reverse fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- MENU（反転） -->
+        <!-- ------------------------------- -->
+        <section class="top-block reverse fade-up" aria-labelledby="menu-title">
             <div class="top-inner">
-                <h2>MENU</h2>
+                <h2 id="menu-title">menu</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="スタイル提案の様子">
+                    </figure>
+
                     <div class="top-text">
                         <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
+                            美しさを最大限に引き出すためのメニューをご用意しています。<br>
+                            あなたにぴったりの施術を、カウンセリングで一緒に見つけましょう。
                         </p>
-                        <!-- view moreボタン -->
+
                         <a href="/spica/menu/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -123,31 +123,28 @@
                 </div>
             </div>
         </section>
-        <!-- スタッフ -->
-        <section class="top-block fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- STAFF -->
+        <!-- ------------------------------- -->
+        <section class="top-block fade-up" aria-labelledby="staff-title">
             <div class="top-inner">
-                <h2>STAFF</h2>
+                <h2 id="staff-title">staff</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="美容師の紹介">
+                    </figure>
+
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
+                        <p>カウンセリングを大切に。<br>
+                            スタイリストってこんな人
                         </p>
-                        <!-- view moreボタン -->
+
                         <a href="/spica/staff/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -159,31 +156,28 @@
                 </div>
             </div>
         </section>
-        <!-- ギャラリー(反転) -->
-        <section class="top-block reverse fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- GALLERY（反転） -->
+        <!-- ------------------------------- -->
+        <section class="top-block reverse fade-up" aria-labelledby="gallery-title">
             <div class="top-inner">
-                <h2>GALLERY</h2>
+                <h2 id="gallery-title">gallery</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="ヘアスタイルギャラリー">
+                    </figure>
+
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
+                        <p>カットラインの美しさや質感の違いなど、言葉だけでは伝わりにくい部分もわかりやすくまとめています。<br>
+                            初めての方にもサロンの雰囲気が伝わるよう、実際のお客様のヘアスタイルを中心に掲載しています。
                         </p>
-                        <!-- view moreボタン -->
+
                         <a href="/spica/gallery/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -195,31 +189,28 @@
                 </div>
             </div>
         </section>
-        <!-- スタッフ -->
-        <section class="top-block fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- BLOG -->
+        <!-- ------------------------------- -->
+        <section class="top-block fade-up" aria-labelledby="blog-title">
             <div class="top-inner">
-                <h2>BLOG</h2>
+                <h2 id="blog-title">blog</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="ブログ更新">
+                    </figure>
+
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
+                        <p>髪の扱い方や季節ごとのケアのポイントなど、日常に役立つ情報もお届けしています。<br>
+                            お店の空気感や、施術に対する想いが少しでも伝わるように、丁寧に更新していきます。
                         </p>
-                        <!-- view moreボタン -->
+
                         <a href="/spica/blog_list/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -231,31 +222,26 @@
                 </div>
             </div>
         </section>
-        <!-- アクセス(反転) -->
-        <section class="top-block reverse fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- ACCESS（反転） -->
+        <!-- ------------------------------- -->
+        <section class="top-block reverse fade-up" aria-labelledby="access-title">
             <div class="top-inner">
-                <h2>ACCESS</h2>
+                <h2 id="access-title">access</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="アクセス情報">
+                    </figure>
+
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
-                        </p>
-                        <!-- view moreボタン -->
+                        <p>ゆっくり過ごしていただける空間へ、スムーズにお越しいただけるようご案内しています。</p>
+
                         <a href="/spica/access/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -267,31 +253,26 @@
                 </div>
             </div>
         </section>
-        <!-- WEB予約(反転) -->
-        <section class="top-block fade-up">
+
+        <!-- ------------------------------- -->
+        <!-- RESERVATION -->
+        <!-- ------------------------------- -->
+        <section class="top-block fade-up" aria-labelledby="reservation-title">
             <div class="top-inner">
-                <h2>RESERVATION</h2>
+                <h2 id="reservation-title">reservation</h2>
+
                 <div class="top-content">
-                    <div class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                    </div>
+                    <figure class="top-section-image">
+                        <img src="/img/concept_counseling.jpg" alt="予約案内">
+                    </figure>
+
                     <div class="top-text">
-                        <p>
-                            お客様一人ひとりに合わせたスタイルを実現するため、<br>
-                            丁寧なカウンセリングを心がけています。<br>
-                            髪質や骨格、ライフスタイルに合わせたご提案をいたします。
-                        </p>
-                        <!-- view moreボタン -->
+                        <p>お客様一人ひとりにしっかり向き合うため、事前のご予約をおすすめしています。</p>
+
                         <a href="/spica/reservation/" class="btnBasic">
                             <div class="btnBasic__label">
-                                <span class="typo">V</span>
-                                <span class="typo">I</span>
-                                <span class="typo">E</span>
-                                <span class="typo">W</span>&ensp;
-                                <span class="typo">M</span>
-                                <span class="typo">O</span>
-                                <span class="typo">R</span>
-                                <span class="typo">E</span>
+                                <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                                <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
                                 <div class="btnBasic__bg"></div>
                             </div>
                             <div class="arrow more__arrow">
@@ -303,22 +284,24 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- フッター -->
     <footer class="footer">
-        <?php echo $this->element('spica_footer'); ?>
+        <?= $this->element('spica_footer'); ?>
     </footer>
 
     <!-- ページトップボタン -->
-	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-	<?php echo $this->element('page_top_script'); ?>
+    <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
+    <?= $this->element('page_top_script'); ?>
 
-    <!-- レスポンシブ　ページトップボタン -->
+    <!-- レスポンシブ用 -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?php echo $this->element('page_top_mobile_script'); ?>
+    <?= $this->element('page_top_mobile_script'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
+
 </body>
 </html>

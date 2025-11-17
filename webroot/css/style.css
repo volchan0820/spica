@@ -20,6 +20,7 @@ h2 {
     text-align: center;
 }
 /* アニメーションスタイル */
+/* 下から上 */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
@@ -29,6 +30,18 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* 右から左 */
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 /*----------------------------------------
  サイト　共通
@@ -152,6 +165,35 @@ h2 {
 /*----------------------------------------
  サイト　トップ
 ----------------------------------------*/
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.top-right-note {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #7a7a7a;          /* 文字色 */
+    text-align: right;    /* 右寄せ */
+    margin: 80px 100px 120px 0px;
+    z-index: 10;          /* ほかの要素より前面に出す */
+}
+
+/* 親を relative にして絶対配置の基準にする */
+/* .top-section {
+    position: relative;
+} */
+
+
+
 
 /*
 letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
@@ -165,7 +207,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     padding-top: 6%;
     padding-bottom: 8%;
     font-size: 40px;
-    font-family: "Tsukimi Rounded", sans-serif;
+    font-family: 'Allura', cursive;
     font-style: normal;
 }
 /* 各ページのトップ画像 */
@@ -293,6 +335,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     text-align: left;
     letter-spacing: 8px;
     position: relative;
+    font-family: 'Allura', cursive;
 }
 /* コンテンツの下線 */
 .top-inner h2::after {
@@ -301,14 +344,14 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     left: 0;
     bottom: -5px;
     width: 45.5%;
-    height: 1px;
+    height: 0.5px;
     background-color: #000;
 }
 /* 左側のハサミマーク */
 .top-inner h2::before {
     content: "✂";
     position: absolute;
-    bottom: -14px;
+    bottom: -18.5px;
     left: calc(48.5% + 5px);
     transform: translateX(-100%);
     font-size: 16px;
@@ -346,6 +389,9 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 }
 .top-section-image, .top-text {
     flex: 1;
+    /* figureのプラウザデフォルトスタイルを解除 */
+    margin: 0;
+	padding: 0;
 }
 /* テキスト */
 .top-text p {
@@ -453,11 +499,12 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     font-size: 3.8rem;
     margin-bottom: 20px;
     text-align: left;
+    font-family: 'Allura', cursive;
 }
 .concept-block .concept-text p {
     line-height: 1.8;
     font-size: 1.5rem;
-    font-family: 'Zen Old Mincho', serif;
+    font-family: 'Allura', cursive;
 }
 .concept-block .concept-image {
     flex: 1;
