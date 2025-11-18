@@ -130,12 +130,13 @@
     	padding-bottom: 0px;
 	}
 	.top-inner {
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
         border-bottom: none;
         position: relative;
+		margin-bottom: 160px;
     }
 	.top-inner h2 {
-        font-size: 4rem;
+        font-size: 2.8rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
@@ -145,7 +146,7 @@
         display: block;
         width: 80%;
         height: 1px;
-        background-color: #ccc;
+        /* background-color: #ccc; */
         margin: 0 auto;
         position: absolute;
         bottom: 0;
@@ -185,7 +186,7 @@
         height: auto;
     }
     .top-text p {
-        font-size: 1rem;
+        font-size: 1.4rem;
         line-height: 1.5;
     }
 	/* reverseクラス */
@@ -200,15 +201,15 @@
         right: auto;
 	}
 	.concept-block {
-		margin-bottom: 0px;
+		margin-bottom: 100px;
 	}
     .concept-block .concept-text h2 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
 	.concept-block .concept-text p {
-        font-size: 1rem;
+        font-size: 1.4rem;
         line-height: 1.5;
 		text-align: left;
     }	
@@ -248,7 +249,7 @@
 		letter-spacing: 1px;
 	}
 	.staff-text {
-		font-size: 1rem;
+		font-size: 1.4rem;
 		line-height: 1.6;
 		padding-left: 0;
 		padding-bottom: 15px;
@@ -412,8 +413,8 @@
     }
     .spica-title {
         font-size: 22px;
-        padding-top: 0px;
-        padding-bottom: 16px;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
     .blog-list {
         display: grid;

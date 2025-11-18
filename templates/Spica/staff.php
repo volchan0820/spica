@@ -38,9 +38,8 @@
                     </p>
                 <h3 class="staff-section-title">資格・実績</h3>
                     <ul class="staff-text">
-                        <li>ヘアケアマイスター認定</li>
-                        <li>〇〇コンテスト 優勝</li>
-                        <li>セミナー実績：2026年3月：美容師専門学生向けキャリアスタート講座</li>
+                        <li>・aujuaソムリエ知識カリキュラム</li>
+                        <li>・ヘアケアソムリエ(aujua)カリキュラム</li>
                     </ul>
                 <h3 class="staff-section-title">得意な技術</h3>
                     <p class="staff-text">

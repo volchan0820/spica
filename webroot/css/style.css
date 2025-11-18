@@ -204,10 +204,10 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     text-align: center;
     text-indent: 4px;
     color: #363637;
-    padding-top: 6%;
-    padding-bottom: 8%;
+    margin-top: 180px;
+    margin-bottom: 300px;
     font-size: 40px;
-    font-family: 'Allura', cursive;
+    font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
 /* 各ページのトップ画像 */
@@ -326,11 +326,11 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 60px;
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 400px;
 }
 .top-inner h2 {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     margin-bottom: 20px;
     text-align: left;
     letter-spacing: 8px;
@@ -396,7 +396,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 /* テキスト */
 .top-text p {
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
     margin-bottom: 50px;
 }
@@ -482,29 +482,33 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 400px;
     gap: 40px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #ccc;
+    /* padding-bottom: 200px; */
+    /* border-bottom: 1px solid #ccc; */
 }
 .concept-block:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.concept-text {
+    padding-left: 20px;
+}
 .concept-block .concept-text {
     flex: 1;
 }
 .concept-block .concept-text h2 {
-    font-size: 3.8rem;
-    margin-bottom: 20px;
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
     text-align: left;
     font-family: 'Allura', cursive;
 }
 .concept-block .concept-text p {
     line-height: 1.8;
-    font-size: 1.5rem;
-    font-family: 'Allura', cursive;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
 }
 .concept-block .concept-image {
     flex: 1;
@@ -593,6 +597,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'Allura', cursive;
 }
 /* 注意書き */
 .price-menu-note {
@@ -673,23 +678,26 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     flex: 1;
 }
 .staff-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.8rem;
+    /* line-height: 1.8; */
     padding-bottom: 25px;
     padding-left: 10px;
     list-style: none;
     margin: 0;
+    color: #555;
 }
 .staff-text li {
     margin-bottom: 0rem;
 }
 .staff-section-title {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
+    color: #555;
 }
+
 
 /*----------------------------------------
  サイト　ギャラリー

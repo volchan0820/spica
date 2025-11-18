@@ -185,8 +185,8 @@
     }
     .spica-title {
         font-size: 22px;
-        padding-top: 80px;
-        padding-bottom: 16px;
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
     .blog-list {
         display: grid;

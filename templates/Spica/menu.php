@@ -28,8 +28,12 @@
             <!-- シングルメニュー -->
             <div class="price-menu-frame fade-up">
                 <div class="price-menu-items">
-                    <h2 class="price-menu-title">&nbsp;SINGLE　MENU</h2>
-                    <p class="price-menu-note">カット以外は全てにベースケアトリートメント、<br>aujuaトリートメント付きとなっております。</p>
+                    <h2 class="price-menu-title">&nbsp;Single　Menu</h2>
+                    <p class="price-menu-note">
+                        カット以外は全てにベースケアトリートメント、<br>
+                        aujuaトリートメント付きとなっております。<br><br>
+                        ※セットメニューにないメニューをご希望の場合は、ご相談ください。
+                    </p>
                     <!-- カット -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
@@ -94,38 +98,46 @@
                         </div>
                     </div>
                 <p class="price-menu-note-small">
-                <br>
-                    ▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
-                <br>
-                    ▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                    <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
+                    <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
                 </p>
                 </div>  
             </div>
 
-            <!-- セットメニュー -->
+            <!-- セットメニュー１ -->
             <div class="price-menu-frame fade-up">
                 <div class="price-menu-items">
-                    <h2 class="price-menu-title">&nbsp;SET　MENU</h2>
-                    <p class="price-menu-note">薬剤施術の際に、抜け出てしまう髪の毛の成分を<br>髪質に合わせて補修しながら行うため全てトリートメント付きとなっております。</p>
+                    <h2 class="price-menu-title">&nbsp;Set　Menu　1</h2>
+                    <p class="price-menu-note">カット以外は全てにベースケアトリートメント、<br>aujuaトリートメント付きとなっております。</p>
                     <!-- カット & カラー -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Cut & Color</p>
-                            <p>カット + カラー + トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>カット + カラー</p>
+                            <p>¥19,000</p>
                         </div>
                         <div class="price-menu-row">
                             <p></p>
-                            <p>カット + カラー + ブリーチ + トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>カット + カラー + リタッチ</p>
+                            <p>¥17,150</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>前髪カット + カラー</p>
+                            <p>¥15,500</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>前髪カット + カラー + リタッチ</p>
+                            <p>¥12,800</p>
                         </div>
                     </div>
                     <!-- カット & パーマ -->
                     <div class="price-menu-section">
                         <div class="price-menu-row">
                             <p>Cut & Perm</p>
-                            <p>カット + アルカリパーマ + トリートメント</p>
-                            <p>¥8,000</p>
+                            <p>カット + パーマ</p>
+                            <p>¥19,500</p>
                         </div>
                         <div class="price-menu-row">
                             <p></p>
@@ -177,6 +189,102 @@
                             <p>¥8,000</p>
                         </div>
                     </div>
+                    <p class="price-menu-note-small">
+                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
+                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                    </p>
+                </div>  
+            </div>
+
+            <!-- セットメニュー２ -->
+            <div class="price-menu-frame fade-up">
+                <div class="price-menu-items">
+                    <h2 class="price-menu-title">&nbsp;Set　Menu　2</h2>
+                    <p class="price-menu-note">カット以外は全てにベースケアトリートメント、<br>aujuaトリートメント付きとなっております。</p>
+                    <!-- カット & カラー -->
+                    <div class="price-menu-section">
+                        <div class="price-menu-row">
+                            <p>Cut & Color</p>
+                            <p>カット + カラー</p>
+                            <p>¥19,000</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>カット + カラー + リタッチ</p>
+                            <p>¥17,150</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>前髪カット + カラー</p>
+                            <p>¥15,500</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>前髪カット + カラー + リタッチ</p>
+                            <p>¥12,800</p>
+                        </div>
+                    </div>
+                    <!-- カット & パーマ -->
+                    <div class="price-menu-section">
+                        <div class="price-menu-row">
+                            <p>Cut & Perm</p>
+                            <p>カット + パーマ</p>
+                            <p>¥19,500</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>カット + 弱酸性パーマ + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>カット + スパイラルパーマ + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>カット + 前髪パーマ + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>前髪カット + パーマ + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                    </div>
+                    <!-- カット & ストレート -->
+                    <div class="price-menu-section">
+                        <div class="price-menu-row">
+                            <p>Cut & Straight</p>
+                            <p>カット + ストレート + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                        <div class="price-menu-row">
+                            <p></p>
+                            <p>カット + 前髪ストレート + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                    </div>
+                    <!-- カラー & ストレート -->
+                    <div class="price-menu-section">
+                        <div class="price-menu-row">
+                            <p>Color & Straight</p>
+                            <p>カラー + ストレート + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                    </div>
+                    <!-- カット & カラー & ストレート -->
+                    <div class="price-menu-section">
+                        <div class="price-menu-row">
+                            <p>Cut & Color & Straight</p>
+                            <p>カット + カラー + ストレート + トリートメント</p>
+                            <p>¥8,000</p>
+                        </div>
+                    </div>
+                    <p class="price-menu-note-small">
+                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
+                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                    </p>
                 </div>  
             </div>
         </div>

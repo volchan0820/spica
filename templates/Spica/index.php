@@ -59,7 +59,7 @@
         <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="concept-title">
             <div class="top-inner">
-                <h2 id="concept-title">concept</h2>
+                <h2 id="concept-title">Concept</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -95,7 +95,7 @@
         <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="menu-title">
             <div class="top-inner">
-                <h2 id="menu-title">menu</h2>
+                <h2 id="menu-title">Menu</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -129,7 +129,7 @@
         <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="staff-title">
             <div class="top-inner">
-                <h2 id="staff-title">staff</h2>
+                <h2 id="staff-title">Staff</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -162,7 +162,7 @@
         <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="gallery-title">
             <div class="top-inner">
-                <h2 id="gallery-title">gallery</h2>
+                <h2 id="gallery-title">Gallery</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -195,7 +195,7 @@
         <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="blog-title">
             <div class="top-inner">
-                <h2 id="blog-title">blog</h2>
+                <h2 id="blog-title">Blog</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -228,7 +228,7 @@
         <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="access-title">
             <div class="top-inner">
-                <h2 id="access-title">access</h2>
+                <h2 id="access-title">Access</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
@@ -259,7 +259,7 @@
         <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="reservation-title">
             <div class="top-inner">
-                <h2 id="reservation-title">reservation</h2>
+                <h2 id="reservation-title">Reservation</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
