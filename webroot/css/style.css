@@ -657,7 +657,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     margin: 0 auto 10px;
 }
 .staff-name {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -680,17 +680,18 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 .staff-text {
     font-size: 1.8rem;
     /* line-height: 1.8; */
-    padding-bottom: 25px;
+    padding-bottom: 45px;
     padding-left: 10px;
     list-style: none;
     margin: 0;
     color: #555;
+    font-family: 'Zen Old Mincho', serif;
 }
 .staff-text li {
     margin-bottom: 0rem;
 }
 .staff-section-title {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Old Mincho', serif;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 10px;

@@ -25,7 +25,6 @@
 
     <div class="contents-wrapper">
         <main class="concept-section">
-            <!-- 左：テキスト / 右：画像 -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
                     <h2>- Private Salon -</h2>
@@ -39,33 +38,6 @@
                     <img src="/img/concept_counseling.jpg" alt="カウンセリング">
                 </div>
             </section>
-            <!-- 左：テキスト / 右：画像 -->
-            <section class="concept-block reverse fade-up">
-                <div class="concept-text">
-                    <h2>- Counseling -</h2>
-                    <p>
-                        お客様の髪質・クセ・骨格を丁寧にチェックし、生活スタイルや好みに合ったデザインを導き出します。<br>
-                        一度きりの仕上がりではなく、「次の日からも扱いやすい髪」であることを最も大切にしています。
-                    </p>
-                </div>
-                <div class="concept-image">
-                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                </div>
-            </section>
-            <!-- 左：画像 / 右：テキスト -->
-            <section class="concept-block fade-up">
-                <div class="concept-text">
-                    <h2>- Cut -</h2>
-                    <p>
-                        髪質や骨格、毛流れを正確に見極め、乾かし方や日々の扱いまで計算した“再現性の高いカット”に徹しています。<br>
-                        細部までコントロールしたカットで、どこから見ても【美しいシルエット】をつくることにこだわっています。
-                    </p>
-                </div>
-                <div class="concept-image">
-                    <img src="/img/concept_cut.jpg" alt="カット">
-                </div>
-            </section>
-             <!-- 左：テキスト / 右：画像 -->
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2>- Comfort -</h2>
@@ -79,23 +51,48 @@
                     <img src="/img/concept_cut.jpg" alt="カット">
                 </div>
             </section>
-            <!-- 左：画像 / 右：テキスト -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
-                    <h2>- Quality -</h2>
+                    <h2>- Counseling -</h2>
                     <p>
-                        髪と頭皮への負担を抑えるため、“弱酸性”の薬剤を使用しています。<br>
-                        さらに、薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメントと、
-                        お悩み解決し質感を理想に近づけるオージュアトリートメントを使用。<br>
-                        積み重ねるほどに髪そのものが整い、通うたびにより美しいコンディションへ導きます。<br>
-                        今日だけの美しさで終わらせないための、こだわりです。
+                        お客様の髪質・クセ・骨格を丁寧にチェックし、日々どんな生活をしているのか、どんなスタイリングが負担になっているのかまで細かく伺っています。<br>
+                        見た目だけで判断せず、扱いづらさの原因やコンプレックスを一緒に確認しながら、無理のない“その人らしいデザイン”を導き出します。<br>
+                        「その日だけ綺麗で終わるヘア」ではなく、次の日からも扱いやすく、数週間先まで心地よく続く髪を大切にしています。<br>
+                        しっかり向き合うカウンセリングこそが、仕上がりと日常の満足度を左右すると考え、時間を惜しまず向き合っています。 
+                    </p>
+                </div>
+                <div class="concept-image">
+                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
+                </div>
+            </section>
+            <section class="concept-block reverse fade-up">
+                <div class="concept-text">
+                    <h2>- Cut -</h2>
+                    <p>
+                        髪質・骨格・毛流れを正確に見極め、乾かし方や普段の扱いまで計算した“再現性の高いカット”に徹しています。<br>
+                        スタイルが伸びてきても崩れにくいよう、量感・質感・シルエットを細部までコントロールし、どの角度から見ても美しく見えるように設計しています。<br>
+                        髪のクセや生えぐせを前向きに活かし、無理なくまとまる形に整えることを心がけています。<br>
+                        毎日のセットが簡単で、自然に収まる。そんな“暮らしにフィットするカット”を提供しています。
                     </p>
                 </div>
                 <div class="concept-image">
                     <img src="/img/concept_cut.jpg" alt="カット">
                 </div>
             </section>
-           <!-- 左：画像 / 右：テキスト -->
+            <section class="concept-block fade-up">
+                <div class="concept-text">
+                    <h2>- Quality -</h2>
+                    <p>
+                        髪と頭皮への負担を最小限に抑えるため、施術には弱酸性のカラー剤・薬剤を使用しています。<br>
+                        弱酸性は髪のpHに近く、過度な膨潤やダメージを抑えながら、ツヤのある発色と柔らかな質感を叶えます。<br>
+                        縮毛矯正では、髪質改善成分を配合した薬剤を使用し、ただ真っ直ぐにするのではなく、しなやかで自然な仕上がりに徹しています。<br>
+                        硬くならず、毛先まで柔らかく動く質感を大切にしています。
+                    </p>
+                </div>
+                <div class="concept-image">
+                    <img src="/img/concept_cut.jpg" alt="カット">
+                </div>
+            </section>
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2>- Maintenance -</h2>
@@ -104,6 +101,20 @@
                         積み重ねるほどに髪の土台が整い、通うたびに扱いやすい美しいコンディションへ導きます。<br>
                         お客様の髪が、次の来店まで心地よく過ごせるように。<br>
                         そのための“続く美しさ”をつくることにこだわっています。
+                    </p>
+                </div>
+                <div class="concept-image">
+                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
+                </div>
+            </section>
+            <section class="concept-block fade-up">
+                <div class="concept-text">
+                    <h2>- Technology -</h2>
+                    <p>シャンプー台には、毛穴の奥の汚れまで落とすマイクロバブルを導入しています。<br>
+                        極小の泡が頭皮や髪の細部に入り込み、普段のシャンプーでは落ちにくい皮脂やスタイリング剤の残留物までしっかり除去します。<br>
+                        汚れがクリアになることで、トリートメントの浸透が良くなり、仕上がりの手触りやまとまりがアップ。<br>
+                        頭皮への負担も少なく、カラーやパーマの持ちが良くなるのも特徴です。<br>
+                        髪と頭皮を健やかな状態に整えるための、当店の“美しい髪づくりの基礎ケア”です。
                     </p>
                 </div>
                 <div class="concept-image">
