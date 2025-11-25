@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | concept</title>
-    <meta name="description" content="concept">
+    <title>Hair atelier spica | Concept | 浦添市経塚のカット技術と薬剤へのこだわり</title>
+    <meta name="description" content="浦添市経塚のhair atelier spicaのコンセプトページ。再現性の高いカット技術や髪と頭皮に優しい弱酸性薬剤へのこだわりで、美しさと扱いやすさを両立。細部まで丁寧に施術することを大切にしています。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>
@@ -13,6 +13,12 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+    <style>
+        .viewmore-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
@@ -119,6 +125,19 @@
                 </div>
                 <div class="concept-image">
                     <img src="/img/concept_counseling.jpg" alt="カウンセリング">
+                </div>
+                <div class="viewmore-btn">
+                    <a href="/spica/concept_technology/" class="btnBasic">
+                        <div class="btnBasic__label">
+                            <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                            <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
+                            <div class="btnBasic__bg"></div>
+                        </div>
+                        <div class="arrow more__arrow">
+                            <div class="arrow__line arrow__line--01"></div>
+                            <div class="arrow__line arrow__line--02"></div>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>

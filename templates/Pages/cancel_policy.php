@@ -69,6 +69,7 @@
     </div>
 
     <h1 class="spica-title fade-up">RESERVE POLICY</h1>
+
     <div class="contents-wrapper">
         <div class="cancel-policy-note fade-up">
             <h2>ご予約に関するお願い</h2>

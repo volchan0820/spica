@@ -33,6 +33,12 @@ class SpicaController extends AppController
 
     }
 
+    // CONCEPT_TECHNOLOGY
+    public function conceptTechnology()
+    {
+
+    }
+
     // MENU
     public function menu()
     {

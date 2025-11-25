@@ -919,6 +919,9 @@ font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 100px;
 }
+.store-address {
+font-family: 'Zen Old Mincho', serif;
+}
 address {
   font-style: normal;
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | ACCESS</title>
-    <meta name="description" content="ACCESS">
+    <title>浦添市経塚のhair atelier spica | ACCESS</title>
+    <meta name="description" content="沖縄県浦添市経塚にあるhair atelier spicaのアクセスページ。サロンの場所や営業時間などをご案内。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>
@@ -13,6 +13,9 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <!-- JSON-LD読み込み -->
+    <?= $this->element('access_jsonld') ?>
 </head>
 
 <body>

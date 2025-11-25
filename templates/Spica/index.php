@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>浦添市の美容室spica | 似合わせカット×弱酸性薬剤のプライベートサロン</title>
-    <meta name="description" content="沖縄県浦添市経塚のHair atelier spicaは、似合わせカットと弱酸性薬剤で髪に優しい施術を提供するプライベートサロン。カフェのような空間でリラックスしながら、理想のヘアスタイルに。">
+    <title>Hair atelier spica｜浦添市経塚のプライベートサロン</title>
+    <meta name="description" content="浦添市経塚のhair atelier spicaは、一席だけのプライベートサロン。マンツーマン施術で高いクオリティのカット・カラー・パーマを提供し、髪質や骨格に合わせた再現性の高いスタイルをご提案します。">
 
     <!-- CSS -->
     <?= $this->element('head_css'); ?>

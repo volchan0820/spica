@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | 予約</title>
-    <meta name="description" content="予約">
+    <title>浦添市経塚のhair atelier spica | 予約</title>
+    <meta name="description" content="沖縄県浦添市経塚のhair atelier spicaの予約ページ。オンラインで簡単にご希望の日時を予約できます。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>

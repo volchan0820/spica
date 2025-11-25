@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | ブログ一覧</title>
-    <meta name="description" content="ブログ一覧">
+    <title>hair atelier spica｜ブログ一覧｜浦添市の美容室</title>
+    <meta name="description" content="浦添市経塚のhair atelier spicaのブログ一覧ページ。サロンの日常やスタイル紹介、ヘアケア情報などを随時更新しています。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>

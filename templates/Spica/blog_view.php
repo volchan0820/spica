@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | ブログ記事</title>
-    <meta name="description" content="ブログ記事">
+    <title>hair atelier spica｜<?= h($blog->title) ?>｜浦添市の美容室ブログ</title>
+    <meta name="description" content="<?= h(mb_strimwidth(strip_tags($blog->content), 0, 120, '…')) ?>">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>
@@ -13,7 +13,9 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
+    
+    <!-- JSON-LD読み込み -->
+    <?= $this->element('blog_jsonld', ['blog' => $blog]) ?>
     <style>
         h2 {
             font-family: 'Zen Maru Gothic', sans-serif;

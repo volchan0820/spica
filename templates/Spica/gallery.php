@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | gallery</title>
-    <meta name="description" content="gallery">
+    <title>Hair atelier spica | ギャラリー｜ショート・ボブ・ミディアム・ロングのスタイル集</title>
+    <meta name="description" content="浦添市経塚のhair atelier spicaのスタイルギャラリー。ショート・ボブ・ミディアム・ロングなど幅広いスタイル例を掲載。髪質や骨格に合わせたカットの参考に。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>

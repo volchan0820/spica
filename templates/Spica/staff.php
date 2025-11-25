@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | スタッフ</title>
-    <meta name="description" content="スタッフ">
+    <title>hair atelier spica｜武藤 早紀｜カットが得意な浦添市の美容室</title>
+    <meta name="description" content="浦添市経塚のhair atelier spicaのスタイリスト武藤 早紀。丁寧なカウンセリングで髪質に合わせたショートカットやスタイルをご提案。繊細なカット技術で理想のヘアに。">
 
     <!-- CSS -->
     <?php echo $this->element('head_css'); ?>
@@ -13,6 +13,9 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <!-- JSON-LD読み込み -->
+    <?= $this->element('staff_jsonld') ?>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
