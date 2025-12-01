@@ -77,7 +77,7 @@
         <h3 class="privacy-policy-subtitle">8. お問い合わせ</h3>
         <p class="privacy-policy-text">
             個人情報の取扱に関するお問い合わせは、公式LINEまたは下記メールアドレスまでお願いいたします。<br>
-            メール：<a href="mailto:xxxxxx@xx.co.jp">xxxxxx@xx.co.jp</a>
+            メール：<a href="mailto:info@atelier-spica.jp">info@atelier-spica.jp</a>
         </p>
     </section>
 

@@ -83,53 +83,34 @@ class ManagementsController extends AppController
                     $attempt->is_locked = 1;
                     $AttemptsTable->save($attempt);
 
-                    // // ログイン失敗の詳細を取得                    
-                    // $ip = $this->request->clientIp();                           // IPアドレス取得                    
-                    // $userAgent = $this->request->getHeaderLine('User-Agent');   // User-Agent取得
-                    // $host = gethostbyaddr($ip);                                 // ホスト名（IPから逆引き）
-                    // $geoDbPath = '/usr/share/GeoIP/GeoLite2-City.mmdb';         // GeoIP データベースのパス
+                    $ip = $this->request->clientIp();
+                    $userAgent = $this->request->getHeaderLine('User-Agent');
+                    $host = gethostbyaddr($ip);
 
-                    // try {
-                    //     $reader = new Reader($geoDbPath);
-                    //     $record = $reader->city($ip);
+                    // 初期値
+                    $country = '不明';
+                    $region  = '不明';
+                    $city    = '不明';
 
-                    //     $country = $record->country->name;                     // 国
-                    //     $region  = $record->mostSpecificSubdivision->name;     // 都道府県など
-                    //     $city    = $record->city->name;                        // 市区町村
-                    // } catch (\Exception $e) {
-                    //     $country = $region = $city = '不明';
-                    // }
+                    try {
+                        $json = @file_get_contents("https://ipinfo.io/{$ip}/json");
 
+                        if ($json !== false) {
+                            $data = json_decode($json);
 
-$ip = $this->request->clientIp();
-$userAgent = $this->request->getHeaderLine('User-Agent');
-$host = gethostbyaddr($ip);
-
-// 初期値
-$country = '不明';
-$region  = '不明';
-$city    = '不明';
-
-try {
-    $json = @file_get_contents("https://ipinfo.io/{$ip}/json");
-
-    if ($json !== false) {
-        $data = json_decode($json);
-
-        if (!empty($data->country)) {
-            $country = $data->country;
-        }
-        if (!empty($data->region)) {
-            $region = $data->region;
-        }
-        if (!empty($data->city)) {
-            $city = $data->city;
-        }
-    }
-} catch (\Throwable $e) {
-    // 何もしない（メールは継続）
-}
-
+                            if (!empty($data->country)) {
+                                $country = $data->country;
+                            }
+                            if (!empty($data->region)) {
+                                $region = $data->region;
+                            }
+                            if (!empty($data->city)) {
+                                $city = $data->city;
+                            }
+                        }
+                    } catch (\Throwable $e) {
+                        // 何もしない（メールは継続）
+                    }
 
                     // メール送信内容
                     $mailBody = "管理者ログインが3回失敗し、アカウントがロックされました。\n\n" .
