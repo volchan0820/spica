@@ -36,8 +36,10 @@ class GallerysController extends AppController
             $gallery = $this->Galleries->newEmptyEntity();
             $uploaded = $data['image_file'];
             $filename = time() . '_' . $uploaded->getClientFilename();
-            $targetPath = WWW_ROOT . 'img/gallerys/' . $filename;
-            $uploaded->moveTo($targetPath);
+            // $targetPath = WWW_ROOT . 'img/gallerys/' . $filename;　// vbox環境用
+            $uploadPath = '/home/purplemink37/www/img/gallerys/';
+            // $uploaded->moveTo($targetPath);　// vbox環境用
+            $uploaded->moveTo($uploadPath . $filename);
             $data['image_path'] = 'gallerys/' . $filename;
             $gallery = $this->Galleries->patchEntity($gallery, $data);
             if ($this->Galleries->save($gallery)) {

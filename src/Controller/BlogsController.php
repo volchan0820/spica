@@ -137,7 +137,8 @@ class BlogsController extends AppController
         
         if ($this->request->is('post') && !empty($this->request->getData('image'))) {   // POSTメソッドかつ画像がある場合
             $image = $this->request->getData('image');  // 画像ファイルを取得
-            $uploadPath = WWW_ROOT . 'img' . DS . 'blogs' . DS; // 保存先のパス
+            // $uploadPath = WWW_ROOT . 'img' . DS . 'blogs' . DS; // 保存先のパス(vbox環境用)
+            $uploadPath = '/home/purplemink37/www/img/blogs/';
             $filename = time() . '_' . $image->getClientFilename(); // ファイル名を作成
             $image->moveTo($uploadPath . $filename);    // ファイルを保存
 

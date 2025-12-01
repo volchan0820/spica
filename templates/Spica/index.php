@@ -39,10 +39,10 @@
                 お使いのブラウザは動画に対応していません。
             </video>
         </div>
-        <div class="spica-logo-main">
+        <!-- <div class="spica-logo-main">
             <div class="glass-bg"></div>
             <img src="/img/spica-logo-top.png" alt="Hair atelier spica ロゴ" />
-        </div>
+        </div> -->
     </div>
 
     <!-- メインコンテンツ -->

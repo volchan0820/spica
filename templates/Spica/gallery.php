@@ -43,7 +43,7 @@
                     data-menu4="<?= h($gallery->menu4) ?>"
                     data-menu5="<?= h($gallery->menu5) ?>"
                     data-note="<?= h($gallery->note) ?>">
-                    <img src="/img/<?= h($gallery->image_path) ?>" alt="ギャラリー画像">                    
+                    <img src="/img/<?= h($gallery->image_path) ?>" alt="ギャラリー画像">
                 </div>
             <?php endforeach; ?>
         </div>
