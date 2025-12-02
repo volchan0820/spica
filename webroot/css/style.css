@@ -654,11 +654,11 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
   display: flex;
   justify-content: space-between; /* 左右に分ける */
   padding: 2px 0;
-font-size: 1.2rem;
+font-size: 1.4rem;
 }
 
 .menu-category h3 {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   font-family: 'Allura', cursive;
 }
 
@@ -676,7 +676,14 @@ font-size: 1.2rem;
 }
 .price-menu-note-small {
     border-top: 1px solid #333;
+    text-align: center;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
 }
+
+
 
 /*----------------------------------------
  サイト　スタッフ

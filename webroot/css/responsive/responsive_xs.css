@@ -112,11 +112,19 @@
 		padding: 5px 0;
 	}
 	.menu-wrapper {
-		padding: 0px 20px 0px 10px;
+		/* padding: 0px 20px 0px 10px; */
+		padding: 0px 10px 0px 0px;
 	}
 	.price-menu-items p {
 		font-size: 0.9rem;
 	}
+
+
+.name.menu-name {
+    font-size: 1.2rem;
+	margin-right: 20px;
+	margin-bottom: 16px;
+}
 
 	/* ------------------------------------------------
 	* サイト　トップ
