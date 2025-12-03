@@ -68,6 +68,54 @@
 	}
 
 	/* ------------------------------------------------
+	* サイト　コンセプト
+	* -----------------------------------------------*/
+	.concept-block {
+		margin-bottom: 100px;
+	}
+    .concept-block .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-block .concept-text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+		text-align: left;
+    }
+
+	/* 3つの徹底事項 */
+	.three-points-title {
+    	font-size: 2.8rem;
+	}
+	.three-points-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .three-points-block.reverse {
+        flex-direction: column;
+    }
+    .three-points-image img {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+	.three-points-image {
+		order: 1;
+	}
+	.three-points-text {
+		order: 2;
+	}
+	.three-points-image img {
+		width: 100%;
+		max-width: 320px;
+	}
+	.three-points-text p {
+		font-size: 1.8rem;
+		line-height: 1.8;
+	}
+
+	/* ------------------------------------------------
 	* サイト　メニュー
 	* -----------------------------------------------*/
 	.price-menu-frame {
@@ -144,7 +192,7 @@
 		margin-bottom: 160px;
     }
 	.top-inner h2 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
@@ -194,7 +242,7 @@
         height: auto;
     }
     .top-text p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         line-height: 1.5;
     }
 	/* reverseクラス */
@@ -208,19 +256,6 @@
 		left: 0;
         right: auto;
 	}
-	.concept-block {
-		margin-bottom: 100px;
-	}
-    .concept-block .concept-text h2 {
-        font-size: 2.8rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-block .concept-text p {
-        font-size: 1.4rem;
-        line-height: 1.5;
-		text-align: left;
-    }	
 
 	/* ------------------------------------------------
 	* サイト　スタッフ
@@ -241,26 +276,26 @@
 		margin-bottom: 10px;
 	}
 	.staff-name {
-		font-size: 1.6rem;
+		font-size: 2.4rem;
 		justify-content: center;
 		gap: 6px;
 	}
 	.staff-name .instagram-link {
-		font-size: 1.8rem;
+		font-size: 2.4rem;
 	}
 	.staff-info {
 		width: 100%;
 	}
 	.staff-section-title {
-		font-size: 1.8rem;
+		font-size: 2.2rem;
 		margin-bottom: 6px;
 		letter-spacing: 1px;
 	}
 	.staff-text {
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 		line-height: 1.6;
 		padding-left: 0;
-		padding-bottom: 15px;
+		padding-bottom: 45px;
 	}
 	.staff-text li {
 		margin-bottom: 0.5rem;

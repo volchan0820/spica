@@ -30,7 +30,7 @@
         <div class="staff-item">
             <div class="staff-image">
                 <img src="/img/staff.png" alt="スタッフ名">
-                <h2 class="staff-name">氏　名<a href="https://www.instagram.com/youraccount" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a></h2>
+                <h2 class="staff-name">武藤　早紀<a href="https://www.instagram.com/hair_atelier_spica?igsh=dnpld2M5eHhvZG5z&utm_source=qr" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a></h2>
             </div>
             <div class="staff-info">
                 <h3 class="staff-section-title">経歴</h3>

@@ -99,47 +99,8 @@
                     <img src="/img/concept_cut.jpg" alt="カット">
                 </div>
             </section>
-            <section class="concept-block reverse fade-up">
-                <div class="concept-text">
-                    <h2>- Maintenance -</h2>
-                    <p>
-                        全メニューにトリートメント工程を組み込み、施術による負担を最小限に抑えています。<br>
-                        積み重ねるほどに髪の土台が整い、通うたびに扱いやすい美しいコンディションへ導きます。<br>
-                        お客様の髪が、次の来店まで心地よく過ごせるように。<br>
-                        そのための“続く美しさ”をつくることにこだわっています。
-                    </p>
-                </div>
-                <div class="concept-image">
-                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                </div>
-            </section>
-            <section class="concept-block fade-up">
-                <div class="concept-text">
-                    <h2>- Technology -</h2>
-                    <p>シャンプー台には、毛穴の奥の汚れまで落とすマイクロバブルを導入しています。<br>
-                        極小の泡が頭皮や髪の細部に入り込み、普段のシャンプーでは落ちにくい皮脂やスタイリング剤の残留物までしっかり除去します。<br>
-                        汚れがクリアになることで、トリートメントの浸透が良くなり、仕上がりの手触りやまとまりがアップ。<br>
-                        頭皮への負担も少なく、カラーやパーマの持ちが良くなるのも特徴です。<br>
-                        髪と頭皮を健やかな状態に整えるための、当店の“美しい髪づくりの基礎ケア”です。
-                    </p>
-                </div>
-                <div class="concept-image">
-                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
-                </div>
-                <div class="viewmore-btn">
-                    <a href="/spica/concept_technology/" class="btnBasic">
-                        <div class="btnBasic__label">
-                            <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                            <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                            <div class="btnBasic__bg"></div>
-                        </div>
-                        <div class="arrow more__arrow">
-                            <div class="arrow__line arrow__line--01"></div>
-                            <div class="arrow__line arrow__line--02"></div>
-                        </div>
-                    </a>
-                </div>
-            </section>
+            <?= $this->element('three_points') ?>
+            <?= $this->element('concept_details') ?>
         </main>
     </div>
 
