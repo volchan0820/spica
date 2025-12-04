@@ -206,7 +206,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     color: #363637;
     margin-top: 180px;
     margin-bottom: 300px;
-    font-size: 40px;
+    font-size: 4rem;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
@@ -593,20 +593,16 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     flex-direction: row-reverse;
 }
 
-/* テクノロジーとヘアケア */
-/* .concept-details-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 400px;
-    gap: 40px;
-} */
+/*
+ テクノロジーとヘアケア 
+*/
+/* テクノロジー */
 .concept-details-block {
     display: flex;
-    flex-direction: column;  /* ← ここを column にする */
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    margin-bottom: 400px;
+    margin-bottom: 120px;
     gap: 40px;
 }
 .concept-details-block:last-child {
@@ -615,77 +611,170 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     padding-bottom: 0;
 }
 .concept-details-text {
+    order: 2;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+.concept-details-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    font-family: 'Allura', cursive;
+}
+.concept-details-text p {
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+}
+.concept-details-image {
+    order: 1;
+    flex: 1;
+    text-align: center;
+}
+.concept-details-image img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .concept-details-block {
+        flex-direction: column;
+    }
+}
+
+/* ヘアケア */
+.concept-block-hair-care {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 400px;
+    gap: 40px;
+    /* padding-bottom: 200px; */
+    /* border-bottom: 1px solid #ccc; */
+}
+.concept-block-hair-care:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.concept-text-hair-care {
     padding-left: 20px;
 }
-.concept-details-block .concept-details-text {
+.concept-block-hair-care .concept-text-hair-care {
     flex: 1;
 }
-.concept-details-block .concept-details-text h2 {
+.concept-block-hair-care .concept-text-hair-care h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     text-align: left;
     font-family: 'Allura', cursive;
 }
-.concept-details-text h2,
-.concept-details-text p {
-    text-align: center;
-}
-.concept-details-block .concept-details-text p {
+.concept-block-hair-care .concept-text-hair-care p {
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
 }
-.concept-details-block .concept-details-image {
+.concept-block-hair-care .concept-image-hair-care {
     flex: 1;
     text-align: center;
 }
- .concept-details-image {
-    flex: none;
-    text-align: center;
-}
-.concept-details-block .concept-details-image img {
+.concept-block-hair-care .concept-image-hair-care img {
     max-width: 100%;
     height: auto;
 }
 /* 偶数番目だけ左右を反転 */
-/* .concept-details-block.reverse {
+.concept-block-hair-care.reverse {
     flex-direction: row-reverse;
-} */
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
-    .concept-details-block,
-    .concept-details-block.reverse {
+    .concept-block-hair-care,
+    .concept-block-hair-care.reverse {
         flex-direction: column;
     }
-    .concept-details-block .concept-details-image,
-    .concept-details-block .concept-details-text {
+    .concept-block-hair-care .concept-image-hair-care,
+    .concept-block-hair-care .concept-text-hair-care {
         text-align: center;
     }
 }
-/* 画像の背景に四角い枠を作る */
-.concept-details-image {
-    position: relative;
-    display: inline-block;
-}
-.concept-details-image img {
+.concept-image-hair-care img {
     max-width: 100%;
     height: auto;
     display: block;
     position: relative;
     z-index: 2;
 }
-/* 擬似要素で枠を作る */
-.concept-details-image::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: -20px;
+
+
+
+.random-layout-block {
     width: 100%;
-    height: 100%;
-    border: 1px solid #333;
-    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.random-layout-block .row {
+    position: relative;
+    margin-bottom: 120px; /* 行間 */
+}
+
+/* 左側テキスト */
+.random-layout-block .text {
+    width: 55%;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/* 右側画像（全体の基本スタイル） */
+.random-layout-block .img {
+    width: 340px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+}
+
+/* 行ごとにズラす（ランダム風） */
+.random-layout-block .img1 {
+    top: -20px;
+    right: -10px;
+}
+
+.random-layout-block .img2 {
+    top: 40px;
+    right: 50px;
+}
+
+.random-layout-block .img3 {
+    top: -10px;
+    right: -30px;
+}
+@media (max-width: 768px) {
+    .random-layout-block .row {
+        margin-bottom: 60px;
+    }
+
+    .random-layout-block .text {
+        width: 100%;
+    }
+
+    .random-layout-block .img {
+        position: relative;
+        width: 100%;
+        right: 0;
+        top: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
 
 /*----------------------------------------
  サイト　メニュー
@@ -784,12 +873,13 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
   display: flex;
   justify-content: space-between; /* 左右に分ける */
   padding: 2px 0;
-font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .menu-category h3 {
   margin-bottom: 25px;
   font-family: 'Allura', cursive;
+  font-size: 3.8rem;
 }
 
 .divider {

@@ -99,8 +99,10 @@
                     <img src="/img/concept_cut.jpg" alt="カット">
                 </div>
             </section>
-            <?= $this->element('three_points') ?>
+            <!-- テクノロジーとヘアケア -->
             <?= $this->element('concept_details') ?>
+            <!-- 3つの徹底事項 -->
+            <?= $this->element('three_points') ?>
         </main>
     </div>
 
