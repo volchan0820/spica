@@ -18,7 +18,7 @@
 
 
     .cancel-policy-note {
-        background-color: #f2f2f2; /* 薄いピンク */
+        background-color: #87ceeb5e; /* 薄いピンク */
         /* border: 2px solid #f5b5c0; */
         padding: 25px;
         padding-bottom: 80px;

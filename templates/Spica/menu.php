@@ -27,7 +27,7 @@
     <h1 class="spica-title fade-up">MENU</h1>
 
     <div class="contents-wrapper">
-            <div class="menu-wrapper">
+        <div class="menu-wrapper">
             <!-- シングルメニュー -->
             <div class="price-menu-frame fade-up">
                 <div class="price-menu-items">
@@ -43,10 +43,10 @@
                             <span class="name menu-name">カット</span>
                             <span class="price">¥7,700</span>
                         </div>
-                        <!-- <div class="menu-item">
-                            <span class="name">カット・トリートメント</span>
-                            <span class="price">¥14,300</span>
-                        </div> -->
+                        <div class="menu-item">
+                            <span class="name">前髪カット</span>
+                            <span class="price">¥1,700</span>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="menu-category">
@@ -108,11 +108,11 @@
                             <span class="price">¥6,600~¥7,700</span>
                         </div>
                     </div>
-                <p class="price-menu-note-small">
-                    <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
-                    <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
-                </p>
-                </div>  
+                    <p class="price-menu-note-small">
+                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
+                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                    </p>
+                </div>
             </div>
 
             <!-- セットメニュー -->
@@ -183,6 +183,7 @@
                         </div>
                     </div>
                     <div class="divider"></div>
+                    <!-- コンビネーションメニュー -->
                     <div class="menu-category">
                         <h3 class="menu-category-title">Combination Menu</h3>
                         <div class="menu-item">
@@ -221,9 +222,7 @@
             <div class="price-menu-frame fade-up">
                 <div class="price-menu-items">
                     <h2 class="price-menu-title">&nbsp;Maintenance　Menu</h2>
-                    <p class="price-menu-note">カット以外は全てにベースケアトリートメント、<br>aujuaトリートメント付きとなっております。</p>
                     <div class="divider"></div>
-                    <!-- カット & カラー -->
                     <div class="menu-category">
                         <h3 class="menu-category-title">Maintenance Cut</h3>
                         <div class="menu-item">
@@ -242,11 +241,12 @@
                             <span class="name menu-name">もみあげ・襟足刈り上げ</span>
                             <span class="price">¥1,500</span>
                         </div>
-                    <p class="price-menu-note-small">
-                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
-                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
-                    </p>
-                </div>  
+                        <p class="price-menu-note-small">
+                            <br>▷メンテナンスカットは、前回のご来店日から5週間以内の方を対象とした特別メニューです
+                            <br>▷初めてご来店の方は、通常のカットメニューをご利用ください
+                        </p>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>

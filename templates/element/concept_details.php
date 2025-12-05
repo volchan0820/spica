@@ -1,7 +1,7 @@
 <!-- テクノロジーとヘアケア -->
 <div class="fade-up">
     <section class="concept-details-block reverse fade-up">
-        <div class="concept-details-text">
+        <div class="text">
             <h2>- Technology -</h2>
             <p>
                 髪や頭皮に負担をかけずに深いクレンジングができる<br>
@@ -14,13 +14,12 @@
                 頭皮トラブルやダメージにつながるストレスも抑えられます。
             </p>
         </div>
-        <div class="concept-details-image">
+        <div class="image">
             <img src="/img/concept_cut.jpg" alt="テクノロジー">
         </div>
     </section>
-
     <section class="concept-details-block reverse fade-up">
-        <div class="concept-details-text">
+        <div class="text">
             <h2>- Hair Care -</h2>
             <p>
                 ◎髪と頭皮を守るために、大切にしていること<br>
@@ -34,10 +33,9 @@
             </p>
         </div>
     </section>
-
-    <section class="concept-block-hair-care reverse fade-up">
-        <div class="concept-text-hair-care">
-            <!-- <h2>- Cut -</h2> -->
+    <div class="divider"></div>
+    <section class="concept-details-block-alt reverse fade-up">
+        <div class="text">
             <p>
                 髪質・骨格・毛流れを正確に見極め、乾かし方や普段の扱いまで計算した“再現性の高いカット”に徹しています。<br>
                 スタイルが伸びてきても崩れにくいよう、量感・質感・シルエットを細部までコントロールし、どの角度から見ても美しく見えるように設計しています。<br>
@@ -45,30 +43,56 @@
                 毎日のセットが簡単で、自然に収まる。そんな“暮らしにフィットするカット”を提供しています。
             </p>
         </div>
-        <div class="concept-image-hair-care">
+        <div class="image">
             <img src="/img/concept_cut.jpg" alt="ヘアケア">
         </div>
     </section>
-
-
-    
-    <section class="random-layout-block">
-
-    <div class="row">
-        <div class="text">① 前処理：薬剤が浸透しやすい髪へ …</div>
-        <img src="/img/concept_cut.jpg" class="img img1">
-    </div>
-
-    <div class="row">
-        <div class="text">② 中間処理：栄養補給しながら …</div>
-        <img src="/img/concept_cut.jpg" class="img img2">
-    </div>
-
-    <div class="row">
-        <div class="text">③ アフターケア：弱酸性へリセット …</div>
-        <img src="/img/concept_cut.jpg" class="img img3">
-    </div>
-
-</section>
-
+    <div class="divider"></div>
+    <section class="concept-details-block-alt-plus">
+        <div class="row">
+            <div class="text">
+                <p>
+                    ① 前処理：薬剤が浸透しやすい髪へ<br><br>
+                    専用トリートメントで髪をやさしく膨潤させ、<br>
+                    薬剤が均一に入りやすい状態に整えます。<br>
+                    これにより、ムラを防ぎつつダメージも軽減。
+                </p>
+            </div>
+            <img src="/img/concept_cut.jpg" class="image img1">
+        </div>
+        <div class="row">
+            <div class="text">
+                <p>
+                    ② 中間処理：栄養補給しながら<br><br>
+                    薬剤が反応している最中に、<br>
+                    髪の内部へ必要な栄養（タンパク質・保湿成分）を補給。<br>
+                    負担をかけずに、ハリ・コシ・まとまりのある仕上がりへ導きます。
+                </p>
+            </div>
+            <img src="/img/concept_cut.jpg" class="image img2">
+        </div>
+        <div class="row">
+            <div class="text">
+                <p>
+                    ③ アフターケア：弱酸性へリセット<br><br>
+                    カラー後に残りやすい過酸化水素を分解し、<br>
+                    活性酸素のダメージを抑えます。<br>
+                    さらに酸リンスで弱酸性に戻す処理を行い、<br>
+                    キューティクルを整え、ツヤと手触りをアップ。
+                </p>
+            </div>
+            <img src="/img/concept_cut.jpg" class="image img3">
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="concept-details-block-extended reverse fade-up">
+        <div class="text">
+            <h2>◎髪と頭皮を守るために、大切にしていること</h2>
+            <p>
+                「その日キレイ」だけでなく、<br>
+                これからの髪や頭皮を守るためのケアをすべての工程に取り入れています。<br>
+                安心してカラーやパーマ、縮毛矯正を続けたい方にこそ、ぜひ体験していただきたい施術です。
+            </p>
+        </div>
+    </section>
 </div>

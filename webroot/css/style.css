@@ -22,26 +22,24 @@ h2 {
 /* アニメーションスタイル */
 /* 下から上 */
 .fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
-
 /* 右から左 */
 .fade-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .fade-right.show {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
-
 
 /*----------------------------------------
  サイト　共通
@@ -176,28 +174,19 @@ h2 {
     white-space: nowrap !important;
     border: 0 !important;
 }
-
 .top-right-note {
     font-family: 'Zen Old Mincho', serif;
     font-size: 2.4rem;
     line-height: 1.5;
-    color: #7a7a7a;          /* 文字色 */
-    text-align: right;    /* 右寄せ */
+    color: #7a7a7a;
+    text-align: right;
     margin: 80px 100px 120px 0px;
-    z-index: 10;          /* ほかの要素より前面に出す */
+    z-index: 10;
 }
 
-/* 親を relative にして絶対配置の基準にする */
-/* .top-section {
-    position: relative;
-} */
-
-
-
-
 /*
-letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
-左寄せになって見えるためtext-indentで先頭にスペースを入れる
+ letter-spacingは最後の文字にスペースが入るが先頭の文字にスペースが入らない
+ 左寄せになって見えるためtext-indentで先頭にスペースを入れる
 */
 .spica-title {
     letter-spacing: 8px;
@@ -205,7 +194,7 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     text-indent: 4px;
     color: #363637;
     margin-top: 180px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     font-size: 4rem;
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
@@ -225,27 +214,27 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 }
 /* スライダーのスタイル */
 .slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 .slider video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
-  .slider video {
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    transform: none;
+    .slider video {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: none;
   }
 }
 
@@ -482,10 +471,8 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     gap: 40px;
-    /* padding-bottom: 200px; */
-    /* border-bottom: 1px solid #ccc; */
 }
 .concept-block:last-child {
     border-bottom: none;
@@ -610,30 +597,30 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.concept-details-text {
+.concept-details-block .text {
     order: 2;
     flex: 1;
     padding-left: 20px;
     text-align: center;
 }
-.concept-details-text h2 {
+.concept-details-block .text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     font-family: 'Allura', cursive;
 }
-.concept-details-text p {
+.concept-details-block .text p {
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
     text-align: center;
 }
-.concept-details-image {
+.concept-details-block .image {
     order: 1;
     flex: 1;
     text-align: center;
 }
-.concept-details-image img {
+.concept-details-block .image img {
     max-width: 70%;
     height: auto;
     display: block;
@@ -649,62 +636,63 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
 }
 
 /* ヘアケア */
-.concept-block-hair-care {
+.concept-details-block-alt {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     gap: 40px;
-    /* padding-bottom: 200px; */
-    /* border-bottom: 1px solid #ccc; */
 }
-.concept-block-hair-care:last-child {
+.concept-details-block-alt:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.concept-text-hair-care {
+.concept-details-block-alt .text {
     padding-left: 20px;
+        line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
 }
-.concept-block-hair-care .concept-text-hair-care {
+.concept-details-block-alt
+.concept-details-block-alt .text {
     flex: 1;
 }
-.concept-block-hair-care .concept-text-hair-care h2 {
+.concept-details-block-alt
+.concept-details-block-alt .text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     text-align: left;
     font-family: 'Allura', cursive;
 }
-.concept-block-hair-care .concept-text-hair-care p {
-    line-height: 1.8;
-    font-size: 2rem;
-    font-family: 'Zen Old Mincho', serif;
-}
-.concept-block-hair-care .concept-image-hair-care {
+.concept-details-block-alt
+.concept-details-block-alt .image {
     flex: 1;
     text-align: center;
 }
-.concept-block-hair-care .concept-image-hair-care img {
+.concept-details-block-alt
+.concept-details-block-alt .image img {
     max-width: 100%;
     height: auto;
 }
-/* 偶数番目だけ左右を反転 */
-.concept-block-hair-care.reverse {
+.concept-details-block-alt.reverse {
     flex-direction: row-reverse;
+        margin-top: 120px;
 }
-/* スマホ対応 */
-@media (max-width: 768px) {
-    .concept-block-hair-care,
-    .concept-block-hair-care.reverse {
+/* @media (max-width: 768px) {
+    .concept-details-block-alt,
+    .concept-details-block-alt.reverse {
         flex-direction: column;
     }
-    .concept-block-hair-care .concept-image-hair-care,
-    .concept-block-hair-care .concept-text-hair-care {
+    .concept-details-block-alt
+    .concept-details-block-alt .image,
+    .concept-details-block-alt
+    .concept-details-block-alt .text {
         text-align: center;
     }
-}
-.concept-image-hair-care img {
+} */
+.concept-details-block-alt .image img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -712,98 +700,109 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     z-index: 2;
 }
 
-
-
-.random-layout-block {
+/* ヘアケアプラスアルファ */
+.concept-details-block-alt-plus {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 120px;
 }
-
-.random-layout-block .row {
+.concept-details-block-alt-plus .row {
     position: relative;
-    margin-bottom: 120px; /* 行間 */
+    margin-bottom: 100px;
 }
-
-/* 左側テキスト */
-.random-layout-block .text {
+.concept-details-block-alt-plus .text {
     width: 55%;
-    font-size: 1.8rem;
     line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
 }
-
-/* 右側画像（全体の基本スタイル） */
-.random-layout-block .img {
+.concept-details-block-alt-plus .image {
     width: 340px;
-    border-radius: 8px;
     position: absolute;
     right: 0;
 }
-
-/* 行ごとにズラす（ランダム風） */
-.random-layout-block .img1 {
+.concept-details-block-alt-plus .img1 {
     top: -20px;
     right: -10px;
 }
-
-.random-layout-block .img2 {
+.concept-details-block-alt-plus .img2 {
     top: 40px;
     right: 50px;
 }
-
-.random-layout-block .img3 {
+.concept-details-block-alt-plus .img3 {
     top: -10px;
     right: -30px;
 }
-@media (max-width: 768px) {
-    .random-layout-block .row {
-        margin-bottom: 60px;
-    }
 
-    .random-layout-block .text {
-        width: 100%;
-    }
+	.concept-details-block .text-alt h2 {
+		font-size: 2.2rem;
+        font-family: 'Zen Old Mincho', serif;
+	}
+	.concept-details-block .text-alt p {
+		font-size: 2rem;
+        font-family: 'Zen Old Mincho', serif;
+	}
 
-    .random-layout-block .img {
-        position: relative;
-        width: 100%;
-        right: 0;
-        top: 20px;
-        margin-top: 20px;
-    }
+
+
+.concept-details-block-extended {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+    gap: 40px;
 }
-
-
-
+.concept-details-block-extended:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+    
+}
+.concept-details-block-extended .text {
+    order: 2;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+.concept-details-block-extended .text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-details-block-extended .text p {
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+}
 
 /*----------------------------------------
  サイト　メニュー
 ----------------------------------------*/
 /* メニュー表 */
 .price-menu-frame {
-  max-width: 800px;
-  margin: 60px auto;
-  margin-bottom: 100px;
-  padding: 20px 70px;
-  border: 10px solid #a9a9a9;
-  position: relative;
-  text-align: center;
+    max-width: 800px;
+    margin: 60px auto;
+    margin-bottom: 100px;
+    padding: 20px 70px;
+    border: 10px solid #a9a9a9;
+    position: relative;
+    text-align: center;
 }
 .price-menu-frame::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: -35px;
-  bottom: -35px;
-  border: 10px solid #333;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: -35px;
+    bottom: -35px;
+    border: 10px solid #333;
 }
 .price-menu-items {
-   font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     text-align: left;
     padding-left: 10px;
 }
-/* メニュータイトル */
 .price-menu-title {
     display: inline-block; 
     background: #5a5a5a;
@@ -818,7 +817,6 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     transform: translateX(-50%);
     font-family: 'Allura', cursive;
 }
-/* 注意書き */
 .price-menu-note {
     text-align: center;
     font-family: 'Zen Old Mincho', serif;
@@ -827,68 +825,40 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     line-height: 1.6;
     margin-bottom: 40px;
 }
-/* メニュー */
-/* .price-menu-row {
-    display: grid;
-    grid-template-columns: 150px 1fr 100px;
-    gap: 20px;
-    align-items: center;
-    padding: 6px 0;
-    font-family: 'Noto Sans JP', sans-serif;
-} */
-/* 価格 */
-/* .price-menu-row p:last-child {
-    text-align: right;
-    white-space: nowrap;
-} */
-
-
-/* メニュー行 */
 .price-menu-row {
     display: grid;
-    grid-template-columns: 120px 1fr 120px; /* 左:カテゴリ固定 / 中央:伸縮 / 右:価格固定 */
+    grid-template-columns: 120px 1fr 120px;
     gap: 20px;
     align-items: center;
     padding: 6px 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
-/* 左列カテゴリ */
 .price-menu-row p:first-child {
     font-weight: bold;
 }
-
-/* 空の左列でも高さを保持 */
 .price-menu-row p:first-child:empty::before {
-    content: "\00a0"; /* 空白文字でスペースを確保 */
+    content: "\00a0";
     display: inline-block;
 }
-
-/* 価格列 */
 .price-menu-row p:last-child {
     text-align: right;
-    white-space: nowrap;  /* 改行させない */
+    white-space: nowrap;
 }
 .menu-item {
-  display: flex;
-  justify-content: space-between; /* 左右に分ける */
-  padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
     font-size: 1.8rem;
 }
-
 .menu-category h3 {
-  margin-bottom: 25px;
-  font-family: 'Allura', cursive;
-  font-size: 3.8rem;
+    margin-bottom: 25px;
+    font-family: 'Allura', cursive;
+    font-size: 3.8rem;
 }
-
 .divider {
-  border-bottom: 1px solid #ccc; /* 線の太さと色 */
-  margin: 10px 0; /* 線の上下の余白 */
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
 }
-
-
-/* 区切り線 */
 .price-menu-section {
     border-top: 1px solid #333;
     margin: 20px 0;
@@ -902,8 +872,9 @@ letter-spacingは最後の文字にスペースが入るが先頭の文字にス
     color: #333;
     line-height: 1.6;
 }
-
-
+.name.menu-name {
+	margin-bottom: 16px;
+}
 
 /*----------------------------------------
  サイト　スタッフ
