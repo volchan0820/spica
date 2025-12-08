@@ -30,20 +30,33 @@
     <h1 class="spica-title fade-up">CONCEPT</h1>
 
     <div class="contents-wrapper">
+        
+
         <main class="concept-section">
             <section class="concept-block fade-up">
                 <div class="concept-text">
-                    <h2>- Private Salon -</h2>
+                    <h2>- Owner Stylist -</h2>
                     <p>
-                        一席だけの落ち着いた空間で、最初から最後まで一人のスタイリストが担当します。<br>
-                        マンツーマンの施術だからこそ、技術のブレがなく、細部まで丁寧に向き合える時間をご提供しています。<br>
-                        お客様一人ひとりのためだけに流れる静かなひとときの中で、毎回変わらない“高いクオリティ”をお届けします。
+                        ※要修正④<br>
+                        ↓<br>
+                        ここに軽い理念とか自己紹介的な
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/img/concept_counseling.jpg" alt="カウンセリング">
+                    <img src="/img/concept_counseling.jpg" alt="オーナースタイリスト">
                 </div>
             </section>
+            <a href="/pages/staff/" class="btnBasic">
+                <div class="btnBasic__label">
+                    <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
+                    <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
+                    <div class="btnBasic__bg"></div>
+                </div>
+                <div class="arrow more__arrow">
+                    <div class="arrow__line arrow__line--01"></div>
+                    <div class="arrow__line arrow__line--02"></div>
+                </div>
+            </a>
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2>- Comfort -</h2>
@@ -61,6 +74,9 @@
                 <div class="concept-text">
                     <h2>- Counseling -</h2>
                     <p>
+                        ※要修正⑤<br>
+                        ↓<br>
+                        もう少し完結にして、溢れた分は代表メッセージ部分へ
                         お客様の髪質・クセ・骨格を丁寧にチェックし、日々どんな生活をしているのか、どんなスタイリングが負担になっているのかまで細かく伺っています。<br>
                         見た目だけで判断せず、扱いづらさの原因やコンプレックスを一緒に確認しながら、無理のない“その人らしいデザイン”を導き出します。<br>
                         「その日だけ綺麗で終わるヘア」ではなく、次の日からも扱いやすく、数週間先まで心地よく続く髪を大切にしています。<br>
@@ -75,6 +91,9 @@
                 <div class="concept-text">
                     <h2>- Cut -</h2>
                     <p>
+                        ※要修正⑥<br>
+                        ↓<br>
+                        もう少し完結にして、溢れた分は代表メッセージ部分へ
                         髪質・骨格・毛流れを正確に見極め、乾かし方や普段の扱いまで計算した“再現性の高いカット”に徹しています。<br>
                         スタイルが伸びてきても崩れにくいよう、量感・質感・シルエットを細部までコントロールし、どの角度から見ても美しく見えるように設計しています。<br>
                         髪のクセや生えぐせを前向きに活かし、無理なくまとまる形に整えることを心がけています。<br>
@@ -89,6 +108,10 @@
                 <div class="concept-text">
                     <h2>- Quality -</h2>
                     <p>
+                        ※要修正⑦<br>
+                        ↓<br>
+                        ここをヘアケアにして、ヘアケアの最初の簡易的な文言（ヘアケアの詳細ページへ導くような）に修正して<br>
+                        view moreでヘアケアの内容を見せる<br>
                         髪と頭皮への負担を最小限に抑えるため、施術には弱酸性のカラー剤・薬剤を使用しています。<br>
                         弱酸性は髪のpHに近く、過度な膨潤やダメージを抑えながら、ツヤのある発色と柔らかな質感を叶えます。<br>
                         縮毛矯正では、髪質改善成分を配合した薬剤を使用し、ただ真っ直ぐにするのではなく、しなやかで自然な仕上がりに徹しています。<br>
@@ -102,6 +125,9 @@
             <!-- テクノロジーとヘアケア -->
             <?= $this->element('concept_details') ?>
             <!-- 3つの徹底事項 -->
+             ※要修正⑧<br>
+             ↓<br>
+             
             <?= $this->element('three_points') ?>
         </main>
     </div>
