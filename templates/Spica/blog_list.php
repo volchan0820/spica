@@ -61,6 +61,8 @@
                 <?php endif; ?>
             <?php endforeach; ?>
         </div>
+        <!-- BACKボタン -->
+        <?= $this->element('back_button_index') ?>
     </div>
 
     <!-- フッター -->

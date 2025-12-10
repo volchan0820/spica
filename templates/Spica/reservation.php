@@ -58,6 +58,8 @@
                     <a href="mailto:info@atelier-spica.jp">info@atelier-spica.jp</a></p>
                 </div>
             </section>
+            <!-- BACKボタン -->
+            <?= $this->element('back_button_index') ?>
         </div>
     </div>
 

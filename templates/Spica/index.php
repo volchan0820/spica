@@ -66,7 +66,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="カウンセリングの様子">
+                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica コンセプト紹介のイメージ">
                     </figure>
 
                     <div class="top-text">
@@ -94,7 +94,7 @@
         </section>
 
         <!-- ------------------------------- -->
-        <!-- MENU（反転） -->
+        <!-- MENU（反転）-->
         <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="menu-title">
             <div class="top-inner">
@@ -102,7 +102,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="スタイル提案の様子">
+                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica メニュー詳細ページへ">
                     </figure>
 
                     <div class="top-text">
@@ -128,26 +128,23 @@
         </section>
 
         <!-- ------------------------------- -->
-        <!-- STAFF -->
+        <!-- SALON RRODUCTS -->
         <!-- ------------------------------- -->
-        <section class="top-block fade-up" aria-labelledby="staff-title">
+        <section class="top-block fade-up" aria-labelledby="products-title">
             <div class="top-inner">
-                <h2 id="staff-title">Staff</h2>
+                <h2 id="staff-title">Products</h2>
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="美容師の紹介">
+                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica で取り扱う商品のイメージ">
                     </figure>
 
                     <div class="top-text">
-                        ※要修正②<br>
-                        マンツーマンでお客様に寄り添って対応している、そんな感じのアピールポイントにして<br>
-                        ↓<br>
-                        <p>カウンセリングを大切に。<br>
-                            スタイリストってこんな人
+                        <p>
+                            ダミー
                         </p>
 
-                        <a href="/spica/staff/" class="btnBasic">
+                        <a href="/spica/products/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                                 <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -172,7 +169,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="ヘアスタイルギャラリー">
+                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica ヘアスタイルギャラリー詳細ページへ">
                     </figure>
 
                     <div class="top-text">

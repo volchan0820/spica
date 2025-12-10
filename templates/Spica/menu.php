@@ -44,7 +44,7 @@
                             <span class="price">¥7,700</span>
                         </div>
                         <div class="menu-item">
-                            <span class="name">前髪カット</span>
+                            <span class="name menu-name">前髪カット</span>
                             <span class="price">¥1,700</span>
                         </div>
                     </div>
@@ -249,6 +249,8 @@
                 </div>
             </div>
         </div>
+        <!-- BACKボタン -->
+        <?= $this->element('back_button_index') ?>
     </div>
 
     <!-- フッター -->

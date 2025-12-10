@@ -6,7 +6,7 @@
                 <li><a href="/spica/index/"><span class="en">HOME</span><span class="jp">ホーム</span></a></li>
                 <li><a href="/spica/concept/"><span class="en">CONCEPT</span><span class="jp">コンセプト</span></a></li>
                 <li><a href="/spica/menu/"><span class="en">MENU</span><span class="jp">メニュー</span></a></li>
-                <li><a href="/spica/staff/"><span class="en">STAFF</span><span class="jp">スタッフ</span></a></li>
+                <li><a href="/spica/products/"><span class="en">PRODUCTS</span><span class="jp">取扱商品</span></a></li>
             </ul>
         </nav>
         <div class="spica-logo-top">
@@ -32,8 +32,9 @@
     <ul class="sidebar-menu">
         <li><a href="/spica/index/">HOME<br>ホーム</a></li>
         <li><a href="/spica/concept/">CONCEPT<br>コンセプト</a></li>
+
         <li><a href="/spica/menu/">MENU<br>メニュー</a></li>
-        <li><a href="/spica/staff/">STAFF<br>スタッフ</a></li>
+        <li><a href="/spica/products/">RRODUCTS<br>取扱商品</a></li>
         <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
         <li><a href="/spica/blogList/">BLOG<br>ブログ</a></li>
         <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>

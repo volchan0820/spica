@@ -51,6 +51,8 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+        <!-- BACKボタン -->
+        <?= $this->element('back_button_index') ?>
     </div>
 
     <!-- フッター -->

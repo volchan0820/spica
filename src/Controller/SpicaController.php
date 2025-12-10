@@ -45,8 +45,8 @@ class SpicaController extends AppController
 
     }
 
-    // STAFF
-    public function staff()
+    // SALON RRODUCTS
+    public function products()
     {
 
     }
