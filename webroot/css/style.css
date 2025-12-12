@@ -155,6 +155,7 @@ h2 {
 .sns-fixed a img:hover {
     transform: scale(1.2);
 }
+
 /* 各ページのコンテンツ要素 */
 .contents-wrapper {
     margin-bottom: 200px;
@@ -163,6 +164,7 @@ h2 {
 /*----------------------------------------
  サイト　トップ
 ----------------------------------------*/
+/* SEOのために表示しているHair atelier spica（ヘアアトリエスピカ）を非表示にする */
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -174,6 +176,8 @@ h2 {
     white-space: nowrap !important;
     border: 0 !important;
 }
+
+/* 動画下に表示する文言 */
 .top-right-note {
     font-family: 'Zen Old Mincho', serif;
     font-size: 2.4rem;
@@ -325,7 +329,6 @@ h2 {
     position: relative;
     font-family: 'Allura', cursive;
 }
-/* コンテンツの下線 */
 .top-inner h2::after {
     content: "";
     position: absolute;
@@ -335,6 +338,40 @@ h2 {
     height: 0.5px;
     background-color: #000;
 }
+
+/* コンテンツブロック　偶数番目は左右反転 */
+.top-block:nth-of-type(even) .top-content {
+    flex-direction: row-reverse;
+}
+.top-block:nth-of-type(even) h2 {
+    text-align: right;
+}
+.top-block:nth-of-type(even) h2::after {
+    left: auto;
+    right: 0;
+}
+.top-block:last-child .top-inner {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.top-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.top-section-image, .top-text {
+    flex: 1;
+    margin: 0;
+	padding: 0;
+}
+.top-text p {
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    margin-bottom: 50px;
+}
+
 /* 左側のハサミマーク */
 .top-inner h2::before {
     content: "✂";
@@ -351,94 +388,58 @@ h2 {
     right: calc(47.5% + 5px);
     transform: translateX(100%);
 }
-/* 偶数番目は左右反転 */
-.top-block:nth-of-type(even) .top-content {
-    flex-direction: row-reverse;
-}
-/* 偶数番目のセクションのタイトルは右寄せにする */
-.top-block:nth-of-type(even) h2 {
-    text-align: right;
-}
-.top-block:nth-of-type(even) h2::after {
-    left: auto;
-    right: 0;
-}
-/* 最後のブロックは線を消す */
-.top-block:last-child .top-inner {
-    border-bottom: none;
-     padding-bottom: 0;
-}
-/* 画像とテキスト */
-.top-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 60px;
-}
-.top-section-image, .top-text {
-    flex: 1;
-    /* figureのプラウザデフォルトスタイルを解除 */
-    margin: 0;
-	padding: 0;
-}
-/* テキスト */
-.top-text p {
-    line-height: 1.8;
-    font-size: 2rem;
-    font-family: 'Zen Old Mincho', serif;
-    margin-bottom: 50px;
-}
+
 /* view moreボタン */
 .btnBasic {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  overflow: visible;
-  padding: 12px 30px 12px 20px;
-  text-decoration: none;
-  border: 2px solid #000;
-  color: #000;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    padding: 12px 30px 12px 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    color: #000;
 }
 .btnBasic__label {
-  position: relative;
-  display: flex;
-  gap: 2px;
-  overflow: visible;
-  color: black;
+    position: relative;
+    display: flex;
+    gap: 2px;
+    overflow: visible;
+    color: black;
 }
 .typo {
-  display: inline-block;
-  transform: translateX(0);
-  transition: transform 0.4s ease;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.4s ease;
 }
 /* 矢印 */
 .arrow {
-  margin-left: 12px;
-  position: relative;
-  width: 20px;
-  height: 12px;
+    margin-left: 12px;
+    position: relative;
+    width: 20px;
+    height: 12px;
 }
 .arrow__line {
-  position: absolute;
-  height: 0.5px;
-  background: #000;
-  transition: transform 0.4s ease;
+    position: absolute;
+    height: 0.5px;
+    background: #000;
+    transition: transform 0.4s ease;
 }
 .arrow__line--01 {
-  top: 50%;
-  left: 0;
-  width: 350%;
-  transform: translateY(-50%) translateX(0);
+    top: 50%;
+    left: 0;
+    width: 350%;
+    transform: translateY(-50%) translateX(0);
 }
 .arrow__line--02 {
-  top: 25%;
-  right: -51px;
-  width: 8px;
-  transform: translateY(-50%) rotate(45deg) translateX(0);
+    top: 25%;
+    right: -51px;
+    width: 8px;
+    transform: translateY(-50%) rotate(45deg) translateX(0);
 }
 /* hover時の動き 左から右にスライド */
 .btnBasic:hover .typo {
-  transform: translateX(10px);
+    transform: translateX(10px);
 }
 /* 文字の stagger アニメーション */
 .btnBasic:hover .typo:nth-child(1) { transition-delay: 0s; }
@@ -451,21 +452,23 @@ h2 {
 .btnBasic:hover .typo:nth-child(8) { transition-delay: 0.35s; }
 
 .btnBasic:hover .arrow__line--01 {
-  transform: translateX(10px) translateY(-50%);
+    transform: translateX(10px) translateY(-50%);
 }
 .btnBasic:hover .arrow__line--02 {
-  transform: translateX(10px) translateY(-50%) rotate(45deg);
+    transform: translateX(10px) translateY(-50%) rotate(45deg);
 }
 
 /*----------------------------------------
  サイト　コンセプト
 ----------------------------------------*/
+/* ボタン */
 .concept-btn {
     margin-left: 20px;
 }
 .concept-btn-reverse {
     margin-left: 950px;
 }
+
 .concept-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -511,22 +514,9 @@ h2 {
     max-width: 100%;
     height: auto;
 }
-/* 偶数番目だけ左右を反転 */
 .concept-block.reverse {
     flex-direction: row-reverse;
 }
-/* スマホ対応 */
-@media (max-width: 768px) {
-    .concept-block,
-    .concept-block.reverse {
-        flex-direction: column;
-    }
-    .concept-block .concept-image,
-    .concept-block .concept-text {
-        text-align: center;
-    }
-}
-/* 画像の背景に四角い枠を作る */
 .concept-image {
     position: relative;
     display: inline-block;
@@ -538,7 +528,6 @@ h2 {
     position: relative;
     z-index: 2;
 }
-/* 擬似要素で枠を作る */
 .concept-image::before {
     content: "";
     position: absolute;
@@ -687,18 +676,6 @@ h2 {
     flex-direction: row-reverse;
         margin-top: 120px;
 }
-/* @media (max-width: 768px) {
-    .concept-details-block-alt,
-    .concept-details-block-alt.reverse {
-        flex-direction: column;
-    }
-    .concept-details-block-alt
-    .concept-details-block-alt .image,
-    .concept-details-block-alt
-    .concept-details-block-alt .text {
-        text-align: center;
-    }
-} */
 .concept-details-block-alt .image img {
     max-width: 100%;
     height: auto;
@@ -741,14 +718,14 @@ h2 {
     right: -30px;
 }
 
-	.concept-details-block .text-alt h2 {
-		font-size: 2.2rem;
-        font-family: 'Zen Old Mincho', serif;
-	}
-	.concept-details-block .text-alt p {
-		font-size: 2rem;
-        font-family: 'Zen Old Mincho', serif;
-	}
+.concept-details-block .text-alt h2 {
+    font-size: 2.2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-details-block .text-alt p {
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
 
 
 

@@ -79,6 +79,16 @@
 	.concept-block {
 		margin-bottom: 20px;
 		margin-top: 60px;
+		flex-direction: column;
+	}
+	.concept-block.reverse {
+		flex-direction: column;
+	}
+	.concept-block .concept-image {
+		 text-align: center;
+	}
+	.concept-block .concept-text {
+		 text-align: center;
 	}
     .concept-block .concept-text h2 {
         font-size: 3rem;
