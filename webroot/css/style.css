@@ -469,12 +469,15 @@ h2 {
     margin-left: 950px;
 }
 
+/* コンセプト内ページ全て共通 */
 .concept-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 20px;
     margin-bottom: 100px;
 }
+
+/* concept */
 .concept-block {
     display: flex;
     align-items: center;
@@ -482,6 +485,7 @@ h2 {
     margin-bottom: 20px;
     margin-top: 200px;
     gap: 40px;
+    flex: 1;
 }
 .concept-block:last-child {
     border-bottom: none;
@@ -490,29 +494,19 @@ h2 {
 }
 .concept-text {
     padding-left: 20px;
-}
-.concept-block .concept-text {
     flex: 1;
 }
-.concept-block .concept-text h2 {
+.concept-text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     text-align: left;
     font-family: 'Allura', cursive;
 }
-.concept-block .concept-text p {
+.concept-text p {
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
-}
-.concept-block .concept-image {
-    flex: 1;
-    text-align: center;
-}
-.concept-block .concept-image img {
-    max-width: 100%;
-    height: auto;
 }
 .concept-block.reverse {
     flex-direction: row-reverse;
@@ -520,6 +514,8 @@ h2 {
 .concept-image {
     position: relative;
     display: inline-block;
+    flex: 1;
+    text-align: center;
 }
 .concept-image img {
     max-width: 100%;
@@ -539,7 +535,7 @@ h2 {
     background: #d2b48c6b;
 }
 
-/* 3つの徹底事項 */
+/* three_points */
 .section-space {
     padding: 5rem 2rem 2rem 4rem;
     background-color: #f9f9f9;
@@ -577,10 +573,10 @@ h2 {
 }
 
 /*
- テクノロジーとヘアケア 
+ hair_care_details
+ private_salon_details
 */
-/* テクノロジー */
-.concept-details-block {
+.hair-care-block {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -588,35 +584,35 @@ h2 {
     margin-bottom: 120px;
     gap: 40px;
 }
-.concept-details-block:last-child {
+.hair-care-block:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.concept-details-block .text {
+.hair-care-block .text {
     order: 2;
     flex: 1;
     padding-left: 20px;
     text-align: center;
 }
-.concept-details-block .text h2 {
+.hair-care-block .text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     font-family: 'Allura', cursive;
 }
-.concept-details-block .text p {
+.hair-care-block .text p {
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
     text-align: center;
 }
-.concept-details-block .image {
+.hair-care-block .image {
     order: 1;
     flex: 1;
     text-align: center;
 }
-.concept-details-block .image img {
+.hair-care-block .image img {
     max-width: 70%;
     height: auto;
     display: block;
@@ -626,110 +622,107 @@ h2 {
 }
 /* スマホ対応 */
 @media (max-width: 768px) {
-    .concept-details-block {
+    .hair-care-block {
         flex-direction: column;
     }
 }
-
-/* ヘアケア */
-.concept-details-block-alt {
+.hair-care-block-alt {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 200px;
     gap: 40px;
+    flex: 1;
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-align: center;
+    font-family: 'Allura', cursive;
 }
-.concept-details-block-alt:last-child {
+.hair-care-block-alt:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.concept-details-block-alt .text {
+.hair-care-block-alt .text {
     padding-left: 20px;
-        line-height: 1.8;
+    line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
-}
-.concept-details-block-alt
-.concept-details-block-alt .text {
     flex: 1;
 }
-.concept-details-block-alt
-.concept-details-block-alt .text h2 {
+.hair-care-block-alt .text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     text-align: left;
     font-family: 'Allura', cursive;
 }
-.concept-details-block-alt
-.concept-details-block-alt .image {
+.hair-care-block-alt
+.hair-care-block-alt .image {
     flex: 1;
     text-align: center;
 }
-.concept-details-block-alt
-.concept-details-block-alt .image img {
+.hair-care-block-alt
+.hair-care-block-alt .image img {
     max-width: 100%;
     height: auto;
 }
-.concept-details-block-alt.reverse {
+.hair-care-block-alt.reverse {
     flex-direction: row-reverse;
         margin-top: 120px;
 }
-.concept-details-block-alt .image img {
+.hair-care-block-alt .image img {
     max-width: 100%;
     height: auto;
     display: block;
     position: relative;
     z-index: 2;
 }
-
-/* ヘアケアプラスアルファ */
-.concept-details-block-alt-plus {
+.hair-care-block-alt-plus {
     width: 100%;
     max-width: 1200px;
     margin-top: 120px;
 }
-.concept-details-block-alt-plus .row {
+.hair-care-block-alt-plus .row {
     position: relative;
     margin-bottom: 100px;
 }
-.concept-details-block-alt-plus .text {
+.hair-care-block-alt-plus .text {
     width: 55%;
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
 }
-.concept-details-block-alt-plus .image {
+.hair-care-block-alt-plus .image {
     width: 340px;
     position: absolute;
     right: 0;
 }
-.concept-details-block-alt-plus .img1 {
+.hair-care-block-alt-plus .img1 {
     top: -20px;
     right: -10px;
 }
-.concept-details-block-alt-plus .img2 {
+.hair-care-block-alt-plus .img2 {
     top: 40px;
     right: 50px;
 }
-.concept-details-block-alt-plus .img3 {
+.hair-care-block-alt-plus .img3 {
     top: -10px;
     right: -30px;
 }
-
-.concept-details-block .text-alt h2 {
+.hair-care-block .text-alt h2 {
     font-size: 2.2rem;
     font-family: 'Zen Old Mincho', serif;
 }
-.concept-details-block .text-alt p {
+.hair-care-block .text-alt p {
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
 }
 
-
-
-.concept-details-block-extended {
+/* hair_care_details */
+.hair-care-block-extended {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -737,23 +730,23 @@ h2 {
     margin-bottom: 200px;
     gap: 40px;
 }
-.concept-details-block-extended:last-child {
+.hair-care-block-extended:last-child {
     border-bottom: none;
     margin-bottom: 200px;
     
 }
-.concept-details-block-extended .text {
+.hair-care-block-extended .text {
     order: 2;
     flex: 1;
     padding-left: 20px;
     text-align: center;
 }
-.concept-details-block-extended .text h2 {
+.hair-care-block-extended .text h2 {
     font-size: 2.2rem;
     margin-bottom: 40px;
     font-family: 'Zen Old Mincho', serif;
 }
-.concept-details-block-extended .text p {
+.hair-care-block-extended .text p {
     line-height: 1.8;
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;

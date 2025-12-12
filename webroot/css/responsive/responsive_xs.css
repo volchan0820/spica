@@ -136,94 +136,94 @@
 	}
 
 	/* テクノロジー */
-    .concept-details-block {
+    .hair-care-block {
         flex-direction: column;
 		    margin-bottom: 40px;
     }
-    .concept-details-block .text {
+    .hair-care-block .text {
         order: 1;
     }
-    .concept-details-block .image {
+    .hair-care-block .image {
         order: 2;
     }
 
-	.concept-details-block .text h2 {
+	.hair-care-block .text h2 {
         font-size: 3rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
-	.concept-details-block .text p {
+	.hair-care-block .text p {
         font-size: 1.8rem;
         line-height: 1.5;
 		text-align: left;
     }
-	.concept-details-block .image img {
+	.hair-care-block .image img {
 		width: 100%;
 		        max-width: 500px; /* もっと大きく見せたいならここを増やせる */
         margin: 0 auto;
         display: block;
 	}
 
-	.concept-details-block-alt .text {
+	.hair-care-block-alt .text {
         font-size: 1.8rem;
         line-height: 1.5;
 		text-align: left;
 	}
-	.concept-details-block-alt-plus {
+	.hair-care-block-alt-plus {
 	margin-top: 60px;
 	}
-    .concept-details-block-alt-plus .row {
+    .hair-care-block-alt-plus .row {
         margin-bottom: 60px;
     }
 
-    .concept-details-block-alt-plus .text {
+    .hair-care-block-alt-plus .text {
         width: 100%;
     }
 
-    .concept-details-block-alt-plus .image {
+    .hair-care-block-alt-plus .image {
         position: relative;
         width: 100%;
         right: 0;
         top: 20px;
         
     }
-	.concept-details-block-alt-plus .text {
+	.hair-care-block-alt-plus .text {
 		font-size: 1.8rem;
 		line-height: 1.5;
 		text-align: left;
 	}
 
-	.concept-details-block-extended .text h2 {
+	.hair-care-block-extended .text h2 {
 		font-size: 2rem;
 		margin-bottom: 15px;
 		letter-spacing: 4px;
 	}
-	.concept-details-block-extended .text p {
+	.hair-care-block-extended .text p {
 		font-size: 1.8rem;
 	}
-    .concept-details-block-alt,
-    .concept-details-block-alt.reverse {
+    .hair-care-block-alt,
+    .hair-care-block-alt.reverse {
         flex-direction: column;
 		margin-top: 40px;
 		margin-bottom: 40px;
     }
-.concept-details-block-extended:last-child {
+.hair-care-block-extended:last-child {
     border-bottom: none;
     margin-bottom: 100px;
     
 }
     /* スマホでは image→text の順にする（画像を上に） */
-    .concept-details-block-alt .image {
+    .hair-care-block-alt .image {
         order: 1;
         text-align: center;
     }
 
-    .concept-details-block-alt .text {
+    .hair-care-block-alt .text {
         order: 2;
         text-align: center;
         padding-left: 0; /* スマホでは左余白いらないなら */
     }
-.concept-details-block-extended	{
+.hair-care-block-extended	{
 	    margin-bottom: 100px;
 
 }

@@ -29,7 +29,7 @@
 
     <div class="contents-wrapper">
         <main class="concept-section">
-            <section class="concept-details-block reverse fade-up">
+            <section class="hair-care-block reverse fade-up">
                 <div class="text">
                     <h2>- Technology -</h2>
                     <p>
@@ -47,7 +47,7 @@
                     <img src="/img/concept_cut.jpg" alt="テクノロジー">
                 </div>
             </section>
-            <section class="concept-details-block reverse fade-up">
+            <section class="hair-care-block reverse fade-up">
                 <div class="text">
                     <h2>- Hair Care -</h2>
                     <p>
@@ -63,21 +63,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="concept-details-block-alt reverse fade-up">
-                <div class="text">
-                    <p>
-                        髪質・骨格・毛流れを正確に見極め、乾かし方や普段の扱いまで計算した“再現性の高いカット”に徹しています。<br>
-                        スタイルが伸びてきても崩れにくいよう、量感・質感・シルエットを細部までコントロールし、どの角度から見ても美しく見えるように設計しています。<br>
-                        髪のクセや生えぐせを前向きに活かし、無理なくまとまる形に整えることを心がけています。<br>
-                        毎日のセットが簡単で、自然に収まる。そんな“暮らしにフィットするカット”を提供しています。
-                    </p>
-                </div>
-                <div class="image">
-                    <img src="/img/concept_cut.jpg" alt="ヘアケア">
-                </div>
-            </section>
-            <div class="divider"></div>
-            <section class="concept-details-block-alt-plus">
+            <section class="hair-care-block-alt-plus">
                 <div class="row">
                     <div class="text">
                         <p>
@@ -114,7 +100,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="concept-details-block-extended reverse fade-up">
+            <section class="hair-care-block-extended reverse fade-up">
                 <div class="text">
                     <h2>◎髪と頭皮を守るために、大切にしていること</h2>
                     <p>
