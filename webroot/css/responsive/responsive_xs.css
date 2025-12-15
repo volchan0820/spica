@@ -119,7 +119,6 @@
         width: 200px;
         margin-bottom: 1rem;
     }
-
 	.three-points-image {
 		order: 1;
 	}
@@ -134,7 +133,6 @@
 		font-size: 1.8rem;
 		line-height: 1.8;
 	}
-
 	/* テクノロジー */
     .hair-care-block {
         flex-direction: column;
@@ -146,7 +144,6 @@
     .hair-care-block .image {
         order: 2;
     }
-
 	.hair-care-block .text h2 {
         font-size: 3rem;
         margin-bottom: 15px;
@@ -159,11 +156,10 @@
     }
 	.hair-care-block .image img {
 		width: 100%;
-		        max-width: 500px; /* もっと大きく見せたいならここを増やせる */
+		        max-width: 500px;
         margin: 0 auto;
         display: block;
 	}
-
 	.hair-care-block-alt .text {
         font-size: 1.8rem;
         line-height: 1.5;
@@ -175,24 +171,20 @@
     .hair-care-block-alt-plus .row {
         margin-bottom: 60px;
     }
-
     .hair-care-block-alt-plus .text {
         width: 100%;
     }
-
     .hair-care-block-alt-plus .image {
         position: relative;
         width: 100%;
         right: 0;
         top: 20px;
-        
     }
 	.hair-care-block-alt-plus .text {
 		font-size: 1.8rem;
 		line-height: 1.5;
 		text-align: left;
 	}
-
 	.hair-care-block-extended .text h2 {
 		font-size: 2rem;
 		margin-bottom: 15px;
@@ -207,26 +199,24 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
     }
-.hair-care-block-extended:last-child {
-    border-bottom: none;
-    margin-bottom: 100px;
-    
-}
+	.hair-care-block-extended:last-child {
+		border-bottom: none;
+		margin-bottom: 100px;
+	}
     /* スマホでは image→text の順にする（画像を上に） */
     .hair-care-block-alt .image {
         order: 1;
         text-align: center;
     }
-
     .hair-care-block-alt .text {
         order: 2;
         text-align: center;
-        padding-left: 0; /* スマホでは左余白いらないなら */
+        padding-left: 0;
     }
-.hair-care-block-extended	{
-	    margin-bottom: 100px;
+	.hair-care-block-extended {
+		margin-bottom: 100px;
+	}
 
-}
 	/* ------------------------------------------------
 	* サイト　メニュー
 	* -----------------------------------------------*/
@@ -275,7 +265,7 @@
 		padding: 0px 10px 0px 0px;
 	}
 	.price-menu-items p {
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 	}
 	.concept-image::before {
 		top: -10px;
@@ -315,7 +305,6 @@
         display: block;
         width: 80%;
         height: 1px;
-        /* background-color: #ccc; */
         margin: 0 auto;
         position: absolute;
         bottom: 0;
@@ -323,19 +312,12 @@
         right: 0;
     }
 	/* コンテンツの下線 */
-    /* .top-inner h2::after {
-        width: 90%;
-        bottom: -3px;
-    } */
-
-	/* コンテンツの下線 */
 	.top-inner h2::after {
 		width: 90%;
 	}
 	/* 左側のハサミマーク */
 	.top-inner h2::before {
 		left: calc(98% + 5px);
-		/* bottom: -13px; */
 	}
 	/* 右側のハサミマーク */
 	.top-block:nth-of-type(even) .top-inner h2::before {
@@ -371,7 +353,7 @@
 	}
 
 	/* ------------------------------------------------
-	* サイト　スタッフ
+	* サイト　コンセプトスタッフ　Page/concept_staff.php
 	* -----------------------------------------------*/
 	.staff-section {
 		max-width: 95%;
@@ -416,7 +398,17 @@
 	}
 
 	/* ------------------------------------------------
-	* サイト　予約
+	* サイト　アクセス　Spica/access.php
+	* -----------------------------------------------*/
+    .access-parking .text {
+        font-size: 1.5rem;
+    }    
+    .access-parking .image img {
+        max-width: 90%;
+    }
+
+	/* ------------------------------------------------
+	* サイト　予約　Spica/reservation.php
 	* -----------------------------------------------*/
 	.hair-atelier-spica-title-img {
 		max-width: 60%;
@@ -424,21 +416,19 @@
 		display: flex;
 		justify-content: center;
 	}
-
 	.hair-atelier-spica-title-img img {
 		width: 100%;
 		height: auto;
 	}
 
 	/*----------------------------------------
-	サイト　プライバシーポリシー
+	サイト　プライバシーポリシー　Page/privacy_policy.php
 	----------------------------------------*/
 	.privacy-policy-content {
 		padding: 0px 20px 0px 20px;
 	}
 	.privacy-policy-title {
 		padding: 0px 20px 0px 20px;
-
 	}
 
 	/* ------------------------------------------------
@@ -542,8 +532,6 @@
 	/* スクロール禁止 */
 	body.no-scroll {
 		overflow: hidden;
-		/* position: fixed;
-		width: 100%; */
 	}
 
 	/* ------------------------------------------------

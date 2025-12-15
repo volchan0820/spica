@@ -51,6 +51,18 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+        <div class="access-parking fade-up">
+            <div class="text">
+                <p>
+                    駐車場は建物の裏に2台ございます。<br>
+                    19番・20番をご利用ください。<br>
+                    ※コーンが置いてある場所が駐車場です。
+                </p>
+            </div>
+            <div class="image">
+                <img src="/img/spica-parking.jpg" alt="hair atelier spica 駐車場">
+            </div>
+        </div>
         <!-- BACKボタン -->
         <?= $this->element('back_button_index') ?>
     </div>

@@ -468,7 +468,6 @@ h2 {
 .concept-btn-reverse {
     margin-left: 950px;
 }
-
 /* コンセプト内ページ全て共通 */
 .concept-section {
     max-width: 1200px;
@@ -476,7 +475,6 @@ h2 {
     padding: 0px 20px;
     margin-bottom: 100px;
 }
-
 /* concept */
 .concept-block {
     display: flex;
@@ -534,7 +532,6 @@ h2 {
     z-index: 1;
     background: #d2b48c6b;
 }
-
 /* three_points */
 .section-space {
     padding: 5rem 2rem 2rem 4rem;
@@ -571,7 +568,6 @@ h2 {
 .three-points-block.reverse {
     flex-direction: row-reverse;
 }
-
 /*
  hair_care_details
  private_salon_details
@@ -843,7 +839,7 @@ h2 {
 }
 .price-menu-note-small {
     border-top: 1px solid #333;
-    text-align: center;
+    text-align: left;
     font-family: 'Zen Old Mincho', serif;
     font-size: 1.2rem;
     color: #333;
@@ -1083,6 +1079,24 @@ h2 {
     color: #555;
     margin-top: 20px;
     font-family: 'Noto Sans JP', sans-serif;
+}
+.access-parking {
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+/* 駐車場 */
+.access-parking .text {
+    font-size: 1.8rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.access-parking .image img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /*----------------------------------------

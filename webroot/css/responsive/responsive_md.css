@@ -32,6 +32,15 @@
 	#pagetop {
 		display: none;
 	}
+	/* 各ページのコンテンツ要素 */
+	.contents-wrapper {
+		margin-bottom: 0px;
+		padding: 0px 10px 0px 10px;
+	}
+	/* 各ページのコンテンツ要素 */
+	.contents-wrapper {
+		margin-bottom: 100px;
+	}
 
 	/* ------------------------------------------------
 	* サイト　SNSアイコン
@@ -54,8 +63,372 @@
 		color: #f0f0f0;
 	}
 	/* SNSアイコンの非表示 */
-	.sns-fixed{
+	.sns-fixed {
 		display: none;
+	}
+
+	/* ------------------------------------------------
+	* サイト　コンセプト
+	* -----------------------------------------------*/
+	.concept-btn {
+		margin-left: 0px;
+	}
+	.concept-btn-reverse {
+		margin-left: 0px;
+	}
+	.concept-block {
+		margin-bottom: 20px;
+		margin-top: 60px;
+		flex-direction: column;
+	}
+	.concept-block.reverse {
+		flex-direction: column;
+	}
+	.concept-block .concept-image {
+		 text-align: center;
+	}
+	.concept-block .concept-text {
+		 text-align: center;
+	}
+    .concept-block .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-block .concept-text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+		text-align: left;
+    }
+
+	/* 3つの徹底事項 */
+	.section-space {
+    	margin-top: 100px;
+	}
+	.three-points-title {
+    	font-size: 2.8rem;
+	}
+	.three-points-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .three-points-block.reverse {
+        flex-direction: column;
+    }
+    .three-points-image img {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+	.three-points-image {
+		order: 1;
+	}
+	.three-points-text {
+		order: 2;
+	}
+	.three-points-image img {
+		width: 60%;
+		max-width: 320px;
+	}
+	.three-points-text p {
+		font-size: 1.8rem;
+		line-height: 1.8;
+	}
+	/* テクノロジー */
+    .hair-care-block {
+        flex-direction: column;
+		    margin-bottom: 40px;
+    }
+    .hair-care-block .text {
+        order: 1;
+    }
+    .hair-care-block .image {
+        order: 2;
+    }
+	.hair-care-block .text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.hair-care-block .text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+		text-align: left;
+    }
+	.hair-care-block .image img {
+		width: 100%;
+		        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+	}
+	.hair-care-block-alt .text {
+        font-size: 1.8rem;
+        line-height: 1.5;
+		text-align: left;
+	}
+	.hair-care-block-alt-plus {
+	margin-top: 60px;
+	}
+    .hair-care-block-alt-plus .row {
+        margin-bottom: 60px;
+    }
+    .hair-care-block-alt-plus .text {
+        width: 100%;
+    }
+    .hair-care-block-alt-plus .image {
+        position: relative;
+        width: 100%;
+        right: 0;
+        top: 20px;
+    }
+	.hair-care-block-alt-plus .text {
+		font-size: 1.8rem;
+		line-height: 1.5;
+		text-align: left;
+	}
+	.hair-care-block-extended .text h2 {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		letter-spacing: 4px;
+	}
+	.hair-care-block-extended .text p {
+		font-size: 1.8rem;
+	}
+    .hair-care-block-alt,
+    .hair-care-block-alt.reverse {
+        flex-direction: column;
+		margin-top: 40px;
+		margin-bottom: 40px;
+    }
+	.hair-care-block-extended:last-child {
+		border-bottom: none;
+		margin-bottom: 100px;
+	}
+    /* スマホでは image→text の順にする（画像を上に） */
+    .hair-care-block-alt .image {
+        order: 1;
+        text-align: center;
+    }
+    .hair-care-block-alt .text {
+        order: 2;
+        text-align: center;
+        padding-left: 0;
+    }
+	.hair-care-block-extended {
+		margin-bottom: 100px;
+	}
+
+	/* ------------------------------------------------
+	* サイト　メニュー
+	* -----------------------------------------------*/
+	.price-menu-frame {
+		max-width: 95%;
+		margin: 30px auto 60px;
+		padding: 15px 20px;
+		border-width: 6px;
+	}
+	.price-menu-frame::before {
+		top: 10px;
+		left: 10px;
+		right: -20px;
+		bottom: -20px;
+		border-width: 6px;
+	}
+	.price-menu-title {
+		font-size: 1.6rem;
+		padding: 8px 20px;
+		margin: 30px auto 20px;
+		letter-spacing: 4px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.price-menu-note {
+		font-size: 1rem;
+		line-height: 1.4;
+		margin-bottom: 25px;
+	}
+	.price-menu-row {
+		display: grid;
+		grid-template-columns: 1fr 2fr auto;
+		gap: 10px;
+		align-items: center;
+		padding: 4px 0;
+	}
+	.price-menu-row p:last-child {
+		text-align: right;
+		white-space: nowrap;
+	}
+	.price-menu-section {
+		margin: 15px 0;
+		padding: 5px 0;
+	}
+	.menu-wrapper {
+		padding: 0px 10px 0px 0px;
+	}
+	.price-menu-items p {
+		font-size: 1.2rem;
+	}
+	.concept-image::before {
+		top: -10px;
+		right: -10px;
+	}
+	.name.menu-name {
+		font-size: 1.2rem;
+		margin-right: 20px;
+		margin-bottom: 16px;
+	}
+
+	/* ------------------------------------------------
+	* サイト　トップ
+	* -----------------------------------------------*/
+	.top-right-note {
+		font-size: 1.4rem;
+		margin: 40px 10px 100px 0px;
+	}
+	.top-block {
+		margin-bottom: 0px;
+    	padding-bottom: 0px;
+	}
+	.top-inner {
+        /* padding-bottom: 20px; */
+        border-bottom: none;
+        position: relative;
+		margin-bottom: 160px;
+    }
+	.top-inner h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	/* コンテンツの下線 */
+    .top-inner::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 1px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+	/* コンテンツの下線 */
+	.top-inner h2::after {
+		width: 90%;
+	}
+	/* 左側のハサミマーク */
+	.top-inner h2::before {
+		left: calc(98% + 5px);
+	}
+	/* 右側のハサミマーク */
+	.top-block:nth-of-type(even) .top-inner h2::before {
+		right: calc(5% + 5px);
+	}
+	/* 最後の .top-block 内の線だけ消す */
+	.top-block:last-of-type .top-inner::after {
+		content: none;
+	}
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .top-section-image img {
+        width: 100%;
+        height: auto;
+    }
+    .top-text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+	/* reverseクラス */
+    .top-block.reverse .top-content {
+        flex-direction: column;
+    }
+	.top-block:nth-of-type(even) h2 {
+		text-align: left;
+	}
+	.top-block:nth-of-type(even) h2::after {
+		left: 0;
+        right: auto;
+	}
+
+	/* ------------------------------------------------
+	* サイト　コンセプトスタッフ　Page/concept_staff.php
+	* -----------------------------------------------*/
+	.staff-section {
+		max-width: 95%;
+		padding: 20px 15px;
+	}
+	.staff-item {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		margin-bottom: 60px;
+	}
+	.staff-image img {
+		width: 450px;
+		height: auto;
+		margin-bottom: 100px;
+	}
+	.staff-name {
+		font-size: 2.4rem;
+		justify-content: center;
+		gap: 6px;
+		margin-top: 0px;
+	}
+	.staff-name .instagram-link {
+		font-size: 2.4rem;
+	}
+	.staff-info {
+		width: 100%;
+	}
+	.staff-section-title {
+		font-size: 2.2rem;
+		margin-bottom: 6px;
+		letter-spacing: 1px;
+	}
+	.staff-text {
+		font-size: 1.8rem;
+		line-height: 1.6;
+		padding-left: 0;
+		padding-bottom: 45px;
+	}
+	.staff-text li {
+		margin-bottom: 0.5rem;
+	}
+
+	/* ------------------------------------------------
+	* サイト　アクセス　Spica/access.php
+	* -----------------------------------------------*/
+    .access-parking .text {
+        font-size: 1.5rem;
+    }    
+    .access-parking .image img {
+        max-width: 90%;
+    }
+
+	/* ------------------------------------------------
+	* サイト　予約　Spica/reservation.php
+	* -----------------------------------------------*/
+	.hair-atelier-spica-title-img {
+		max-width: 60%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	.hair-atelier-spica-title-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/*----------------------------------------
+	サイト　プライバシーポリシー　Page/privacy_policy.php
+	----------------------------------------*/
+	.privacy-policy-content {
+		padding: 0px 20px 0px 20px;
+	}
+	.privacy-policy-title {
+		padding: 0px 20px 0px 20px;
 	}
 
 	/* ------------------------------------------------
@@ -67,6 +440,9 @@
 	}
 	.spica-logo-top {
 		margin: 0 auto;
+	}
+	.spica-logo-top img {
+		height: 70px;
 	}
 	.hamburger {
 		position: fixed;
@@ -156,8 +532,6 @@
 	/* スクロール禁止 */
 	body.no-scroll {
 		overflow: hidden;
-		/* position: fixed;
-		width: 100%; */
 	}
 
 	/* ------------------------------------------------
@@ -172,7 +546,6 @@
         overflow: hidden;
         background: #ffffff;
     }
-
     .thumbnail {
         max-width: 100%;
         max-height: 100%;
@@ -194,7 +567,6 @@
         gap: 12px;
         padding: 0 12px;
     }
-
     .blog-post {
         height: 240px;
         display: flex;
@@ -202,7 +574,6 @@
         align-items: center;
         justify-content: flex-start;
     }
-
     .blog-post h3 {
         font-size: 0.9em;
         text-align: center;
@@ -215,7 +586,6 @@
         min-height: calc(1.4em * 2);
         margin: 6px 0 4px;
     }
-
     .blog-post p {
         font-size: 0.8em;
         text-align: center;
@@ -250,6 +620,11 @@
     .spica-logo-footer img {
         width: 80px;
     }
+	.blog-detail {
+		padding: 20px;
+		margin: 20px;
+		max-width: 90%;
+	}
 
 	/* ------------------------------------------------
 	* サイト・管理画面　ギャラリー
@@ -266,20 +641,31 @@
         width: calc(50% - 20px);
     }
 
-	.thumbnail-container {
-		width: 100%;
-		height: 120px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-		background: #ffffff;
+	/* ------------------------------------------------
+	* 管理画面　ブログ
+	* -----------------------------------------------*/
+	.add-admin {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+	.admin-title {		
+		font-size: 22px;
+		margin-top: 100px;
 	}
-	.thumbnail {
-		max-width: 100%;
-		max-height: 100%;
-		object-fit: contain;
-		border-radius: 0;
+	.publish-complete-admin {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
 	}
-
+	.edit-admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
+	.draft-save-complete-admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
+	.draft_delete_complete_admin {
+		padding-left: 20px !important;
+        padding-right: 20px !important;
+	}
 }
