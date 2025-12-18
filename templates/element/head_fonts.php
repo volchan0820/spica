@@ -10,3 +10,4 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap" rel="stylesheet"> <!-- 丸みのあるゴシック体 font-family: 'M PLUS Rounded 1c', sans-serif; -->
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- 角ゴシック体 font-family: 'Zen Kaku Gothic New', sans-serif; -->
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script&display=swap" rel="stylesheet"> <!-- 筆記体 font-family: 'Allura', cursive; -->
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- セリフ体 font-family: 'Lora', serif; -->

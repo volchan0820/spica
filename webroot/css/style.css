@@ -493,6 +493,7 @@ h2 {
 .concept-text {
     padding-left: 20px;
     flex: 1;
+    margin-top: -120px;
 }
 .concept-text h2 {
     font-size: 4.8rem;
@@ -532,7 +533,8 @@ h2 {
     z-index: 1;
     background: #d2b48c6b;
 }
-/* three_points */
+
+/* three_points ここから */
 .section-space {
     padding: 5rem 2rem 2rem 4rem;
     background-color: #f9f9f9;
@@ -568,10 +570,9 @@ h2 {
 .three-points-block.reverse {
     flex-direction: row-reverse;
 }
-/*
- hair_care_details
- private_salon_details
-*/
+/* three_points ここまで */
+/*----------------------------------------
+/* hair_care_details ここから */
 .hair-care-block {
     display: flex;
     flex-direction: column-reverse;
@@ -667,7 +668,7 @@ h2 {
 }
 .hair-care-block-alt.reverse {
     flex-direction: row-reverse;
-        margin-top: 120px;
+    margin-top: 120px;
 }
 .hair-care-block-alt .image img {
     max-width: 100%;
@@ -716,8 +717,6 @@ h2 {
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
 }
-
-/* hair_care_details */
 .hair-care-block-extended {
     display: flex;
     flex-direction: column-reverse;
@@ -729,7 +728,6 @@ h2 {
 .hair-care-block-extended:last-child {
     border-bottom: none;
     margin-bottom: 200px;
-    
 }
 .hair-care-block-extended .text {
     order: 2;
@@ -748,6 +746,74 @@ h2 {
     font-family: 'Zen Old Mincho', serif;
     text-align: center;
 }
+/* hair_care_details ここまで */
+/*----------------------------------------
+/* concept_staff ここから */
+.staff-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+.staff-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+.staff-image {
+    text-align: center;
+}
+.staff-image img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+    transform: rotate(90deg);
+    margin-top: 120px;
+}
+.staff-name {
+    font-size: 2.4rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Zen Old Mincho', serif;
+    margin-top: 120px;
+}
+.staff-name .instagram-link {
+    color: #E4405F;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.staff-name .instagram-link:hover {
+    color: #d6249f;
+}
+.staff-info {
+    flex: 1;
+}
+.staff-text {
+    font-size: 1.8rem;
+    padding-bottom: 45px;
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+    color: #555;
+    font-family: 'Zen Old Mincho', serif;
+}
+.staff-text li {
+    margin-bottom: 0rem;
+}
+.staff-section-title {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #555;
+}
+/* concept_staff ここまで */
 
 /*----------------------------------------
  サイト　メニュー
@@ -850,74 +916,81 @@ h2 {
 }
 
 /*----------------------------------------
- サイト　スタッフ
+ サイト　プロダクト
 ----------------------------------------*/
-.staff-section {
-    max-width: 1000px;
+/* ボタン */
+.product-btn {
+    margin-left: 20px;
+}
+.product-btn-reverse {
+    margin-left: 950px;
+}
+/* コンセプト内ページ全て共通 */
+.product-section {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 10px;
+    padding: 0px 20px;
+    margin-bottom: 100px;
 }
-.staff-item {
+.product-block {
     display: flex;
-    align-items: flex-start;
-    gap: 60px;
-}
-.staff-image {
-    text-align: center;
-}
-.staff-image img {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 10px;
-    transform: rotate(90deg);
-    margin-top: 120px;
-}
-.staff-name {
-    font-size: 2.4rem;
-    margin: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 8px;
-    font-family: 'Zen Old Mincho', serif;
-    margin-top: 120px;
-}
-.staff-name .instagram-link {
-    color: #E4405F;
-    font-size: 2.4rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.staff-name .instagram-link:hover {
-    color: #d6249f;
-}
-.staff-info {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    gap: 40px;
     flex: 1;
 }
-.staff-text {
-    font-size: 1.8rem;
-    /* line-height: 1.8; */
-    padding-bottom: 45px;
-    padding-left: 10px;
-    list-style: none;
-    margin: 0;
-    color: #555;
-    font-family: 'Zen Old Mincho', serif;
+.product-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-.staff-text li {
-    margin-bottom: 0rem;
+.product-text {
+    padding-left: 20px;
+    flex: 1;
+    margin-top: -220px;
 }
-.staff-section-title {
-    font-family: 'Zen Old Mincho', serif;
+.product-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    /* font-family: 'Allura', cursive; */
+    font-family: 'Lora', serif;
+    border-bottom: 20px solid #b9b9b9;
+}
+.product-text p {
+    line-height: 1.8;
     font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    color: #555;
+    font-family: 'Zen Old Mincho', serif;
 }
-
+.product-block.reverse {
+    flex-direction: row-reverse;
+}
+.product-image {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.product-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #b9b9b9;
+}
 
 /*----------------------------------------
  サイト　ギャラリー
