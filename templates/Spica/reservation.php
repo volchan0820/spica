@@ -54,7 +54,7 @@
                 </div>
                 <div class="contact-info">
                     <p>お問い合わせは公式LINEまたは下記のメールアドレスまでお願いいたします。<br>
-                    ※お電話での対応は行っておりません。<br>
+                    ※マンツーマン対応のため、お電話での対応は行っておりません。<br>
                     <a href="mailto:info@atelier-spica.jp">info@atelier-spica.jp</a></p>
                 </div>
             </section>

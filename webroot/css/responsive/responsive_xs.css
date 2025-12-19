@@ -70,34 +70,40 @@
 	/* ------------------------------------------------
 	* サイト　コンセプト
 	* -----------------------------------------------*/
+	/* ボタン */
 	.concept-btn {
 		margin-left: 0px;
+		margin-bottom: 160px;
 	}
 	.concept-btn-reverse {
 		margin-left: 0px;
+		margin-bottom: 160px;
 	}
+	/* concept */
 	.concept-block {
-		margin-bottom: 20px;
 		margin-top: 60px;
 		flex-direction: column;
+        letter-spacing: 4px;
+		text-align: left;
 	}
 	.concept-block.reverse {
 		flex-direction: column;
 	}
-	.concept-block .concept-image {
-		 text-align: center;
+	.concept-image {
+		text-align: center;
 	}
-	.concept-block .concept-text {
-		 text-align: center;
+	.concept-text {
+		text-align: center;
+		margin-top: 0px;
 	}
-    .concept-block .concept-text h2 {
+    .concept-text h2 {
         font-size: 3rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
-	.concept-block .concept-text p {
-        font-size: 1.8rem;
-        line-height: 1.5;
+	.concept-text p {
+        font-size: 1.4rem;
+        line-height: 1.4;
 		text-align: left;
     }
 
@@ -106,7 +112,7 @@
     	margin-top: 100px;
 	}
 	.three-points-title {
-    	font-size: 2.8rem;
+    	font-size: 2rem;
 	}
 	.three-points-block {
         flex-direction: column;
@@ -130,8 +136,7 @@
 		max-width: 320px;
 	}
 	.three-points-text p {
-		font-size: 1.8rem;
-		line-height: 1.8;
+		font-size: 1.4rem;
 	}
 	/* テクノロジー */
     .hair-care-block {
@@ -148,10 +153,11 @@
         font-size: 3rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
+		margin-top: 100px;
     }
 	.hair-care-block .text p {
-        font-size: 1.8rem;
-        line-height: 1.5;
+        font-size: 1.4rem;
+		line-height: 1.4;
 		text-align: left;
     }
 	.hair-care-block .image img {
@@ -169,7 +175,7 @@
 	margin-top: 60px;
 	}
     .hair-care-block-alt-plus .row {
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
     .hair-care-block-alt-plus .text {
         width: 100%;
@@ -181,8 +187,8 @@
         top: 20px;
     }
 	.hair-care-block-alt-plus .text {
-		font-size: 1.8rem;
-		line-height: 1.5;
+		font-size: 1.4rem;
+		line-height: 1.4;
 		text-align: left;
 	}
 	.hair-care-block-extended .text h2 {
@@ -191,7 +197,7 @@
 		letter-spacing: 4px;
 	}
 	.hair-care-block-extended .text p {
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 	}
     .hair-care-block-alt,
     .hair-care-block-alt.reverse {
@@ -278,6 +284,47 @@
 	}
 
 	/* ------------------------------------------------
+	* サイト　プロダクト
+	* -----------------------------------------------*/
+	/* ボタン */
+	.product-btn {
+		margin-left: 0px;
+		margin-bottom: 160px;
+	}
+	.product-btn-reverse {
+		margin-left: 0px;
+		margin-bottom: 160px;
+	}
+	/* product */
+	.product-block {
+		margin-top: 60px;
+		flex-direction: column;
+        letter-spacing: 4px;
+		text-align: left;
+	}
+	.product-block.reverse {
+		flex-direction: column;
+	}
+	.product-image {
+		text-align: center;
+	}
+	.product-text {
+		text-align: center;
+		margin-top: 0px;
+	}
+    .product-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+		border-bottom: 10px solid #b9b9b9;
+    }
+	.product-text p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+		text-align: left;
+    }
+
+	/* ------------------------------------------------
 	* サイト　トップ
 	* -----------------------------------------------*/
 	.top-right-note {
@@ -289,7 +336,7 @@
     	padding-bottom: 0px;
 	}
 	.top-inner {
-        /* padding-bottom: 20px; */
+        padding: 0 40px;
         border-bottom: none;
         position: relative;
 		margin-bottom: 160px;
@@ -337,8 +384,9 @@
         height: auto;
     }
     .top-text p {
-        font-size: 1.8rem;
-        line-height: 1.5;
+        font-size: 1.6rem;
+        line-height: 1.4;
+		margin-bottom: 10px;
     }
 	/* reverseクラス */
     .top-block.reverse .top-content {
@@ -558,7 +606,7 @@
     }
     .spica-title {
         font-size: 22px;
-        margin-top: 80px;
+        margin-top: 150px;
         margin-bottom: 80px;
     }
     .blog-list {

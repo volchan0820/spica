@@ -26,7 +26,6 @@
     <div class="spica-page-img">
         <img src="/img/cafe_2.jpg" alt="hair atelier spica">
     </div>
-
     <div class="contents-wrapper">
         <main class="concept-section">
             <section class="hair-care-block reverse fade-up">
@@ -102,7 +101,7 @@
             <div class="divider"></div>
             <section class="hair-care-block-extended reverse fade-up">
                 <div class="text">
-                    <h2>◎髪と頭皮を守るために、大切にしていること</h2>
+                    <h2>◎髪と頭皮を守るために、<br>大切にしていること</h2>
                     <p>
                         「その日キレイ」だけでなく、<br>
                         これからの髪や頭皮を守るためのケアをすべての工程に取り入れています。<br>

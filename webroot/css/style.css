@@ -503,7 +503,7 @@ h2 {
     font-family: 'Allura', cursive;
 }
 .concept-text p {
-    line-height: 1.8;
+    /* line-height: 1.8; */
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
 }
@@ -949,14 +949,12 @@ h2 {
 .product-text {
     padding-left: 20px;
     flex: 1;
-    margin-top: -220px;
 }
 .product-text h2 {
     font-size: 4.8rem;
     letter-spacing: 8px;
     margin-bottom: 40px;
     text-align: left;
-    /* font-family: 'Allura', cursive; */
     font-family: 'Lora', serif;
     border-bottom: 20px solid #b9b9b9;
 }
