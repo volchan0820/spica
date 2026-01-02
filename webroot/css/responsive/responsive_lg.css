@@ -70,10 +70,15 @@
 	/* ------------------------------------------------
 	* サイト　コンセプト
 	* -----------------------------------------------*/
-	.concept-btn {
+	.concept-btn-1 {
 		margin-left: 0px;
+		margin-top: 0px;
 	}
-	.concept-btn-reverse {
+	.concept-btn-2-reverse {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.concept-btn-3 {
 		margin-left: 0px;
 	}
 	.concept-block {

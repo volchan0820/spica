@@ -36,9 +36,10 @@
                 <div class="product-text">
                     <h2>Aujua</h2>
                     <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
+                        aujuaとは「一人ひとりの髪と頭皮に“合わせて作る”オーダーメイドケア」<br>
+                        Aujuaは日本人の髪を研究して生まれた、オーダーメイドケア。<br>
+                        髪質やダメージ、季節の変化に合わせて最適な組み合わせをご提案。<br>
+                        紫外線や湿度の影響を受けやすい沖縄の髪にも、本当に必要なケアを行います。
                     </p>
                 </div>
                 <div class="product-image">
@@ -46,7 +47,7 @@
                 </div>
             </section>
             <div class="product-btn">
-                <a href="/pages/product_aujua/" class="btnBasic">
+                <a href="/pages/products_aujua/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -63,9 +64,8 @@
                 <div class="product-text">
                     <h2>MILBON</h2>
                     <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
+                        市販のスタイリング剤と違うところは、髪の毛を守りながらスタイリングできるところ。<br>
+                        プロの美容師も愛用する方が多く、付けやすい、セットしやすいのが特徴です。
                     </p>
                 </div>
                 <div class="product-image">
@@ -90,9 +90,8 @@
                 <div class="product-text">
                     <h2>LOA THE OIL</h2>
                     <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
+                        ボディー、ヘアー、ハンド、フレグランスとして使用できる、香りが持続する香水のようなヘアオイルです。<br>
+                        香水ほど強くなく、ほんのり香るのがお気に入りです。
                     </p>
                 </div>
                 <div class="product-image">
@@ -117,9 +116,8 @@
                 <div class="product-text">
                     <h2>ReKERA</h2>
                     <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
+                        カラーやパーマ、紫外線によるダメージ、加齢によって毛髪の栄養分が減少するエイジングダメージなど、
+                        髪の毛のタンパク質そのものを補修してくれるので使うほどキレイに！
                     </p>
                 </div>
                 <div class="product-image">
@@ -144,9 +142,9 @@
                 <div class="product-text">
                     <h2>+ hunt</h2>
                     <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
+                        メンズのスタイリングは＋hunt。<br>
+                        メンズに使って欲しいスタイリング剤No.1です。<br>
+                        香りも良し、使い心地も良し、セット力もバッチリあります◎
                     </p>
                 </div>
                 <div class="product-image">
@@ -171,9 +169,8 @@
                 <div class="product-text">
                     <h2>Magnet/CREATEs</h2>
                     <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
+                        軽量、速乾、美髪、を兼ね備えた髪の仕上がりを自分好みにカスタマイズするならMagnetドライヤー。<br>
+                        コテやヘアアイロンも、プロも選ぶ使いやすさやプロクオリティを自宅でも再現しやすいアイテムです！
                     </p>
                 </div>
                 <div class="product-image">

@@ -18,6 +18,142 @@
             text-align: center;
             margin-top: 20px;
         }
+.aujua-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+}
+.aujua-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    gap: 40px;
+    flex: 1;
+}
+.aujua-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.aujua-block.reverse {
+    flex-direction: row-reverse;
+}
+.aujua-text {
+    padding-left: 20px;
+    flex: 1;
+    margin-top: -120px;
+}
+.aujua-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+    text-align: left;
+    font-family: 'Allura', cursive;
+}
+.aujua-text p {
+    /* line-height: 1.8; */
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.aujua-image {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+.aujua-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+/* .aujua-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #d2b48c6b;
+} */
+.aujua-block-alt {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* text-align: center; */
+    margin-bottom: 120px;
+    gap: 40px;
+    font-family: 'Allura', cursive;
+}
+.aujua-block-alt:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.aujua-block-alt .text {
+    order: 2;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+.aujua-block-alt .text h2 {
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 80px;
+    /* font-family: 'Allura', cursive; */
+    font-family: 'Allura', cursive;
+}
+.aujua-block-alt .text p {
+    line-height: 1.8;
+    /* font-size: 2rem; */
+    /* font-family: 'Zen Old Mincho', serif; */
+    /* text-align: center; */
+}
+.aujua-block-alt .image {
+    order: 1;
+    flex: 1;
+    text-align: center;
+}
+.aujua-block-alt .image img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .aujua-block-alt {
+        flex-direction: column;
+    }
+}
+.menu-note-1 {
+    text-align: left;
+    margin-bottom: 80px;
+    margin-left: -200px;
+    font-size: 1.6rem;
+}
+.menu-note-2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.menu-note-3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu-note-4 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.menu-note-5 {
+    text-align: right;
+}
     </style>
 </head>
 <body>
@@ -27,173 +163,84 @@
         <img src="/img/cafe_2.jpg" alt="hair atelier spica">
     </div>
 
-    <h1 class="spica-title fade-up">RRODUCTS</h1>
+    <h1 class="spica-title fade-up">AUJUA</h1>
 
     <div class="contents-wrapper">
-        <main class="product-section">
-            <!-- Aujua -->
-            <section class="product-block fade-up">
-                <div class="product-text">
-                    <h2>Aujua</h2>
+        <main class="aujua-section">
+            <!-- プライベートサロン -->
+            <section class="aujua-block fade-up">
+                <div class="aujua-text">
                     <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
+                        花粉や梅雨の湿気、夏の紫外線や冬の乾燥、<br>
+                        ドライヤーの使い方やアイロンの使用頻度など、<br>
+                        一人ひとり全く違うダメージを解決するためにカスタムするヘアケアブランド。
                     </p>
                 </div>
-                <div class="product-image">
-                    <img src="/img/product/product_aujua.jpg" alt="取扱商品 Aujua">
+                <div class="aujua-image">
+                    <img src="/img/concept/concept_privatesalon.jpg" alt="完全プライベートサロン hair atelier spica の店内">
                 </div>
             </section>
-            <div class="product-btn">
-                <a href="/pages/product_aujua/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
-            <!-- MILBON -->
-            <section class="product-block reverse fade-up">
-                <div class="product-text">
-                    <h2>MILBON</h2>
+            <!-- カウンセリング -->
+            <section class="aujua-block reverse fade-up" style="margin-bottom: 160px;">
+                <div class="aujua-text">
                     <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
+                        「同じ日本でも、地域で髪の悩みは変わる」という考えと、<br>
+                        湿気が多く紫外線量も高い沖縄の環境とも相性が良いシリーズが揃っています。
                     </p>
                 </div>
-                <div class="product-image">
-                    <img src="/img/product/product_milbon.jpg" alt="取扱商品 MILBON">
+                <div class="aujua-image">
+                    <img src="/img/concept/concept_counseling.jpg" alt="初めての方も安心できる丁寧なカウンセリング hair atelier spica">
                 </div>
             </section>
-            <div class="product-btn-reverse">
-                <a href="/pages/product_milbon/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
-            <!-- LOA THE OIL -->
-            <section class="product-block fade-up">
-                <div class="product-text">
-                    <h2>LOA THE OIL</h2>
-                    <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
+            <section class="aujua-block-alt reverse fade-up">
+                <div class="text">
+                    <h2>オージュア最大の特徴は“オーダーメイドケア”。</h2>
+                    <p class="menu-note-1">
+                        カウンセリングで髪の状態を見極め、数十種類の中から必要な栄養成分を組み合わせて使用。<br>
+                        蓄積ダメージを内部から補修し、回数を重ねるほど扱いやすい髪質へ導いていきます。<br>
+                    </p>
+                    <p class="menu-note-2">
+                        こんなお悩みに特におすすめ<br>
+                        　・ブリーチ / カラー / パーマによるごわつきやパサつき<br>
+                        　・年齢と共に髪が痩せてきた、まとまりにくい<br>
+                        　・湿気で広がる / 乾燥で硬くなる<br>
+                        　・自分に合うシャンプーが見つからない<br>
+                    </p>
+                    <p class="menu-note-3">
+                        お悩み別に大きく分けて4種類あります<br>
+                        <br>
+                        ◎髪質そのもののお悩み<br>
+                        ▶︎ジリジリまとまらない、クセが昔に比べて増えた、年齢ともにボリュームが減った。<br>
+                        →エクイアル、タイムサージなど。<br>
+                        <br>
+                        ◎ダメージによるお悩み<br>
+                        ▶︎カラーやパーマ、アイロンなどのダメージでパサパサする。<br>
+                        →インメトリー、クエンチなど。<br>
+                        <br>
+                        ◎季節によるお悩み<br>
+                        ▶︎梅雨で髪の毛が膨らむ、紫外線でカラーの色抜けが早いなど。<br>
+                        →アクアヴィア、デイライトなど。<br>
+                        <br>
+                        ◎頭皮のお悩み<br>
+                        ▶︎乾燥して地肌がかゆい、油分が多くベタつく、毛が細くなってきた。<br>
+                        →エイジングスパ、モイストカームなど。<br>
+                    </p>
+                    <p class="menu-note-4">
+                        当店のこだわりポイント<br>
+                        <br>
+                        ✔︎ カウンセリングで理想の仕上がりをヒアリング<br>
+                        ✔︎ 髪の栄養状態を見てラインを選定<br>
+                        ✔︎ ホームケアの選び方も提案（無理な押し売りなし）<br>
+                        ✔︎ aujua商品のご購入だけでもご来店OK(合った商品を見つけるためのカウンセリングも行えます)<br>
+                    </p>
+                    <p class="menu-note-5">
+                        “あなたの髪に寄り添うヘアケア”を体感ください。
                     </p>
                 </div>
-                <div class="product-image">
-                    <img src="/img/product/product_loa_the_oil.jpg" alt="取扱商品 LOA THE OIL">
-                </div>
             </section>
-            <div class="product-btn">
-                <a href="/pages/product_loa_the_oil/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
-            <!-- ReKERA -->
-            <section class="product-block reverse fade-up">
-                <div class="product-text">
-                    <h2>ReKERA</h2>
-                    <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
-                    </p>
-                </div>
-                <div class="product-image">
-                    <img src="/img/product/product_rekera.jpg" alt="取扱商品 ReKERA">
-                </div>
-            </section>
-            <div class="product-btn-reverse">
-                <a href="/pages/product_rekera/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
-            <!-- ＋ hunt -->
-            <section class="product-block fade-up">
-                <div class="product-text">
-                    <h2>+ hunt</h2>
-                    <p>
-                        （120文字以内）<br>
-                       ・店内一席のみの完全プライベート、最新の椅子使用などさっくり紹介<br>
-                       ※viewmoreで別ページへ遷移して多く記載（文字数制限一旦なし）<br>
-                    </p>
-                </div>
-                <div class="product-image">
-                    <img src="/img/product/product_hunt.jpg" alt="取扱商品 ＋ hunt">
-                </div>
-            </section>
-            <div class="product-btn">
-                <a href="/pages/product_hunt/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
-            <!-- Magnet / CREATEs -->
-            <section class="product-block reverse fade-up">
-                <div class="product-text">
-                    <h2>Magnet/CREATEs</h2>
-                    <p>
-                        （120文字以内）<br>
-                        カウンセリング（120文字以内）<br>
-                        ・文字数足りない（もっと伝えたい）場合は、代表挨拶部分に盛り込む<br>
-                    </p>
-                </div>
-                <div class="product-image">
-                    <img src="/img/product/product_magnet_creates.jpg" alt="取扱商品 Magnet / CREATEs">
-                </div>
-            </section>
-            <div class="product-btn-reverse">
-                <a href="/pages/product_magnet_creates/" class="btnBasic">
-                    <div class="btnBasic__label">
-                        <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
-                        <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
-                        <div class="btnBasic__bg"></div>
-                    </div>
-                    <div class="arrow more__arrow">
-                        <div class="arrow__line arrow__line--01"></div>
-                        <div class="arrow__line arrow__line--02"></div>
-                    </div>
-                </a>
-            </div>
         </main>
+        <!-- BACKボタン -->
+        <?= $this->element('back_button_index') ?>
     </div>
 
     <!-- フッター -->

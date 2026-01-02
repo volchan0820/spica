@@ -462,11 +462,16 @@ h2 {
  サイト　コンセプト
 ----------------------------------------*/
 /* ボタン */
-.concept-btn {
+.concept-btn-1 {
     margin-left: 20px;
+    margin-top: -70px;
 }
-.concept-btn-reverse {
-    margin-left: 950px;
+.concept-btn-2-reverse {
+    margin-left: 610px;
+    margin-top: -70px;
+}
+.concept-btn-3 {
+    margin-left: 20px;
 }
 /* コンセプト内ページ全て共通 */
 .concept-section {
