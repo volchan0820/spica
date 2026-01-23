@@ -45,7 +45,7 @@
                     <img src="/img/concept/concept_privatesalon.jpg" alt="完全プライベートサロン hair atelier spica の店内">
                 </div>
             </section>
-            <div class="concept-btn">
+            <div class="concept-btn-1">
                 <a href="/pages/private_salon_details/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -97,7 +97,7 @@
                     <img src="/img/concept/concept_haircare.jpg" alt="髪のダメージを抑える丁寧なヘアケア施術 hair atelier spica">
                 </div>
             </section>
-            <div class="concept-btn-reverse">
+            <div class="concept-btn-2-reverse">
                 <a href="/pages/hair_care_details/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -130,7 +130,7 @@
                     <img src="/img/concept/concept_ownersmessage.jpg" alt="技術と想いを大切にする hair atelier spica オーナーのメッセージ写真">
                 </div>
             </section>
-            <div class="concept-btn">
+            <div class="concept-btn-3">
                 <a href="/pages/concept_staff/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;

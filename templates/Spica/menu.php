@@ -63,10 +63,6 @@
                             <span class="name menu-name">カラーリタッチ・トリートメント</span>
                             <span class="price">¥10,800</span>
                         </div>
-                        <div class="menu-item">
-                            <span class="name menu-name">ブリーチカラー・トリートメント</span>
-                            <span class="price">¥25,700</span>
-                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="menu-category">
@@ -144,10 +140,6 @@
                             <span class="name menu-name">前髪カット+カラーリタッチ+トリートメント</span>
                             <span class="price">¥12,800</span>
                         </div>
-                        <div class="menu-item">
-                            <span class="name menu-name">カット+ブリーチ+カラー+トリートメント</span>
-                            <span class="price">¥32,000</span>
-                        </div>
                     </div>
                     <!-- パーマ & ストレート -->
                     <div class="divider"></div>
@@ -183,9 +175,9 @@
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <!-- コンビネーションメニュー -->
+                    <!-- スペシャルセット -->
                     <div class="menu-category">
-                        <h3 class="menu-category-title">Combination Menu</h3>
+                        <h3 class="menu-category-title">Special Set</h3>
                         <div class="menu-item">
                             <span class="name menu-name">カット+カラー+ストレート+トリートメント</span>
                             <span class="price">¥35,000</span>
@@ -205,10 +197,6 @@
                         <div class="menu-item">
                             <span class="name menu-name">カット+カラー+前髪ストレート+トリートメント</span>
                             <span class="price">¥24,500</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name menu-name">カラー+ブリーチ+前髪ストレート+トリートメント</span>
-                            <span class="price">¥33,500</span>
                         </div>
                     </div>
                     <p class="price-menu-note-small">

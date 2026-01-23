@@ -9,7 +9,7 @@
         <img src="/img/cafe_2.jpg" alt="hair atelier spica">
     </div>
 
-    <h1 class="spica-title fade-up">STAFF</h1>
+    <h1 class="spica-title fade-up">OWNER / STYLIST</h1>
 
 <div class="contents-wrapper">
     <div class="staff-section fade-up">

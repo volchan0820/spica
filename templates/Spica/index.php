@@ -19,11 +19,11 @@
 
     <!-- SNS固定ボタン（sectionにする必要なし） -->
     <div class="sns-fixed">
-        <a href="https://line.me/R/ti/p/your_line_id" target="_blank"><i class="fab fa-line"></i></a>
-        <a href="https://www.instagram.com/your_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://beauty.hotpepper.jp/slnH000000000/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://lin.ee/W4Ibxfb" target="_blank"><i class="fab fa-line"></i></a>
+        <a href="https://www.instagram.com/hair_atelier_spica?igsh=dnpld2M5eHhvZG5z&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@hair.muto?_r=1&_t=ZS-91uOlD4Gvor" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://youtube.com/@spicahairatelier?si=XmP6hDmeuDWV4o12" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://x.com/hair_spica?s=21&t=fNQQekDrU1xZpY-c_-5fhA" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
 
     <!-- ヘッダー -->
@@ -48,11 +48,8 @@
     <!-- メインコンテンツ -->
     <main class="top-section">
         <div class="top-right-note fade-up">
-            ※要修正①<br>
-            「マンツーマンでお客様に寄り添っている、+カフェのような空間でリラックスできるよみたいな感じで」<br>
-            ↓<br>
-            やさしい光が差し込むカフェのような空間で、<br>
-            ゆったりとお過ごしください
+            マンツーマンでお客様に寄り添う<br>
+            カフェのような完全プライベート空間でリラックスしながらお過ごしください
         </div>
         <!-- h1はページの主題として必須（視覚的非表示） -->
         <h1 class="visually-hidden">Hair atelier spica（ヘアアトリエスピカ）</h1>
@@ -73,8 +70,8 @@
                         <p>
                             毎日が少しラクになって、<br>                            
                             鏡を見るのが楽しみになるヘアスタイルを。<br>
-                            落ち着いた大人女性が安心して過ごせる。<br>
-                            プライベートな空間〜
+                            落ち着いた大人女性が安心して過ごせるプライベートな空間で、<br>
+                            クオリティ高いサービスを提供いたします。
                         </p>
 
                         <a href="/spica/concept/" class="btnBasic">
@@ -141,7 +138,9 @@
 
                     <div class="top-text">
                         <p>
-                            ダミー
+                            お悩み別に揃えたホームケア。<br>
+                            数多くの種類からお悩み別、<br>
+                            スタイリング別に合ったホームケアをご紹介しています。
                         </p>
 
                         <a href="/spica/products/" class="btnBasic">
@@ -173,8 +172,10 @@
                     </figure>
 
                     <div class="top-text">
-                        <p>カットラインの美しさや質感の違いなど、言葉だけでは伝わりにくい部分もわかりやすくまとめています。<br>
-                            初めての方にもサロンの雰囲気が伝わるよう、実際のお客様のヘアスタイルを中心に掲載しています。
+                        <p>カットラインの美しさや質感の違いなど、<br>
+                        言葉だけでは伝わりにくい部分もわかりやすくまとめています。<br>
+                            初めての方にもサロンの雰囲気が伝わるよう、<br>
+                            実際のお客様のヘアスタイルを中心に掲載しています。
                         </p>
 
                         <a href="/spica/gallery/" class="btnBasic">
@@ -206,7 +207,8 @@
                     </figure>
 
                     <div class="top-text">
-                        <p>髪の扱い方や季節ごとのケアのポイントなど、日常に役立つ情報もお届けしています。<br>
+                        <p>髪の扱い方や季節ごとのケアのポイントなど、<br>
+                            日常に役立つ情報もお届けしています。<br>
                             お店の空気感や、施術に対する想いが少しでも伝わるように、丁寧に更新していきます。
                         </p>
 
@@ -239,7 +241,10 @@
                     </figure>
 
                     <div class="top-text">
-                        <p>ゆっくり過ごしていただける空間へ、スムーズにお越しいただけるようご案内しています。</p>
+                        <p>
+                            駐車場2台完備。モノレール経塚駅から徒歩10分。<br>
+                            スムーズにご来店いただけるようにご案内しております。
+                        </p>
 
                         <a href="/spica/access/" class="btnBasic">
                             <div class="btnBasic__label">

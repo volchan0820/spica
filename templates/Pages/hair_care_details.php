@@ -30,7 +30,7 @@
         <main class="concept-section">
             <section class="hair-care-block reverse fade-up">
                 <div class="text">
-                    <h2>- Technology -</h2>
+                    <h2>- Microbubble -</h2>
                     <p>
                         spicaでは、髪や頭皮に負担をかけずに深いクレンジングができる“マイクロバブル”を取り入れています。<br>
                         <br>
