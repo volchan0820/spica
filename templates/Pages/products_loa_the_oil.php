@@ -15,157 +15,159 @@
     <?php echo $this->element('head_scripts'); ?>
 
     <style>
-   /* =====================================================
-    LOA THE OIL – PAGE ONLY
-    ===================================================== */
-    .loa-section {
-        max-width: 1000px;
-        margin: 0 auto 180px;
-        font-family: 'Zen Old Mincho', serif;
-    }
-    .loa-page-en {
-        display: block;
-        text-align: center;
-        font-size: 1.4rem;
-        letter-spacing: 4px;
-        color: #aaa;
-        margin-bottom: 100px;
-    }
-    .loa-intro {
-        text-align: center;
-        margin-bottom: 120px;
-    }
-    .loa-intro p {
-        font-size: 1.8rem;
-        line-height: 2;
-        color: #444;
-    }
-    .loa-block {
-        display: flex;
-        align-items: center;
-        gap: 80px;
-        margin-bottom: 140px;
-    }
-    .loa-block.reverse {
-        flex-direction: row-reverse;
-    }
-    .loa-text h3 {
-        font-size: 2.4rem;
-        margin-bottom: 24px;
-    }
-    .loa-text p {
-        font-size: 1.6rem;
-        line-height: 2;
-        color: #555;
-    }
-    .loa-image {
-        text-align: center;
-    }
-    .loa-image img {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
-    }
-    .loa-closing {
-        text-align: center;
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-        margin-top: 120px;
-    }
-    .loa-lifestyle {
-        max-width: 720px;
-        margin: 0 auto 140px;
-        text-align: center;
-    }
-    .loa-lifestyle p {
-        font-size: 1.6rem;
-        line-height: 2.2;
-        color: #555;
-        margin-bottom: 32px;
-    }
-    .loa-lifestyle-lead {
-        font-size: 2.2rem;
-        letter-spacing: 2px;
-        margin-bottom: 48px;
-        color: #333;
-    }
-    .loa-lifestyle-note {
-        margin-top: 56px;
-        font-size: 1.5rem;
-        color: #777;
-    }
-    .loa-ritual {
-        margin: 160px auto;
-        text-align: center;
-    }
-    .loa-ritual-title {
-        font-size: 2.2rem;
-        letter-spacing: 2px;
-        margin-bottom: 80px;
-        line-height: 1.6;
-    }
-    .loa-ritual-title span {
-        display: block;
-        margin-top: 12px;
-        font-size: 1.3rem;
-        letter-spacing: 4px;
-        color: #aaa;
-    }
-    .loa-ritual-flow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    }
-    .loa-ritual-step {
-        text-align: center;
-        min-width: 200px;
-    }
-    .loa-ritual-step .num {
-        display: block;
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-        color: #aaa;
-        margin-bottom: 16px;
-    }
-    .loa-ritual-step h4 {
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-        margin-bottom: 12px;
-    }
-    .loa-ritual-step p {
-        font-size: 1.4rem;
-        line-height: 1.9;
-        color: #666;
-    }
-    .loa-ritual-line {
-        width: 60px;
-        height: 1px;
-        background: #ddd;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        .loa-ritual-flow {
-            flex-direction: column;
-            gap: 30px;
+    /* =====================================================
+            LOA THE OIL – PAGE ONLY
+        ===================================================== */
+        .loa-section {
+            max-width: 1000px;
+            margin: 0 auto 180px;
+            font-family: 'Zen Old Mincho', serif;
         }
-
-        .loa-ritual-line {
-            width: 1px;
-            height: 40px;
+        .loa-page-en {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+            color: #aaa;
+            margin-bottom: 100px;
         }
-        .loa-block,
+        .loa-intro {
+            text-align: center;
+            margin-bottom: 120px;
+        }
+        .loa-intro p {
+            font-size: 1.8rem;
+            line-height: 2;
+            color: #444;
+        }
+        .loa-block {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            margin-bottom: 140px;
+        }
         .loa-block.reverse {
-            flex-direction: column;
-            gap: 40px;
+            flex-direction: row-reverse;
+        }
+        .loa-text h3 {
+            font-size: 2.4rem;
+            margin-bottom: 24px;
+        }
+        .loa-text p {
+            font-size: 1.6rem;
+            line-height: 2;
+            color: #555;
+        }
+        .loa-image {
             text-align: center;
         }
-
-        .loa-intro p {
-            font-size: 1.6rem;
+        .loa-image img {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
         }
-    }
+        .loa-closing {
+            text-align: center;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-top: 120px;
+        }
+        .loa-lifestyle {
+            max-width: 720px;
+            margin: 0 auto 140px;
+            text-align: center;
+        }
+        .loa-lifestyle p {
+            font-size: 1.6rem;
+            line-height: 2.2;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        .loa-lifestyle-lead {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 48px;
+            color: #333;
+        }
+        .loa-lifestyle-note {
+            margin-top: 56px;
+            font-size: 1.5rem;
+            color: #777;
+        }
+        .loa-ritual {
+            margin: 160px auto;
+            text-align: center;
+        }
+        .loa-ritual-title {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 80px;
+            line-height: 1.6;
+        }
+        .loa-ritual-title span {
+            display: block;
+            margin-top: 12px;
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            color: #aaa;
+        }
+        .loa-ritual-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+        .loa-ritual-step {
+            text-align: center;
+            min-width: 200px;
+        }
+        .loa-ritual-step .num {
+            display: block;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: #aaa;
+            margin-bottom: 16px;
+        }
+        .loa-ritual-step h4 {
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .loa-ritual-step p {
+            font-size: 1.4rem;
+            line-height: 1.9;
+            color: #666;
+        }
+        .loa-ritual-line {
+            width: 60px;
+            height: 1px;
+            background: #ddd;
+        }
+
+        /* =====================================================
+            Responsive
+        ===================================================== */
+        @media (max-width: 768px) {
+            .loa-ritual-flow {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .loa-ritual-line {
+                width: 1px;
+                height: 40px;
+            }
+            .loa-block,
+            .loa-block.reverse {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .loa-intro p {
+                font-size: 1.6rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -179,9 +181,7 @@
 
     <div class="contents-wrapper">
         <main class="loa-section fade-up">
-
-        <span class="en loa-page-en">PERFUME OIL</span>
-
+            <span class="en loa-page-en">PERFUME OIL</span>
             <div class="loa-intro">
                 <p>
                     ヘア・ボディ・ハンド・フレグランス。<br>

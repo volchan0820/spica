@@ -15,176 +15,198 @@
     <?php echo $this->element('head_scripts'); ?>
 
     <style>
-    /* =====================================================
-    AUJUA PAGE ONLY
-    ===================================================== */
-    .aujua-section {
-        max-width: 1200px;
-        margin: 0 auto 100px;
-        padding: 0 20px;
-    }
-    .aujua-block {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-        margin-top: 200px;
-    }
-    .aujua-block.reverse {
-        flex-direction: row-reverse;
-    }
-    .aujua-text {
-        flex: 1;
-        padding-left: 20px;
-        margin-top: -120px;
-        font-family: 'Zen Old Mincho', serif;
-    }
-    .aujua-text h2 {
-        font-size: 4.8rem;
-        letter-spacing: 8px;
-        margin-bottom: 60px;
-        font-family: 'Allura', cursive;
-    }
-    .aujua-text p {
-        font-size: 2rem;
-    }
-    .aujua-image {
-        flex: 1;
-        text-align: center;
-    }
-    .aujua-image img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-    .aujua-intro {
-        margin-top: -80px;
-    }
-    .intro-en {
-        display: block;
-        font-size: 1.2rem;
-        letter-spacing: 4px;
-        color: #aaa;
-        margin-bottom: 24px;
-    }
-    .intro-main {
-        font-size: 2.2rem;
-        line-height: 1.9;
-        margin-bottom: 32px;
-    }
-    .intro-sub {
-        font-size: 1.6rem;
-        line-height: 2;
-        color: #555;
-    }
-    .aujua-order {
-        max-width: 900px;
-        margin: 160px auto;
-        font-family: 'Zen Old Mincho', serif;
-    }
-    .aujua-order-header {
-        text-align: center;
-        margin-bottom: 80px;
-    }
-    .aujua-order-header .en {
-        font-size: 1.4rem;
-        letter-spacing: 4px;
-        color: #999;
-        margin-bottom: 20px;
-    }
-    .aujua-order-header h2 {
-        font-size: 3.2rem;
-        font-family: 'Allura', cursive;
-    }
-    .aujua-order-lead {
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    .aujua-order-lead p {
-        font-size: 1.8rem;
-        line-height: 2;
-    }
-    .aujua-spica-point {
-        margin-top: 160px;
-    }
-    .aujua-order-problems h3,
-    .aujua-lineup h3,
-    .aujua-spica-point h3 {
-        text-align: center;
-        font-size: 2.2rem;
-        margin-bottom: 40px;
-    }
-    .aujua-order-problems ul,
-    .aujua-spica-point ul {
-        max-width: 600px;
-        margin: 0 auto 120px;
-        list-style: none;
-        padding: 0;
-    }
-    .aujua-order-problems li,
-    .aujua-spica-point li {
-        padding: 12px 0;
-        border-bottom: 1px solid #e5e5e5;
-        font-size: 1.6rem;
-    }
-    .lineup-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-    .lineup-card {
-        padding: 40px 30px;
-        border: 1px solid #ddd;
-        text-align: center;
-    }
-    .lineup-card .category {
-        font-size: 1.2rem;
-        letter-spacing: 3px;
-        color: #aaa;
-    }
-    .lineup-card h4 {
-        font-size: 1.8rem;
-        margin: 20px 0;
-    }
-    .lineup-card p {
-        font-size: 1.5rem;
-        line-height: 1.8;
-    }
-    .lineup-card .example {
-        display: block;
-        margin-top: 24px;
-        font-size: 1.3rem;
-        color: #999;
-    }
-    .aujua-closing {
-        text-align: center;
-        font-size: 1.8rem;
-        margin-top: 120px;
-        letter-spacing: 2px;
-    }
-
-    /* =====================================================
-    Responsive
-    ===================================================== */
-    @media (max-width: 768px) {
-
+        /* =====================================================
+            AUJUA PAGE ONLY
+        ===================================================== */
+        .aujua-section {
+            max-width: 1200px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
         .aujua-block {
-            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            margin-top: 200px;
+        }
+        .aujua-block.reverse {
+            flex-direction: row-reverse;
+        }
+        .aujua-text {
+            flex: 1;
+            padding-left: 20px;
+            margin-top: -120px;
+            font-family: 'Zen Old Mincho', serif;
+        }
+        .aujua-text h2 {
+            font-size: 4.8rem;
+            letter-spacing: 8px;
+            margin-bottom: 60px;
+            font-family: 'Allura', cursive;
+        }
+        .aujua-text p {
+            font-size: 2rem;
+        }
+        .aujua-image {
+            flex: 1;
+            text-align: center;
+        }
+        .aujua-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .aujua-intro {
+            margin-top: -80px;
+        }
+        .intro-en {
+            display: block;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: #aaa;
+            margin-bottom: 24px;
+        }
+        .intro-main {
+            font-size: 2.2rem;
+            line-height: 1.9;
+            margin-bottom: 32px;
+        }
+        .intro-sub {
+            font-size: 1.6rem;
+            line-height: 2;
+            color: #555;
+        }
+        .aujua-order {
+            max-width: 900px;
+            margin: 160px auto;
+            font-family: 'Zen Old Mincho', serif;
+        }
+        .aujua-order-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .aujua-order-header .en {
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .aujua-order-header h2 {
+            font-size: 3.2rem;
+            font-family: 'Allura', cursive;
+        }
+        .aujua-order-lead {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .aujua-order-lead p {
+            font-size: 1.8rem;
+            line-height: 2;
+        }
+        .aujua-spica-point {
+            margin-top: 160px;
+        }
+        .aujua-order-problems h3,
+        .aujua-lineup h3,
+        .aujua-spica-point h3 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+        .aujua-order-problems ul,
+        .aujua-spica-point ul {
+            max-width: 600px;
+            margin: 0 auto 120px;
+            list-style: none;
+            padding: 0;
+        }
+        .aujua-order-problems li,
+        .aujua-spica-point li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 1.6rem;
+        }
+        .lineup-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        .lineup-card {
+            padding: 40px 30px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .lineup-card .category {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            color: #aaa;
+        }
+        .lineup-card h4 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+        }
+        .lineup-card p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+        .lineup-card .example {
+            display: block;
+            margin-top: 24px;
+            font-size: 1.3rem;
+            color: #999;
+        }
+        .aujua-closing {
+            text-align: center;
+            font-size: 1.8rem;
             margin-top: 120px;
+            letter-spacing: 2px;
         }
 
+	/* =====================================================
+		products_aujua.php
+	===================================================== */
+    @media screen and (max-width: 767px) {
+        .aujua-block {
+            flex-direction: column;
+            margin-top: 80px;
+            gap: 32px;
+        }
         .aujua-text {
             margin-top: 0;
             padding-left: 0;
             text-align: center;
         }
-
+        .aujua-text h2 {
+            font-size: 3.2rem;
+            letter-spacing: 4px;
+            margin-bottom: 32px;
+        }
         .intro-main {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
+        .intro-sub {
+            font-size: 1.4rem;
+        }
+        .aujua-order {
+            margin: 100px auto;
+            padding: 0 16px;
+        }
+        .aujua-order-header h2 {
+            font-size: 2.4rem;
+        }
+        .aujua-order-lead p {
+            font-size: 1.6rem;
+        }
         .lineup-grid {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+        .aujua-closing {
+            font-size: 1.6rem;
+            margin-top: 80px;
         }
     }
     </style>
@@ -200,7 +222,6 @@
 
     <div class="contents-wrapper">
         <main class="aujua-section">
-            <!-- AUJUA INTRO 01 -->
             <section class="aujua-block fade-up">
                 <div class="aujua-text aujua-intro">
                     <span class="intro-en">CUSTOMIZED FOR YOUR LIFE</span>
@@ -219,8 +240,7 @@
                     <img src="/img/concept/concept_privatesalon.jpg" alt="hair atelier spica の店内">
                 </div>
             </section>
-            <!-- AUJUA INTRO 02 -->
-            <section class="aujua-block reverse fade-up" style="margin-bottom: 160px;">
+            <section class="aujua-block fade-up" style="margin-bottom: 160px;">
                 <div class="aujua-text aujua-intro">
                     <span class="intro-en">MADE FOR JAPANESE HAIR</span>
                     <p class="intro-main">
@@ -237,7 +257,6 @@
                     <img src="/img/concept/concept_counseling.jpg" alt="丁寧なカウンセリングの様子 hair atelier spica">
                 </div>
             </section>
-            <!-- AUJUA ORDER MADE CARE -->
             <section class="aujua-order fade-up">
                 <header class="aujua-order-header">
                     <span class="en">ORDER MADE CARE</span>
@@ -310,7 +329,8 @@
                     </ul>
                 </div>
                 <p class="aujua-closing">
-                    あなたの髪に、今いちばん必要なケアを。
+                    あなたの髪に、<br>
+                    今いちばん必要なケアを。
                 </p>
             </section>
         </main>
