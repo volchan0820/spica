@@ -73,7 +73,7 @@
                 </div>
             </section>
             <div class="product-btn-reverse">
-                <a href="/pages/product_milbon/" class="btnBasic">
+                <a href="/pages/products_milbon/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -99,7 +99,7 @@
                 </div>
             </section>
             <div class="product-btn">
-                <a href="/pages/product_loa_the_oil/" class="btnBasic">
+                <a href="/pages/products_loa_the_oil/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -125,7 +125,7 @@
                 </div>
             </section>
             <div class="product-btn-reverse">
-                <a href="/pages/product_rekera/" class="btnBasic">
+                <a href="/pages/products_rekera/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -152,7 +152,7 @@
                 </div>
             </section>
             <div class="product-btn">
-                <a href="/pages/product_hunt/" class="btnBasic">
+                <a href="/pages/products_hunt/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
@@ -178,7 +178,7 @@
                 </div>
             </section>
             <div class="product-btn-reverse">
-                <a href="/pages/product_magnet_creates/" class="btnBasic">
+                <a href="/pages/products_magnet_creates/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>
