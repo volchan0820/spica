@@ -129,24 +129,89 @@
         }
 
         /* =====================================================
-            Responsive
+            レスポンシブ対応
         ===================================================== */
         @media (max-width: 768px) {
+
+            .milbon-container {
+                padding: 0 16px;
+                margin-bottom: 60px;
+            }
+
+            .milbon-header {
+                margin-bottom: 48px;
+            }
+
+            .milbon-header h2 {
+                font-size: 2.4rem;
+            }
+
+            .milbon-lead {
+                font-size: 1.5rem;
+                line-height: 1.8;
+            }
+
+            .milbon-section {
+                margin-bottom: 100px;
+            }
+
             .milbon-products {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 32px;
+                margin-bottom: 80px;
             }
+
             .product-item {
-                padding: 50px 30px;
+                padding: 36px 24px;
             }
+
             .product-item img {
-                max-width: 280px;
+                max-width: 240px;
             }
+
+            .milbon-content {
+                margin-bottom: 80px;
+            }
+
+            .milbon-text {
+                font-size: 1.5rem;
+                line-height: 1.9;
+            }
+
             .milbon-features {
                 grid-template-columns: 1fr;
+                gap: 32px;
+                margin-bottom: 80px;
             }
-            .milbon-section {
-                margin-bottom: 140px;
+
+            .feature h3 {
+                font-size: 1.3rem;
+            }
+
+            .feature p {
+                font-size: 1.45rem;
+            }
+
+            .milbon-target,
+            .milbon-spica {
+                margin-bottom: 72px;
+            }
+
+            .milbon-target h3,
+            .milbon-spica h3 {
+                font-size: 1.8rem;
+            }
+
+            .milbon-target li,
+            .milbon-spica li {
+                font-size: 1.45rem;
+                padding: 10px 0;
+            }
+
+            .milbon-closing {
+                font-size: 1.6rem;
+                margin-top: 72px;
+                line-height: 1.8;
             }
         }
     </style>
@@ -161,11 +226,11 @@
     <h1 class="spica-title fade-up">MILBON</h1>
 
     <div class="contents-wrapper">
-        <main class=".milbon-container">
+        <main class="milbon-container">
             <section class="milbon-section fade-up">
                 <header class="milbon-header">
                     <span class="milbon-en">STYLING SERIES</span>
-                    <h2>スタイリング剤</h2>
+                    <h2>スタイリングを楽しむ、プロクオリティケア</h2>
                     <p class="milbon-lead">
                         髪を守りながら、<br>
                         仕上がりの美しさを楽しむ。
@@ -243,7 +308,7 @@
             </section>
         </main>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_index') ?>
+        <?= $this->element('back_button_products') ?>
     </div>
 
     <!-- フッター -->
