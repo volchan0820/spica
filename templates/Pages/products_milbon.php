@@ -43,7 +43,7 @@
         .milbon-header h2 {
             font-size: 3.2rem;
             line-height: 1.5;
-            font-family: 'Allura', cursive;
+            font-family: 'Zen Old Mincho', serif;
             margin-bottom: 24px;
         }
         .milbon-lead {
@@ -129,7 +129,7 @@
         }
 
         /* =====================================================
-            レスポンシブ対応
+            Responsive
         ===================================================== */
         @media (max-width: 768px) {
 

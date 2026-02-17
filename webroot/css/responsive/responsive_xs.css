@@ -285,47 +285,6 @@
 	}
 
 	/* ------------------------------------------------
-	* サイト　プロダクト
-	* -----------------------------------------------*/
-	/* ボタン */
-	.product-btn {
-		margin-left: 0px;
-		margin-bottom: 160px;
-	}
-	.product-btn-reverse {
-		margin-left: 0px;
-		margin-bottom: 160px;
-	}
-	/* product */
-	.product-block {
-		margin-top: 60px;
-		flex-direction: column;
-        letter-spacing: 4px;
-		text-align: left;
-	}
-	.product-block.reverse {
-		flex-direction: column;
-	}
-	.product-image {
-		text-align: center;
-	}
-	.product-text {
-		text-align: center;
-		margin-top: 0px;
-	}
-    .product-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-		border-bottom: 10px solid #b9b9b9;
-    }
-	.product-text p {
-        font-size: 1.4rem;
-        line-height: 1.4;
-		text-align: left;
-    }
-
-	/* ------------------------------------------------
 	* サイト　トップ
 	* -----------------------------------------------*/
 	.top-right-note {

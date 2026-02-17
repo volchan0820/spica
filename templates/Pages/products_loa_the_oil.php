@@ -292,7 +292,7 @@
             </p>
         </main>
             <!-- BACKボタン -->
-            <?= $this->element('back_button_index') ?>
+            <?= $this->element('back_button_products') ?>
     </div><!-- contents-wrapper -->
 
     <!-- フッター -->

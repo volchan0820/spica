@@ -13,12 +13,133 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-    <!-- <style>
-        .viewmore-btn {
-            text-align: center;
-            margin-top: 20px;
+    <style>
+        /* =====================================================
+            PRODUCTS PAGE ONLY
+        ===================================================== */
+        .product-btn {
+            margin-left: 20px;
         }
-    </style> -->
+        .product-btn-reverse {
+            margin-left: 950px;
+        }
+        /* コンセプト内ページ全て共通 */
+        .product-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px 20px;
+            margin-bottom: 100px;
+        }
+        .product-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 200px;
+            gap: 40px;
+            flex: 1;
+        }
+        .product-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .product-text {
+            padding-left: 20px;
+            flex: 1;
+        }
+        .product-text h2 {
+            font-size: 4.8rem;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+            text-align: left;
+            font-family: 'Lora', serif;
+            border-bottom: 4px solid #b9b9b9;
+        }
+        .product-text p {
+            line-height: 1.8;
+            font-size: 2rem;
+            font-family: 'Zen Old Mincho', serif;
+        }
+        .product-block.reverse {
+            flex-direction: row-reverse;
+        }
+        .product-image {
+            position: relative;
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+        .product-image::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: #b9b9b9;
+        }
+        /* =====================================================
+            Responsive
+        ===================================================== */
+        @media (max-width: 768px) {
+            /* ボタン */
+            .product-btn {
+                margin-left: 0px;
+                margin-bottom: 160px;
+            }
+            .product-btn-reverse {
+                margin-left: 0px;
+                margin-bottom: 160px;
+            }
+            /* product */
+            .product-block {
+                margin-top: 60px;
+                flex-direction: column;
+                letter-spacing: 4px;
+                text-align: left;
+            }
+            .product-block.reverse {
+                flex-direction: column;
+            }
+            .product-image {
+                text-align: center;
+            }
+            .product-text {
+                text-align: center;
+                margin-top: 0px;
+            }
+            .product-text h2 {
+                font-size: 3rem;
+                margin-bottom: 15px;
+                letter-spacing: 4px;
+                border-bottom: 2px solid #b9b9b9;
+            }
+            .product-text p {
+                font-size: 1.4rem;
+                line-height: 1.4;
+                text-align: left;
+            }
+            .product-image::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: #b9b9b9;
+            }
+        }
+    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>
