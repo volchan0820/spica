@@ -225,66 +225,6 @@
 	}
 
 	/* ------------------------------------------------
-	* サイト　メニュー
-	* -----------------------------------------------*/
-	.price-menu-frame {
-		max-width: 95%;
-		margin: 30px auto 60px;
-		padding: 15px 20px;
-		border-width: 6px;
-	}
-	.price-menu-frame::before {
-		top: 10px;
-		left: 10px;
-		right: -20px;
-		bottom: -20px;
-		border-width: 6px;
-	}
-	.price-menu-title {
-		font-size: 1.6rem;
-		padding: 8px 20px;
-		margin: 30px auto 20px;
-		letter-spacing: 4px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	.price-menu-note {
-		font-size: 1rem;
-		line-height: 1.4;
-		margin-bottom: 25px;
-	}
-	.price-menu-row {
-		display: grid;
-		grid-template-columns: 1fr 2fr auto;
-		gap: 10px;
-		align-items: center;
-		padding: 4px 0;
-	}
-	.price-menu-row p:last-child {
-		text-align: right;
-		white-space: nowrap;
-	}
-	.price-menu-section {
-		margin: 15px 0;
-		padding: 5px 0;
-	}
-	.menu-wrapper {
-		padding: 0px 10px 0px 0px;
-	}
-	.price-menu-items p {
-		font-size: 1.2rem;
-	}
-	.concept-image::before {
-		top: -10px;
-		right: -10px;
-	}
-	.name.menu-name {
-		font-size: 1.2rem;
-		margin-right: 20px;
-		margin-bottom: 16px;
-	}
-
-	/* ------------------------------------------------
 	* サイト　トップ
 	* -----------------------------------------------*/
 	.top-right-note {
