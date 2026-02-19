@@ -13,6 +13,24 @@
     <?= $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?= $this->element('head_scripts'); ?>
+
+    <style>
+        .top-right-note {
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 2.4rem;
+            line-height: 1.5;
+            color: #7a7a7a;
+            text-align: right;
+            margin: 80px 100px 120px 0px;
+            z-index: 10;
+        }
+        @media (max-width: 768px) {
+            .top-right-note {
+                font-size: 1.4rem;
+                margin: 40px 10px 100px 0px;
+            }
+        }
+    </style>
 </head>
 
 <body>
