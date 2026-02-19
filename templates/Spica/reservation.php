@@ -13,6 +13,59 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <style>
+        .reservation-info {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #555;
+            margin-top: 20px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .line-img {
+            text-align: center;
+        }
+        .line-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .line-buttons img {
+            height: 60px;
+            cursor: pointer;
+        }
+        .reservation-attention {
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        .reservation-attention .attention-link {
+            color: #007bff;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .reservation-attention-note{
+        color: #d6002f;
+        font-size: 1.2rem;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 100px;
+        }
+        .store-address {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        address {
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>

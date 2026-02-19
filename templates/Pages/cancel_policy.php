@@ -14,10 +14,42 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 
-        <style>
-
-
-
+    <style>
+        .cancel-policy-note {
+            background-color: #f9f9f9;
+            padding: 25px;
+            padding-bottom: 80px;
+            margin: 40px auto;
+            max-width: 650px;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .cancel-policy-note h2 {
+            font-size: 2.4rem;
+            margin-top: 10px;
+            margin-bottom: 60px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .cancel-policy-note h3 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .cancel-policy-note p {
+            font-size: 1.4rem;
+            line-height: 1.9;
+            text-align: left;
+        }
     </style>
 </head>
 

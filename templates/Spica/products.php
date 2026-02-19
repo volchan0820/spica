@@ -312,6 +312,8 @@
                 </a>
             </div>
         </main>
+        <!-- BACKボタン -->
+        <?= $this->element('back_button_index') ?>
     </div>
 
     <!-- フッター -->

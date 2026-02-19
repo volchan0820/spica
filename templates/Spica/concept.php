@@ -13,12 +13,6 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-    <style>
-        .viewmore-btn {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <?php echo $this->element('spica_header'); ?>

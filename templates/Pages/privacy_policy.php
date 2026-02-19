@@ -13,6 +13,40 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <style>
+        /* =====================================================
+            privacy policy only
+        ===================================================== */
+        .privacy-policy-content {
+            padding: 0px 120px 0px 120px;
+            margin-bottom: 100px;
+        }
+        .privacy-policy-title {
+            font-family: 'Zen Old Mincho', serif;
+        }
+        .privacy-policy-subtitle {
+            margin-bottom: 10px;
+            font-size: 2.4rem;
+            font-family: 'Zen Old Mincho', serif;
+        }
+        .privacy-policy-text {
+            margin: 0px 0px 40px 25px;
+            font-family: 'Zen Old Mincho', serif;
+        }
+
+        /* =====================================================
+            Responsive
+        ===================================================== */
+        @media (max-width: 768px) {
+            .privacy-policy-content {
+                padding: 0px 20px 0px 20px;
+            }
+            .privacy-policy-title {
+                padding: 0px 20px 0px 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>

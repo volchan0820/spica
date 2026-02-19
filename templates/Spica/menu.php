@@ -19,9 +19,9 @@
 
     <style>
         /* =====================================================
-            MENU PAGE ONLY
+            MENU PAGE ONLY　（二重枠のスタイル）
         ===================================================== */
-        .price-menu-frame {
+        /* .price-menu-frame {
             max-width: 800px;
             margin: 60px auto;
             margin-bottom: 100px;
@@ -115,12 +115,12 @@
         }
         .name.menu-name {
             margin-bottom: 16px;
-        }
+        } */
 
         /* =====================================================
             Responsive
         ===================================================== */
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             .price-menu-frame {
                 max-width: 95%;
                 margin: 30px auto 60px;
@@ -176,6 +176,175 @@
                 font-size: 1.2rem;
                 margin-right: 20px;
                 margin-bottom: 16px;
+            }
+        } */
+
+        /* =====================================================
+            MENU PAGE - FLOATING ELEGANT STYLE
+        ===================================================== */
+        .price-menu-frame {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 70px 80px;
+            background: #ffffff;
+            border-radius: 20px;
+            position: relative;
+            transition: all 0.4s ease;
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.06),
+                0 40px 80px rgba(0,0,0,0.04);
+        }
+        .price-menu-frame:hover {
+            transform: translateY(-8px);
+            box-shadow:
+                0 25px 50px rgba(0,0,0,0.08),
+                0 50px 100px rgba(0,0,0,0.06);
+        }
+        .price-menu-items {
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+        .price-menu-title {
+            display: inline-block;
+            font-family: 'Allura', cursive;
+            font-size: 3rem;
+            letter-spacing: 6px;
+            color: #ffffff;
+            padding: 14px 50px;
+            border-radius: 50px;
+            background: #696969;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin: 0 auto 40px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .price-menu-note {
+            text-align: center;
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 1.2rem;
+            color: #5c554d;
+            line-height: 1.7;
+            margin-bottom: 50px;
+        }
+        .menu-category {
+            margin: 50px 0;
+            padding: 35px 40px;
+            border-radius: 16px;
+            background: #faf8f6;
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.9),
+                0 8px 20px rgba(0,0,0,0.03);
+        }
+        .menu-category-title {
+            font-family: 'Lora', serif;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4b443c;
+            position: relative;
+        }
+        .menu-category-title::after {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background: #cfc7bd;
+            display: block;
+            margin: 15px auto 0;
+        }
+        .menu-item::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px dotted #c5bfb5;
+            margin: 0 14px;
+        }
+        .divider {
+            display: none;
+        }
+        .price-menu-note-small {
+            margin-top: 40px;
+            padding-top: 25px;
+            font-family: 'Zen Old Mincho', serif;
+            font-size: 1.2rem;
+            color: #5c554d;
+            line-height: 1.7;
+        }
+        .menu-item {
+            display: block;
+            margin: 22px 0;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #ece7e1;
+        }
+        .menu-name {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #3f3a34;
+            line-height: 1.6;
+            margin-bottom: 6px;
+            font-family: 'Lora', serif;
+        }
+        .price {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            /* color: #8a8178; */
+            letter-spacing: 2px;
+            text-align: right;
+        }
+        /* =====================================================
+            Responsive
+        ===================================================== */
+        @media (max-width: 768px) {
+            .price-menu-frame {
+                margin: 50px auto;
+                padding: 40px 22px;
+                border-radius: 16px;
+            }
+            .price-menu-frame:hover {
+                transform: none;
+            }
+            .price-menu-title {
+                font-size: 2rem;
+                padding: 10px 28px;
+                letter-spacing: 3px;
+                margin-bottom: 30px;
+            }
+            .price-menu-note {
+                font-size: 1rem;
+                margin-bottom: 30px;
+                line-height: 1.6;
+            }
+            .menu-category {
+                padding: 22px;
+                margin: 30px 0;
+                border-radius: 14px;
+            }
+            .menu-category-title {
+                font-size: 1.7rem;
+                margin-bottom: 22px;
+            }
+            .menu-item {
+                margin: 18px 0;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #ece7e1;
+            }
+            .menu-name {
+                font-size: 1.35rem;
+                line-height: 1.6;
+                margin-bottom: 6px;
+            }
+            .price {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                text-align: right;
+            }
+            .price-menu-note-small {
+                font-size: 0.95rem;
+                margin-top: 30px;
+                padding-top: 20px;
+                line-height: 1.6;
             }
         }
     </style>
@@ -268,8 +437,8 @@
                         </div>
                     </div>
                     <p class="price-menu-note-small">
-                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
-                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                        ▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)<br>
+                        ▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
                     </p>
                 </div>
             </div>
@@ -363,8 +532,8 @@
                         </div>
                     </div>
                     <p class="price-menu-note-small">
-                        <br>▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)
-                        <br>▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
+                        ▷薬剤によるダメージや、残留成分を取り除き髪質を改善するベースケアトリートメント(予防)<br>
+                        ▷さらにお悩み解決し質感を理想に近づけるオージュアトリートメント(補修)
                     </p>
                 </div>  
             </div>
@@ -392,11 +561,11 @@
                             <span class="name menu-name">もみあげ・襟足刈り上げ</span>
                             <span class="price">¥1,500</span>
                         </div>
-                        <p class="price-menu-note-small">
-                            <br>※メンテナンスカットは、前回のご来店日から5週間以内の方を対象とした特別メニューです。
-                            <br>※初めてご来店の方は、通常のカットメニューをご利用ください。
-                        </p>
-                    </div>  
+                    </div>
+                    <p class="price-menu-note-small">
+                        ※メンテナンスカットは、前回のご来店日から5週間以内の方を対象とした特別メニューです。<br>
+                        ※初めてご来店の方は、通常のカットメニューをご利用ください。
+                    </p>
                 </div>
             </div>
         </div>

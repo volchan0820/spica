@@ -16,6 +16,44 @@
 
     <!-- JSON-LD読み込み -->
     <?= $this->element('access_jsonld') ?>
+
+    <style>
+        .access-map {
+            max-width: 600px;
+            margin: 32px auto;
+            width: 90%;
+        }
+        .access-map iframe {
+            width: 100%;
+            height: 400px;
+            display: block;
+            border-radius: 0px;
+        }
+        .access-info {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #555;
+            margin-top: 20px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .access-parking {
+            padding: 20px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+        .access-parking .text {
+            font-size: 1.8rem;
+            font-family: 'Zen Old Mincho', serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .access-parking .image img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>

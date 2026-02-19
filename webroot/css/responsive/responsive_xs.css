@@ -358,26 +358,7 @@
 	/* ------------------------------------------------
 	* サイト　予約　Spica/reservation.php
 	* -----------------------------------------------*/
-	.hair-atelier-spica-title-img {
-		max-width: 60%;
-		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-	}
-	.hair-atelier-spica-title-img img {
-		width: 100%;
-		height: auto;
-	}
 
-	/*----------------------------------------
-	サイト　プライバシーポリシー　Page/privacy_policy.php
-	----------------------------------------*/
-	.privacy-policy-content {
-		padding: 0px 20px 0px 20px;
-	}
-	.privacy-policy-title {
-		padding: 0px 20px 0px 20px;
-	}
 
 	/* ------------------------------------------------
 	* サイト・管理画面　ハンバーガーメニュー
