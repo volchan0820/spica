@@ -498,7 +498,7 @@
 		background-color: #f0f0f0;
 		color: #000;
 	}
-	.overlay {
+	/* .overlay {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -509,6 +509,13 @@
 		overflow: hidden;
 		z-index: 1100;
 		margin-top: 75px;
+	} */
+	.overlay {
+		position: fixed;
+		top: 75px;
+		left: 0;
+		width: 0;
+		height: calc(100vh - 75px);
 	}
 	.overlay.active {
 		width: 100%;
