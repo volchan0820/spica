@@ -53,13 +53,13 @@
     <div class="container">
         <div class="slider">
             <video autoplay muted loop playsinline>
-                <source src="/video/test.mp4" type="video/mp4">
+                <source src="/video/hair-atelier-spica-intro.mp4" type="video/mp4">
                 お使いのブラウザは動画に対応していません。
             </video>
         </div>
         <!-- <div class="spica-logo-main">
             <div class="glass-bg"></div>
-            <img src="/img/spica-logo-top.png" alt="Hair atelier spica ロゴ" />
+            <img src="/img/spica-logo-white.png" alt="Hair atelier spica ロゴ" />
         </div> -->
     </div>
 
