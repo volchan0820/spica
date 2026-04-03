@@ -46,7 +46,7 @@
         <a href="https://www.instagram.com/hair_atelier_spica?igsh=dnpld2M5eHhvZG5z&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@hair.muto?_r=1&_t=ZS-91uOlD4Gvor" target="_blank"><i class="fab fa-tiktok"></i></a>
         <a href="https://youtube.com/@spicahairatelier?si=XmP6hDmeuDWV4o12" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://x.com/hair_spica?s=21&t=fNQQekDrU1xZpY-c_-5fhA" target="_blank"><i class="fab fa-twitter"></i></a>
+        <!-- <a href="https://x.com/hair_spica?s=21&t=fNQQekDrU1xZpY-c_-5fhA" target="_blank"><i class="fab fa-twitter"></i></a> -->
     </div>
 </div>
 

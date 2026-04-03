@@ -145,7 +145,7 @@
     <?php echo $this->element('spica_header'); ?>
 
     <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
+        <img src="/assets/images/product/product-main.jpeg" alt="hair atelier spica">
     </div>
 
     <h1 class="spica-title fade-up">RRODUCTS</h1>
@@ -164,7 +164,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_aujua.jpg" alt="取扱商品 Aujua">
+                    <img src="/assets/images/product/product-aujua.jpeg" alt="取扱商品 Aujua">
                 </div>
             </section>
             <div class="product-btn">
@@ -190,7 +190,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_milbon.jpg" alt="取扱商品 MILBON">
+                    <img src="/assets/images/product/product-milbon.jpeg" alt="取扱商品 MILBON">
                 </div>
             </section>
             <div class="product-btn-reverse">
@@ -216,7 +216,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_loa_the_oil.jpg" alt="取扱商品 LOA THE OIL">
+                    <img src="/assets/images/product/product-loa-the-oil.jpeg" alt="取扱商品 LOA THE OIL">
                 </div>
             </section>
             <div class="product-btn">
@@ -242,7 +242,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_rekera.jpg" alt="取扱商品 ReKERA">
+                    <img src="/assets/images/product/product-rekera.jpeg" alt="取扱商品 ReKERA">
                 </div>
             </section>
             <div class="product-btn-reverse">
@@ -269,7 +269,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_hunt.jpg" alt="取扱商品 ＋ hunt">
+                    <img src="/assets/images/product/product-hunt.jpeg" alt="取扱商品 ＋ hunt">
                 </div>
             </section>
             <div class="product-btn">
@@ -295,7 +295,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/img/product/product_magnet_creates.jpg" alt="取扱商品 Magnet / CREATEs">
+                    <img src="/assets/images/product/product-magnet-creates.jpeg" alt="取扱商品 Magnet / CREATEs">
                 </div>
             </section>
             <div class="product-btn-reverse">
