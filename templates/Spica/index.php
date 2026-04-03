@@ -53,7 +53,7 @@
     <div class="container">
         <div class="slider">
             <video autoplay muted loop playsinline>
-                <source src="/video/hair-atelier-spica-intro.mp4" type="video/mp4">
+                <source src="/assets/videos/hair-atelier-spica-intro.mp4" type="video/mp4">
                 お使いのブラウザは動画に対応していません。
             </video>
         </div>
@@ -81,7 +81,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/home/top-concept-section.jpeg" alt="hair atelier spica コンセプト紹介のイメージ">
+                        <img src="/assets/images/top/top-concept-section.jpeg" alt="hair atelier spica コンセプト紹介のイメージ">
                     </figure>
 
                     <div class="top-text">
@@ -117,7 +117,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/home/top-menu-section.jpeg" alt="hair atelier spica メニュー詳細ページへ">
+                        <img src="/assets/images/top/top-menu-section.jpeg" alt="hair atelier spica メニュー詳細ページへ">
                     </figure>
 
                     <div class="top-text">
@@ -151,7 +151,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/home/top-products-section.jpeg" alt="hair atelier spica で取り扱う商品のイメージ">
+                        <img src="/assets/images/top/top-products-section.jpeg" alt="hair atelier spica で取り扱う商品のイメージ">
                     </figure>
 
                     <div class="top-text">
@@ -255,7 +255,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/home/top-access-section.jpeg" alt="アクセス情報">
+                        <img src="/assets/images/top/top-access-section.jpeg" alt="アクセス情報">
                     </figure>
 
                     <div class="top-text">
@@ -289,7 +289,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/home/top-reservation-section.jpeg" alt="予約案内">
+                        <img src="/assets/images/top/top-reservation-section.jpeg" alt="予約案内">
                     </figure>
 
                     <div class="top-text">
