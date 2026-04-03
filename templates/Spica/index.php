@@ -81,7 +81,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica コンセプト紹介のイメージ">
+                        <img src="/img/home/top-concept-section.jpeg" alt="hair atelier spica コンセプト紹介のイメージ">
                     </figure>
 
                     <div class="top-text">
@@ -117,7 +117,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica メニュー詳細ページへ">
+                        <img src="/img/home/top-menu-section.jpeg" alt="hair atelier spica メニュー詳細ページへ">
                     </figure>
 
                     <div class="top-text">
@@ -151,7 +151,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica で取り扱う商品のイメージ">
+                        <img src="/img/home/top-products-section.jpeg" alt="hair atelier spica で取り扱う商品のイメージ">
                     </figure>
 
                     <div class="top-text">
@@ -255,7 +255,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="アクセス情報">
+                        <img src="/img/home/top-access-section.jpeg" alt="アクセス情報">
                     </figure>
 
                     <div class="top-text">
@@ -289,7 +289,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="予約案内">
+                        <img src="/img/home/top-reservation-section.jpeg" alt="予約案内">
                     </figure>
 
                     <div class="top-text">
