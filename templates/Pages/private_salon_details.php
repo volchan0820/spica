@@ -18,12 +18,12 @@
             text-align: center;
             margin-top: 20px;
         }
-        .spica-page-img img {
+        /* .spica-page-img img {
             width: 100%;
             height: 420px;
             object-fit: cover;
             filter: brightness(0.9);
-        }
+        } */
         .concept-section section {
             margin-bottom: 100px;
         }
@@ -37,7 +37,7 @@
             max-width: 480px;
         }
         .text h2 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 300;
             letter-spacing: 0.2em;
             margin-bottom: 20px;
@@ -45,7 +45,7 @@
             color: #939393;
         }
         .text p {
-            font-size: 15px;
+            font-size: 18px;
             color: #555;
             font-family: 'Zen Old Mincho', serif;
         }

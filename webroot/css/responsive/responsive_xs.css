@@ -482,9 +482,9 @@
         display: block;
         border-radius: 0;
     }
-    .spica-page-img img {
-        height: 180px;
-    }
+    /* .spica-page-img img {
+        height: 600px;
+    } */
     .spica-title {
         font-size: 22px;
         margin-top: 150px;
@@ -521,7 +521,7 @@
         margin: 0;
         margin-top: auto;
     }
-    .slider {
+    /* .slider {
         height: 220px !important;
         padding: 0 12px !important;
         box-sizing: border-box;
@@ -529,7 +529,7 @@
     .slider img {
         height: 220px !important;
         object-fit: cover !important;
-    }
+    } */
     .spica-logo-main {
         top: 65% !important;
         height: 70px !important;
