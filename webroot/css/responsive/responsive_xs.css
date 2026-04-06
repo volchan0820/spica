@@ -109,7 +109,7 @@
     }
 
 	/* 3つの徹底事項 */
-	.section-space {
+	/* .section-space {
     	margin-top: 100px;
 	}
 	.three-points-title {
@@ -138,7 +138,7 @@
 	}
 	.three-points-text p {
 		font-size: 1.4rem;
-	}
+	} */
 	/* テクノロジー */
     .hair-care-block {
         flex-direction: column;
@@ -283,11 +283,11 @@
         width: 100%;
         height: auto;
     }
-    .top-text p {
+    /* .top-text p {
         font-size: 1.6rem;
         line-height: 1.4;
 		margin-bottom: 10px;
-    }
+    } */
 	/* reverseクラス */
     .top-block.reverse .top-content {
         flex-direction: column;
@@ -348,12 +348,7 @@
 	/* ------------------------------------------------
 	* サイト　アクセス　Spica/access.php
 	* -----------------------------------------------*/
-    .access-parking .text {
-        font-size: 1.5rem;
-    }    
-    .access-parking .image img {
-        max-width: 90%;
-    }
+
 
 	/* ------------------------------------------------
 	* サイト　予約　Spica/reservation.php

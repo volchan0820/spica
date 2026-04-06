@@ -53,7 +53,7 @@
                 </a>
             </div>
             <!-- カウンセリング -->
-            <section class="concept-block reverse fade-up" style="margin-bottom: 160px;">
+            <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2>- Counseling -</h2>
                     <p>
@@ -66,7 +66,7 @@
                 </div>
             </section>
             <!-- カット -->
-            <section class="concept-block fade-up" style="margin-bottom: 160px;">
+            <section class="concept-block fade-up">
                 <div class="concept-text">
                     <h2>- Cut -</h2>
                     <p>

@@ -383,6 +383,13 @@ h2 {
     font-size: 2rem;
     font-family: 'Zen Old Mincho', serif;
     margin-bottom: 50px;
+    color: #4e4e4e;
+}
+@media (max-width: 768px) {
+    .top-text p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
 }
 
 /* 左側のハサミマーク */
@@ -410,7 +417,7 @@ h2 {
     overflow: visible;
     padding: 12px 30px 12px 20px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 1px solid #000;
     color: #000;
 }
 .btnBasic__label {
@@ -554,7 +561,7 @@ h2 {
 }
 
 /* three_points ここから */
-.section-space {
+/* .section-space {
     padding: 5rem 2rem 2rem 4rem;
     background-color: #f9f9f9;
     margin-top: 200px;
@@ -588,7 +595,106 @@ h2 {
 }
 .three-points-block.reverse {
     flex-direction: row-reverse;
+} */
+
+/* ===== 3つの徹底事項（カード化） ===== */
+
+.three-points-section {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 0 20px;
 }
+
+.three-points-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 80px;
+    /* font-family: 'Zen Old Mincho', serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 4px;
+}
+
+/* グリッド化（←ここが一番重要） */
+.three-points-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* カード */
+.three-points-card {
+    border: 1px solid #e5e5e5;
+    padding: 40px 30px;
+    text-align: center;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.three-points-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 画像 */
+.three-points-image {
+    margin-bottom: 24px;
+}
+
+.three-points-image img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* テキスト */
+.three-points-text {
+    font-size: 1.6rem;
+    line-height: 1.;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+
+/* ===== レスポンシブ ===== */
+
+/* タブレット */
+@media screen and (max-width: 1024px) {
+    .three-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 767px) {
+    .three-points-section {
+        margin: 100px auto;
+    }
+
+    .three-points-title {
+        font-size: 2.6rem;
+        margin-bottom: 40px;
+    }
+
+    .three-points-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .three-points-card {
+        padding: 30px 20px;
+    }
+
+    .three-points-text {
+        font-size: 1.4rem;
+    }
+
+    .three-points-image img {
+        width: 200px;
+        height: 140px;
+    }
+}
+
 /* three_points ここまで */
 /*----------------------------------------
 /* hair_care_details ここから */
@@ -2269,5 +2375,94 @@ body .editPreviewButton {
     @media (max-width: 768px) {
         .hunt-header h2 {
             font-size: 2.8rem;
+        }
+    }
+
+
+
+
+
+    .access-map {
+        max-width: 600px;
+        margin: 32px auto;
+        width: 90%;
+    }
+    .access-map iframe {
+        width: 100%;
+        height: 400px;
+        display: block;
+        border-radius: 0px;
+    }
+    .access-info {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #555;
+        margin-top: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .access-parking {
+        padding: 20px;
+        margin: 0 auto 40px auto;
+        text-align: center;
+    }
+    .access-parking .text {
+        font-size: 1.8rem;
+        font-family: 'Zen Old Mincho', serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* .access-parking .image img {
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    } */
+    /* @media (max-width: 768px) {
+                .access-parking .text {
+            font-size: 1.5rem;
+        }    
+        .access-parking .image img {
+            max-width: 90%;
+        }
+    } */
+    /* @media (max-width: 1023px) {
+                .access-parking .text {
+            font-size: 1.5rem;
+        }    
+        .access-parking .image img {
+            max-width: 90%;
+        }
+    } */
+
+    /* スマホ（デフォルト） */
+    .access-parking .image img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .access-parking .text {
+        font-size: 1.5rem;
+    }
+
+    /* タブレット以上 */
+    @media (min-width: 768px) {
+        .access-parking .image img {
+            max-width: 70%;
+        }
+    }
+
+    /* 小さめPC・iPad Pro */
+    @media (min-width: 1024px) {
+        .access-parking .image img {
+            max-width: 70%;
+        }
+    }
+
+    /* 大画面（必要なら） */
+    @media (min-width: 1280px) {
+        .access-parking .image img {
+            max-width: 50%;
         }
     }
