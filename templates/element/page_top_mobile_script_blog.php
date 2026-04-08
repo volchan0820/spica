@@ -22,7 +22,7 @@
 		const overlap = (scrollY + windowH) - (docH - footerHeight);
 		if (overlap > 0) {
 		// フッター接近時の位置調整（値を大きくすると下に、小さくすると上に移動）
-		pagetopMobile.style.bottom = (overlap + 20) + "px";
+		pagetopMobile.style.bottom = (overlap - 130) + "px";
 		} else {
 		// デフォルトの位置調整（値を大きくすると下に、小さくすると上に移動）
 		pagetopMobile.style.bottom = "20px";

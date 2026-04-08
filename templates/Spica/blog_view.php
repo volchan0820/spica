@@ -63,7 +63,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?php echo $this->element('page_top_mobile_script'); ?>
+    <?php echo $this->element('page_top_mobile_script_blog'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>

@@ -48,5 +48,13 @@
         <?= $this->Form->button('公開する', ['class' => 'publishButton']) ?>
         <?= $this->Form->end() ?>
     </div>
+
+    <!-- ページトップボタン -->
+	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
+	<?php echo $this->element('page_top_script'); ?>
+
+    <!-- レスポンシブ　ページトップボタン -->
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <?php echo $this->element('page_top_mobile_script_admin'); ?>
 </body>
 </html>

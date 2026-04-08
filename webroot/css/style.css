@@ -938,6 +938,25 @@ h2 {
     letter-spacing: 2px;
     color: #555;
 }
+@media (min-width: 768px) {
+	.staff-section-title {
+		font-size: 2.2rem;
+		margin-bottom: 6px;
+		letter-spacing: 1px;
+	}
+    .staff-text {
+		font-size: 1.4rem;
+		line-height: 1.6;
+		padding-left: 0;
+		padding-bottom: 45px;
+	}
+	.staff-text li {
+		margin-bottom: 0.5rem;
+	}
+}
+
+
+
 /* concept_staff ここまで */
 
 
