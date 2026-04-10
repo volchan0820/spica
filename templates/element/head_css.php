@@ -1,6 +1,8 @@
 <!-- CSS -->
+<link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/blog.css">
+<link rel="stylesheet" href="/css/concept.css">
 <link rel="stylesheet" href="/css/responsive/responsive_lg.css">
 <link rel="stylesheet" href="/css/responsive/responsive_md.css">
 <link rel="stylesheet" href="/css/responsive/responsive_sm.css">

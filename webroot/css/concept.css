@@ -1,0 +1,730 @@
+/*----------------------------------------
+ * concept.php のスタイル
+----------------------------------------*/
+/* .concept-btn-1 {
+    margin-left: 20px;
+    margin-top: -70px;
+}
+.concept-btn-2-reverse {
+    margin-left: 610px;
+    margin-top: -70px;
+}
+.concept-btn-3 {
+    margin-left: 20px;
+}
+.concept-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+}
+.concept-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    gap: 40px;
+    flex: 1;
+    letter-spacing: 4px;
+}
+.concept-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.concept-text {
+    padding-left: 20px;
+    flex: 1;
+    margin-top: -120px;
+}
+.concept-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Allura', cursive;
+}
+.concept-text p {
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-block.reverse {
+    flex-direction: row-reverse;
+}
+.concept-image {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+.concept-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.concept-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #d2b48c6b;
+}
+@media screen and (max-width: 1024px) {
+    .concept-block {
+		margin-bottom: 20px;
+		margin-top: 60px;
+		flex-direction: column;
+	}
+	.concept-block.reverse {
+		flex-direction: column;
+	}
+	.concept-block .concept-image {
+		 text-align: center;
+	}
+	.concept-block .concept-text {
+		 text-align: center;
+	}
+    .concept-block .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-block .concept-text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+		text-align: left;
+    }
+	.concept-btn-1 {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.concept-btn-2-reverse {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.concept-btn-3 {
+		margin-left: 0px;
+	}
+	.concept-block {
+		margin-bottom: 20px;
+		margin-top: 60px;
+		flex-direction: column;
+	}
+	.concept-block.reverse {
+		flex-direction: column;
+	}
+	.concept-block .concept-image {
+		 text-align: center;
+	}
+	.concept-block .concept-text {
+		 text-align: center;
+	}
+    .concept-block .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-block .concept-text p {
+		text-align: left;
+    }
+}
+@media screen and (max-width: 480px) {
+	.concept-block.reverse {
+		flex-direction: column;
+	}
+	.concept-image {
+		text-align: center;
+	}
+	.concept-text {
+		text-align: center;
+		margin-top: 0px;
+	}
+    .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+	.concept-text p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+		text-align: left;
+    }
+} */
+
+/* 以下、上記スタイルをGPTも添削させたスタイル */
+.concept-btn-1 {
+    margin-left: 20px;
+    margin-top: -70px;
+}
+.concept-btn-2-reverse {
+    margin-left: 610px;
+    margin-top: -70px;
+}
+.concept-btn-3 {
+    margin-left: 20px;
+}
+.concept-section {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+.concept-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 200px 0 20px;
+    gap: 40px;
+    flex: 1;
+    letter-spacing: 4px;
+}
+.concept-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.concept-text {
+    padding-left: 20px;
+    flex: 1;
+    margin-top: -120px;
+}
+.concept-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Allura', cursive;
+}
+.concept-text p {
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-block.reverse {
+    flex-direction: row-reverse;
+}
+.concept-image {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+.concept-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.concept-image::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #d2b48c6b;
+}
+@media screen and (max-width: 1024px) {
+    .concept-block {
+        margin: 60px 0 20px;
+        flex-direction: column;
+    }
+    .concept-block.reverse {
+        flex-direction: column;
+    }
+    .concept-block .concept-image {
+        text-align: center;
+    }
+    .concept-block .concept-text {
+        text-align: center;
+    }
+    .concept-block .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+    .concept-block .concept-text p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .concept-text {
+        margin-top: 0;
+    }
+    .concept-btn-1,
+    .concept-btn-2-reverse,
+    .concept-btn-3 {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .concept-block.reverse {
+        flex-direction: column;
+    }
+    .concept-image {
+        text-align: center;
+    }
+    .concept-text {
+        text-align: center;
+        margin-top: 0;
+    }
+    .concept-text h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        letter-spacing: 4px;
+    }
+    .concept-text p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+}
+
+
+
+/* 3つの徹底事項 */
+.three-points-section {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 0 20px;
+}
+.three-points-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 80px;
+    font-family: 'Zen Old Mincho', serif;
+    letter-spacing: 4px;
+}
+.three-points-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.three-points-card {
+    border: 1px solid #e5e5e5;
+    padding: 40px 30px;
+    text-align: center;
+    background: #fff;
+    transition: 0.3s;
+}
+.three-points-card:hover {
+    transform: translateY(-5px);
+}
+.three-points-image {
+    margin-bottom: 24px;
+}
+.three-points-image img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.three-points-text {
+    font-size: 1.6rem;
+    line-height: 1.;
+    font-family: 'Zen Old Mincho', serif;
+}
+@media screen and (min-width: 1025px) {
+    .three-points-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .three-points-grid {
+        justify-items: center;
+    }
+    .three-points-card {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .three-points-section {
+        margin: 100px auto;
+    }
+    .three-points-title {
+        font-size: 2.6rem;
+        margin-bottom: 40px;
+    }
+    .three-points-grid {
+        justify-items: center;
+    }
+    .three-points-card {
+        width: 100%;
+        max-width: 500px;
+    }
+    .three-points-text {
+        font-size: 1.4rem;
+    }
+    .three-points-image img {
+        width: 200px;
+        height: 140px;
+    }
+}
+
+
+/*----------------------------------------
+ * private_salon_details.php のスタイル
+----------------------------------------*/
+.concept-section section {
+    /* コンテンツとボタンとの余白が不自然なので一旦コメントアウト */
+    /* margin-bottom: 100px; */
+}
+.divider {
+    width: 60px;
+    height: 1px;
+    background: #ccc;
+    margin: 80px auto;
+}
+.text {
+    max-width: 480px;
+}
+.text h2 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    color: #939393;
+}
+.text p {
+    font-size: 18px;
+    color: #555;
+    font-family: 'Zen Old Mincho', serif;
+}
+.concept-details-block,
+.concept-details-block-alt,
+.concept-details-block-extended {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.image {
+    width: 100%;
+    max-width: 500px;
+}
+.image img {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.concept-details-block-alt {
+    align-items: flex-start;
+}
+.concept-details-block-alt-plus .row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.concept-details-block-alt-plus .row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.concept-details-block-alt-plus .image {
+    width: 45%;
+    border-radius: 10px;
+}
+.concept-details-block-alt-plus .text {
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .spica-page-img img {
+        height: 260px;
+    }
+    .concept-details-block,
+    .concept-details-block-alt,
+    .concept-details-block-extended {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .concept-details-block-alt-plus .row {
+        flex-direction: column !important;
+    }
+    .concept-details-block-alt-plus .image,
+    .concept-details-block-alt-plus .text {
+        width: 100%;
+    }
+    .text h2 {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+}
+
+/*----------------------------------------
+ * hair_care_details.php のスタイル
+----------------------------------------*/
+.hair-care-block {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 120px;
+    gap: 40px;
+}
+.hair-care-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.hair-care-block .text {
+    order: 2;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+.hair-care-block .text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    font-family: 'Allura', cursive;
+}
+.hair-care-block .text p {
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+}
+.hair-care-block .image {
+    order: 1;
+    flex: 1;
+    text-align: center;
+}
+.hair-care-block .image img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    .hair-care-block {
+        flex-direction: column;
+    }
+}
+.hair-care-block-alt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    gap: 40px;
+    flex: 1;
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-align: center;
+    font-family: 'Allura', cursive;
+}
+.hair-care-block-alt:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.hair-care-block-alt .text {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    flex: 1;
+}
+.hair-care-block-alt .text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Allura', cursive;
+}
+.hair-care-block-alt
+.hair-care-block-alt .image {
+    flex: 1;
+    text-align: center;
+}
+.hair-care-block-alt
+.hair-care-block-alt .image img {
+    max-width: 100%;
+    height: auto;
+}
+.hair-care-block-alt.reverse {
+    flex-direction: row-reverse;
+    margin-top: 120px;
+}
+.hair-care-block-alt .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.hair-care-block-alt-plus {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 120px;
+}
+.hair-care-block-alt-plus .row {
+    position: relative;
+    margin-bottom: 100px;
+}
+.hair-care-block-alt-plus .text {
+    width: 55%;
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.hair-care-block-alt-plus .image {
+    width: 340px;
+    position: absolute;
+    right: 0;
+}
+.hair-care-block-alt-plus .img1 {
+    top: -20px;
+    right: -10px;
+}
+.hair-care-block-alt-plus .img2 {
+    top: 40px;
+    right: 50px;
+}
+.hair-care-block-alt-plus .img3 {
+    top: -10px;
+    right: -30px;
+}
+.hair-care-block .text-alt h2 {
+    font-size: 2.2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.hair-care-block .text-alt p {
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+}
+.hair-care-block-extended {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+    gap: 40px;
+}
+.hair-care-block-extended:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+.hair-care-block-extended .text {
+    order: 2;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+.hair-care-block-extended .text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.hair-care-block-extended .text p {
+    line-height: 1.8;
+    font-size: 2rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+}
+
+/*----------------------------------------
+ * concept_staff.php のスタイル
+----------------------------------------*/
+.staff-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+.staff-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+.staff-image {
+    text-align: center;
+}
+.staff-image img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+    transform: rotate(90deg);
+    margin-top: 120px;
+}
+.staff-name {
+    font-size: 2.4rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Zen Old Mincho', serif;
+    margin-top: 120px;
+}
+.staff-name .instagram-link {
+    color: #E4405F;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.staff-name .instagram-link:hover {
+    color: #d6249f;
+}
+.staff-info {
+    flex: 1;
+}
+.staff-text {
+    font-size: 1.8rem;
+    padding-bottom: 45px;
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+    color: #555;
+    font-family: 'Zen Old Mincho', serif;
+}
+.staff-text li {
+    margin-bottom: 0rem;
+}
+.staff-section-title {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #555;
+}
+@media (min-width: 768px) {
+	.staff-section-title {
+		font-size: 2.2rem;
+		margin-bottom: 6px;
+		letter-spacing: 1px;
+	}
+    .staff-text {
+		font-size: 1.4rem;
+		line-height: 1.6;
+		padding-left: 0;
+		padding-bottom: 45px;
+	}
+	.staff-text li {
+		margin-bottom: 0.5rem;
+	}
+}

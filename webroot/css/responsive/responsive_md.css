@@ -72,72 +72,7 @@
 		display: none;
 	}
 
-	/* ------------------------------------------------
-	* サイト　コンセプト
-	* -----------------------------------------------*/
-	.concept-btn {
-		margin-left: 0px;
-	}
-	.concept-btn-reverse {
-		margin-left: 0px;
-	}
-	.concept-block {
-		margin-bottom: 20px;
-		margin-top: 60px;
-		flex-direction: column;
-	}
-	.concept-block.reverse {
-		flex-direction: column;
-	}
-	.concept-block .concept-image {
-		 text-align: center;
-	}
-	.concept-block .concept-text {
-		 text-align: center;
-	}
-    .concept-block .concept-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-block .concept-text p {
-        font-size: 1.8rem;
-        line-height: 1.5;
-		text-align: left;
-    }
 
-	/* 3つの徹底事項 */
-	/* .section-space {
-    	margin-top: 100px;
-	}
-	.three-points-title {
-    	font-size: 2.8rem;
-	}
-	.three-points-block {
-        flex-direction: column;
-        text-align: center;
-    }
-    .three-points-block.reverse {
-        flex-direction: column;
-    }
-    .three-points-image img {
-        width: 200px;
-        margin-bottom: 1rem;
-    }
-	.three-points-image {
-		order: 1;
-	}
-	.three-points-text {
-		order: 2;
-	}
-	.three-points-image img {
-		width: 60%;
-		max-width: 320px;
-	}
-	.three-points-text p {
-		font-size: 1.8rem;
-		line-height: 1.8;
-	} */
 	/* テクノロジー */
     .hair-care-block {
         flex-direction: column;

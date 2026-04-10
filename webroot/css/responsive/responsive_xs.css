@@ -72,41 +72,22 @@
 	* サイト　コンセプト
 	* -----------------------------------------------*/
 	/* ボタン */
-	.concept-btn {
+	/* .concept-btn {
 		margin-left: 0px;
 		margin-bottom: 160px;
 	}
 	.concept-btn-reverse {
 		margin-left: 0px;
 		margin-bottom: 160px;
-	}
+	} */
 	/* concept */
-	.concept-block {
+	/* .concept-block {
 		margin-top: 60px;
 		flex-direction: column;
         letter-spacing: 4px;
 		text-align: left;
-	}
-	.concept-block.reverse {
-		flex-direction: column;
-	}
-	.concept-image {
-		text-align: center;
-	}
-	.concept-text {
-		text-align: center;
-		margin-top: 0px;
-	}
-    .concept-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-text p {
-        font-size: 1.4rem;
-        line-height: 1.4;
-		text-align: left;
-    }
+	} */
+
 
 	/* 3つの徹底事項 */
 	/* .section-space {

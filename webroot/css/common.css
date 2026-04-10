@@ -1,0 +1,207 @@
+/* ------------------------------------------------
+* サイト・管理画面　ハンバーガーメニュー
+* -----------------------------------------------*/
+@media screen and (max-width: 1024px) {
+	.navGlobal.navLeft,
+	.navGlobal.navRight {
+		display: none;
+	}
+	.spica-logo-top {
+		margin: 0 auto;
+	}
+	.spica-logo-top img {
+		height: 70px;
+	}
+	.hamburger {
+		position: fixed;
+		top: 15px;
+		right: 15px;
+		font-size: 24px;
+		color: #333;
+		cursor: pointer;
+		z-index: 1300; 
+	}
+	.sidebar {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		padding: 20% 20px;
+		box-sizing: border-box;
+		transition: right 0.3s;
+		z-index: 1200;
+		margin-top: 75px;
+	}
+	.sidebar.active {
+		right: 0;
+	}
+	.sidebar-menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+		padding: 0;
+		margin: 0;
+		font-family: "Tsukimi Rounded", sans-serif;
+		text-align: center;
+	}
+	.sidebar-menu li {
+		list-style: none;
+		margin: 0;
+	}
+	.sidebar-menu a {
+		display: block;
+		padding: 12px 8px;
+		border: 1px solid #ddd;
+		color: #ffffff;
+		font-size: 14px;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.sidebar-menu a:hover {
+		background-color: #f0f0f0;
+		color: #000;
+	}
+	.overlay {
+		position: fixed;
+		top: 75px;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 75px);
+		background: rgba(50, 50, 50, 0.85);
+		z-index: 1100;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s;
+	}
+	.overlay.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.hamburger i.fa-bars {
+		position: relative;
+		z-index: 1;
+		display: inline;
+	}
+	.hamburger.active i.fa-bars {
+		display: none;
+	}
+	.hamburger i.fa-times {
+		position: relative;
+		z-index: 2;
+		display: none;
+	}
+	.hamburger.active i.fa-times {
+		display: inline;
+	}
+	/* PC向けのナビ非表示 */
+	.navGlobal.navLeft,
+	.navGlobal.navRight {
+		display: none;
+	}
+	/* スクロール禁止 */
+	body.no-scroll {
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navGlobal.navLeft,
+	.navGlobal.navRight {
+		display: none;
+	}
+	.spica-logo-top {
+		margin: 0 auto;
+	}
+	.spica-logo-top img {
+		height: 70px;
+	}
+	.hamburger {
+		position: fixed;
+		top: 15px;
+		right: 15px;
+		font-size: 24px;
+		color: #333;
+		cursor: pointer;
+		z-index: 1300; 
+	}
+	.sidebar {
+		position: fixed;
+		top: 0;
+		right: -1000px;
+		width: 100%;
+		padding: 20% 20px;
+		box-sizing: border-box;
+		transition: right 0.3s;
+		z-index: 1200;
+		margin-top: 75px;
+	}
+	.sidebar.active {
+		right: 0;
+	}
+	.sidebar-menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+		padding: 0;
+		margin: 0;
+		font-family: "Tsukimi Rounded", sans-serif;
+		text-align: center;
+	}
+	.sidebar-menu li {
+		list-style: none;
+		margin: 0;
+	}
+	.sidebar-menu a {
+		display: block;
+		padding: 12px 8px;
+		border: 1px solid #ddd;
+		color: #ffffff;
+		font-size: 14px;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.sidebar-menu a:hover {
+		background-color: #f0f0f0;
+		color: #000;
+	}
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100vh;
+		background: rgba(50, 50, 50, 0.85);
+		transition: width 0.3s;
+		overflow: hidden;
+		z-index: 1100;
+		margin-top: 75px;
+	}
+	.overlay.active {
+		width: 100%;
+	}
+	.hamburger i.fa-bars {
+		position: relative;
+		z-index: 1;
+		display: inline;
+	}
+	.hamburger.active i.fa-bars {
+		display: none;
+	}
+	.hamburger i.fa-times {
+		position: relative;
+		z-index: 2;
+		display: none;
+	}
+	.hamburger.active i.fa-times {
+		display: inline;
+	}
+	/* PC向けのナビ非表示 */
+	.navGlobal.navLeft,
+	.navGlobal.navRight {
+		display: none;
+	}
+	/* スクロール禁止 */
+	body.no-scroll {
+		overflow: hidden;
+	}
+}
