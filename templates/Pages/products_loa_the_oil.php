@@ -17,10 +17,6 @@
 <body>
     <?= $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <h1 class="spica-title fade-up">LOA THE OIL</h1>
 
     <div class="contents-wrapper">
@@ -51,7 +47,7 @@
                     </p>
                 </div>
                 <div class="loa-image">
-                    <img src="/img/concept/concept_counseling.jpg" alt="LOA THE OIL 商品イメージ">
+                    <img src="/assets/images/product/loa-the-oil/loa-the-oil-1.jpeg" alt="LOA THE OIL 商品イメージ">
                 </div>
             </div>
             <div class="loa-block reverse">
@@ -63,7 +59,7 @@
                     </p>
                 </div>
                 <div class="loa-image">
-                    <img src="/img/concept/concept_counseling.jpg" alt="LOA THE OIL ラインナップ">
+                    <img src="/assets/images/product/loa-the-oil/loa-the-oil-2.jpeg" alt="LOA THE OIL ラインナップ">
                 </div>
             </div>
             <section class="loa-ritual">

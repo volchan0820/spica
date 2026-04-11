@@ -145,7 +145,7 @@
     <?php echo $this->element('spica_header'); ?>
 
     <div class="spica-page-img">
-        <img src="/assets/images/product/product-main.jpeg" alt="hair atelier spica">
+        <img src="/assets/images/product/main/product-main.jpeg" alt="hair atelier spica">
     </div>
 
     <h1 class="spica-title fade-up">RRODUCTS</h1>
@@ -164,7 +164,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-aujua.jpeg" alt="取扱商品 Aujua">
+                    <img src="/assets/images/product/main/product-aujua.jpeg" alt="取扱商品 Aujua">
                 </div>
             </section>
             <div class="product-btn">
@@ -190,7 +190,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-milbon.jpeg" alt="取扱商品 MILBON">
+                    <img src="/assets/images/product/main/product-milbon.jpeg" alt="取扱商品 MILBON">
                 </div>
             </section>
             <div class="product-btn-reverse">
@@ -216,7 +216,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-loa-the-oil.jpeg" alt="取扱商品 LOA THE OIL">
+                    <img src="/assets/images/product/main/product-loa-the-oil.jpeg" alt="取扱商品 LOA THE OIL">
                 </div>
             </section>
             <div class="product-btn">
@@ -242,7 +242,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-rekera.jpeg" alt="取扱商品 ReKERA">
+                    <img src="/assets/images/product/main/product-rekera.jpeg" alt="取扱商品 ReKERA">
                 </div>
             </section>
             <div class="product-btn-reverse">
@@ -269,7 +269,7 @@
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-hunt.jpeg" alt="取扱商品 ＋ hunt">
+                    <img src="/assets/images/product/main/product-hunt.jpeg" alt="取扱商品 ＋ hunt">
                 </div>
             </section>
             <div class="product-btn">
@@ -285,21 +285,21 @@
                     </div>
                 </a>
             </div>
-            <!-- Magnet / CREATEs -->
+            <!-- Magnet -->
             <section class="product-block reverse fade-up">
                 <div class="product-text">
-                    <h2>Magnet/CREATEs</h2>
+                    <h2>Magnet</h2>
                     <p>
                         軽量、速乾、美髪、を兼ね備えた髪の仕上がりを自分好みにカスタマイズするならMagnetドライヤー。<br>
                         コテやヘアアイロンも、プロも選ぶ使いやすさやプロクオリティを自宅でも再現しやすいアイテムです！
                     </p>
                 </div>
                 <div class="product-image">
-                    <img src="/assets/images/product/product-magnet-creates.jpeg" alt="取扱商品 Magnet / CREATEs">
+                    <img src="/assets/images/product/main/product-magnet.jpeg" alt="取扱商品 Magnet">
                 </div>
             </section>
             <div class="product-btn-reverse">
-                <a href="/pages/products_magnet_creates/" class="btnBasic">
+                <a href="/pages/products_magnet/" class="btnBasic">
                     <div class="btnBasic__label">
                         <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
                         <span class="typo">M</span><span class="typo">O</span><span class="typo">R</span><span class="typo">E</span>

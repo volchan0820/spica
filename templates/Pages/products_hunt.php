@@ -17,10 +17,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <h1 class="spica-title fade-up">+ hunt</h1>
 
     <div class="contents-wrapper">
@@ -30,7 +26,7 @@
                     <span class="en">MEN'S STYLING</span>        
                 </header>
                 <div class="hunt-image">
-                    <img src="/img/product/product_hunt.jpg" alt="＋hunt メンズスタイリング剤">
+                    <img src="/assets/images/product/hunt/hunt-1.jpeg" alt="＋hunt メンズスタイリング剤">
                 </div>
                 <div class="hunt-lead">
                     <p>

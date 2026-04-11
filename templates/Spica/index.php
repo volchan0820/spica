@@ -186,7 +186,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="hair atelier spica ヘアスタイルギャラリー詳細ページへ">
+                        <img src="/assets/images/top/top-gallery-section.jpeg" alt="hair atelier spica ヘアスタイルギャラリー詳細ページへ">
                     </figure>
 
                     <div class="top-text">
@@ -221,7 +221,7 @@
 
                 <div class="top-content">
                     <figure class="top-section-image">
-                        <img src="/img/concept_counseling.jpg" alt="ブログ更新">
+                        <img src="/assets/images/top/top-blog-section.jpeg" alt="ブログ更新">
                     </figure>
 
                     <div class="top-text">

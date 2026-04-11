@@ -18,7 +18,7 @@
     <?php echo $this->element('spica_header'); ?>
 
     <div class="spica-page-img">
-        <img src="/assets/images/comcept/concept-main.jpeg" alt="hair atelier spica">
+        <img src="/assets/images/concept/main/concept-main.jpeg" alt="hair atelier spica">
     </div>
 
     <h1 class="spica-title fade-up">CONCEPT</h1>
@@ -36,7 +36,7 @@
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/assets/images/comcept/concept-privatesalon.jpeg" alt="完全プライベートサロン hair atelier spica の店内">
+                    <img src="/assets/images/concept/main/concept-privatesalon.jpeg" alt="完全プライベートサロン hair atelier spica の店内">
                 </div>
             </section>
             <div class="concept-btn-1">
@@ -62,7 +62,7 @@
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/assets/images/comcept/concept-counseling.jpeg" alt="初めての方も安心できる丁寧なカウンセリング hair atelier spica">
+                    <img src="/assets/images/concept/main/concept-counseling.jpeg" alt="初めての方も安心できる丁寧なカウンセリング hair atelier spica">
                 </div>
             </section>
             <!-- カット -->
@@ -75,7 +75,7 @@
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/assets/images/comcept/concept-cut.jpeg" alt="一人ひとりに似合わせたカットを行う hair atelier spica">
+                    <img src="/assets/images/concept/main/concept-cut.jpeg" alt="一人ひとりに似合わせたカットを行う hair atelier spica">
                 </div>
             </section>
             <!-- ヘアケア -->
@@ -88,7 +88,7 @@
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/assets/images/comcept/concept-haircare.jpeg" alt="髪のダメージを抑える丁寧なヘアケア施術 hair atelier spica">
+                    <img src="/assets/images/concept/main/concept-haircare.jpeg" alt="髪のダメージを抑える丁寧なヘアケア施術 hair atelier spica">
                 </div>
             </section>
             <div class="concept-btn-2-reverse">
@@ -121,7 +121,7 @@
                     </p>
                 </div>
                 <div class="concept-image">
-                    <img src="/assets/images/comcept/concept-ownersmessage.jpeg" alt="技術と想いを大切にする hair atelier spica オーナーのメッセージ写真">
+                    <img src="/assets/images/concept/main/concept-ownersmessage.jpeg" alt="技術と想いを大切にする hair atelier spica オーナーのメッセージ写真">
                 </div>
             </section>
             <div class="concept-btn-3">

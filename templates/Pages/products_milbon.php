@@ -17,10 +17,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <h1 class="spica-title fade-up">MILBON</h1>
 
     <div class="contents-wrapper">
@@ -36,10 +32,10 @@
                 </header>
                 <div class="milbon-products">
                     <figure class="product-item">
-                        <img src="/img/concept/concept_privatesalon.jpg" alt="MILBON スタイリング剤">
+                        <img src="/assets/images/product/milbon/milbon-1.jpeg" alt="MILBON スタイリング剤">
                     </figure>
                     <figure class="product-item">
-                        <img src="/img/concept/concept_privatesalon.jpg" alt="MILBON スタイリング剤">
+                        <img src="/assets/images/product/milbon/milbon-2.jpeg" alt="MILBON スタイリング剤">
                     </figure>
                 </div>
                 <div class="milbon-content">

@@ -24,7 +24,7 @@
     <?php echo $this->element('spica_header'); ?>
 
     <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
+        <img src="/assets/images/blog/blog-main.jpeg" alt="hair atelier spica">
     </div>
 
     <h1 class="spica-title fade-up">BLOG</h1>

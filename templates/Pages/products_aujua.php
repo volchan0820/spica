@@ -17,10 +17,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <h1 class="spica-title fade-up">AUJUA</h1>
 
     <div class="contents-wrapper">
@@ -40,7 +36,7 @@
                     </p>
                 </div>
                 <div class="aujua-image">
-                    <img src="/img/concept/concept_privatesalon.jpg" alt="hair atelier spica の店内">
+                    <img src="/assets/images/product/aujua/aujua-1.jpeg" alt="hair atelier spica の店内">
                 </div>
             </section>
             <section class="aujua-block fade-up" style="margin-bottom: 160px;">
@@ -57,7 +53,7 @@
                     </p>
                 </div>
                 <div class="aujua-image">
-                    <img src="/img/concept/concept_counseling.jpg" alt="丁寧なカウンセリングの様子 hair atelier spica">
+                    <img src="/assets/images/product/aujua/aujua-2.jpeg" alt="丁寧なカウンセリングの様子 hair atelier spica">
                 </div>
             </section>
             <section class="aujua-order fade-up">

@@ -23,9 +23,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
     <div class="contents-wrapper">
         <main class="concept-section">
             <section class="hair-care-block reverse fade-up">
@@ -43,7 +40,7 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="/img/concept_cut.jpg" alt="テクノロジー">
+                    <img src="/assets/images/concept/haircare/hair-care-microbubble.jpeg" alt="テクノロジー">
                 </div>
             </section>
             <section class="hair-care-block reverse fade-up">
@@ -72,7 +69,7 @@
                             これにより、ムラを防ぎつつダメージも軽減。
                         </p>
                     </div>
-                    <img src="/img/concept_cut.jpg" class="image img1">
+                    <img src="/assets/images/concept/haircare/hair-care-synergy-1.jpeg" class="image img1">
                 </div>
                 <div class="row">
                     <div class="text">
@@ -83,7 +80,7 @@
                             負担をかけずに、ハリ・コシ・まとまりのある仕上がりへ導きます。
                         </p>
                     </div>
-                    <img src="/img/concept_cut.jpg" class="image img2">
+                    <img src="/assets/images/concept/haircare/hair-care-synergy-2.jpeg" class="image img2">
                 </div>
                 <div class="row">
                     <div class="text">
@@ -95,7 +92,7 @@
                             キューティクルを整え、ツヤと手触りをアップ。
                         </p>
                     </div>
-                    <img src="/img/concept_cut.jpg" class="image img3">
+                    <img src="/assets/images/concept/haircare/hair-care-synergy-3.jpeg" class="image img3">
                 </div>
             </section>
             <div class="divider"></div>

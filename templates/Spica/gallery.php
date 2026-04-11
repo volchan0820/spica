@@ -20,7 +20,7 @@
 
     <!-- コンテンツ -->
     <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
+        <img src="/assets/images/gallery/gallery-main.jpeg" alt="hair atelier spica">
     </div>
         <h1 class="spica-title fade-up">GALLERY</h1>
     <div class="contents-wrapper">

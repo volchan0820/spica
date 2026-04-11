@@ -16,7 +16,7 @@
     
     <style>
         /* =====================================================
-            Magnet / CREATEs PAGE ONLY
+            Magnet PAGE ONLY
         ===================================================== */
         .magnet-section {
             max-width: 1000px;
@@ -105,11 +105,7 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
-    <h1 class="spica-title fade-up">Magnet / CREATEs</h1>
+    <h1 class="spica-title fade-up">Magnet</h1>
 
     <div class="contents-wrapper">
         <main class="aujua-section">
@@ -118,7 +114,7 @@
                     <span class="en">PROFESSIONAL TOOL</span>        
                 </header>
                 <div class="magnet-image">
-                    <img src="/img/product/product_magnet_creates.jpg" alt="Magnet / CREATEs ドライヤー・ヘアアイロン">
+                    <img src="/assets/images/product/magnet/magnet-1.jpeg" alt="Magnet ドライヤー・ヘアアイロン">
                 </div>
                 <div class="magnet-lead">
                     <p>

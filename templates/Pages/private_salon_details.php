@@ -23,10 +23,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <div class="contents-wrapper">
         <main class="concept-section">
             <!-- 完全プライベート空間 -->
@@ -44,7 +40,7 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="/img/concept_cut.jpg" alt="完全プライベート空間">
+                    <img src="/assets/images/concept/private-salon/private-salon-1.jpeg" alt="完全プライベート空間">
                 </div>
             </section>
 
@@ -64,7 +60,7 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="/img/concept_cut.jpg" alt="最新チェア">
+                    <img src="/assets/images/concept/private-salon/private-salon-2.jpeg" alt="最新チェア">
                 </div>
             </section>
 
@@ -86,7 +82,7 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="/img/concept_cut.jpg" alt="リラックス空間">
+                    <img src="/assets/images/concept/private-salon/private-salon-3.jpeg" alt="リラックス空間">
                 </div>
             </section>
         </main>

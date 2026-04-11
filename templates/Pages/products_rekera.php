@@ -17,10 +17,6 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
     <h1 class="spica-title fade-up">ReKERA TREATMENT</h1>
 
     <div class="contents-wrapper">
@@ -56,7 +52,7 @@
                         </p>
                     </div>
                     <div class="rekera-image">
-                        <img src="/img/concept/concept_counseling.jpg" alt="ReKERA トリートメント">
+                        <img src="/assets/images/product/rekera/rekera-1.jpeg" alt="ReKERA トリートメント">
                     </div>
                 </div>
                 <h3 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">
