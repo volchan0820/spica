@@ -324,7 +324,7 @@
 
     <!-- レスポンシブ用 -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?= $this->element('page_top_mobile_script'); ?>
+    <?= $this->element('page_top_mobile_script_index'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
