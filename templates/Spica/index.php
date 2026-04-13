@@ -320,7 +320,7 @@
 
     <!-- ページトップボタン -->
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-    <?= $this->element('page_top_script'); ?>
+    <?= $this->element('page_top_script_index'); ?>
 
     <!-- レスポンシブ用 -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>

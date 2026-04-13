@@ -17,7 +17,7 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title fade-up">ReKERA TREATMENT</h1>
+    <h1 class="spica-title">ReKERA TREATMENT</h1>
 
     <div class="contents-wrapper">
         <main class="rekera-section">
@@ -88,7 +88,7 @@
 
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-	<?php echo $this->element('page_top_script'); ?>
+	<?php echo $this->element('page_top_script_detail'); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>

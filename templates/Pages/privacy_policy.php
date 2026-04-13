@@ -52,11 +52,7 @@
 <body>
     <?php echo $this->element('spica_header'); ?>
 
-    <div class="spica-page-img">
-        <img src="/img/cafe_2.jpg" alt="hair atelier spica">
-    </div>
-
-    <h1 class="spica-title fade-up">PRIVACY POLICY</h1>
+    <h1 class="spica-title">PRIVACY POLICY</h1>
 
     <div class="contents-wrapper">
         <section class="privacy-policy-content">

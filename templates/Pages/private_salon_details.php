@@ -97,7 +97,7 @@
 
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-	<?php echo $this->element('page_top_script'); ?>
+	<?php echo $this->element('page_top_script_detail_2'); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>

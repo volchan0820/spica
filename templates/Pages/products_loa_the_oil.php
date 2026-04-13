@@ -17,7 +17,7 @@
 <body>
     <?= $this->element('spica_header'); ?>
 
-    <h1 class="spica-title fade-up">LOA THE OIL</h1>
+    <h1 class="spica-title">LOA THE OIL</h1>
 
     <div class="contents-wrapper">
         <main class="loa-section fade-up">
@@ -142,7 +142,7 @@
 
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-	<?php echo $this->element('page_top_script'); ?>
+	<?php echo $this->element('page_top_script_detail'); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>

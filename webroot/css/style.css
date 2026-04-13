@@ -1705,20 +1705,20 @@ body .editPreviewButton {
     .milbon-products {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 60px;
+        gap: 40px;
         max-width: 1000px;
         margin: 0 auto 120px;
     }
     .product-item {
-        background: #fafafa;
-        padding: 60px 40px;
+        /* background: #fafafa;
+        padding: 60px 40px; */
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .product-item img {
         width: 100%;
-        max-width: 320px;
+        /* max-width: 420px; */
         height: auto;
         transition: transform 0.4s ease;
     }
