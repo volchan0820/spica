@@ -228,14 +228,14 @@
 		margin-bottom: 0px;
     	padding-bottom: 0px;
 	}
-	.top-inner {
+	/* .top-inner {
         padding: 0 60px;
         border-bottom: none;
         position: relative;
 		margin-bottom: 160px;
 		display: block;
 		margin: 0 auto;
-    }
+    } */
 	.top-inner h2 {
         font-size: 3rem;
         margin-bottom: 15px;
@@ -395,7 +395,7 @@
 		cursor: pointer;
 		z-index: 1300; 
 	}
-	.sidebar {
+	/* .sidebar {
 		position: fixed;
 		top: 0;
 		right: -1000px;
@@ -405,7 +405,7 @@
 		transition: right 0.3s;
 		z-index: 1200;
 		margin-top: 75px;
-	}
+	} */
 	.sidebar.active {
 		right: 0;
 	}

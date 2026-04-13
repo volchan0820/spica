@@ -259,12 +259,12 @@
 		margin-bottom: 0px;
     	padding-bottom: 0px;
 	}
-	.top-inner {
+	/* .top-inner {
         padding: 0 60px;
         border-bottom: none;
         position: relative;
 		margin-bottom: 160px;
-    }
+    } */
 	.top-inner h2 {
         font-size: 3rem;
         margin-bottom: 15px;
