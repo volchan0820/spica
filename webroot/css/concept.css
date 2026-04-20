@@ -1,163 +1,6 @@
-/*----------------------------------------
- * concept.php のスタイル
-----------------------------------------*/
-/* .concept-btn-1 {
-    margin-left: 20px;
-    margin-top: -70px;
-}
-.concept-btn-2-reverse {
-    margin-left: 610px;
-    margin-top: -70px;
-}
-.concept-btn-3 {
-    margin-left: 20px;
-}
-.concept-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 20px;
-    margin-bottom: 100px;
-}
-.concept-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 200px;
-    gap: 40px;
-    flex: 1;
-    letter-spacing: 4px;
-}
-.concept-block:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.concept-text {
-    padding-left: 20px;
-    flex: 1;
-    margin-top: -120px;
-}
-.concept-text h2 {
-    font-size: 4.8rem;
-    letter-spacing: 8px;
-    margin-bottom: 40px;
-    text-align: left;
-    font-family: 'Allura', cursive;
-}
-.concept-text p {
-    font-size: 2rem;
-    font-family: 'Zen Old Mincho', serif;
-}
-.concept-block.reverse {
-    flex-direction: row-reverse;
-}
-.concept-image {
-    position: relative;
-    display: inline-block;
-    flex: 1;
-    text-align: center;
-}
-.concept-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    z-index: 2;
-}
-.concept-image::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: #d2b48c6b;
-}
-@media screen and (max-width: 1024px) {
-    .concept-block {
-		margin-bottom: 20px;
-		margin-top: 60px;
-		flex-direction: column;
-	}
-	.concept-block.reverse {
-		flex-direction: column;
-	}
-	.concept-block .concept-image {
-		 text-align: center;
-	}
-	.concept-block .concept-text {
-		 text-align: center;
-	}
-    .concept-block .concept-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-block .concept-text p {
-        font-size: 1.8rem;
-        line-height: 1.5;
-		text-align: left;
-    }
-	.concept-btn-1 {
-		margin-left: 0px;
-		margin-top: 0px;
-	}
-	.concept-btn-2-reverse {
-		margin-left: 0px;
-		margin-top: 0px;
-	}
-	.concept-btn-3 {
-		margin-left: 0px;
-	}
-	.concept-block {
-		margin-bottom: 20px;
-		margin-top: 60px;
-		flex-direction: column;
-	}
-	.concept-block.reverse {
-		flex-direction: column;
-	}
-	.concept-block .concept-image {
-		 text-align: center;
-	}
-	.concept-block .concept-text {
-		 text-align: center;
-	}
-    .concept-block .concept-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-block .concept-text p {
-		text-align: left;
-    }
-}
-@media screen and (max-width: 480px) {
-	.concept-block.reverse {
-		flex-direction: column;
-	}
-	.concept-image {
-		text-align: center;
-	}
-	.concept-text {
-		text-align: center;
-		margin-top: 0px;
-	}
-    .concept-text h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-	.concept-text p {
-        font-size: 1.4rem;
-        line-height: 1.4;
-		text-align: left;
-    }
-} */
-
-/* 以下、上記スタイルをGPTも添削させたスタイル */
+/* =====================================================
+    concept.php
+===================================================== */
 .concept-btn-1 {
     margin-left: 20px;
     margin-top: -70px;
@@ -287,8 +130,6 @@
     }
 }
 
-
-
 /* 3つの徹底事項 */
 .three-points-section {
     max-width: 1200px;
@@ -372,24 +213,15 @@
     }
 }
 
-
-/*----------------------------------------
- * private_salon_details.php のスタイル
-----------------------------------------*/
-.concept-section section {
-    /* コンテンツとボタンとの余白が不自然なので一旦コメントアウト */
-    /* margin-bottom: 100px; */
-}
+/* =====================================================
+    private_salon_details.php
+===================================================== */
 .divider {
     width: 60px;
     height: 1px;
     background: #ccc;
     margin: 80px auto;
 }
-/* これがあるとアクセスの文字に影響がある、なぜこのCSS追加したが覚えていないが一旦コメントアウト */
-/* .text {
-    max-width: 480px;
-} */
 .text h2 {
     font-size: 24px;
     font-weight: 300;
@@ -415,11 +247,6 @@
 .reverse {
     flex-direction: row-reverse;
 }
-/* これがあるとアクセスの画像に影響がある、なぜこのCSS追加したが覚えていないが一旦コメントアウト */
-/* .image {
-    width: 100%;
-    max-width: 500px;
-} */
 .image img {
     width: 100%;
     border-radius: 0px;
@@ -451,7 +278,6 @@
 }
 @media screen and (max-width: 768px) {
     .spica-page-img img {
-        /* height: 260px; */
         height: 600px;
     }
     .concept-details-block,
@@ -473,9 +299,9 @@
     }
 }
 
-/*----------------------------------------
- * hair_care_details.php のスタイル
-----------------------------------------*/
+/* =====================================================
+    hair_care_details.php
+===================================================== */
 .hair-care-block {
     display: flex;
     flex-direction: column-reverse;
@@ -649,9 +475,9 @@
     text-align: center;
 }
 
-/*----------------------------------------
- * concept_staff.php のスタイル
-----------------------------------------*/
+/* =====================================================
+    concept_staff.php
+===================================================== */
 .staff-section {
     max-width: 1000px;
     margin: 0 auto;

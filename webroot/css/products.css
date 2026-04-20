@@ -1,0 +1,681 @@
+/* =====================================================
+    products.php
+===================================================== */
+/* products_aujua.php */
+.aujua-section {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+.aujua-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 200px;
+}
+.aujua-block.reverse {
+    flex-direction: row-reverse;
+}
+.aujua-text {
+    flex: 1;
+    padding-left: 20px;
+    margin-top: -120px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.aujua-text h2 {
+    font-size: 4.8rem;
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+    font-family: 'Allura', cursive;
+}
+.aujua-text p {
+    font-size: 2rem;
+}
+.aujua-image {
+    flex: 1;
+    text-align: center;
+}
+.aujua-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.aujua-intro {
+    margin-top: -80px;
+}
+.intro-en {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    color: #aaa;
+    margin-bottom: 24px;
+}
+.intro-main {
+    font-size: 2.2rem;
+    line-height: 1.9;
+    margin-bottom: 32px;
+}
+.intro-sub {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #555;
+}
+.aujua-order {
+    max-width: 900px;
+    margin: 160px auto;
+    font-family: 'Zen Old Mincho', serif;
+}
+.aujua-order-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.aujua-order-header .en {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.aujua-order-header h2 {
+    font-size: 3.2rem;
+    font-family: 'Allura', cursive;
+}
+.aujua-order-lead {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.aujua-order-lead p {
+    font-size: 1.8rem;
+    line-height: 2;
+}
+.aujua-spica-point {
+    margin-top: 160px;
+}
+.aujua-order-problems h3,
+.aujua-lineup h3,
+.aujua-spica-point h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+.aujua-order-problems ul,
+.aujua-spica-point ul {
+    max-width: 600px;
+    margin: 0 auto 120px;
+    list-style: none;
+    padding: 0;
+}
+.aujua-order-problems li,
+.aujua-spica-point li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.6rem;
+}
+.lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.lineup-card {
+    padding: 40px 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.lineup-card .category {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: #aaa;
+}
+.lineup-card h4 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+.lineup-card p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.lineup-card .example {
+    display: block;
+    margin-top: 24px;
+    font-size: 1.3rem;
+    color: #999;
+}
+.aujua-closing {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 120px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 767px) {
+    .aujua-block {
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 32px;
+    }
+    .aujua-text {
+        margin-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    .aujua-text h2 {
+        font-size: 3.2rem;
+        letter-spacing: 4px;
+        margin-bottom: 32px;
+    }
+    .aujua-text p {
+        font-size: 1.4rem;
+    }
+    .intro-main {
+        font-size: 1.8rem;
+    }
+
+    .intro-sub {
+        font-size: 1.4rem;
+    }
+    .aujua-order {
+        margin: 100px auto;
+        padding: 0 16px;
+    }
+    .aujua-order-header h2 {
+        font-size: 2.4rem;
+    }
+    .aujua-order-lead p {
+        font-size: 1.6rem;
+    }
+    .lineup-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .aujua-closing {
+        font-size: 1.6rem;
+        margin-top: 80px;
+    }
+}
+
+/* products_milbon.php */
+.milbon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+}
+.milbon-section {
+    max-width: 1000px;
+    margin: 0 auto 180px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.milbon-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.milbon-en {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.milbon-header h2 {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    font-family: 'Zen Old Mincho', serif;
+    margin-bottom: 24px;
+}
+.milbon-lead {
+    font-size: 1.8rem;
+    line-height: 2;
+}
+.milbon-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 120px;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+.product-item:hover img {
+    transform: translateY(-6px);
+}
+.milbon-content {
+    max-width: 700px;
+    margin: 0 auto 120px;
+    text-align: center;
+}
+.milbon-text {
+    font-size: 1.7rem;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.milbon-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 120px;
+}
+.feature h3 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 16px;
+}
+.feature p {
+    font-size: 1.5rem;
+    line-height: 1.9;
+}
+.milbon-target,
+.milbon-spica {
+    max-width: 600px;
+    margin: 0 auto 100px;
+}
+.milbon-target h3,
+.milbon-spica h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+.milbon-target ul,
+.milbon-spica ul {
+    list-style: none;
+    padding: 0;
+}
+.milbon-target li,
+.milbon-spica li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.6rem;
+}
+.milbon-closing {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 120px;
+}
+@media (max-width: 768px) {
+    .milbon-container {
+        padding: 0 16px;
+        margin-bottom: 60px;
+    }
+    .milbon-header {
+        margin-bottom: 48px;
+    }
+    .milbon-header h2 {
+        font-size: 2.4rem;
+    }
+    .milbon-lead {
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+    .milbon-section {
+        margin-bottom: 100px;
+    }
+    .milbon-products {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 80px;
+    }
+    .product-item {
+        padding: 36px 24px;
+    }
+    .product-item img {
+        max-width: 240px;
+    }
+    .milbon-content {
+        margin-bottom: 80px;
+    }
+    .milbon-text {
+        font-size: 1.5rem;
+        line-height: 1.9;
+    }
+    .milbon-features {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 80px;
+    }
+    .feature h3 {
+        font-size: 1.3rem;
+    }
+    .feature p {
+        font-size: 1.45rem;
+    }
+    .milbon-target,
+    .milbon-spica {
+        margin-bottom: 72px;
+    }
+    .milbon-target h3,
+    .milbon-spica h3 {
+        font-size: 1.8rem;
+    }
+    .milbon-target li,
+    .milbon-spica li {
+        font-size: 1.45rem;
+        padding: 10px 0;
+    }
+    .milbon-closing {
+        font-size: 1.6rem;
+        margin-top: 72px;
+        line-height: 1.8;
+    }
+}
+
+/* products_loa_the_oil.php */
+.loa-section {
+    max-width: 1000px;
+    margin: 0 auto 180px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.loa-page-en {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #aaa;
+    margin-bottom: 100px;
+}
+.loa-intro {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.loa-intro p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #444;
+}
+.loa-block {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 140px;
+}
+.loa-block.reverse {
+    flex-direction: row-reverse;
+}
+.loa-text h3 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+.loa-text p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #555;
+}
+.loa-image {
+    text-align: center;
+}
+.loa-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+.loa-closing {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 120px;
+}
+.loa-lifestyle {
+    max-width: 720px;
+    margin: 0 auto 140px;
+    text-align: center;
+}
+.loa-lifestyle p {
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: #555;
+    margin-bottom: 32px;
+}
+.loa-lifestyle-lead {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
+    color: #333;
+}
+.loa-lifestyle-note {
+    margin-top: 56px;
+    font-size: 1.5rem;
+    color: #777;
+}
+.loa-ritual {
+    margin: 160px auto;
+    text-align: center;
+}
+.loa-ritual-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+    line-height: 1.6;
+}
+.loa-ritual-title span {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    color: #aaa;
+}
+.loa-ritual-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.loa-ritual-step {
+    text-align: center;
+    min-width: 200px;
+}
+.loa-ritual-step .num {
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+.loa-ritual-step h4 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.loa-ritual-step p {
+    font-size: 1.4rem;
+    line-height: 1.9;
+    color: #666;
+}
+.loa-ritual-line {
+    width: 60px;
+    height: 1px;
+    background: #ddd;
+}
+@media (max-width: 768px) {
+    .loa-ritual-flow {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .loa-ritual-line {
+        width: 1px;
+        height: 40px;
+    }
+    .loa-block,
+    .loa-block.reverse {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .loa-intro p {
+        font-size: 1.6rem;
+    }
+}
+
+/* products_rekera.php */
+.rekera-section {
+    max-width: 1000px;
+    margin: 0 auto 200px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.rekera-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.rekera-header .en {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #aaa;
+    margin-bottom: 24px;
+}
+.rekera-header h2 {
+    font-size: 3.2rem;
+    line-height: 1.6;
+    font-family: 'Allura', cursive;
+}
+.rekera-lead {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.rekera-lead p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #444;
+}
+.rekera-block {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 140px;
+}
+.rekera-text h3 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+.rekera-text p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #555;
+}
+.rekera-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+.rekera-list {
+    max-width: 700px;
+    margin: 0 auto 120px;
+    list-style: none;
+    padding: 0;
+}
+.rekera-list li {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.6rem;
+}
+.rekera-point {
+    max-width: 700px;
+    margin: 0 auto 140px;
+    list-style: none;
+    padding-left: 10px;
+}
+.rekera-point li {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 16px;
+}
+.rekera-closing {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 120px;
+}
+@media (max-width: 768px) {
+    .rekera-block {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .rekera-header h2 {
+        font-size: 2.6rem;
+    }
+}
+
+
+/* products_hunt.php */
+.hunt-section {
+    max-width: 900px;
+    margin: 0 auto 200px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.hunt-header {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.hunt-header .en {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.hunt-header h2 {
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    font-family: 'Allura', cursive;
+}
+.hunt-image {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.hunt-image img {
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+.hunt-lead {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.hunt-lead p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #444;
+}
+.hunt-feature {
+    max-width: 600px;
+    margin: 0 auto 120px;
+}
+.hunt-feature p {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.hunt-recommend {
+    max-width: 600px;
+    margin: 0 auto 140px;
+    list-style: none;
+    padding: 0;
+}
+.hunt-recommend li {
+    font-size: 1.6rem;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+.hunt-closing {
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    margin-top: 120px;
+}
+@media (max-width: 768px) {
+    .hunt-header h2 {
+        font-size: 2.8rem;
+    }
+}
