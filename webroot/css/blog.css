@@ -158,12 +158,12 @@
     font-family: 'Zen Old Mincho', serif;
 }
 .blog-detail h2 {
-font-size: 24px;
+    font-size: 1.8rem;
     margin-top: 40px;
     margin-bottom: 20px;
     color: #333;
     text-align: center;
-    font-family: 'Zen Old Mincho', serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .preview-title h2 {
     font-size: 22px;
@@ -208,7 +208,10 @@ font-size: 24px;
 }
 .blog-content {
     margin-top: 60px;
-    font-family: 'Zen Old Mincho', serif;
+}
+.blog-content p {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .blog-content img {
     display: block;

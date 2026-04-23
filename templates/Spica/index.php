@@ -43,10 +43,6 @@
                 お使いのブラウザは動画に対応していません。
             </video>
         </div>
-        <!-- <div class="spica-logo-main">
-            <div class="glass-bg"></div>
-            <img src="/img/spica-logo-white.png" alt="Hair atelier spica ロゴ" />
-        </div> -->
     </div>
 
     <!-- メインコンテンツ -->
