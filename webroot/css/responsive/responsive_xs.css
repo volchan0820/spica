@@ -81,30 +81,6 @@
 	.staff-info {
 		width: 100%;
 	}
-	/* .staff-section-title {
-		font-size: 2.2rem;
-		margin-bottom: 6px;
-		letter-spacing: 1px;
-	}
-	.staff-text {
-		font-size: 1.8rem;
-		line-height: 1.6;
-		padding-left: 0;
-		padding-bottom: 45px;
-	}
-	.staff-text li {
-		margin-bottom: 0.5rem;
-	} */
-
-	/* ------------------------------------------------
-	* サイト　アクセス　Spica/access.php
-	* -----------------------------------------------*/
-
-
-	/* ------------------------------------------------
-	* サイト　予約　Spica/reservation.php
-	* -----------------------------------------------*/
-
 
 	/* ------------------------------------------------
 	* サイト・管理画面　ハンバーガーメニュー
@@ -128,17 +104,6 @@
 		cursor: pointer;
 		z-index: 1300; 
 	}
-	/* .sidebar {
-		position: fixed;
-		top: 0;
-		right: -1000px;
-		width: 100%;
-		padding: 20% 20px;
-		box-sizing: border-box;
-		transition: right 0.3s;
-		z-index: 1200;
-		margin-top: 75px;
-	} */
 	.sidebar.active {
 		right: 0;
 	}
@@ -267,15 +232,6 @@
         margin: 0;
         margin-top: auto;
     }
-    /* .slider {
-        height: 220px !important;
-        padding: 0 12px !important;
-        box-sizing: border-box;
-    }
-    .slider img {
-        height: 220px !important;
-        object-fit: cover !important;
-    } */
     .spica-logo-main {
         top: 65% !important;
         height: 70px !important;

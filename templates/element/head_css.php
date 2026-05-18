@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/concept.css">
 <link rel="stylesheet" href="/css/products.css">
+<link rel="stylesheet" href="/css/products_detail.css">
 <link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/responsive/responsive_lg.css">
 <link rel="stylesheet" href="/css/responsive/responsive_md.css">

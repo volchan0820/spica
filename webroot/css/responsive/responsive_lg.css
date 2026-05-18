@@ -1,56 +1,4 @@
 @media screen and (max-width: 1024px) {
-	/* .top-block {
-		margin-bottom: 0px;
-    	padding-bottom: 0px;
-	}
-	.top-inner h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        letter-spacing: 4px;
-    }
-    .top-inner::after {
-        content: "";
-        display: block;
-        width: 80%;
-        height: 1px;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-	.top-inner h2::after {
-		width: 90%;
-	}
-	.top-inner h2::before {
-		left: calc(98% - 25px);
-	}
-	.top-block:nth-of-type(even) .top-inner h2::before {
-		right: calc(5% + 25px);
-	}
-	.top-block:last-of-type .top-inner::after {
-		content: none;
-	}
-    .top-content {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .top-section-image img {
-        width: 100%;
-        height: auto;
-    }
-    .top-block.reverse .top-content {
-        flex-direction: column;
-    }
-	.top-block:nth-of-type(even) h2 {
-		text-align: left;
-	}
-	.top-block:nth-of-type(even) h2::after {
-		left: 0;
-        right: auto;
-	} */
-
 	/* ------------------------------------------------
 	* サイト　コンセプトスタッフ　Page/concept_staff.php
 	* -----------------------------------------------*/
@@ -81,30 +29,6 @@
 	.staff-info {
 		width: 100%;
 	}
-	/* .staff-section-title {
-		font-size: 2.2rem;
-		margin-bottom: 6px;
-		letter-spacing: 1px;
-	}
-	.staff-text {
-		font-size: 1.8rem;
-		line-height: 1.6;
-		padding-left: 0;
-		padding-bottom: 45px;
-	}
-	.staff-text li {
-		margin-bottom: 0.5rem;
-	} */
-
-	/* ------------------------------------------------
-	* サイト　アクセス　Spica/access.php
-	* -----------------------------------------------*/
-    /* .access-parking .text {
-        font-size: 1.5rem;
-    }    
-    .access-parking .image img {
-        max-width: 90%;
-    } */
 
 	/* ------------------------------------------------
 	* サイト　予約　Spica/reservation.php
@@ -131,11 +55,6 @@
 	}
 
 	/* ------------------------------------------------
-	* サイト・管理画面　ハンバーガーメニュー
-	* -----------------------------------------------*/
-	
-
-	/* ------------------------------------------------
 	* サイト・管理画面　ブログ
 	* -----------------------------------------------*/
     .thumbnail-container {
@@ -154,14 +73,6 @@
         display: block;
         border-radius: 0;
     }
-    /* .spica-page-img img {
-        height: 180px;
-    } */
-    /* .spica-title {
-        font-size: 22px;
-        margin-top: 80px;
-        margin-bottom: 80px;
-    } */
     .blog-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -193,15 +104,6 @@
         margin: 0;
         margin-top: auto;
     }
-    /* .slider {
-        height: 220px !important;
-        padding: 0 12px !important;
-        box-sizing: border-box;
-    }
-    .slider img {
-        height: 220px !important;
-        object-fit: cover !important;
-    } */
     .spica-logo-main {
         top: 65% !important;
         height: 70px !important;
