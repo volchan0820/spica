@@ -48,8 +48,8 @@
     <!-- メインコンテンツ -->
     <main class="top-section">
         <div class="top-right-note fade-up">
-            マンツーマンでお客様に寄り添う<br>
-            カフェのような完全プライベート空間でリラックスしながらお過ごしください
+            店内一席のみの完全プライベートサロン<br>
+            マンツーマンでお客様に寄り添いお悩みを解決します
         </div>
         <!-- h1はページの主題として必須（視覚的非表示） -->
         <h1 class="visually-hidden">Hair atelier spica（ヘアアトリエスピカ）</h1>
