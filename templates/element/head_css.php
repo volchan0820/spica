@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="/css/products.css">
 <link rel="stylesheet" href="/css/products_detail.css">
 <link rel="stylesheet" href="/css/menu.css">
+<link rel="stylesheet" href="/css/gallery.css">
 <link rel="stylesheet" href="/css/responsive/responsive_lg.css">
 <link rel="stylesheet" href="/css/responsive/responsive_md.css">
 <link rel="stylesheet" href="/css/responsive/responsive_sm.css">
