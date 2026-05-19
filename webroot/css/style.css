@@ -304,13 +304,7 @@
     transform: translateX(10px) translateY(-50%) rotate(45deg);
 }
 
-
-
-
-/*----------------------------------------
- サイト　ヘッダー
-----------------------------------------*/
-/* ロゴのスタイル */
+/* ヘッダー */
 .spica-logo-top {
     display: flex;
     justify-content: center;
@@ -339,7 +333,6 @@
     width: 90%;
     max-width: 1200px;
 }
-/* 左右のナビゲーションメニュー */
 .navGlobal {
     display: flex;
     align-items: center;
@@ -381,7 +374,6 @@
     width: 100%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    /* 虹色グラデーションの初期設定 */
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -411,9 +403,7 @@
     }
 }
 
-/*----------------------------------------
- サイト　フッター
-----------------------------------------*/
+/* フッター */
 .footer {
     background-color: rgb(90, 90, 90);
 }
@@ -447,10 +437,7 @@
     color: #c4c4c4;
 }
 
-/*----------------------------------------
- 管理画面　共通
-----------------------------------------*/
-/* 各ページのタイトル */
+/* 管理画面　共通 */
 .admin-title {
     letter-spacing: 8px;
     text-align: center;
@@ -461,7 +448,6 @@
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
-/* ログアウトボタンのスタイル */
 .logout a {
     margin: 20px auto;
     font-size: 16px;
@@ -489,7 +475,6 @@
 .logout i {
     margin-right: 6px;
 }
-/* 戻るボタン */
 .return a {
     margin: 20px auto;
     font-size: 16px;
@@ -518,10 +503,7 @@
     margin-right: 6px;
 }
 
-/*----------------------------------------
- 管理画面　ログイン画面
-----------------------------------------*/
-/* ラベルのスタイル */
+/* 管理画面　ログイン画面 */
 .form-label {
     font-size: 14px;
     color: #555;
@@ -543,7 +525,6 @@ body .form-input {
     font-style: normal;
     margin-left: 20%;
 }
-/* ボタンのスタイル */
 body .form-submit {
     margin: 20px auto;
     font-size: 16px;
@@ -560,7 +541,6 @@ body .form-submit {
     font-weight: 400;
     font-style: normal;
 }
-/* スマホ用のレスポンシブスタイル */
 @media screen and (max-width: 768px) {
     body .top-image img {
         width: 80%;
