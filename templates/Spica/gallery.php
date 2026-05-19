@@ -13,6 +13,23 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
+
+    <style>
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .contents-wrapper {
+                padding: 0 40px;
+            }
+            .grid {
+                margin: 0 auto;
+            }
+            .grid-item {
+                margin-bottom: 16px;
+            }
+            .filter-area {
+                padding: 0 0 30px;
+            }
+        }
+</style>
 </head>
 <body>
     <!-- ヘッダー -->
