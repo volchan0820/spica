@@ -856,6 +856,7 @@ body .editPreviewButton {
 /* =====================================================
     access.php
 ===================================================== */
+/* hair-atelier-spica-title-imgは、reservation.php にも適用させている */
 .hair-atelier-spica-title-img {
     max-width: 24%;
     margin: 0 auto;
