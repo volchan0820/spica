@@ -19,10 +19,14 @@
     align-items: flex-start;
     transition: transform 0.3s;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     overflow: hidden;
     height: 250px;
     border: 1.5px solid #ffffff;
+}
+.blog-info {
+    min-width: 0;
 }
 .blog-post:hover {
     cursor: pointer;
