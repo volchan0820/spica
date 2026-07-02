@@ -324,7 +324,7 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
     gap: 40px;
 }
 .hair-care-block:last-child {
@@ -425,18 +425,6 @@
     position: absolute;
     right: 0;
 }
-.hair-care-block-alt-plus .img1 {
-    top: -20px;
-    right: -10px;
-}
-.hair-care-block-alt-plus .img2 {
-    top: 40px;
-    right: 50px;
-}
-.hair-care-block-alt-plus .img3 {
-    top: -10px;
-    right: -30px;
-}
 .hair-care-block-extended {
     display: flex;
     flex-direction: column-reverse;
@@ -469,7 +457,7 @@
 @media (max-width: 1023px) {
     .hair-care-block {
         flex-direction: column;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
     .hair-care-block .text {
         order: 1;
@@ -478,7 +466,7 @@
         order: 2;
     }
     .hair-care-block .text h2 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin-bottom: 15px;
         letter-spacing: 4px;
     }
@@ -521,7 +509,7 @@
     }
     .hair-care-block-alt-plus .image {
         position: relative;
-        width: 100%;
+        width: 280px;
         right: 0;
         top: 20px;
     }
@@ -541,7 +529,7 @@
 }
 @media (max-width: 480px) {
     .hair-care-block .text h2 {
-        margin-top: 100px;
+        margin-top: 140px;
     }
     .hair-care-block .text p,
     .hair-care-block-alt-plus .text,
@@ -551,6 +539,10 @@
     }
     .hair-care-block-alt-plus .row {
         margin-bottom: 100px;
+    }
+    .hair-care-block-alt-plus .text p {
+        font-size: 1.4rem;
+        line-height: 1.4;
     }
 }
 

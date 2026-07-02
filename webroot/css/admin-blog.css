@@ -1,0 +1,16 @@
+@media screen and (max-width: 1024px) {
+/* =====================================================
+    管理画面　ブログ
+===================================================== */
+	.add-admin,
+	.publish-complete-admin,
+	.edit-admin,
+	.draft-save-complete-admin,
+	.draft_delete_complete_admin {
+		padding-inline: 20px !important;
+	}
+	.admin-title {
+		font-size: 22px;
+		margin-top: 100px;
+	}
+}
