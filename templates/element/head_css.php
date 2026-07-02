@@ -4,13 +4,10 @@
 <link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/concept.css">
 <link rel="stylesheet" href="/css/products.css">
-<link rel="stylesheet" href="/css/products_detail.css">
+<link rel="stylesheet" href="/css/products-detail.css">
 <link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/gallery.css">
-<link rel="stylesheet" href="/css/responsive/responsive_lg.css">
-<link rel="stylesheet" href="/css/responsive/responsive_md.css">
-<link rel="stylesheet" href="/css/responsive/responsive_sm.css">
-<link rel="stylesheet" href="/css/responsive/responsive_xs.css">
+<link rel="stylesheet" href="/css/admin-blog.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">

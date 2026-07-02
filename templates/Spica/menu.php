@@ -187,7 +187,7 @@
                             <span class="price">¥28,000~¥32,500</span>
                         </div>
                         <div class="menu-item">
-                            <span class="name menu-name">カット+カラー+リタッチ+ストレート+トリートメント</span>
+                            <span class="name menu-name">カット+カラーリタッチ+ストレート+トリートメント</span>
                             <span class="price">¥32,200</span>
                         </div>
                         <div class="menu-item">

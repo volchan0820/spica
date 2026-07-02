@@ -23,7 +23,7 @@
 <body>  
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title fade-up">SOWNER / STYLIST</h1>
+    <h1 class="spica-title fade-up">OWNER / STYLIST</h1>
 
     <div class="contents-wrapper">
         <div class="staff-section fade-up">
