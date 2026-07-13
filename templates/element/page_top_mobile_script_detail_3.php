@@ -1,44 +1,41 @@
 <!-- レスポンシブ　ページトップボタン -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-
+	document.addEventListener('DOMContentLoaded', function () {
 	const pagetopMobile = document.getElementById('pagetop-mobile');
 	const footer = document.querySelector('footer');
+	const footerHeight = 150; // フッターの高さ
 	const showPoint = 50; // この位置までスクロールしたら表示
-
-	const defaultBottom = <?= isset($pageTopBottom) ? $pageTopBottom : 20 ?>;
-	const footerOffset = <?= isset($pageTopFooterOffset) ? $pageTopFooterOffset : -20 ?>;
 
 	function togglePagetopMobile() {
 		const scrollY = window.scrollY;
 		const windowH = window.innerHeight;
 		const docH = document.body.offsetHeight;
 
-		// フッターの高さを毎回取得（画像読み込み後の変化にも対応）
-		const footerHeight = footer ? footer.offsetHeight : 150;
-
+		// スクロール位置で表示・非表示を切り替え
 		if (scrollY > showPoint) {
-			pagetopMobile.classList.add('show');
+		pagetopMobile.classList.add('show');
 		} else {
-			pagetopMobile.classList.remove('show');
+		pagetopMobile.classList.remove('show');
 		}
 
+		// フッターに被らないよう調整
 		const overlap = (scrollY + windowH) - (docH - footerHeight);
-
 		if (overlap > 0) {
-			pagetopMobile.style.bottom = (overlap + footerOffset) + "px";
+		// フッター接近時の位置調整（値を大きくすると下に、小さくすると上に移動）
+		pagetopMobile.style.bottom = (overlap - 0) + "px";
 		} else {
-			pagetopMobile.style.bottom = defaultBottom + "px";
+		// デフォルトの位置調整（値を大きくすると下に、小さくすると上に移動）
+		pagetopMobile.style.bottom = "20px";
 		}
 	}
 
 	window.addEventListener('scroll', togglePagetopMobile);
-	togglePagetopMobile();
+	togglePagetopMobile(); // 初期状態チェック
 
+	// クリックでスムーズスクロール
 	pagetopMobile.addEventListener('click', function (e) {
 		e.preventDefault();
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	});
-
-});
+	});
 </script>

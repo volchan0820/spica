@@ -1,6 +1,14 @@
 /* =====================================================
     concept.php
 ===================================================== */
+/* 共通 */
+.section-title::before {
+    content: "- ";
+}
+.section-title::after {
+    content: " -";
+}
+
 .concept-btn-1 {
     margin-left: 20px;
     margin-top: -70px;
@@ -77,7 +85,6 @@
 @media screen and (max-width: 1024px) {
     .concept-section {
         max-width: 820px;
-        padding: 0 48px;
     }
     .concept-block {
         margin: 80px 0 40px;
@@ -108,7 +115,7 @@
         padding-left: 0;
     }
     .concept-block .concept-text h2 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin-bottom: 20px;
         letter-spacing: 4px;
         text-align: left;
@@ -244,13 +251,13 @@
     font-weight: 300;
     letter-spacing: 0.2em;
     margin-bottom: 20px;
-    /* margin-top: 200px; */
     color: #939393;
 }
 .text p {
     font-size: 18px;
     color: #555;
     font-family: 'Zen Old Mincho', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
 }
 .concept-details-block,
 .concept-details-block-alt,
@@ -264,15 +271,27 @@
 .reverse {
     flex-direction: row-reverse;
 }
+.concept-details-block .text,
+.concept-details-block-alt .text,
+.concept-details-block-extended .text {
+    flex: 1;
+    margin-top: 100px;
+}
+.concept-details-block .image,
+.concept-details-block-alt .image,
+.concept-details-block-extended .image {
+    flex: 1;
+}
 .image img {
     width: 100%;
-    border-radius: 0px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .image img:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 .concept-details-block-alt {
     align-items: flex-start;
@@ -293,7 +312,7 @@
 .concept-details-block-alt-plus .text {
     width: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .spica-page-img img {
         height: 600px;
     }
@@ -302,6 +321,16 @@
     .concept-details-block-extended {
         flex-direction: column;
         gap: 30px;
+        margin-top: 80px;
+    }
+    .concept-details-block .text,
+    .concept-details-block .image,
+    .concept-details-block-alt .text,
+    .concept-details-block-alt .image,
+    .concept-details-block-extended .text,
+    .concept-details-block-extended .image {
+        width: 100%;
+        flex: none;
     }
     .concept-details-block-alt-plus .row {
         flex-direction: column !important;
@@ -311,8 +340,26 @@
         width: 100%;
     }
     .text h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .spica-page-img img {
+        height: 450px;
+    }
+    .text h2 {
         font-size: 18px;
-        margin-top: 40px;
+    }
+    .text p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+    .divider {
+        margin: 60px auto;
     }
 }
 

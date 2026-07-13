@@ -299,6 +299,7 @@
 @media (max-width: 768px) {
     .contents-wrapper {
         padding: 0 16px;
+        margin-top: 60px;
     }
     .blog-list {
         grid-template-columns: repeat(2, 1fr);

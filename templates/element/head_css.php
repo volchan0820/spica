@@ -1,6 +1,7 @@
 <!-- CSS -->
 <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/index.css">
 <link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/concept.css">
 <link rel="stylesheet" href="/css/products.css">

@@ -28,7 +28,7 @@
             <!-- プライベートサロン -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
-                    <h2>- Private Salon -</h2>
+                    <h2 class="section-title">Private Salon</h2>
                     <p>
                         店内一席のみの完全プライベートサロン ― <br>
                         周囲を気にせず、静かにお過ごしいただけます。<br>
@@ -55,7 +55,7 @@
             <!-- カウンセリング -->
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
-                    <h2>- Counseling -</h2>
+                    <h2 class="section-title">Counseling</h2>
                     <p>
                         spicaではカウンセリングを何より大切にしています。<br>
                         お悩みやご要望を丁寧に伺い、髪質や骨格を見極めたうえで、日常に寄り添う最適なヘアスタイルをご提案いたします。
@@ -68,7 +68,7 @@
             <!-- カット -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
-                    <h2>- Cut -</h2>
+                    <h2 class="section-title">Cut</h2>
                     <p>
                         カットは仕上がりだけでなく、日々の扱いやすさを左右します。<br>
                         髪質や骨格を的確に捉え、計算されたカットで、ご自宅でも美しく再現できるスタイルを追求しています。
@@ -81,7 +81,7 @@
             <!-- ヘアケア -->
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
-                    <h2>- Hair Care -</h2>
+                    <h2 class="section-title">Hair Care</h2>
                     <p>
                         マイクロバブルによるやさしいクレンジングで、毛穴や頭皮の奥まで丁寧に洗浄します。<br>
                         全メニューにトリートメント工程を組み込み、髪と頭皮への負担を最小限に抑えています。
@@ -107,7 +107,7 @@
             <!-- 代表挨拶 -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
-                    <h2>- Owner's Message -</h2>
+                    <h2 class="section-title">Owner's Message</h2>
                     <p>
                         spicaが最も大切にしていることは、<br>
                         ”お客様一人ひとりに寄り添うこと” です。<br>
@@ -151,11 +151,12 @@
 
     <!-- ページトップボタン -->
 	<a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
-	<?php echo $this->element('page_top_script'); ?>
+	<?php echo $this->element('page_top_script'); ?>    
 
     <!-- レスポンシブ　ページトップボタン -->
+    <?php $pageTopFooterOffset = 80; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?php echo $this->element('page_top_mobile_script'); ?>
+    <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>

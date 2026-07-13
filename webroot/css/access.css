@@ -1,0 +1,75 @@
+/* =====================================================
+    access.php
+===================================================== */
+/* hair-atelier-spica-title-imgは、reservation.php にも適用させている */
+.hair-atelier-spica-title-img {
+    max-width: 24%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.hair-atelier-spica-title-img img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+        .hair-atelier-spica-title-img {
+        max-width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+.access-map {
+    max-width: 600px;
+    margin: 32px auto;
+    width: 90%;
+}
+.access-map iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 0px;
+}
+.access-info {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.access-parking {
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+.access-parking .text {
+    font-size: 1.8rem;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.access-parking .image img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.access-parking .text {
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .access-parking .image img {
+        max-width: 70%;
+    }
+}
+@media (min-width: 1024px) {
+    .access-parking .image img {
+        max-width: 70%;
+    }
+}
+@media (min-width: 1280px) {
+    .access-parking .image img {
+        max-width: 50%;
+    }
+}

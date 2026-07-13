@@ -28,7 +28,7 @@
             <!-- 完全プライベート空間 -->
             <section class="concept-details-block reverse fade-up">
                 <div class="text">
-                    <h2>- Private Salon -</h2>
+                    <h2 class="section-title">Private Salon</h2>
                     <p>
                         spicaは【店内1席のみ】の完全プライベートサロンです。<br>
                         ご来店からお帰りまで他のお客様と顔を合わせることがなく、落ち着いた空間でゆったりとお過ごしいただけます。<br><br>
@@ -49,7 +49,7 @@
             <!-- 最新チェア -->
             <section class="concept-details-block fade-up">
                 <div class="text">
-                    <h2>- Comfortable Chair -</h2>
+                    <h2 class="section-title">Comfortable Chair</h2>
                     <p>
                         施術には、移動の必要がない最新のスタイリングチェアを採用しています。<br>
                         カットからシャンプー、ヘッドスパまで同じ椅子で行うことができるため、施術中の移動による負担がありません。<br><br>
@@ -69,7 +69,7 @@
             <!-- 空間 -->
             <section class="concept-details-block-alt reverse fade-up">
                 <div class="text">
-                    <h2>- Relaxing Space -</h2>
+                    <h2 class="section-title">- Relaxing Space -</h2>
                     <p>
                         美容室で過ごす時間が、忙しい日常の中でほっと一息つけるひとときになるように。<br>
                         spicaでは空間づくりにもこだわっています。<br><br>
@@ -101,7 +101,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?php echo $this->element('page_top_mobile_script_detail'); ?>
+    <?php echo $this->element('page_top_mobile_script_detail_3'); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>

@@ -71,8 +71,9 @@
 	<?php echo $this->element('page_top_script_detail'); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
+    <?php $pageTopFooterOffset = -80; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
-    <?php echo $this->element('page_top_mobile_script_detail_2'); ?>
+    <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
