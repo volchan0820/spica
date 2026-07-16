@@ -259,9 +259,7 @@
     font-family: 'Zen Old Mincho', serif;
     font-size: clamp(1.4rem, 3vw, 2rem);
 }
-.concept-details-block,
-.concept-details-block-alt,
-.concept-details-block-extended {
+.concept-details-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,15 +269,11 @@
 .reverse {
     flex-direction: row-reverse;
 }
-.concept-details-block .text,
-.concept-details-block-alt .text,
-.concept-details-block-extended .text {
+.concept-details-block .text {
     flex: 1;
     margin-top: 100px;
 }
-.concept-details-block .image,
-.concept-details-block-alt .image,
-.concept-details-block-extended .image {
+.concept-details-block .image {
     flex: 1;
 }
 .image img {
@@ -293,51 +287,19 @@
     transform: scale(1.03);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
-.concept-details-block-alt {
-    align-items: flex-start;
-}
-.concept-details-block-alt-plus .row {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 80px;
-}
-.concept-details-block-alt-plus .row:nth-child(even) {
-    flex-direction: row-reverse;
-}
-.concept-details-block-alt-plus .image {
-    width: 45%;
-    border-radius: 10px;
-}
-.concept-details-block-alt-plus .text {
-    width: 50%;
-}
 @media screen and (max-width: 1024px) {
     .spica-page-img img {
         height: 600px;
     }
-    .concept-details-block,
-    .concept-details-block-alt,
-    .concept-details-block-extended {
+    .concept-details-block {
         flex-direction: column;
         gap: 30px;
         margin-top: 80px;
     }
     .concept-details-block .text,
-    .concept-details-block .image,
-    .concept-details-block-alt .text,
-    .concept-details-block-alt .image,
-    .concept-details-block-extended .text,
-    .concept-details-block-extended .image {
+    .concept-details-block .image {
         width: 100%;
         flex: none;
-    }
-    .concept-details-block-alt-plus .row {
-        flex-direction: column !important;
-    }
-    .concept-details-block-alt-plus .image,
-    .concept-details-block-alt-plus .text {
-        width: 100%;
     }
     .text h2 {
         font-size: 20px;

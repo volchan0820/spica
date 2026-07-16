@@ -330,7 +330,12 @@ h2 {
 	cursor: pointer;
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 0.4s ease, bottom 0.3s ease;
+
+	transform: translateY(0);
+	will-change: transform;
+
+	transition: opacity 0.4s ease, transform 0.12s linear;
+
 	display: none;
 }
 #pagetop-mobile.show {
@@ -343,8 +348,8 @@ h2 {
 	display: block;
 	margin-left: auto;
 }
-/* スマホだけ表示 */
-@media (max-width: 767px) {
+/* タブレット・スマホで表示 */
+@media (max-width: 1024px) {
 	#pagetop-mobile {
 		display: block;
 	}

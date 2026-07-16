@@ -4,40 +4,63 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const pagetopMobile = document.getElementById('pagetop-mobile');
 	const footer = document.querySelector('footer');
-	const showPoint = 50; // この位置までスクロールしたら表示
+	const showPoint = 50;
 
 	const defaultBottom = <?= isset($pageTopBottom) ? $pageTopBottom : 20 ?>;
-	const footerOffset = <?= isset($pageTopFooterOffset) ? $pageTopFooterOffset : -20 ?>;
+	const footerOffset = <?= isset($pageTopFooterOffset) ? $pageTopFooterOffset : 20 ?>;
+
+	// bottomは固定
+	pagetopMobile.style.bottom = defaultBottom + "px";
 
 	function togglePagetopMobile() {
+
 		const scrollY = window.scrollY;
 		const windowH = window.innerHeight;
-		const docH = document.body.offsetHeight;
+		const docH = document.documentElement.scrollHeight;
 
-		// フッターの高さを毎回取得（画像読み込み後の変化にも対応）
 		const footerHeight = footer ? footer.offsetHeight : 150;
 
+		// 表示・非表示
 		if (scrollY > showPoint) {
 			pagetopMobile.classList.add('show');
 		} else {
 			pagetopMobile.classList.remove('show');
 		}
 
+		// フッターとの重なり
 		const overlap = (scrollY + windowH) - (docH - footerHeight);
 
 		if (overlap > 0) {
-			pagetopMobile.style.bottom = (overlap + footerOffset) + "px";
+			pagetopMobile.style.transform =
+				'translateY(' + (-(overlap + footerOffset)) + 'px)';
 		} else {
-			pagetopMobile.style.bottom = defaultBottom + "px";
+			pagetopMobile.style.transform = 'translateY(0)';
 		}
 	}
 
-	window.addEventListener('scroll', togglePagetopMobile);
+	// スクロール処理を最適化
+	let ticking = false;
+
+	window.addEventListener('scroll', function () {
+		if (!ticking) {
+			requestAnimationFrame(function () {
+				togglePagetopMobile();
+				ticking = false;
+			});
+			ticking = true;
+		}
+	}, { passive: true });
+
+	window.addEventListener('resize', togglePagetopMobile);
+
 	togglePagetopMobile();
 
 	pagetopMobile.addEventListener('click', function (e) {
 		e.preventDefault();
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
 	});
 
 });
