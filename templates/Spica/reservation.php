@@ -41,7 +41,7 @@
             <section class="reservation-links">
                 <div class="line-buttons">
                     <!-- LINE公式ボタン -->
-                    <a href="https://lin.ee/W4Ibxfb" target="_blank" rel="noopener"><img src="/img/line.png" alt="友だち追加"></a>
+                    <a href="https://lin.ee/W4Ibxfb" target="_blank" rel="noopener"><img src="/assets/images/reservation/line.png" alt="友だち追加"></a>
                     <!-- ホットペッパービューティーボタン -->
                     <a href="https://beauty.hotpepper.jp/slnH000788665/" target="_blank" rel="noopener"><img src="/img/Beauty_Logo_270_90.gif" alt="HOT PEPPER Beauty"></a>
                 </div>
