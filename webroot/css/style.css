@@ -1,6 +1,46 @@
 /* =====================================================
     共通処理
 ===================================================== */
+/* ローディング */
+#loading {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity .9s ease, visibility .9s ease;
+}
+#loading.is-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.loading-logo {
+    width: 300px;
+    opacity: 0;
+    transform: scale(0.96);
+    transition:
+        opacity .7s ease,
+        transform .7s ease,
+        filter .7s ease;
+}
+.loading-logo.is-show {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+.loading-logo.is-hide {
+    opacity: 0;
+    transform: scale(1.02);
+    filter: blur(1px);
+}
+@media (max-width: 767px) {
+    .loading-logo {
+        width: 220px;
+    }
+}
+
 /* view moreボタン */
 .btnBasic {
     display: inline-flex;

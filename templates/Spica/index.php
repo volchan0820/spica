@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <div id="loading">
+        <img src="/img/logo/spica-logo.png" alt="ロゴ" class="loading-logo">
+    </div>
+
     <!-- SNS固定ボタン -->
     <div class="sns-fixed">
         <a href="https://lin.ee/W4Ibxfb" target="_blank"><i class="fab fa-line"></i></a>
@@ -260,5 +264,7 @@
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
+
+    <?php echo $this->element('loading_script'); ?>
 </body>
 </html>
