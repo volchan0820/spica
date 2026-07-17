@@ -94,6 +94,40 @@
 .btnBasic--back:hover .typo:nth-child(3) { transition-delay: 0.25s; }
 .btnBasic--back:hover .typo:nth-child(4) { transition-delay: 0.2s; }
 
+@media screen and (max-width: 767px) {
+    .btnBasic {
+        padding: 7px 16px 7px 12px;
+        font-size: 12px;
+    }
+    .btnBasic--back {
+        padding: 7px 12px 7px 16px;
+    }
+    .arrow {
+        width: 14px;
+        height: 8px;
+        margin-left: 6px;
+    }
+    .btnBasic--back .arrow {
+        margin-right: 6px;
+    }
+    .arrow__line--01 {
+        width: 320%;
+    }
+    .arrow__line--02 {
+        right: -32px;
+        width: 6px;
+    }
+    .btnBasic:hover .typo {
+        transform: translateX(5px);
+    }
+    .btnBasic:hover .arrow__line--01 {
+        transform: translateX(5px) translateY(-50%);
+    }
+    .btnBasic:hover .arrow__line--02 {
+        transform: translateX(5px) translateY(-50%) rotate(45deg);
+    }
+}
+
 /* ヘッダー */
 .spica-logo-top {
     display: flex;
