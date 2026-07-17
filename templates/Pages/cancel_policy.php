@@ -35,7 +35,7 @@
             <p style="font-size: 1.2rem;">　※一部のメニューのみ施術する場合も、料金は元々のご予約メニューの80％の料金を頂戴しております。</p>
         </div>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_reservation') ?>
+        <?= $this->element('back_button', ['url' => '/spica/reservation/']) ?>
     </div>
 
     <!-- フッター -->

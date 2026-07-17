@@ -187,7 +187,7 @@
             </div>
         </main>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_index') ?>
+        <?= $this->element('back_button', ['url' => '/spica/index/']) ?>
     </div>
 
     <!-- フッター -->

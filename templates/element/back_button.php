@@ -1,6 +1,6 @@
 <!-- BACKボタン -->
 <div class="back-button" style="text-align: center;">
-    <a href="/spica/reservation/" class="btnBasic">
+    <a href="<?= h($url) ?>" class="btnBasic btnBasic--back">
         <div class="btnBasic__label">
             <span class="typo">B</span>
             <span class="typo">A</span>

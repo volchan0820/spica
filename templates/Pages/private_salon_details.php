@@ -78,7 +78,7 @@
             </section>
         </main>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_concept') ?>
+        <?= $this->element('back_button', ['url' => '/spica/concept/']) ?>
     </div><!-- contents-wrapper -->
 
     <!-- フッター -->

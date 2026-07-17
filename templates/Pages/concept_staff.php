@@ -62,7 +62,7 @@
             </div>
         </div>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_concept') ?>
+        <?= $this->element('back_button', ['url' => '/spica/concept/']) ?>
     </div>
 
     <!-- フッター -->

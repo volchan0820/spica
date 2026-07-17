@@ -67,7 +67,7 @@
             <?php endforeach; ?>
         </div>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_index') ?>
+        <?= $this->element('back_button', ['url' => '/spica/index/']) ?>
     </div>
 
     <!-- モーダル表示用 -->

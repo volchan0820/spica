@@ -135,7 +135,7 @@
             </section>
         </main>
         <!-- BACKボタン -->
-        <?= $this->element('back_button_products') ?>
+        <?= $this->element('back_button', ['url' => '/spica/products/']) ?>
     </div><!-- contents-wrapper -->
 
     <!-- フッター -->
