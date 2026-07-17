@@ -34,7 +34,7 @@
                 <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
             </div>
             <br>
-            <p>〒901-2111 沖縄県浦添市経塚608番地1 EST CONPLEX 2nd BLD 6-A</p>
+            <p>〒901-2111 沖縄県浦添市経塚608番地1<br>EST CONPLEX 2nd BLD 6-A</p>
             <br>
             <p>6-A, EST COMPLEX 2nd BLD, 608-1 Kyozuka, Urasoe-shi, Okinawa 901-2111, Japan</p>
             <br>
