@@ -70,11 +70,4 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
-
-
-
-    public function cancelPolicy()
-    {
-        // templates/Pages/cancel_policy.php を表示
-    }
 }

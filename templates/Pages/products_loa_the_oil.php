@@ -14,15 +14,16 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
-<body>
+
+<body class="no-page-image">
     <?= $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">LOA THE OIL</h1>
+    <h1 class="spica-title fade-up">LOA THE OIL</h1>
 
     <div class="contents-wrapper">
-        <main class="loa-section fade-up">
-            <span class="en loa-page-en">PERFUME OIL</span>
-            <div class="loa-intro">
+        <main class="loa-section">
+            <span class="product-subtitle fade-up">PERFUME OIL</span>
+            <div class="loa-intro fade-up">
                 <p>
                     ヘア・ボディ・ハンド・フレグランス。<br>
                     全身に使える、天然由来のパフュームオイル。
@@ -33,7 +34,7 @@
                     <strong>ひとつは持っておきたい大人のオイルアイテム</strong>です。
                 </p>
             </div>
-            <div class="loa-block">
+            <div class="loa-block fade-up">
                 <div class="loa-text">
                     <h3>香りも、質感も、ちょうどいい。</h3>
                     <p>
@@ -50,7 +51,7 @@
                     <img src="/assets/images/product/loa-the-oil/loa-the-oil-1.jpeg" alt="LOA THE OIL 商品イメージ">
                 </div>
             </div>
-            <div class="loa-block reverse">
+            <div class="loa-block reverse fade-up">
                 <div class="loa-text">
                     <h3>オイルだけじゃない、LOAシリーズ。</h3>
                     <p>
@@ -62,7 +63,7 @@
                     <img src="/assets/images/product/loa-the-oil/loa-the-oil-2.jpeg" alt="LOA THE OIL ラインナップ">
                 </div>
             </div>
-            <section class="loa-ritual">
+            <section class="loa-ritual fade-up">
                 <h3 class="loa-ritual-title">
                     おすすめの使い方
                     <span>- Daily Ritual -</span>
@@ -102,7 +103,7 @@
                     </div>
                 </div>
             </section>
-            <section class="loa-lifestyle">
+            <section class="loa-lifestyle fade-up">
                 <p class="loa-lifestyle-lead">
                     香りを、<br>
                     さりげなく纏うという選択。
@@ -125,7 +126,7 @@
                     大人のためのフレグランスケアです。
                 </p>
             </section>
-            <p class="loa-closing">
+            <p class="loa-closing fade-up">
                 ギフトとしても人気の、贅沢で大人なオイルアイテム。<br>
                 spicaのお手洗いのハンドソープも、このLOAシリーズを使用しています。<br><br>
                 ぜひ、香りや使用感をお試しください。
@@ -140,12 +141,12 @@
         <?php echo $this->element('spica_footer'); ?>
     </footer>
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

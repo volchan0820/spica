@@ -14,6 +14,7 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
+
 <body>
     <?php echo $this->element('spica_header'); ?>
 
@@ -23,14 +24,11 @@
 
     <h1 class="spica-title fade-up">RESERVATION</h1>
 
-  
     <div class="reservation-info fade-up">
         <div class="contents-wrapper">
             <div class="hair-atelier-spica-title-img">
                 <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
             </div>
-
-            <!-- <p style="font-size: 30px;">Hair atelier spica</p> -->
             <section class="store-address">
                 <address>
                     <br>
@@ -53,9 +51,10 @@
                     <span class="reservation-attention-note">の注意事項をご確認ください。</span>
                 </div>
                 <div class="contact-info">
-                    <p>お問い合わせは公式LINEまたは下記のメールアドレスまでお願いいたします。<br>
-                    ※マンツーマン対応のため、お電話での対応は行っておりません。<br>
-                    <a href="mailto:info@atelier-spica.jp">info@atelier-spica.jp</a></p>
+                    <p>お問い合わせは、公式LINEまたは下記メールアドレスよりお気軽にご連絡ください。<br>
+                    <a href="mailto:info@atelier-spica.jp">info@atelier-spica.jp</a></p><br>
+                    一人ひとりのお客様との時間を大切にするため、お電話でのお問い合わせはお受けしておりません。<br>
+                    ご不便をおかけいたしますが、ご理解のほどよろしくお願いいたします。                    
                 </div>
             </section>
             <!-- BACKボタン -->
@@ -69,12 +68,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

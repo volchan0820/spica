@@ -1,6 +1,16 @@
 /* =====================================================
     products.php
 ===================================================== */
+/* 共通 */
+.product-subtitle {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #aaa;
+    margin-bottom: 100px;
+}
+
 /* products_aujua.php */
 .aujua-section {
     max-width: 1200px;
@@ -194,7 +204,7 @@
 }
 
 /* products_milbon.php */
-.milbon-container {
+.milbon-container { 
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -373,14 +383,6 @@
     margin: 0 auto 180px;
     font-family: 'Zen Old Mincho', serif;
 }
-.loa-page-en {
-    display: block;
-    text-align: center;
-    font-size: 1.4rem;
-    letter-spacing: 4px;
-    color: #aaa;
-    margin-bottom: 100px;
-}
 .loa-intro {
     text-align: center;
     margin-bottom: 120px;
@@ -519,22 +521,6 @@
     margin: 0 auto 200px;
     font-family: 'Zen Old Mincho', serif;
 }
-.rekera-header {
-    text-align: center;
-    margin-bottom: 100px;
-}
-.rekera-header .en {
-    display: block;
-    font-size: 1.4rem;
-    letter-spacing: 4px;
-    color: #aaa;
-    margin-bottom: 24px;
-}
-.rekera-header h2 {
-    font-size: 3.2rem;
-    line-height: 1.6;
-    font-family: 'Allura', cursive;
-}
 .rekera-lead {
     text-align: center;
     margin-bottom: 120px;
@@ -605,28 +591,11 @@
     }
 }
 
-
 /* products_hunt.php */
 .hunt-section {
     max-width: 900px;
     margin: 0 auto 200px;
     font-family: 'Zen Old Mincho', serif;
-}
-.hunt-header {
-    text-align: center;
-    margin-bottom: 120px;
-}
-.hunt-header .en {
-    display: block;
-    font-size: 1.2rem;
-    letter-spacing: 5px;
-    color: #999;
-    margin-bottom: 20px;
-}
-.hunt-header h2 {
-    font-size: 3.6rem;
-    letter-spacing: 2px;
-    font-family: 'Allura', cursive;
 }
 .hunt-image {
     text-align: center;
@@ -677,5 +646,85 @@
 @media (max-width: 768px) {
     .hunt-header h2 {
         font-size: 2.8rem;
+    }
+}
+
+/* products_magnet.php */
+.magnet-section {
+    max-width: 1000px;
+    margin: 0 auto 200px;
+    font-family: 'Zen Old Mincho', serif;
+}
+.magnet-header {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.magnet-header .en {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 24px;
+}
+.magnet-header h2 {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    font-family: 'Allura', cursive;
+}
+.magnet-image {
+    text-align: center;
+    margin-bottom: 120px;
+}
+.magnet-image img {
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+}
+.magnet-lead {
+    max-width: 700px;
+    margin: 0 auto 120px;
+    text-align: center;
+}
+.magnet-lead p {
+    font-size: 1.7rem;
+    line-height: 2;
+    color: #444;
+}
+.magnet-block {
+    max-width: 720px;
+    margin: 0 auto 120px;
+}
+.magnet-block h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.magnet-block p {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.magnet-list {
+    max-width: 650px;
+    margin: 0 auto 140px;
+    list-style: none;
+    padding: 0;
+}
+.magnet-list li {
+    font-size: 1.6rem;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+.magnet-closing {
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 120px;
+}
+@media (max-width: 768px) {
+    .magnet-header h2 {
+        font-size: 2.6rem;
     }
 }

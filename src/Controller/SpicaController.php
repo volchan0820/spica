@@ -27,30 +27,6 @@ class SpicaController extends AppController
         $this->set(compact('blogs'));
     }
 
-    // CONCEPT
-    public function concept()
-    {
-
-    }
-
-    // CONCEPT_TECHNOLOGY
-    public function conceptTechnology()
-    {
-
-    }
-
-    // MENU
-    public function menu()
-    {
-
-    }
-
-    // SALON RRODUCTS
-    public function products()
-    {
-
-    }
-
     // GALLERY
     public function gallery()
     {
@@ -92,23 +68,5 @@ class SpicaController extends AppController
             ->order(['id' => 'DESC'])
             ->first();
         $this->set(compact('blog', 'nextBlog', 'prevBlog'));
-    }
-
-    // ACCESS
-    public function access()
-    {
-
-    }
-
-    // WEB予約
-    public function reservation()
-    {
-
-    }
-
-    // PRIVACY POLICY
-    public function privacyPolicy()
-    {
-
     }
 }

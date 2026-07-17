@@ -121,7 +121,6 @@
         text-align: left;
     }
     .concept-block .concept-text p {
-        line-height: 1.8;
         text-align: left;
     }
     .concept-btn-1,
@@ -603,12 +602,12 @@
     flex: 1;
 }
 .staff-text {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 3vw, 2rem);
     padding-bottom: 45px;
     padding-left: 10px;
     list-style: none;
     margin: 0;
-    color: #555;
+    color: #4e4e4e;
     font-family: 'Zen Old Mincho', serif;
 }
 .staff-text li {
@@ -616,7 +615,7 @@
 }
 .staff-section-title {
     font-family: 'Zen Old Mincho', serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 10px;
     letter-spacing: 2px;

@@ -14,16 +14,17 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
-<body>
+
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">MILBON</h1>
+    <h1 class="spica-title fade-up">MILBON</h1>
 
     <div class="contents-wrapper">
         <main class="milbon-container">
             <section class="milbon-section fade-up">
                 <header class="milbon-header">
-                    <span class="milbon-en">STYLING SERIES</span>
+                    <span class="product-subtitle">STYLING SERIES</span>
                     <h2>スタイリングを楽しむ、プロクオリティケア</h2>
                     <p class="milbon-lead">
                         髪を守りながら、<br>
@@ -51,7 +52,7 @@
                         そして<strong>仕上がりの軽さと柔らかさ</strong>が長く続きます。
                     </p>
                 </div>
-                <div class="milbon-features">
+                <div class="milbon-features fade-up">
                     <div class="feature">
                         <h3>POINT 01</h3>
                         <p>
@@ -78,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="milbon-target">
+                <div class="milbon-target fade-up">
                     <h3>こんな方におすすめ</h3>
                     <ul>
                         <li>美容室帰りの仕上がりを自宅でも再現したい</li>
@@ -87,7 +88,7 @@
                         <li>束感・濡れ髪・ニュアンス巻きが好き</li>
                     </ul>
                 </div>
-                <div class="milbon-spica">
+                <div class="milbon-spica fade-up">
                     <h3>spicaでのご提案</h3>
                     <ul>
                         <li>スタイリング方法のレクチャー</li>
@@ -95,7 +96,7 @@
                         <li>メンズ・レディース・年代問わず対応</li>
                     </ul>
                 </div>
-                <p class="milbon-closing">
+                <p class="milbon-closing fade-up">
                     「ナチュラルなのに、おしゃれ。」<br>
                     毎日のスタイリングが楽しくなるアイテムです。
                 </p>
@@ -111,12 +112,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

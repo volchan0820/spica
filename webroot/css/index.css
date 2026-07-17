@@ -76,6 +76,10 @@
         margin-top: 100px;
         margin-bottom: 0;
     }
+    /* privacy_policy.php cancel_policy.php  */
+    .no-page-image .spica-title {
+        margin-top: 160px;
+    }
 }
 
 /* トップ画面 */

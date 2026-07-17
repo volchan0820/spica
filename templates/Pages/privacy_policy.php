@@ -13,43 +13,9 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
-    <style>
-        /* =====================================================
-            privacy policy only
-        ===================================================== */
-        .privacy-policy-content {
-            padding: 0px 120px 0px 120px;
-            margin-bottom: 100px;
-        }
-        .privacy-policy-title {
-            font-family: 'Zen Old Mincho', serif;
-        }
-        .privacy-policy-subtitle {
-            margin-bottom: 10px;
-            font-size: 2.4rem;
-            font-family: 'Zen Old Mincho', serif;
-        }
-        .privacy-policy-text {
-            margin: 0px 0px 40px 25px;
-            font-family: 'Zen Old Mincho', serif;
-        }
-
-        /* =====================================================
-            Responsive
-        ===================================================== */
-        @media (max-width: 768px) {
-            .privacy-policy-content {
-                padding: 0px 20px 0px 20px;
-            }
-            .privacy-policy-title {
-                padding: 0px 20px 0px 20px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
     <h1 class="spica-title">PRIVACY POLICY</h1>
@@ -121,12 +87,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

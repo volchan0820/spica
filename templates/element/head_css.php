@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="/css/products-detail.css">
 <link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/gallery.css">
-<link rel="stylesheet" href="/css/admin-blog.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/cancel-policy.css">
+<link rel="stylesheet" href="/css/privacy-policy.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">

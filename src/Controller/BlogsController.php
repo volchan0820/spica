@@ -190,7 +190,7 @@ class BlogsController extends AppController
                 $blog->status = 'published';  // 公開状態に更新
             }
         }
-    
+
         // 保存
         if ($this->Blogs->save($blog)) {  // 保存に成功した場合
             // 新規作成された場合は、IDを取得
@@ -250,7 +250,7 @@ class BlogsController extends AppController
         return $this->response->withType('application/json')
             ->withStringBody(json_encode(['success' => false]));
     }
-    
+
     // ブログ編集ページ
     public function editAdmin($id = null)
     {
@@ -270,9 +270,6 @@ class BlogsController extends AppController
         }
         $this->set(compact('blog'));
     }
-
-
-    
 
     // 公開中ブログ削除処理
     public function deletePublished($id = null)

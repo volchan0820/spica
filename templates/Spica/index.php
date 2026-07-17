@@ -13,15 +13,10 @@
     <?= $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?= $this->element('head_scripts'); ?>
-
-    <style>
-
-    </style>
 </head>
 
 <body>
-
-    <!-- SNS固定ボタン（sectionにする必要なし） -->
+    <!-- SNS固定ボタン -->
     <div class="sns-fixed">
         <a href="https://lin.ee/W4Ibxfb" target="_blank"><i class="fab fa-line"></i></a>
         <a href="https://www.instagram.com/hair_atelier_spica?igsh=dnpld2M5eHhvZG5z&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -31,11 +26,8 @@
     </div>
 
     <!-- ヘッダー -->
-    <header>
-        <?= $this->element('spica_header'); ?>
-    </header>
+    <header><?= $this->element('spica_header'); ?></header>
 
-    <!-- メインビジュアル（装飾のため section にしない） -->
     <div class="container">
         <div class="slider">
             <video autoplay muted loop playsinline>
@@ -45,27 +37,21 @@
         </div>
     </div>
 
-    <!-- メインコンテンツ -->
     <main class="top-section">
         <div class="top-right-note fade-up">
             店内一席のみの完全プライベートサロン<br>
             マンツーマンでお客様に寄り添いお悩みを解決します
         </div>
-        <!-- h1はページの主題として必須（視覚的非表示） -->
+
         <h1 class="visually-hidden">Hair atelier spica（ヘアアトリエスピカ）</h1>
 
-        <!-- ------------------------------- -->
-        <!-- CONCEPT -->
-        <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="concept-title">
             <div class="top-inner">
                 <h2 id="concept-title">Concept</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-concept-section.jpeg" alt="hair atelier spica コンセプト紹介のイメージ">
                     </figure>
-
                     <div class="top-text">
                         <p>
                             毎日が少しラクになって、<br>                            
@@ -73,7 +59,6 @@
                             落ち着いた大人女性が安心して過ごせるプライベートな空間で、<br>
                             クオリティ高いサービスを提供いたします。
                         </p>
-
                         <a href="/spica/concept/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -90,24 +75,18 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- MENU（反転）-->
-        <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="menu-title">
             <div class="top-inner">
                 <h2 id="menu-title">Menu</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-menu-section.jpeg" alt="hair atelier spica メニュー詳細ページへ">
                     </figure>
-
                     <div class="top-text">
                         <p>
                             美しさを最大限に引き出すためのメニューをご用意しています。<br>
                             あなたにぴったりの施術を、カウンセリングで一緒に見つけましょう。
                         </p>
-
                         <a href="/spica/menu/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -124,25 +103,19 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- SALON RRODUCTS -->
-        <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="products-title">
             <div class="top-inner">
                 <h2 id="staff-title">Products</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-products-section.jpeg" alt="hair atelier spica で取り扱う商品のイメージ">
                     </figure>
-
                     <div class="top-text">
                         <p>
                             お悩み別に揃えたホームケア。<br>
                             数多くの種類からお悩み別、<br>
                             スタイリング別に合ったホームケアをご紹介しています。
                         </p>
-
                         <a href="/spica/products/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -159,25 +132,19 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- GALLERY（反転） -->
-        <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="gallery-title">
             <div class="top-inner">
                 <h2 id="gallery-title">Gallery</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-gallery-section.jpeg" alt="hair atelier spica ヘアスタイルギャラリー詳細ページへ">
                     </figure>
-
                     <div class="top-text">
                         <p>カットラインの美しさや質感の違いなど、<br>
                         言葉だけでは伝わりにくい部分もわかりやすくまとめています。<br>
                             初めての方にもサロンの雰囲気が伝わるよう、<br>
                             実際のお客様のヘアスタイルを中心に掲載しています。
                         </p>
-
                         <a href="/spica/gallery/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -194,24 +161,18 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- BLOG -->
-        <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="blog-title">
             <div class="top-inner">
                 <h2 id="blog-title">Blog</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-blog-section.jpeg" alt="ブログ更新">
                     </figure>
-
                     <div class="top-text">
                         <p>髪の扱い方や季節ごとのケアのポイントなど、<br>
                             日常に役立つ情報もお届けしています。<br>
                             お店の空気感や、施術に対する想いが少しでも伝わるように、丁寧に更新していきます。
                         </p>
-
                         <a href="/spica/blog_list/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -228,24 +189,18 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- ACCESS（反転） -->
-        <!-- ------------------------------- -->
         <section class="top-block reverse fade-up" aria-labelledby="access-title">
             <div class="top-inner">
                 <h2 id="access-title">Access</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-access-section.jpeg" alt="アクセス情報">
                     </figure>
-
                     <div class="top-text">
                         <p>
                             駐車場2台完備。モノレール経塚駅から徒歩10分。<br>
                             スムーズにご来店いただけるようにご案内しております。
                         </p>
-
                         <a href="/spica/access/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -262,21 +217,15 @@
             </div>
         </section>
 
-        <!-- ------------------------------- -->
-        <!-- RESERVATION -->
-        <!-- ------------------------------- -->
         <section class="top-block fade-up" aria-labelledby="reservation-title">
             <div class="top-inner">
                 <h2 id="reservation-title">Reservation</h2>
-
                 <div class="top-content">
                     <figure class="top-section-image">
                         <img src="/assets/images/top/top-reservation-section.jpeg" alt="予約案内">
                     </figure>
-
                     <div class="top-text">
                         <p>お客様一人ひとりにしっかり向き合うため、事前のご予約をおすすめしています。</p>
-
                         <a href="/spica/reservation/" class="btnBasic">
                             <div class="btnBasic__label">
                                 <span class="typo">V</span><span class="typo">I</span><span class="typo">E</span><span class="typo">W</span>&ensp;
@@ -292,7 +241,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- フッター -->
@@ -301,17 +249,16 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?> 
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>
-
 </body>
 </html>

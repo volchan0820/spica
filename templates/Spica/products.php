@@ -14,6 +14,7 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
+
 <body>
     <?php echo $this->element('spica_header'); ?>
 
@@ -21,7 +22,7 @@
         <img src="/assets/images/product/main/product-main.jpeg" alt="hair atelier spica">
     </div>
 
-    <h1 class="spica-title fade-up">RRODUCTS</h1>
+    <h1 class="spica-title fade-up">PRODUCTS</h1>
 
     <div class="contents-wrapper">
         <main class="product-section">
@@ -195,12 +196,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

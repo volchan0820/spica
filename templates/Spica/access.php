@@ -16,10 +16,6 @@
 
     <!-- JSON-LD読み込み -->
     <?= $this->element('access_jsonld') ?>
-
-    <style>
- 
-    </style>
 </head>
 
 <body>
@@ -31,8 +27,8 @@
 
     <h1 class="spica-title fade-up">ACCESS</h1>
 
-    <div class="contents-wrapper">
-        <div class="access-info fade-up">
+    <div class="contents-wrapper fade-up">
+        <div class="access-info">
 
             <div class="hair-atelier-spica-title-img">
                 <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
@@ -45,7 +41,7 @@
             <p>OPEN: 10:00〜18:00</p>
             <p>CLOSE: 土曜日・日曜日</p>
         </div>
-        <div class="access-map fade-up">
+        <div class="access-map">
             <iframe
             src="https://maps.google.com/maps?q=26.234143,127.722426&z=18&output=embed"
             width="100%" height="450"
@@ -55,7 +51,7 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <div class="access-parking fade-up">
+        <div class="access-parking">
             <div class="text">
                 <p>
                     駐車場は建物の裏に2台ございます。<br>
@@ -77,15 +73,14 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
-
 
     <!-- フェードアップ -->
     <?= $this->element('fade_up_script') ?>

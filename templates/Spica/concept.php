@@ -14,6 +14,7 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
+
 <body>
     <?php echo $this->element('spica_header'); ?>
 
@@ -25,7 +26,6 @@
 
     <div class="contents-wrapper">
         <main class="concept-section">
-            <!-- プライベートサロン -->
             <section class="concept-block fade-up">
                 <div class="concept-text">
                     <h2 class="section-title">Private Salon</h2>
@@ -52,7 +52,7 @@
                     </div>
                 </a>
             </div>
-            <!-- カウンセリング -->
+
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2 class="section-title">Counseling</h2>
@@ -65,7 +65,7 @@
                     <img src="/assets/images/concept/main/concept-counseling.jpeg" alt="初めての方も安心できる丁寧なカウンセリング hair atelier spica">
                 </div>
             </section>
-            <!-- カット -->
+
             <section class="concept-block fade-up">
                 <div class="concept-text">
                     <h2 class="section-title">Cut</h2>
@@ -78,7 +78,7 @@
                     <img src="/assets/images/concept/main/concept-cut.jpeg" alt="一人ひとりに似合わせたカットを行う hair atelier spica">
                 </div>
             </section>
-            <!-- ヘアケア -->
+
             <section class="concept-block reverse fade-up">
                 <div class="concept-text">
                     <h2 class="section-title">Hair Care</h2>
@@ -104,7 +104,7 @@
                     </div>
                 </a>
             </div>
-            <!-- 代表挨拶 -->
+
             <section class="concept-block fade-up">
                 <div class="concept-text">
                     <h2 class="section-title">Owner's Message</h2>
@@ -150,12 +150,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

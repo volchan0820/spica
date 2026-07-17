@@ -15,7 +15,7 @@ class GallerysController extends AppController
         // モデルをロードする
         $this->Galleries = $this->getTableLocator()->get('Galleries');
     }
-    
+
     // スタイル画像追加
     public function styleUploadAdmin()
     {
@@ -73,8 +73,5 @@ class GallerysController extends AppController
             $this->Flash->error(__('削除に失敗しました。'));
         }
         return $this->redirect(['action' => 'styleListAdmin']);
-    }
-
-    public function styleUploadCompleteAdmin() {
     }
 }

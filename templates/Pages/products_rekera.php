@@ -14,18 +14,19 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
-<body>
+
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">ReKERA TREATMENT</h1>
+    <h1 class="spica-title fade-up">ReKERA TREATMENT</h1>
 
     <div class="contents-wrapper">
         <main class="rekera-section">
             <section class="rekera-section fade-up">
                 <header class="rekera-header">
-                    <span class="en">KERATIN REPAIR</span>
+                    <span class="product-subtitle fade-up">KERATIN REPAIR</span>
                 </header>
-                <div class="rekera-lead">
+                <div class="rekera-lead fade-up">
                     <p>
                         「髪を治す」ことを目的に作られた、<br>
                         ケラチン補修トリートメント。
@@ -35,7 +36,7 @@
                         <strong>髪の芯そのものを整える</strong>という考え方から生まれました。
                     </p>
                 </div>
-                <div class="rekera-block">
+                <div class="rekera-block fade-up">
                     <div class="rekera-text">
                         <h3>熱ダメージを受けた髪へ。</h3>
                         <p>
@@ -58,7 +59,7 @@
                 <h3 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">
                     こんな方におすすめ
                 </h3>
-                <ul class="rekera-list">
+                <ul class="rekera-list fade-up">
                     <li>ブリーチや縮毛矯正で髪がボロボロ</li>
                     <li>髪が細くなってきた / ハリがなくなってきた</li>
                     <li>ダメージで広がる / 切れ毛が気になる</li>
@@ -71,7 +72,7 @@
                     <li>✔︎ 髪の状態を見ながら、配合バランスを細かく調整</li>
                     <li>✔︎ ドライヤーやアイロン前にも使用可能</li>
                 </ul>
-                <p class="rekera-closing">
+                <p class="rekera-closing fade-up">
                     “美容室帰りだけ綺麗”から、<br>
                     “綺麗が積み重なる髪”へ。
                 </p>
@@ -87,12 +88,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

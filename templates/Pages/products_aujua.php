@@ -14,10 +14,11 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
-<body>
+
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">AUJUA</h1>
+    <h1 class="spica-title fade-up">AUJUA</h1>
 
     <div class="contents-wrapper">
         <main class="aujua-section">
@@ -68,7 +69,7 @@
                         あなただけのケアを組み立てるヘアケアプログラムです。
                     </p>
                 </div>
-                <div class="aujua-order-problems">
+                <div class="aujua-order-problems fade-up">
                     <h3>こんなお悩みに</h3>
                     <ul>
                         <li>ブリーチ・カラー・パーマによるごわつき、パサつき</li>
@@ -77,7 +78,7 @@
                         <li>自分に合うシャンプーが分からない</li>
                     </ul>
                 </div>
-                <div class="aujua-lineup">
+                <div class="aujua-lineup fade-up">
                     <h3>悩み別ラインナップ</h3>
                     <div class="lineup-grid">
                         <div class="lineup-card">
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="aujua-spica-point">
+                <div class="aujua-spica-point fade-up">
                     <h3>spicaのこだわり</h3>
                     <ul>
                         <li>丁寧なカウンセリングで理想の質感を共有</li>
@@ -127,7 +128,7 @@
                         <li>商品の購入のみのご来店も可能</li>
                     </ul>
                 </div>
-                <p class="aujua-closing">
+                <p class="aujua-closing fade-up">
                     あなたの髪に、<br>
                     今いちばん必要なケアを。
                 </p>
@@ -143,12 +144,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

@@ -143,12 +143,6 @@ class ManagementsController extends AppController
         }
     }
 
-    // ログイン成功後のアクション（管理画面一覧）
-    public function administratorLoginSuccess()
-    {
-
-    }
-
     // ログアウト処理
     public function administratorLogout()
     {
@@ -159,10 +153,4 @@ class ManagementsController extends AppController
             'controller' => 'Managements','action' => 'administratorLogin', // ログインページにリダイレクト
         ]);
     }
-
-    public function AdministratorLoginLocked()
-    {
-
-    }
-
 }

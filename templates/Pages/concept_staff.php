@@ -14,13 +14,14 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
     <style>
-        .viewmore-btn {
+        /* .viewmore-btn {
             text-align: center;
             margin-top: 20px;
-        }
+        } */
     </style>
 </head>
-<body>  
+
+<body class="no-page-image">  
     <?php echo $this->element('spica_header'); ?>
 
     <h1 class="spica-title fade-up">OWNER / STYLIST</h1>
@@ -47,12 +48,15 @@
                         </ul>
                     <h3 class="staff-section-title">得意な技術</h3>
                         <p class="staff-text">
-                            カット、ショート
+                            ・カット<br>
+                            ・ショート
                         </p>
                     <h3 class="staff-section-title">趣味</h3>
                         <p class="staff-text">
                             ・魚釣り<br>
-                            ・カフェ巡り
+                            ・映画鑑賞<br>
+                            ・カフェ巡り<br>
+                            ・カメラ
                         </p>
                 </div>
             </div>
@@ -67,12 +71,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

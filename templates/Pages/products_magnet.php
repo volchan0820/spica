@@ -13,110 +13,21 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-    
-    <style>
-        /* =====================================================
-            Magnet PAGE ONLY
-        ===================================================== */
-        .magnet-section {
-            max-width: 1000px;
-            margin: 0 auto 200px;
-            font-family: 'Zen Old Mincho', serif;
-        }
-        .magnet-header {
-            text-align: center;
-            margin-bottom: 120px;
-        }
-        .magnet-header .en {
-            display: block;
-            font-size: 1.2rem;
-            letter-spacing: 4px;
-            color: #999;
-            margin-bottom: 24px;
-        }
-        .magnet-header h2 {
-            font-size: 3.2rem;
-            letter-spacing: 2px;
-            font-family: 'Allura', cursive;
-        }
-        .magnet-image {
-            text-align: center;
-            margin-bottom: 120px;
-        }
-        .magnet-image img {
-            width: 100%;
-            max-width: 460px;
-            box-shadow: 0 20px 45px rgba(0,0,0,0.1);
-        }
-        .magnet-lead {
-            max-width: 700px;
-            margin: 0 auto 120px;
-            text-align: center;
-        }
-        .magnet-lead p {
-            font-size: 1.7rem;
-            line-height: 2;
-            color: #444;
-        }
-        .magnet-block {
-            max-width: 720px;
-            margin: 0 auto 120px;
-        }
-        .magnet-block h3 {
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-        .magnet-block p {
-            font-size: 1.6rem;
-            line-height: 2;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-        .magnet-list {
-            max-width: 650px;
-            margin: 0 auto 140px;
-            list-style: none;
-            padding: 0;
-        }
-        .magnet-list li {
-            font-size: 1.6rem;
-            padding: 14px 0;
-            border-bottom: 1px solid #e5e5e5;
-            text-align: center;
-        }
-        .magnet-closing {
-            text-align: center;
-            font-size: 1.8rem;
-            letter-spacing: 2px;
-            margin-top: 120px;
-        }
-
-        /* =====================================================
-            Responsive
-        ===================================================== */
-        @media (max-width: 768px) {
-            .magnet-header h2 {
-                font-size: 2.6rem;
-            }
-        }
-    </style>
 </head>
-<body>
+
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">Magnet</h1>
+    <h1 class="spica-title fade-up">Magnet</h1>
 
     <div class="contents-wrapper">
         <main class="aujua-section">
             <section class="magnet-section fade-up">
-                <header class="magnet-header">
-                    <span class="en">PROFESSIONAL TOOL</span>        
-                </header>
+                <span class="product-subtitle fade-up">PROFESSIONAL TOOL</span>
                 <div class="magnet-image">
                     <img src="/assets/images/product/magnet/magnet-1.jpeg" alt="Magnet ドライヤー・ヘアアイロン">
                 </div>
-                <div class="magnet-lead">
+                <div class="magnet-lead fade-up">
                     <p>
                         軽量・速乾・ツヤ。<br>
                         すべてを叶えるプロフェッショナルドライヤー。
@@ -126,7 +37,7 @@
                         髪の仕上がりを、自分好みにカスタマイズできます。
                     </p>
                 </div>
-                <div class="magnet-block">
+                <div class="magnet-block fade-up">
                     <h3>乾かすだけで、綺麗になる。</h3>
                     <p>
                         温度と風量を細かく調整でき、<br>
@@ -141,7 +52,7 @@
                         日々のケアが自然と楽になります。
                     </p>
                 </div>
-                <div class="magnet-block">
+                <div class="magnet-block fade-up">
                     <h3>むとう的、使いやすさ No.1。</h3>
                     <p>
                         Magnetのコテは、<br>
@@ -155,13 +66,13 @@
                 <h3 style="text-align:center; font-size:2.2rem; margin-bottom:40px;">
                     こんな方におすすめ
                 </h3>
-                <ul class="magnet-list">
+                <ul class="magnet-list fade-up">
                     <li>毎朝のスタイリングを楽にしたい</li>
                     <li>巻きが取れやすい</li>
                     <li>スタイリング中の腕の疲れを減らしたい</li>
                     <li>美容室の仕上がりを家でもキープしたい</li>
                 </ul>
-                <p class="magnet-closing">
+                <p class="magnet-closing fade-up">
                     気になる方は、<br>
                     実際に手に取って風量や重さをお試しいただけます。
                 </p>
@@ -177,12 +88,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 

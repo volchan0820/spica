@@ -34,7 +34,7 @@
         <li><a href="/spica/concept/">CONCEPT<br>コンセプト</a></li>
 
         <li><a href="/spica/menu/">MENU<br>メニュー</a></li>
-        <li><a href="/spica/products/">RRODUCTS<br>取扱商品</a></li>
+        <li><a href="/spica/products/">PRODUCTS<br>取扱商品</a></li>
         <li><a href="/spica/gallery/">GALLERY<br>ギャラリー</a></li>
         <li><a href="/spica/blogList/">BLOG<br>ブログ</a></li>
         <li><a href="/spica/access/">ACCESS<br>アクセス</a></li>

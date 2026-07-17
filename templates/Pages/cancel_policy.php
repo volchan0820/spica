@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hair atelier spica | privacy policy</title>
+    <title>Hair atelier spica | cancel policy</title>
     <meta name="description" content="privacy policy">
 
     <!-- CSS -->
@@ -13,50 +13,12 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
-    <style>
-        .cancel-policy-note {
-            background-color: #f9f9f9;
-            padding: 25px;
-            padding-bottom: 80px;
-            margin: 40px auto;
-            max-width: 650px;
-            text-align: center;
-            font-family: 'Noto Sans JP', sans-serif;
-            color: #333;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        .cancel-policy-note h2 {
-            font-size: 2.4rem;
-            margin-top: 10px;
-            margin-bottom: 60px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .cancel-policy-note h3 {
-            font-size: 1.8rem;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            text-align: left;
-            font-weight: 400;
-            letter-spacing: 1px;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        .cancel-policy-note p {
-            font-size: 1.4rem;
-            line-height: 1.9;
-            text-align: left;
-        }
-    </style>
 </head>
 
-<body>
+<body class="no-page-image">
     <?php echo $this->element('spica_header'); ?>
 
-    <h1 class="spica-title">RESERVE POLICY</h1>
+    <h1 class="spica-title">CANCEL POLICY</h1>
 
     <div class="contents-wrapper">
         <div class="cancel-policy-note fade-up">
@@ -64,7 +26,6 @@
             <p>・当店はプライベートサロンのため、お連れ様のご同伴はご遠慮いただいております。</p>
             <p style="font-size: 1.2rem;">　※ご同伴が必要な場合は、事前にご相談ください。</p>
             <p>・当店は中学生以下の施術はご予約を承っておりません。</p>
-            </p>
             <br>
             <h3>キャンセル料に関して</h3>
             <p>・ご予約日の前日の17：00以降のメニューの変更やキャンセルは、ご予約施術料金の80％を頂戴しております。</p>
@@ -83,12 +44,12 @@
     </footer>
 
     <!-- ページトップボタン -->
-    <?php $pageTopFooterOffsetPc = 100; ?> <!-- ここの数値を調整してボタンの位置を合わせる(数値を大きくすると下へ、小さくすると上へ移動) -->
+    <?php $pageTopFooterOffsetPc = 100; ?>
     <a href="#" class="pagetop" id="pagetop"><span class="pagetop-text">PAGE TOP</span></a>
     <?= $this->element('page_top_script', array('pageTopFooterOffsetPc' => $pageTopFooterOffsetPc)); ?>
 
     <!-- レスポンシブ　ページトップボタン -->
-    <?php $pageTopFooterOffset = 0; ?> <!-- ここの数値を調整してボタンの位置を合わせる(大きくなるほど上、小さくなるほど下) -->
+    <?php $pageTopFooterOffset = 0; ?>
     <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
