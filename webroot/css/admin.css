@@ -1,4 +1,3 @@
-@media screen and (max-width: 1024px) {
 /* =====================================================
     管理画面　共通
 ===================================================== */
@@ -12,6 +11,7 @@
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
+
 .logout a {
     margin: 20px auto;
     font-size: 16px;
@@ -33,12 +33,15 @@
     text-decoration: none;
     max-width: 160px;
 }
+
 .logout a:hover {
     background-color: #ffb83678;
 }
+
 .logout i {
     margin-right: 6px;
 }
+
 .return a {
     margin: 20px auto;
     font-size: 16px;
@@ -60,12 +63,15 @@
     text-decoration: none;
     max-width: 160px;
 }
+
 .return a:hover {
     background-color: #ffb83678;
 }
+
 .return i {
     margin-right: 6px;
 }
+
 
 /* =====================================================
     管理画面　ログイン画面
@@ -79,6 +85,7 @@
     font-style: normal;
     margin-left: 20%;
 }
+
 body .form-input {
     width: 60%;
     padding: 10px;
@@ -91,6 +98,7 @@ body .form-input {
     font-style: normal;
     margin-left: 20%;
 }
+
 body .form-submit {
     margin: 20px auto;
     font-size: 16px;
@@ -107,31 +115,13 @@ body .form-submit {
     font-weight: 400;
     font-style: normal;
 }
-@media screen and (max-width: 768px) {
-    body .top-image img {
-        width: 80%;
-    }
 
-    body .form-label {
-        font-size: 12px;
-    }
-
-    body .form-submit {
-        font-size: 14px;
-        padding: 0px 10px 10px 10px;
-    }
-
-    body .form-input {
-        font-size: 14px;
-    }
-}
 
 /* =====================================================
     管理画面　アカウントロック　ログイン画面へ戻るボタン
 ===================================================== */
 body .btn-back {
-    margin: 100px auto;
-    margin-bottom: 20px;
+    margin: 100px auto 20px;
     font-size: 16px;
     color: #000000;
     background-color: #ffb836;
@@ -150,14 +140,17 @@ body .btn-back {
     text-decoration: none;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .btn-back:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
 
+
 /* =====================================================
     管理画面　トップ
 ===================================================== */
+
 /* ロゴのスタイル */
 .top-image img {
     width: 20%;
@@ -166,22 +159,28 @@ body .btn-back {
     margin: 0 auto;
     display: block;
 }
+
 .menu-content {
     margin-top: 140px;
 }
+
 body .menu {
     width: 90%;
     max-width: 600px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
+
 body .menu-box {
     width: 90%;
     max-width: 600px;
     padding: 20px;
     background-color: #FFF;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-    margin:  0 auto;
+    box-shadow:
+        0 4px 6px 0 rgba(0, 0, 0, 0.16),
+        0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
 }
+
 body .menu-title {
     font-size: 26px;
     color: #555;
@@ -192,14 +191,17 @@ body .menu-title {
     margin-left: 6%;
     text-align: left;
 }
+
 body .menu_list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 body .menu_list li {
     margin: 10px 0;
 }
+
 body .menu_list li a {
     text-decoration: none;
     color: #333;
@@ -211,14 +213,17 @@ body .menu_list li a {
     font-family: "Tsukimi Rounded", sans-serif;
     font-style: normal;
 }
+
 body .menu_list li a:hover {
-    background-color:rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
     color: #fff;
 }
+
 
 /* =====================================================
     管理画面　ブログ
 ===================================================== */
+
 /* 新規投稿　下書き保存ボタン */
 body .draftButton {
     margin: 20px;
@@ -234,19 +239,21 @@ body .draftButton {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 20px;
     transition: background-color 0.3s ease;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     max-width: 160px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .draftButton:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
+
+
 /* 新規投稿　確認ボタン */
 body .postPreviewButton {
     margin: 20px;
@@ -262,19 +269,21 @@ body .postPreviewButton {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 20px;
     transition: background-color 0.3s ease;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     max-width: 160px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .postPreviewButton:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
+
+
 /* 公開するボタン */
 body .publishButton {
     margin: 100px auto;
@@ -297,13 +306,16 @@ body .publishButton {
     max-width: 160px;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .publishButton:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
+
+
 /* 下書き保存　確認ボタン */
 body .editPreviewButton {
-    margin: 20px;    
+    margin: 20px;
     font-size: 16px;
     color: #000000;
     background-color: #ffb836;
@@ -315,25 +327,27 @@ body .editPreviewButton {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 40px;
     transition: background-color 0.3s ease;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
     max-width: 160px;
-    padding: 20px 40px 20px 40px;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .editPreviewButton:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
+
 .preview-text {
     text-align: left;
     font-size: 18px;
@@ -342,6 +356,7 @@ body .editPreviewButton {
     margin-top: 30px;
     word-break: break-word;
 }
+
 .preview-text img {
     max-width: 100%;
     height: auto;
@@ -350,15 +365,27 @@ body .editPreviewButton {
     border-radius: 12px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 .publish-button-wrapper {
     text-align: center;
     margin-top: 20px;
 }
+
+
 /* 下書き・公開完了画面 */
 .admin-subtitle {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     font-size: 2.5rem;
     font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
 }
+
 
 /* =====================================================
     管理画面　ギャラリー
@@ -369,23 +396,27 @@ body .editPreviewButton {
     padding: 0 20px;
     font-family: 'Zen Old Mincho', serif;
 }
+
 .form-wrapper .input {
     margin-bottom: 2.5rem;
 }
+
 .form-wrapper label {
     font-size: 1.8rem;
     display: block;
     margin-bottom: 0.4rem;
 }
+
 .form-wrapper .required {
     color: red;
     font-size: 0.8em;
     margin-left: 0.5em;
 }
+
+
 /* 削除ボタン */
 .btn-delete {
     display: inline-block;
-    /* padding: 0.4em 1em; */
     font-size: 1rem;
     color: black;
     border: none;
@@ -395,10 +426,13 @@ body .editPreviewButton {
     margin-bottom: 40px;
     background-color: #ffb836;
 }
+
 .btn-delete:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
+
+
 /* 投稿するボタン */
 .submit-btn {
     margin: 20px auto;
@@ -416,30 +450,189 @@ body .editPreviewButton {
     font-weight: 400;
     font-style: normal;
 }
+
 .submit-btn:hover {
     background-color: #ffb83678;
     color: #ffffff;
 }
 
+
+/* =====================================================
+    Flashメッセージ
+===================================================== */
+.message {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Tsukimi Rounded", sans-serif;
+}
+
+
 /* =====================================================
     管理画面　その他
 ===================================================== */
-	.add-admin,
-	.publish-complete-admin,
-	.edit-admin,
-	.draft-save-complete-admin,
-	.draft_delete_complete_admin {
-		padding-inline: 20px !important;
-	}
-	body.list-draft-admin,
-	body.view-draft-admin,
-	body.list-published-admin,
-	body.view-published-admin,
-	body.style-list-admin {
-		padding-inline: 20px;
-	}
-	.admin-title {
-		font-size: 22px;
-		margin-top: 100px;
-	}
+.add-admin,
+.publish-complete-admin,
+.edit-admin,
+.draft-save-complete-admin,
+.draft_delete_complete_admin {
+    padding-inline: 20px !important;
+}
+
+body.list-draft-admin,
+body.view-draft-admin,
+body.list-published-admin,
+body.view-published-admin,
+body.style-list-admin {
+    padding-inline: 20px;
+}
+
+
+/* =====================================================
+    1024px以下
+===================================================== */
+@media screen and (max-width: 1024px) {
+
+    .top-image img {
+        width: 30%;
+    }
+
+    .menu-content {
+        margin-top: 100px;
+    }
+
+    .admin-title {
+        font-size: 30px;
+    }
+
+    .admin-subtitle {
+        font-size: 2.2rem;
+    }
+
+    .form-wrapper {
+        max-width: 600px;
+    }
+
+}
+
+
+/* =====================================================
+    768px以下
+===================================================== */
+@media screen and (max-width: 768px) {
+
+    body .top-image img {
+        width: 80%;
+    }
+
+    body .form-label {
+        font-size: 12px;
+    }
+
+    body .form-submit {
+        font-size: 14px;
+        padding: 0 10px 10px 10px;
+    }
+
+    body .form-input {
+        font-size: 14px;
+    }
+
+    .admin-title {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .admin-subtitle {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    body .menu-title {
+        font-size: 22px;
+    }
+
+    body .menu_list li a {
+        font-size: 16px;
+    }
+
+    .form-wrapper {
+        padding: 0 15px;
+    }
+
+    .form-wrapper label {
+        font-size: 1.5rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body .draftButton,
+    body .postPreviewButton,
+    body .editPreviewButton {
+        margin: 10px auto;
+    }
+
+}
+
+
+/* =====================================================
+    480px以下（スマートフォン）
+===================================================== */
+@media screen and (max-width: 480px) {
+
+    .admin-title {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .admin-subtitle {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .menu-content {
+        margin-top: 60px;
+    }
+
+    body .menu-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    body .menu-title {
+        font-size: 20px;
+        margin-left: 3%;
+    }
+
+    body .menu_list li a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .form-wrapper {
+        padding: 0 10px;
+    }
+
+    .form-wrapper label {
+        font-size: 1.3rem;
+    }
+
+    .message {
+        width: 90%;
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
 }

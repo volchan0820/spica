@@ -2,15 +2,18 @@
 <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/index.css">
-<link rel="stylesheet" href="/css/blog.css">
 <link rel="stylesheet" href="/css/concept.css">
+<link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/products.css">
 <link rel="stylesheet" href="/css/products-detail.css">
-<link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/gallery.css">
-<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/blog.css">
+<link rel="stylesheet" href="/css/access.css">
+<link rel="stylesheet" href="/css/reservation.css">
 <link rel="stylesheet" href="/css/cancel-policy.css">
 <link rel="stylesheet" href="/css/privacy-policy.css">
+<link rel="stylesheet" href="/css/admin.css">
+<link rel="stylesheet" href="/css/admin-blog.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
