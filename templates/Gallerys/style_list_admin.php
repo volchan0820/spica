@@ -21,6 +21,8 @@
 
     <h1 class="admin-title fade-up">Image List</h1>
 
+    <?= $this->Flash->render() ?>
+
     <div class="filter-area fade-up">
         <div class="select-wrapper">
             <select id="styleFilter" aria-label="スタイルで絞り込み">

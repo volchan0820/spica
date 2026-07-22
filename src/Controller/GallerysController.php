@@ -74,4 +74,9 @@ class GallerysController extends AppController
         }
         return $this->redirect(['action' => 'styleListAdmin']);
     }
+
+    public function styleUploadCompleteAdmin()
+    {
+        
+    }
 }

@@ -12,13 +12,6 @@
     <?php echo $this->element('head_fonts'); ?>
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
-
-    <style>
-        /* body {
-            padding-left: 200px !important;
-            padding-right: 200px !important;
-        } */
-    </style>
 </head>
 
 <body>

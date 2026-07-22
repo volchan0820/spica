@@ -16,7 +16,7 @@
     <!-- JavaScript -->
     <?php echo $this->element('head_scripts'); ?>
 </head>
-<body>
+<body class="confirm_admin">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const publishBtn = document.querySelector('.publishButton');

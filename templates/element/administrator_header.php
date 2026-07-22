@@ -4,10 +4,9 @@
     <div class="header-inner">
         <nav class="navGlobal navLeft">
             <ul class="navGlobalIn">
-                <li><a href="/managements/administratorLoginSuccess/"><span>Home</span></a></li>
-                <li><a href="/blogs/addAdmin/"><span>New Post</span></a></li>
-                <li><a href="/blogs/listDraftAdmin/"><span>Draft List</span></a></li>
-                <li><a href="/blogs/listPublishedAdmin/"><span>Published List</span></a></li>
+                <li><a href="/blogs/addAdmin/"><span>BLOG<br>新規投稿</span></a></li>
+                <li><a href="/blogs/listDraftAdmin/"><span>BLOG<br>下書き一覧</span></a></li>
+                <li><a href="/blogs/listPublishedAdmin/"><span>BLOG<br>公開済み記事一覧</span></a></li>
             </ul>
         </nav>
         <div class="spica-logo-top">
@@ -15,9 +14,8 @@
         </div>
         <nav class="navGlobal navRight">
             <ul class="navGlobalIn">
-                <li><a href="/gallerys/styleUploadAdmin/"><span>Add Image</span></a></li>
-                <li><a href="/gallerys/styleListAdmin/"><span>Image List</span></a></li>
-                <li><a href=""><span>Access Log</span></a></li>
+                <li><a href="/gallerys/styleUploadAdmin/"><span>GALLERY<br>新規投稿</span></a></li>
+                <li><a href="/gallerys/styleListAdmin/"><span>GALLERY<br>公開済みスタイル一覧</span></a></li>
                 <li><a href="/managements/administratorLogout/"><span>Logout</span></a></li>
             </ul>
         </nav>      
@@ -31,13 +29,11 @@
 <!-- ハンバーガーメニュー内コンテンツ -->
 <div class="sidebar">
     <ul class="sidebar-menu">
-        <li><a href="/managements/administratorLoginSuccess/">HOME<br>&nbsp;</a></li>
-        <li><a href="/blogs/addAdmin/">BLOG<br>New Post</a></li>
-        <li><a href="/blogs/listDraftAdmin/">BLOG<br>Draft List</a></li>
-        <li><a href="/blogs/listPublishedAdmin/">BLOG<br>Published List</a></li>
-        <li><a href="/gallerys/styleUploadAdmin/">GALLERY<br>Add Image</a></li>
-        <li><a href="/gallerys/styleListAdmin/">GALLERY<br>Image List</a></li>
-        <li><a href="">ACCESS LOG<br>&nbsp;</a></li>
+        <li><a href="/blogs/addAdmin/">BLOG<br>新規投稿</a></li>
+        <li><a href="/blogs/listDraftAdmin/">BLOG<br>下書き一覧</a></li>
+        <li><a href="/blogs/listPublishedAdmin/">BLOG<br>公開済み記事一覧</a></li>
+        <li><a href="/gallerys/styleUploadAdmin/">GALLERY<br>新規投稿</a></li>
+        <li><a href="/gallerys/styleListAdmin/">GALLERY<br>公開済みスタイル一覧</a></li>
         <li><a href="/managements/administratorLogout/">Logout<br>&nbsp;</a></li>
     </ul>
 </div>

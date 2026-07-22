@@ -19,6 +19,8 @@
 
     <h2 class="admin-title">Published List</h2>
 
+    <?= $this->Flash->render() ?>
+
     <div class="contents-wrapper">
         <div class="blog-list">
             <?php foreach ($blogs as $blog): ?>

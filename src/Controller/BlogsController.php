@@ -296,17 +296,14 @@ class BlogsController extends AppController
         try {
             $blog = $this->Blogs->get($id);
             $blog->delete_flag = 1;
-
             if ($this->Blogs->save($blog)) {
-                return $this->render('/Pages/draft_delete_complete_admin');
+                $this->Flash->success(__('下書きブログ記事を削除しました。'));
             } else {
-                // 削除失敗は元の下書き一覧に戻す
-                $this->Flash->error(__('ブログ記事の削除に失敗しました。'));
-                return $this->redirect(['action' => 'listDraftAdmin']);
+                $this->Flash->error(__('下書きブログ記事の削除に失敗しました。'));
             }
         } catch (\Exception $e) {
-            $this->Flash->error(__('ブログ記事の削除時にエラーが発生しました。'));
-            return $this->redirect(['action' => 'listDraftAdmin']);
+            $this->Flash->error(__('下書きブログ記事の削除時にエラーが発生しました。'));
         }
+        return $this->redirect(['action' => 'listDraftAdmin']);
     }
 }

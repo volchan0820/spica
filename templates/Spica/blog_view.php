@@ -16,12 +16,6 @@
     
     <!-- JSON-LD読み込み -->
     <?= $this->element('blog_jsonld', ['blog' => $blog]) ?>
-    <style>
-        h2 {
-            font-family: 'Zen Maru Gothic', sans-serif;
-            border-bottom: 1px solid #d3d3d3;
-        }
-    </style>
 </head>
 
 <body class="no-page-image">

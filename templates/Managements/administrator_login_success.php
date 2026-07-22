@@ -24,9 +24,9 @@
             <h2 class="menu-title">Blog</h2>
             <div class="mui-panel menu-box">
                 <ul class="menu_list">
-                    <li><?php echo $this->Html->link('New Post', ['controller' => 'Blogs', 'action' => 'add_admin']); ?></li>
-                    <li><?php echo $this->Html->link('Draft List', ['controller' => 'Blogs', 'action' => 'list_draft_admin']); ?></li>
-                    <li><?php echo $this->Html->link('Published Articles', ['controller' => 'Blogs', 'action' => 'list_published_admin']); ?></li>
+                    <li><?php echo $this->Html->link('新規投稿', ['controller' => 'Blogs', 'action' => 'add_admin']); ?></li>
+                    <li><?php echo $this->Html->link('下書き一覧', ['controller' => 'Blogs', 'action' => 'list_draft_admin']); ?></li>
+                    <li><?php echo $this->Html->link('公開済み記事一覧', ['controller' => 'Blogs', 'action' => 'list_published_admin']); ?></li>
                 </ul>
             </div>
         </div>
@@ -34,8 +34,8 @@
             <h2 class="menu-title">Gallery</h2>
             <div class="mui-panel menu-box">
                 <ul class="menu_list">
-                    <li><?php echo $this->Html->link('Add Image', ['controller' => 'Gallerys', 'action' => 'styleUploadAdmin']); ?></li>
-                    <li><?php echo $this->Html->link('Image List', ['controller' => 'Gallerys', 'action' => 'styleListAdmin']); ?></li>
+                    <li><?php echo $this->Html->link('新規投稿', ['controller' => 'Gallerys', 'action' => 'styleUploadAdmin']); ?></li>
+                    <li><?php echo $this->Html->link('公開済みスタイル一覧', ['controller' => 'Gallerys', 'action' => 'styleListAdmin']); ?></li>
                 </ul>
             </div>
         </div>

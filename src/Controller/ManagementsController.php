@@ -126,9 +126,9 @@ class ManagementsController extends AppController
                     // Gmail へ通知
                     $mailer = new Mailer('default');
                     // 差出人の設定
-                    $mailer->setFrom(['r.miyazato0820@gmail.com' => '管理システム'])
+                    $mailer->setFrom(['hair.atelier.spica@gmail.com' => '管理システム'])
                         // 宛先
-                        ->setTo('r.miyazato0820@gmail.com')
+                        ->setTo('hair.atelier.spica@gmail.com')
                         // 件名
                         ->setSubject('管理者ログインが3回失敗しました')
                         // 本文
@@ -152,5 +152,16 @@ class ManagementsController extends AppController
         return $this->redirect([
             'controller' => 'Managements','action' => 'administratorLogin', // ログインページにリダイレクト
         ]);
+    }
+
+    // ログイン成功後のアクション（管理画面一覧）
+    public function administratorLoginSuccess()
+    {
+
+    }
+
+    public function AdministratorLoginLocked()
+    {
+
     }
 }

@@ -170,6 +170,7 @@
     color: #333;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
+    border-bottom: 1px solid #d3d3d3;
 }
 .preview-title h2 {
     font-size: 22px;
@@ -239,6 +240,7 @@
     color: #333;
     text-align: center;
     font-family: 'Zen Old Mincho', serif;
+    border-bottom: 1px solid #d3d3d3;
 }
 .confirm-blog-detail .preview-text {
     text-align: left;

@@ -17,7 +17,7 @@
 <body>
     <?php echo $this->element('administrator_header'); ?>
 
-    <h2 class="admin-title">Published View</h2>
+    <h1 class="admin-title">Published View</h1>
 
     <div class="contents-wrapper">
         <div class="blog-action-links">
@@ -27,7 +27,7 @@
 
         <div class="blog-detail">
             <p class="update-date"><?= $blog->modified->format('Y/m/d') ?></p>
-            <h1><?= h($blog->title) ?></h1>
+            <h2><?= h($blog->title) ?></h2>
             <div class="blog-content"><?= $blog->content ?></div>
         </div>
 
