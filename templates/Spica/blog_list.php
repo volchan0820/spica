@@ -48,7 +48,7 @@
                             ?>                    
                             <div class="thumbnail-container">
                                 <img 
-                                    src="<?= h($firstImageUrl ?: '/img/spica-logo-top.png') ?>" 
+                                    src="<?= h($firstImageUrl ?: '/img/logo/spica-logo-top.png') ?>" 
                                     alt="サムネイル" 
                                     class="thumbnail"
                                 >
@@ -78,7 +78,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <?php $pageTopFooterOffset = 0; ?>
-    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/buttons/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->

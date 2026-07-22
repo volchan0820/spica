@@ -154,14 +154,11 @@ class ManagementsController extends AppController
         ]);
     }
 
-    // ログイン成功後のアクション（管理画面一覧）
     public function administratorLoginSuccess()
     {
-
     }
 
     public function AdministratorLoginLocked()
     {
-
     }
 }

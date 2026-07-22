@@ -27,7 +27,7 @@
     <div class="reservation-info fade-up">
         <div class="contents-wrapper">
             <div class="hair-atelier-spica-title-img">
-                <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
+                <img src="/img/logo/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
             </div>
             <section class="store-address">
                 <address>
@@ -43,7 +43,7 @@
                     <!-- LINE公式ボタン -->
                     <a href="https://lin.ee/W4Ibxfb" target="_blank" rel="noopener"><img src="/assets/images/reservation/line.png" alt="友だち追加"></a>
                     <!-- ホットペッパービューティーボタン -->
-                    <a href="https://beauty.hotpepper.jp/slnH000788665/" target="_blank" rel="noopener"><img src="/img/Beauty_Logo_270_90.gif" alt="HOT PEPPER Beauty"></a>
+                    <a href="https://beauty.hotpepper.jp/slnH000788665/" target="_blank" rel="noopener"><img src="/img/buttons/Beauty_Logo_270_90.gif" alt="HOT PEPPER Beauty"></a>
                 </div>
                 <div class="reservation-attention">
                     <span class="reservation-attention-note">※ご予約前に</span>
@@ -74,7 +74,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <?php $pageTopFooterOffset = 0; ?>
-    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/buttons/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->

@@ -22,7 +22,7 @@
 
 <body>
     <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
+        <img src="/img/logo/spica-logo.png" alt="spica-logo">
     </div>
 
     <h1 class="admin-title">Account Locked</h1>

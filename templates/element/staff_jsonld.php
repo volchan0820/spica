@@ -3,7 +3,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "武藤 早紀",
-  "image": "https://spica.com/img/staff.png",
+  "image": "/assets/images/concept/owners-message/concept-owner.jpg",
   "jobTitle": "スタイリスト",
   "worksFor": {
     "@type": "HairSalon",

@@ -31,7 +31,7 @@
         <div class="access-info">
 
             <div class="hair-atelier-spica-title-img">
-                <img src="/img/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
+                <img src="/img/logo/hair_atelier_spica.png" alt="hair atelier spica title" oncontextmenu="return false;" ondragstart="return false;" style="pointer-events: none;">
             </div>
             <br>
             <p>〒901-2111 沖縄県浦添市経塚608番地1<br>EST CONPLEX 2nd BLD 6-A</p>
@@ -60,7 +60,7 @@
                 </p>
             </div>
             <div class="image">
-                <img src="/img/spica-parking.jpg" alt="hair atelier spica 駐車場">
+                <img src="/assets/images/access/spica-parking.jpg" alt="hair atelier spica 駐車場">
             </div>
         </div>
         <!-- BACKボタン -->
@@ -79,7 +79,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <?php $pageTopFooterOffset = 0; ?>
-    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/buttons/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->

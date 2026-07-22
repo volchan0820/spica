@@ -30,7 +30,7 @@
         <div class="staff-section fade-up">
             <div class="staff-item">
                 <div class="staff-image">
-                    <img src="/img/concept/concept_owner.jpg" alt="hair atelier spica 武藤早紀のプロフィール写真">
+                    <img src="/assets/images/concept/owners-message/concept-owner.jpg" alt="hair atelier spica 武藤早紀のプロフィール写真">
                     <h2 class="staff-name">武藤　早紀<a href="https://www.instagram.com/hair_atelier_spica?igsh=dnpld2M5eHhvZG5z&utm_source=qr" target="_blank" class="instagram-link"><i class="fab fa-instagram"></i></a></h2>
                 </div>
                 <div class="staff-info">
@@ -77,7 +77,7 @@
 
     <!-- レスポンシブ　ページトップボタン -->
     <?php $pageTopFooterOffset = 0; ?>
-    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/pagetop.png" alt="ページトップへ"></a>
+    <a href="#top" id="pagetop-mobile" class="page-top"><img src="/img/buttons/pagetop.png" alt="ページトップへ"></a>
     <?php echo $this->element('page_top_mobile_script',array('pageTopFooterOffset' => $pageTopFooterOffset)); ?>
 
     <!-- フェードアップ -->

@@ -1,5 +1,5 @@
 <div class="spica-logo-footer">
-    <img src="/img/spica-logo-white.png" alt="Spica Logo Footer">
+    <img src="/img/logo/spica-logo-white.png" alt="Spica Logo Footer">
 </div>
 <div class="privacy-policy">
     <a href="/pages/privacy-policy">プライバシーポリシー</a>

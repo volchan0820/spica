@@ -10,7 +10,7 @@
             </ul>
         </nav>
         <div class="spica-logo-top">
-            <a href="/managements/administratorLoginSuccess/"><img src="/img/spica-logo-top.png" alt="hair atelier spica"></a>
+            <a href="/managements/administratorLoginSuccess/"><img src="/img/logo/spica-logo-top.png" alt="hair atelier spica"></a>
         </div>
         <nav class="navGlobal navRight">
             <ul class="navGlobalIn">

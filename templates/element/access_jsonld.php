@@ -3,7 +3,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Hair atelier spica",
-  "image": "https://spica.com/img/hair_atelier_spica.png",
+  "image": "https://spica.com/img/logo/hair_atelier_spica.png",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "608番地1 EST CONPLEX 2nd BLD 6-A",

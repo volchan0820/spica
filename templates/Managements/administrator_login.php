@@ -16,7 +16,7 @@
 
 <body>
     <div class="top-image">
-        <img src="/img/spica-logo.png" alt="spica-logo">
+        <img src="/img/logo/spica-logo.png" alt="spica-logo">
     </div>
     <div class="login-wrapper">
         <?= $this->Form->create(null, ['url' => '/managements/administrator-login-ZmhT3nWEjld02kFcqEm5', 'method' => 'post']) ?>

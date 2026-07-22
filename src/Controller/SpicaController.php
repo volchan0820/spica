@@ -69,4 +69,32 @@ class SpicaController extends AppController
             ->first();
         $this->set(compact('blog', 'nextBlog', 'prevBlog'));
     }
+
+    public function concept()
+    {
+    }
+
+    public function conceptTechnology()
+    {
+    }
+
+    public function menu()
+    {
+    }
+
+    public function products()
+    {
+    }
+
+    public function access()
+    {
+    }
+
+    public function reservation()
+    {
+    }
+
+    public function privacyPolicy()
+    {
+    }
 }

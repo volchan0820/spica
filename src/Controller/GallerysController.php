@@ -77,6 +77,5 @@ class GallerysController extends AppController
 
     public function styleUploadCompleteAdmin()
     {
-        
     }
 }
